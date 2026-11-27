@@ -1,4 +1,25 @@
-# Courses
+# gymhub gyms
+
+The gyms for [gymhub](https://github.com/ykirpichev/gymhub): GPU kernels, LLM internals, algorithms, and ML interview courses. Each folder is one gym package (`<id>/gym.json` plus `problems/`). The platform (the board, the runner and the graders) lives in [gymhub](https://github.com/ykirpichev/gymhub), which fetches this repository into its `gyms/` folder at the commit its `gyms.lock` pins.
+
+## Working on a gym
+
+Commands below run from a gymhub checkout, with this repository linked as its `gyms/` folder:
+
+```
+git clone https://github.com/ykirpichev/gymhub && git clone https://github.com/ykirpichev/gymhub-gyms
+cd gymhub && ./setup.sh && source .venv/bin/activate
+rm -rf gyms && ln -s ../gymhub-gyms gyms
+python -m gymhub.packages validate gyms/algo      # what CI runs on every changed gym
+```
+
+Every pull request is validated against the platform: every grader must load, every starter must fail its tests and every reference solution must pass them. Keep answers out of the public parts (`problem.json`, `PROBLEM.md`, `HINTS.md`, `starter/`), and never commit your own `solutions/` or `progress.json`.
+
+## Licence
+
+The course content (statements, hints, lessons, editorials, questions and answer keys) is licensed under [CC BY 4.0](LICENSE): reuse it, with credit to this repository. The code in it (starters, reference solutions and graders: files ending in `.py`, `.cu`, `.cpp`, `.h` and similar) is licensed under the [MIT licence](LICENSE-CODE).
+
+## Courses
 
 The courses below are marked `"publish": "upload"` in their `gym.json`: they are published by **uploading them to a board**. A runner never publishes them from its local files, so they get versions, sharing and answer keys like any uploaded gym. The other gyms here (`algo`, `gpu`, `llm`) are published by a runner.
 
@@ -13,7 +34,7 @@ The courses below are marked `"publish": "upload"` in their `gym.json`: they are
 
 ## Publish a course
 
-On a local board (`GYMHUB_STORE=sqlite:...`) there is nothing to do: the runner publishes these courses at start (`gymhub/courses.py`), or run `python -m gymhub.cli gym seed`. On a hosted board, push them:
+On a local board (`GYMHUB_STORE=sqlite:...`) there is nothing to do: the runner publishes these courses at start ([`gymhub/courses.py`](https://github.com/ykirpichev/gymhub/blob/main/gymhub/courses.py)), or run `python -m gymhub.cli gym seed`. On a hosted board, push them:
 
 Create an API token on the board (**Gyms → Create a gym → API tokens**), then:
 
@@ -27,9 +48,9 @@ To run the machine's checks locally first: `python -m gymhub.cli gym validate gy
 
 ## Writing exercises
 
-The easiest way to write or change a gym is one [Gym Markdown](../gymhub/GYM_MARKDOWN.md) file. `python -m gymhub.cli gym export gyms/ml-fundamentals -o ml-fundamentals.gym.md` gives a course as one file; edit it, check it with `python -m gymhub.cli gym check`, then push or upload the file itself (the board compiles it), or turn it back into this folder with `gym build`. The package format underneath is below.
+The easiest way to write or change a gym is one [Gym Markdown](https://github.com/ykirpichev/gymhub/blob/main/gymhub/GYM_MARKDOWN.md) file. `python -m gymhub.cli gym export gyms/ml-fundamentals -o ml-fundamentals.gym.md` gives a course as one file; edit it, check it with `python -m gymhub.cli gym check`, then push or upload the file itself (the board compiles it), or turn it back into this folder with `gym build`. The package format underneath is below.
 
-Besides code, an exercise's `problem.json` can set `"kind"` to `answer`, `choice`, `essay`, `checklist`, `lesson` (a page to read), `order` (put items in order), `match` (pair prompts with options) or `fill` (blanks in a sentence or in code). The public fields go in `problem.json` and the answer key in `answer.json`, which learners never receive. `gymhub/kinds.py` lists the fields for each kind, and `examples/gyms/mixed` has one exercise of every kind.
+Besides code, an exercise's `problem.json` can set `"kind"` to `answer`, `choice`, `essay`, `checklist`, `lesson` (a page to read), `order` (put items in order), `match` (pair prompts with options) or `fill` (blanks in a sentence or in code). The public fields go in `problem.json` and the answer key in `answer.json`, which learners never receive. [`gymhub/kinds.py`](https://github.com/ykirpichev/gymhub/blob/main/gymhub/kinds.py) lists the fields for each kind, and [`examples/gyms/mixed`](https://github.com/ykirpichev/gymhub/tree/main/examples/gyms/mixed) has one exercise of every kind.
 
 - **Structure:** give each track a one-sentence `"summary"` in `gym.json`, and each exercise an optional `"minutes"` estimate and up to eight `"concepts"`.
 - **Teach, then practise:** open each track with a short `lesson` that gives the theory its exercises rely on, and end each coding exercise with what an interviewer looks for and two or three follow-up questions. The courses here all follow this shape.

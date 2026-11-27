@@ -1,0 +1,58 @@
+# Validates the gyms against the platform (ykirpichev/gymhub): every grader loads, every starter
+# fails its tests, every reference solution passes. CPU only: checks that need CUDA skip themselves.
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  # The platform the gyms are checked against. Bump it to a release tag (v*) once gymhub has one.
+  PLATFORM_REF: main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: gyms-repo
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: ykirpichev/gymhub
+          ref: ${{ env.PLATFORM_REF }}
+          path: gymhub
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: gymhub/pyproject.toml
+      - name: Install the platform
+        working-directory: gymhub
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch numpy --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[hub]"
+          ln -s "$GITHUB_WORKSPACE/gyms-repo" gyms
+      - name: Gyms changed by this push or pull request (all of them on main)
+        id: changed
+        working-directory: gyms-repo
+        run: |
+          if [ "${{ github.event_name }}" = pull_request ]; then
+            ids=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" | cut -d/ -f1 | sort -u \
+              | while read -r d; do [ -f "$d/gym.json" ] && echo "$d"; done | tr '\n' ' ')
+          else
+            ids=$(for f in */gym.json; do dirname "$f"; done | tr '\n' ' ')
+          fi
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+          echo "Validating: ${ids:-nothing}"
+      - name: Validate
+        if: steps.changed.outputs.ids != ''
+        working-directory: gymhub
+        run: python -m gymhub.packages validate $(for id in ${{ steps.changed.outputs.ids }}; do echo "gyms/$id"; done)

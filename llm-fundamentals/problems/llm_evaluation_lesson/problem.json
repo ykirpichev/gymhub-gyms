@@ -1,0 +1,15 @@
+{
+  "title": "Evaluating LLMs and retrieval",
+  "difficulty": "easy",
+  "summary": "A lesson: retrieval metrics (recall@k, MRR, nDCG), the RAG triad, and how to evaluate generated text.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "recall@k",
+    "MRR",
+    "nDCG",
+    "RAG evaluation",
+    "LLM-as-judge",
+    "benchmarks"
+  ]
+}

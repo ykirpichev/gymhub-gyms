@@ -1,0 +1,11 @@
+{
+  "order": [
+    "d",
+    "f",
+    "b",
+    "e",
+    "a",
+    "c"
+  ],
+  "explanation": "Each step raises data reuse one level up the memory hierarchy: coalescing makes global loads efficient, shared tiles reuse each global load `BN` or `BM` times, register tiles reuse each shared load several times, and double buffering hides the latency that is left. Only then is the kernel limited by math, at which point Tensor Cores raise the ceiling by an order of magnitude. Simon Boehm's article in Sources measures each step; the GPU gym's `matmul` reports TFLOP/s so you can follow the same path."
+}

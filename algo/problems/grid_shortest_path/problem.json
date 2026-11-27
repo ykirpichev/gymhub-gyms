@@ -1,0 +1,6 @@
+{
+  "title": "Shortest path in a grid",
+  "difficulty": "medium",
+  "summary": "Breadth-first search on a grid with walls: the fewest steps from start to goal.",
+  "kind": "code"
+}

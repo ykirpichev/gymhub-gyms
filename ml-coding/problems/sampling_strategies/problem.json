@@ -1,0 +1,6 @@
+{
+  "title": "Uniform, weighted, and stratified sampling",
+  "difficulty": "medium",
+  "summary": "Draw uniform samples with or without replacement, weighted samples, or a stratified sample with a per-class minimum.",
+  "kind": "code"
+}

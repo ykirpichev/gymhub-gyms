@@ -1,0 +1,7 @@
+{
+  "correct": [
+    "a",
+    "c"
+  ],
+  "explanation": "PCA is the unsupervised eigendecomposition of the covariance, ordered by variance; because it never sees labels, its leading directions need not separate the classes. ICA looks for independent non-Gaussian sources and does not rank axes by variance. Whitening removes second-order structure, which leaves every rotation equally good for PCA; ICA then picks the rotation that makes the sources independent, so the two do not agree. Classical t-SNE keeps local neighborhoods, and the white space between clusters is not a measured distance."
+}

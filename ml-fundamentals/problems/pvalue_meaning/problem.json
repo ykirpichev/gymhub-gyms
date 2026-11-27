@@ -1,0 +1,24 @@
+{
+  "title": "What a p-value is",
+  "difficulty": "easy",
+  "summary": "A tail probability under the null, not a posterior and not an effect size.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "If the null hypothesis were true, a result at least this extreme would occur about 3% of the time."
+    },
+    {
+      "id": "b",
+      "text": "Given the data, there is a 3% probability that the null hypothesis is true, so the alternative is 97% likely."
+    },
+    {
+      "id": "c",
+      "text": "If the experiment were repeated, there is a 97% chance it would again be significant at the 0.05 level."
+    },
+    {
+      "id": "d",
+      "text": "The effect is large enough to matter in practice, since a p-value this small rules out a trivial difference."
+    }
+  ]
+}

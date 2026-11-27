@@ -1,0 +1,13 @@
+{
+  "title": "Point-in-time feature join",
+  "difficulty": "medium",
+  "summary": "Attach to each training event the latest feature value known before it, within a maximum age.",
+  "kind": "code",
+  "minutes": 20,
+  "concepts": [
+    "point-in-time join",
+    "leakage",
+    "feature store",
+    "binary search"
+  ]
+}

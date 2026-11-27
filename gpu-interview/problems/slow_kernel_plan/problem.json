@@ -1,0 +1,15 @@
+{
+  "title": "Your kernel runs at 30% of bandwidth",
+  "difficulty": "medium",
+  "summary": "Say how you would find out why a memory-bound kernel is slow, and what you would try.",
+  "kind": "essay",
+  "minutes": 8,
+  "concepts": [
+    "profiling",
+    "Nsight Compute",
+    "coalescing",
+    "roofline"
+  ],
+  "min_words": 80,
+  "max_words": 350
+}

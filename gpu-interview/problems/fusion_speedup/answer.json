@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "2"
+  ],
+  "match": "number",
+  "tolerance": 0.05,
+  "explanation": "Unfused: kernel 1 reads 4 bytes and writes 4 per element, kernel 2 does the same: 16 bytes per element. Fused: 8 bytes. Same bandwidth, half the bytes, twice as fast. Each extra elementwise op in an unfused chain adds 8 more bytes per element, which is why compilers (`torch.compile`, XLA) and hand-written kernels fuse norms, activations, residual adds and dropout into their neighbours."
+}

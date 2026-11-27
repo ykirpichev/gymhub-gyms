@@ -1,0 +1,6 @@
+{
+  "title": "Reverse a vector",
+  "difficulty": "easy",
+  "summary": "B[i] = A[N - 1 - i].",
+  "kind": "code"
+}

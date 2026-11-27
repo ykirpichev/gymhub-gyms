@@ -1,0 +1,6 @@
+{
+  "title": "Linear regression with gradient descent",
+  "difficulty": "medium",
+  "summary": "Full-batch gradient descent on mean squared error with a bias term, returning the loss history.",
+  "kind": "code"
+}

@@ -1,0 +1,11 @@
+{
+  "title": "How to answer a deep-dive question",
+  "difficulty": "easy",
+  "summary": "A lesson: a structure for explaining a kernel or a system, and the follow-ups to expect.",
+  "kind": "lesson",
+  "minutes": 5,
+  "concepts": [
+    "communication",
+    "deep dive"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Meeting rooms",
+  "difficulty": "medium",
+  "summary": "The fewest rooms that hold every meeting, by sweeping start and end events.",
+  "kind": "code"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Symmetric contrastive loss",
+  "difficulty": "medium",
+  "summary": "CLIP-style InfoNCE over a batch of paired embeddings: normalize, scale by temperature, cross-entropy both ways.",
+  "kind": "code"
+}

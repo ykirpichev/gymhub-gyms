@@ -1,0 +1,6 @@
+{
+  "title": "Count inversions",
+  "difficulty": "medium",
+  "summary": "Count pairs i < j with a[i] > a[j] in O(n log n) with merge sort or a Fenwick tree.",
+  "kind": "code"
+}

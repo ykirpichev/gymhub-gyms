@@ -1,0 +1,4 @@
+{
+  "order": ["norm1", "attn", "add1", "norm2", "mlp", "add2"],
+  "explanation": "A pre-norm block is x + Attn(Norm(x)), then h + MLP(Norm(h)). The normalization sits inside each branch, and the residual stream itself is never normalized until the final norm before the output head, which keeps gradients flowing through the additions in deep stacks."
+}

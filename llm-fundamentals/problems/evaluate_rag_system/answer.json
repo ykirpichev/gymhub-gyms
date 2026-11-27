@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Gives an evaluation approach for open-ended answers: a fixed test set rerun when the prompt, the model, or the index changes, judged by people or by a model, because token-overlap scores against one reference track usefulness poorly.\n2. Defines the RAG triad: faithfulness (the answer is supported by the retrieved context), answer relevance (the answer addresses the question), and context relevance (the retrieved context is about the question).\n3. Scores the retriever separately with at least one ranking metric and says what it measures, such as recall@k (coverage of the relevant documents in the top k), MRR (the rank of the first hit), or nDCG (graded relevance with a position discount).\n4. Describes LLM-as-judge and at least two of its biases, such as position bias, verbosity or length bias, and self-preference or style bias, with a mitigation such as swapping sides, controlling length, or auditing a sample with people.",
+  "pass_score": 0.7
+}

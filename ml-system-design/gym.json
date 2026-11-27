@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "id": "ml-system-design",
+  "title": "ML system design interview",
+  "description": "Prepare for the ML system design round: the open-ended interview where you design a recommender, a search ranker, an ads model, a RAG assistant or an LLM serving platform on a whiteboard. Each track opens with a lesson that teaches the theory with diagrams: the answer framework, back-of-the-envelope numbers, data and feature pipelines, retrieval and ranking funnels, evaluation and experiments, LLM serving (KV cache, batching, latency and cost), and RAG. Short questions drill the numbers and trade-offs interviewers probe; Python exercises build the pieces you would sketch (point-in-time joins, ranking metrics, diversity re-ranking, drift checks, rank fusion, a batching simulator and a serving capacity planner), each with an editorial. The last track walks through complete designs and then asks you to write your own. No GPU needed.",
+  "runtime": "gymkit",
+  "requires": {
+    "gpu": false
+  },
+  "order": 9,
+  "publish": "upload",
+  "sources": [
+    {
+      "title": "Designing Machine Learning Systems (Chip Huyen, O'Reilly, 2022)",
+      "url": "https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/",
+      "note": "Data, features, training, deployment and monitoring as one system: the backbone of the first five tracks."
+    },
+    {
+      "title": "Rules of Machine Learning (Martin Zinkevich, Google)",
+      "url": "https://developers.google.com/machine-learning/guides/rules-of-ml",
+      "note": "Practical rules on launching a first model, features, training/serving skew and objectives."
+    },
+    {
+      "title": "AIMLInterviews (Alireza Dirafzoon, MIT)",
+      "url": "https://github.com/alirezadir/AIMLInterviews",
+      "note": "The interview guide whose ML system design notes set this course's topics. Questions, rubrics and code here were written for this course."
+    },
+    {
+      "title": "Deep Neural Networks for YouTube Recommendations (Covington, Adams, Sargin, RecSys 2016)",
+      "url": "https://dl.acm.org/doi/10.1145/2959100.2959190",
+      "note": "The two-stage candidate generation and ranking funnel."
+    },
+    {
+      "title": "Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations (Yi et al., RecSys 2019)",
+      "url": "https://dl.acm.org/doi/10.1145/3298689.3346996",
+      "note": "Two-tower retrieval with in-batch negatives and its sampling correction."
+    },
+    {
+      "title": "Practical Lessons from Predicting Clicks on Ads at Facebook (He et al., 2014)",
+      "url": "https://dl.acm.org/doi/10.1145/2648584.2648589",
+      "note": "Calibration, normalized cross-entropy and data freshness in a production CTR model."
+    },
+    {
+      "title": "Efficient and robust approximate nearest neighbor search using HNSW graphs (Malkov and Yashunin)",
+      "url": "https://arxiv.org/abs/1603.09320",
+      "note": "The graph index behind most vector search."
+    },
+    {
+      "title": "Michelangelo: Uber's machine learning platform",
+      "url": "https://www.uber.com/blog/michelangelo-machine-learning-platform/",
+      "note": "An online and offline feature store and the training/serving split."
+    },
+    {
+      "title": "Trustworthy Online Controlled Experiments (Kohavi, Tang, Xu)",
+      "url": "https://experimentguide.com/",
+      "note": "A/B tests, sample sizes, guardrail metrics and sample ratio mismatch."
+    },
+    {
+      "title": "The use of MMR, diversity-based reranking (Carbonell and Goldstein, SIGIR 1998)",
+      "url": "https://dl.acm.org/doi/10.1145/290941.291025",
+      "note": "Maximal marginal relevance, in mmr_rerank."
+    },
+    {
+      "title": "Reciprocal Rank Fusion (Cormack, Clarke, Buettcher, SIGIR 2009)",
+      "url": "https://dl.acm.org/doi/10.1145/1571941.1572114",
+      "note": "Fusing keyword and vector rankings, in reciprocal_rank_fusion."
+    },
+    {
+      "title": "Retrieval-Augmented Generation (Lewis et al., 2020)",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "note": "Retrieval as part of generation."
+    },
+    {
+      "title": "Orca: continuous batching (Yu et al., OSDI 2022)",
+      "url": "https://www.usenix.org/conference/osdi22/presentation/yu",
+      "note": "Iteration-level scheduling for LLM serving."
+    },
+    {
+      "title": "PagedAttention / vLLM (Kwon et al., 2023)",
+      "url": "https://arxiv.org/abs/2309.06180",
+      "note": "The paged KV cache that sets how many sequences fit on a GPU."
+    },
+    {
+      "title": "SARATHI: chunked prefills (Agrawal et al., 2023)",
+      "url": "https://arxiv.org/abs/2308.16369",
+      "note": "Splitting long prefills so they do not stall decodes."
+    },
+    {
+      "title": "DistServe: disaggregated prefill and decoding (Zhong et al., 2024)",
+      "url": "https://arxiv.org/abs/2401.09670",
+      "note": "Separate GPU pools for prefill and decode, sized to TTFT and TPOT targets."
+    },
+    {
+      "title": "S-LoRA: Serving Thousands of Concurrent LoRA Adapters (Sheng et al., 2023)",
+      "url": "https://arxiv.org/abs/2311.03285",
+      "note": "Batching requests for many adapters over one base model, with an adapter cache."
+    },
+    {
+      "title": "Deep & Cross Network for Ad Click Predictions (Wang et al., 2017)",
+      "url": "https://arxiv.org/abs/1708.05123",
+      "note": "Explicit feature crosses for sparse CTR data."
+    },
+    {
+      "title": "How to Scale Your Model (Google DeepMind)",
+      "url": "https://jax-ml.github.io/scaling-book/",
+      "note": "Rooflines and inference arithmetic for transformers, with worked numbers."
+    }
+  ],
+  "langs": [
+    {
+      "id": "python",
+      "label": "Python",
+      "editor": "python",
+      "file": "solution.py"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Start here: the design round",
+      "summary": "How an ML system design interview runs, the framework that keeps an answer organised, and how to open one.",
+      "exercises": [
+        "mlsd_round_lesson",
+        "framework_order",
+        "clarifying_questions",
+        "frame_the_label",
+        "open_a_design"
+      ]
+    },
+    {
+      "name": "Back-of-the-envelope numbers",
+      "summary": "The arithmetic interviewers expect you to do on the whiteboard: requests per second, storage, memory, compute and latency budgets.",
+      "exercises": [
+        "mlsd_numbers_lesson",
+        "qps_from_dau",
+        "embedding_table_size",
+        "log_storage",
+        "ranking_compute",
+        "latency_match"
+      ]
+    },
+    {
+      "name": "Data, labels and features",
+      "summary": "Where training data comes from, how labels go wrong, and how features stay identical in training and serving.",
+      "exercises": [
+        "mlsd_data_lesson",
+        "negative_sampling_calibration",
+        "serving_skew",
+        "leakage_match",
+        "point_in_time_join"
+      ]
+    },
+    {
+      "name": "Retrieval and ranking",
+      "summary": "The multi-stage funnel behind recommendation, search and ads: candidate generation, ranking, re-ranking, and the metrics that judge them.",
+      "exercises": [
+        "mlsd_ranking_lesson",
+        "two_tower_limits",
+        "ann_index_memory",
+        "ranking_problems_match",
+        "ndcg_mrr",
+        "mmr_rerank"
+      ]
+    },
+    {
+      "name": "Evaluation, experiments and monitoring",
+      "summary": "How to know a model is better before and after launch: offline metrics, A/B tests, safe rollouts, and catching drift.",
+      "exercises": [
+        "mlsd_eval_lesson",
+        "ab_sample_size",
+        "srm_and_peeking",
+        "rollout_order",
+        "psi_drift"
+      ]
+    },
+    {
+      "name": "Serving LLMs at scale",
+      "summary": "The LLM serving design round: the request path, KV-cache memory, batching, latency targets, and what a million tokens costs.",
+      "exercises": [
+        "mlsd_llm_serving_lesson",
+        "kv_bytes_per_token",
+        "concurrent_sequences",
+        "decode_step_bound",
+        "cost_per_million",
+        "serving_levers_match",
+        "ttft_spike",
+        "dynamic_batching",
+        "serving_capacity"
+      ]
+    },
+    {
+      "name": "RAG and LLM applications",
+      "summary": "Designing retrieval-augmented assistants: ingestion, hybrid retrieval, re-ranking, grounding, evaluation, permissions and cost.",
+      "exercises": [
+        "mlsd_rag_lesson",
+        "rag_index_size",
+        "chunk_size_tradeoffs",
+        "rag_failures_match",
+        "reciprocal_rank_fusion",
+        "rag_evaluation_plan"
+      ]
+    },
+    {
+      "name": "Worked design problems",
+      "summary": "Full answers to common prompts, start to finish, then practice prompts graded against a rubric.",
+      "exercises": [
+        "worked_video_feed",
+        "worked_llm_chat",
+        "prefill_with_prefix_cache",
+        "cost_tradeoff_choice",
+        "design_ads_ctr",
+        "design_product_search",
+        "design_lora_platform",
+        "design_content_moderation"
+      ]
+    },
+    {
+      "name": "Before the interview",
+      "summary": "A last checklist, and a summary of what the round rewards.",
+      "exercises": [
+        "mlsd_checklist_lesson"
+      ]
+    }
+  ]
+}

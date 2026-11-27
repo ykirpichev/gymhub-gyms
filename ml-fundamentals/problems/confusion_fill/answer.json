@@ -1,0 +1,10 @@
+{
+  "blanks": {
+    "precision": {"answers": [0.8], "match": "number", "tolerance": 0.005},
+    "recall": {"answers": [0.6667], "match": "number", "tolerance": 0.005},
+    "f1": {"answers": [0.7273], "match": "number", "tolerance": 0.005},
+    "accuracy": {"answers": [0.85], "match": "number", "tolerance": 0.005},
+    "priority": {"answers": ["recall", "sensitivity", "true positive rate", "tpr"]}
+  },
+  "explanation": "Precision = 40 / (40 + 10) = 0.8. Recall = 40 / (40 + 20) ≈ 0.667. F1 = 2 · 0.8 · 0.667 / (0.8 + 0.667) ≈ 0.727. Accuracy = (40 + 130) / 200 = 0.85. Catching fraud means missing less of it: recall."
+}

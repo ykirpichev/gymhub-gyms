@@ -1,0 +1,36 @@
+{
+  "title": "Read an experiment before trusting it",
+  "difficulty": "medium",
+  "summary": "Which experiment readings are trustworthy.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "SRM",
+    "peeking",
+    "novelty",
+    "guardrails"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Control has 1,000,000 users and treatment 985,000. Before reading any metric, investigate the assignment and logging, because a split this uneven at this size is almost impossible by chance."
+    },
+    {
+      "id": "b",
+      "text": "Treatment was significantly better on day 2, so the experiment could have been stopped then."
+    },
+    {
+      "id": "c",
+      "text": "Click-through rate rose 3% in week one and 0.5% in week two; the long-run effect is probably closer to the second week's."
+    },
+    {
+      "id": "d",
+      "text": "The primary metric improved, but p99 latency, a guardrail, rose from 180 ms to 260 ms; the launch needs a latency fix or an explicit trade-off decision first."
+    },
+    {
+      "id": "e",
+      "text": "Offline NDCG rose 2%, so the online result does not matter."
+    }
+  ],
+  "multiple": true
+}

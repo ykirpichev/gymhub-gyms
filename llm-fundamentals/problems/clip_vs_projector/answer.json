@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "CLIP and SigLIP train two towers so a matching image and caption score high, and neither tower writes a sentence, which makes them the match-score product (late fusion). LLaVA projects vision features into the language model's embedding size and puts those tokens in the input sequence (early fusion), which is how product 2 answers in sentences. Flamingo can also answer in sentences, but under the definitions given its cross-attention reads visual features on a side path, which is not early fusion. A projector is not a contrastive similarity, and SigLIP's text tower encodes rather than decodes."
+}

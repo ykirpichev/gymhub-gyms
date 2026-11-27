@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "d"
+  ],
+  "explanation": "`__syncthreads()` must be reached by all threads of the block. Putting it under a condition that differs between threads is undefined behavior: on some GPUs and compilers it hangs, on others it seems to work because the hardware counts warps, not threads. Even when it \"works\", threads 0–63 read `tile[127 - t]`, slots 64–127, which nobody wrote, and threads 64–127 never wait for the writes they read. The fix is to keep the barrier outside the branch: do the conditional write, then `__syncthreads()` in code every thread runs."
+}

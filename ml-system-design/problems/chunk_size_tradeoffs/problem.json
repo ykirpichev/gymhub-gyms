@@ -1,0 +1,35 @@
+{
+  "title": "Choose a chunk size",
+  "difficulty": "medium",
+  "summary": "What happens when chunks are too small or too large.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "chunking",
+    "retrieval quality",
+    "context budget"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Very small chunks can lose the context needed to interpret them, such as which product a sentence is about."
+    },
+    {
+      "id": "b",
+      "text": "Chunk size does not matter once a re-ranker is used."
+    },
+    {
+      "id": "c",
+      "text": "Very large chunks dilute the embedding across several topics and spend the context window on irrelevant text."
+    },
+    {
+      "id": "d",
+      "text": "Prepending the document title and section headings to each chunk helps both retrieval and the model's reading."
+    },
+    {
+      "id": "e",
+      "text": "The best chunk size is always the model's full context window, so each document is one chunk."
+    }
+  ],
+  "multiple": true
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Where the norm sits",
+  "difficulty": "easy",
+  "summary": "Why a pre-norm block trains more easily at depth.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Pre-norm replaces layer norm with batch norm over the sequence, and batch norm is stable at this depth."
+    },
+    {
+      "id": "b",
+      "text": "Pre-norm normalizes the residual stream after every block, so activations cannot grow with depth and the gradient through the stack stays bounded."
+    },
+    {
+      "id": "c",
+      "text": "The skip connection stays a plain identity, so a gradient of 1 reaches earlier layers without being multiplied by the norm's Jacobian."
+    },
+    {
+      "id": "d",
+      "text": "Post-norm applies the norm only once, after the final layer, so the earlier layers train on unnormalized inputs and need a long warmup to settle."
+    }
+  ]
+}

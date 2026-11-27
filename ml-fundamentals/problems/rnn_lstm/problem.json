@@ -1,0 +1,29 @@
+{
+  "title": "Backprop through time, and a cell",
+  "difficulty": "medium",
+  "summary": "Why a plain recurrent net loses long gradients, and what an LSTM changes.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Once a network is an LSTM, the gradient through time cannot vanish for any setting of the gates. The memory is permanent."
+    },
+    {
+      "id": "b",
+      "text": "Exploding gradients are commonly handled by clipping the gradient. Clipping does not restore a gradient that has already vanished."
+    },
+    {
+      "id": "c",
+      "text": "Backpropagation through time unrolls the recurrent net and applies the chain rule along that path. A shared weight gets a gradient summed over the time steps that used it."
+    },
+    {
+      "id": "d",
+      "text": "An LSTM cell is updated as forget-gate times old cell, plus an input term. A forget gate near 1 leaves a path whose multiplier is near 1, instead of the same squashing matrix every step, which is how the cell carries a dependency further."
+    },
+    {
+      "id": "e",
+      "text": "A vanilla RNN multiplies by the same recurrent matrix every step. If the singular values of that matrix sit well below 1, repeated products vanish; if they sit well above 1, products can explode. Either way a long-range gradient is fragile."
+    }
+  ],
+  "multiple": true
+}

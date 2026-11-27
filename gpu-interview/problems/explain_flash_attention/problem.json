@@ -1,0 +1,15 @@
+{
+  "title": "Explain flash attention",
+  "difficulty": "medium",
+  "summary": "The problem flash attention solves, the idea, and why it is exact.",
+  "kind": "essay",
+  "minutes": 8,
+  "concepts": [
+    "flash attention",
+    "tiling",
+    "online softmax",
+    "memory traffic"
+  ],
+  "min_words": 100,
+  "max_words": 350
+}

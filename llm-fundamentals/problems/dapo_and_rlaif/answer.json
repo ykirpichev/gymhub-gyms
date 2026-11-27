@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "a"
+  ],
+  "explanation": "RLAIF replaces human preference labels with labels written by a model, and the loss on top can still be DPO or a reward model plus RL. DAPO is a set of fixes for long-reasoning RL on a group-relative advantage: a higher upper clip so rare tokens can gain probability, dynamic sampling that discards groups with nothing to learn, and a token-level average so a long trace is not under-weighted. Plain GRPO includes none of those three changes. ORPO, SimPO, DPO, and KTO are offline losses, not a sampled-group loop."
+}

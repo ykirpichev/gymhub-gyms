@@ -1,0 +1,39 @@
+{
+  "title": "Optimizing a matmul, in order",
+  "difficulty": "medium",
+  "summary": "The usual path from a naive CUDA matmul to one near cuBLAS.",
+  "kind": "order",
+  "minutes": 4,
+  "concepts": [
+    "matmul",
+    "tiling",
+    "coalescing",
+    "Tensor Cores"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "Use vectorized loads and double-buffer the shared tiles so the next tile loads while this one computes."
+    },
+    {
+      "id": "b",
+      "text": "Stage `BM × BK` and `BK × BN` tiles in shared memory, with a barrier per tile."
+    },
+    {
+      "id": "c",
+      "text": "Move the inner product to Tensor Core instructions (WMMA, MMA or a library such as CUTLASS) with BF16 or FP16 inputs."
+    },
+    {
+      "id": "d",
+      "text": "One thread per output element, reading a row of `A` and a column of `B` from global memory."
+    },
+    {
+      "id": "e",
+      "text": "Give each thread a small tile of outputs in registers (for example 8 × 8), reusing each shared-memory value several times."
+    },
+    {
+      "id": "f",
+      "text": "Map threads so that consecutive threads write consecutive columns of `C`, making the loads of `B` coalesce."
+    }
+  ]
+}

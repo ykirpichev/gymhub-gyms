@@ -1,0 +1,13 @@
+{
+  "title": "Memory for a 4-bit 70B model",
+  "difficulty": "medium",
+  "summary": "Weights plus group scales for a 70-billion-parameter model in int4.",
+  "kind": "answer",
+  "minutes": 4,
+  "concepts": [
+    "int4",
+    "group quantization",
+    "memory budget"
+  ],
+  "placeholder": "gigabytes (10⁹ bytes)"
+}

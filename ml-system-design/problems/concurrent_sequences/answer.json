@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "119"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "One conversation needs ${327{,}680 \\times 4{,}096 = 1.342}$ GB, and ${160 / 1.342 = 119.2}$, so 119. Most conversations are shorter than the limit, and a paged KV cache only allocates blocks that are used, so in practice the server runs more sequences and **preempts** (pauses or recomputes) one if memory runs out."
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Embedding lookup",
+  "difficulty": "easy",
+  "summary": "Gather one row of a table for each token id.",
+  "kind": "code"
+}

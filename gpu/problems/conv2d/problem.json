@@ -1,0 +1,6 @@
+{
+  "title": "2D convolution",
+  "difficulty": "medium",
+  "summary": "Valid 2D convolution of an image with a small filter.",
+  "kind": "code"
+}

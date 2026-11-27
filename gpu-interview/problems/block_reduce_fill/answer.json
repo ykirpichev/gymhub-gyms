@@ -1,0 +1,36 @@
+{
+  "blanks": {
+    "b1": {
+      "answers": [
+        "0.0f",
+        "0",
+        "0.0",
+        "0.f"
+      ]
+    },
+    "b2": {
+      "answers": [
+        "__syncthreads();"
+      ]
+    },
+    "b3": {
+      "answers": [
+        ">>= 1",
+        "/= 2"
+      ]
+    },
+    "b4": {
+      "answers": [
+        "offset"
+      ]
+    },
+    "b5": {
+      "answers": [
+        "0"
+      ],
+      "match": "number",
+      "tolerance": 0
+    }
+  },
+  "explanation": "Threads past `n` load `0.0f` so the sum is unchanged. The barrier after the load makes every write visible before the first read of `s[t + stride]`, and the barrier inside the loop does the same for each level. Halving `stride` (`>>= 1`) gives sequential addressing: active threads are contiguous, so whole warps retire together and there are no bank conflicts. Once 32 values remain, one warp finishes with `__shfl_down_sync`, exchanging registers directly: no shared memory, no barriers. After the shuffles lane 0 holds the total, so it writes the block's result."
+}

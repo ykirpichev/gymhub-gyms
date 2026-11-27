@@ -1,0 +1,43 @@
+{
+  "title": "The training step, in order",
+  "difficulty": "easy",
+  "summary": "Put one optimization step in the right order.",
+  "kind": "order",
+  "minutes": 2,
+  "concepts": [
+    "training loop",
+    "zero_grad",
+    "backward",
+    "gradient clipping"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "`optimizer.zero_grad()`"
+    },
+    {
+      "id": "b",
+      "text": "`scheduler.step()`"
+    },
+    {
+      "id": "c",
+      "text": "`pred = model(x)`"
+    },
+    {
+      "id": "d",
+      "text": "`optimizer.step()`"
+    },
+    {
+      "id": "e",
+      "text": "`loss.backward()`"
+    },
+    {
+      "id": "f",
+      "text": "`loss = loss_fn(pred, y)`"
+    },
+    {
+      "id": "g",
+      "text": "`clip_grad_norm_(model.parameters(), max_norm)`"
+    }
+  ]
+}

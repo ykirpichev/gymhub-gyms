@@ -1,0 +1,15 @@
+{
+  "title": "LLM inference in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: prefill versus decode, why batching works, the KV cache, and the metrics servers are judged by.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "prefill",
+    "decode",
+    "KV cache",
+    "continuous batching",
+    "TTFT",
+    "TPOT"
+  ]
+}

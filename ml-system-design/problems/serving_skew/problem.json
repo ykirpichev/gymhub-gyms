@@ -1,0 +1,34 @@
+{
+  "title": "Causes of training/serving skew",
+  "difficulty": "medium",
+  "summary": "What makes production features differ from training features.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "training-serving skew",
+    "feature store"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "The training pipeline computes \"average order value\" in SQL; the serving code reimplements it in Java and treats refunds differently."
+    },
+    {
+      "id": "b",
+      "text": "Training used features joined from a daily snapshot taken after each event, while serving reads the value as of the request."
+    },
+    {
+      "id": "c",
+      "text": "A feature is missing at serving time when a cache times out, and the service fills in 0, a value that never appeared in training."
+    },
+    {
+      "id": "d",
+      "text": "The model was trained with a different random seed than the previous model."
+    },
+    {
+      "id": "e",
+      "text": "Text is lower-cased by the training tokenizer but not by the serving tokenizer."
+    }
+  ],
+  "multiple": true
+}

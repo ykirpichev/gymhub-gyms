@@ -1,0 +1,24 @@
+{
+  "title": "Why scale the attention scores",
+  "difficulty": "easy",
+  "summary": "What the sqrt(d_k) divisor is doing before the softmax.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Each head's output sums d_k terms, so its variance grows with d_k; dividing the scores keeps the residual stream's variance from growing with the head size."
+    },
+    {
+      "id": "b",
+      "text": "The dot product of two such vectors has variance about d_k. Dividing by sqrt(d_k) keeps the logits near unit scale, where the softmax still has a useful gradient."
+    },
+    {
+      "id": "c",
+      "text": "The divisor turns the dot product into a cosine similarity, so every logit lies in [−1, 1] and the softmax cannot saturate however large d_k gets."
+    },
+    {
+      "id": "d",
+      "text": "It offsets the softmax denominator, which sums d_k exponentials and would otherwise grow with the head size and push every attention weight toward zero."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Exact cosine top-k retrieval",
+  "difficulty": "medium",
+  "summary": "Rank documents by cosine similarity for a batch of queries and return the top k, with ties and zero vectors defined.",
+  "kind": "code"
+}

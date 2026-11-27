@@ -1,0 +1,16 @@
+{
+  "title": "Inference, decoding and prompting",
+  "difficulty": "easy",
+  "summary": "A lesson: prefill and decode, quantization and serving tricks, sampling knobs, and prompting strategies.",
+  "kind": "lesson",
+  "minutes": 10,
+  "concepts": [
+    "prefill",
+    "decode",
+    "quantization",
+    "speculative decoding",
+    "temperature",
+    "top-p",
+    "prompting"
+  ]
+}

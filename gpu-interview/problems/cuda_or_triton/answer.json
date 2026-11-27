@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Says Triton programs at the block level: the compiler handles thread mapping, coalescing, shared memory and (for `tl.dot`) Tensor Core instructions, so fused elementwise, normalization, softmax and many attention or matmul variants are much faster to write and tune.\n2. Says CUDA (or CUTLASS / CuTe) gives full control over threads, warps, shared memory layout, synchronization and the newest hardware features (for example warp specialization, asynchronous copies, new Tensor Core instructions), which matters for the last part of peak performance and unusual algorithms.\n3. Names a decision rule with a trade-off: prototype in Triton and measure against the roofline or a library baseline; go to CUDA when Triton cannot express the algorithm or leaves significant performance on the table, accepting more code and maintenance.",
+  "pass_score": 0.7
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Before the interview",
+  "difficulty": "easy",
+  "summary": "The things to have ready the week of the interview.",
+  "kind": "checklist",
+  "minutes": 5,
+  "concepts": [
+    "preparation"
+  ],
+  "items": [
+    "Write the interview GPU's numbers (bandwidth, FP32 and BF16 peak, SM count, registers and shared memory per SM) from memory, and the ridge point.",
+    "Write a vector add, a block reduction and a row softmax in CUDA on paper, with bounds checks, in under 15 minutes each.",
+    "Write a row softmax in Triton from memory.",
+    "Explain coalescing and bank conflicts with an example address pattern for each.",
+    "Estimate the memory of a model's training state, its KV cache for a given batch and context, and its batch-1 tokens per second.",
+    "Explain flash attention, ring all-reduce and continuous batching in two minutes each, out loud.",
+    "Prepare one project of your own to deep-dive: the problem, the numbers before and after, and what you would do next.",
+    "Solve one GPU gym kernel on a real GPU and know its benchmark result as a share of the roofline."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "A/B test sample size",
+  "difficulty": "medium",
+  "summary": "Users per arm to detect a half-point lift in conversion.",
+  "kind": "answer",
+  "minutes": 4,
+  "concepts": [
+    "A/B testing",
+    "power",
+    "sample size"
+  ],
+  "placeholder": "users per arm"
+}

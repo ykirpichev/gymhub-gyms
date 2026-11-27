@@ -1,0 +1,6 @@
+{
+  "title": "RMSNorm",
+  "difficulty": "easy",
+  "summary": "Root-mean-square layer norm over the last dimension, with a learned scale.",
+  "kind": "code"
+}

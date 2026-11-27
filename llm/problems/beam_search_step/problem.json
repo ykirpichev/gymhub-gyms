@@ -1,0 +1,6 @@
+{
+  "title": "Beam search step",
+  "difficulty": "medium",
+  "summary": "Extend W beams by one token for a whole batch: top-W over W·V candidates, with parents and tokens.",
+  "kind": "code"
+}

@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "163840"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "Each layer stores a key and a value for every key/value head: 2 × 8 × 128 values, and 40 layers make 81,920 values, or 163,840 bytes in bf16 (160 KiB per token). Query heads add nothing to the cache, so using 32 heads instead of 8 gives a 4× overestimate; forgetting either keys or values halves the answer. At 8,192 tokens that is 1.25 GiB per sequence, which is why the key/value head count matters."
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Clarifying questions that matter",
+  "difficulty": "easy",
+  "summary": "Which opening questions change the design.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "requirements",
+    "scoping"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "How many daily active users and videos are there, and how many requests per second at peak?"
+    },
+    {
+      "id": "b",
+      "text": "What should we optimise: clicks, watch time, or long-term retention?"
+    },
+    {
+      "id": "c",
+      "text": "What is the latency budget for the home page?"
+    },
+    {
+      "id": "d",
+      "text": "Which deep learning framework does the team use?"
+    },
+    {
+      "id": "e",
+      "text": "How fresh must recommendations be: should a video uploaded an hour ago be recommendable?"
+    },
+    {
+      "id": "f",
+      "text": "What colour scheme does the home page use?"
+    }
+  ],
+  "multiple": true
+}

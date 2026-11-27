@@ -1,0 +1,17 @@
+{
+  "title": "Design a multi-tenant fine-tuned model platform",
+  "difficulty": "hard",
+  "summary": "Practice: serve hundreds of customers' LoRA fine-tunes of one base model with fair latency and low cost.",
+  "kind": "essay",
+  "minutes": 25,
+  "concepts": [
+    "LoRA",
+    "multi-tenant serving",
+    "batching",
+    "KV cache",
+    "cost",
+    "isolation"
+  ],
+  "min_words": 300,
+  "max_words": 900
+}

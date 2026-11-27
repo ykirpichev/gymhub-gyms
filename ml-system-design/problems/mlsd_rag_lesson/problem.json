@@ -1,0 +1,16 @@
+{
+  "title": "Retrieval-augmented generation as a system",
+  "difficulty": "easy",
+  "summary": "A lesson: the ingestion and query pipelines, chunking, hybrid retrieval and rank fusion, re-rankers, grounding and citations, evaluation, permissions, caching and cost.",
+  "kind": "lesson",
+  "minutes": 15,
+  "concepts": [
+    "RAG",
+    "chunking",
+    "hybrid retrieval",
+    "re-ranking",
+    "grounding",
+    "evaluation",
+    "access control"
+  ]
+}

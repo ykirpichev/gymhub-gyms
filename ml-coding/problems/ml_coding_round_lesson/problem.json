@@ -1,0 +1,13 @@
+{
+  "title": "How an ML coding round works",
+  "difficulty": "easy",
+  "summary": "A lesson: what the round tests, a routine for writing a model from its math in NumPy, and the habits that earn points.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "ML coding interview",
+    "NumPy",
+    "vectorization",
+    "testing"
+  ]
+}

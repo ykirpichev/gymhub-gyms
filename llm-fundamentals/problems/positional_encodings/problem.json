@@ -1,0 +1,25 @@
+{
+  "title": "Position methods past the trained length",
+  "difficulty": "medium",
+  "summary": "Which position schemes carry relative position, and which ones extend.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Position interpolation scales the position index so a longer prompt lands inside the original trained range. YaRN goes further: it interpolates low-frequency RoPE dimensions more than high-frequency ones, and it applies a temperature to the attention logits."
+    },
+    {
+      "id": "b",
+      "text": "A learned absolute position table is applied inside the softmax, so any length longer than the table works with no new parameters."
+    },
+    {
+      "id": "c",
+      "text": "RoPE rotates pairs of query and key coordinates by an angle that depends on the token position, so the query-key dot product depends on the relative offset."
+    },
+    {
+      "id": "d",
+      "text": "ALiBi adds a head-specific linear penalty on the distance between the two tokens to the attention scores, and does not add a position vector to the token embeddings."
+    }
+  ],
+  "multiple": true
+}

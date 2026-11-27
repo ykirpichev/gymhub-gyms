@@ -1,0 +1,13 @@
+{
+  "title": "Intensity of a large matmul",
+  "difficulty": "medium",
+  "summary": "The arithmetic intensity of a square BF16 matmul, and what it says about the bottleneck.",
+  "kind": "answer",
+  "minutes": 4,
+  "concepts": [
+    "arithmetic intensity",
+    "matmul",
+    "compute-bound"
+  ],
+  "placeholder": "FLOPs per byte"
+}

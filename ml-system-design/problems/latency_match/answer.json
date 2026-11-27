@@ -1,0 +1,9 @@
+{
+  "pairs": {
+    "p1": "b",
+    "p2": "a",
+    "p3": "e",
+    "p4": "c"
+  },
+  "explanation": "A local memory access costs about 100 ns. Anything over the network pays at least a data-centre round trip (hundreds of microseconds). A cross-continent trip is bounded by the speed of light in fibre, about 150 ms for Europe to the US west coast, which is why services are deployed per region. An SSD reads a megabyte in roughly a millisecond. Nothing here takes ten seconds; if a step in your design does, it belongs in an offline batch job."
+}

@@ -1,0 +1,6 @@
+{
+  "title": "SwiGLU feed-forward block",
+  "difficulty": "easy",
+  "summary": "The gated MLP of Llama-style transformers: two projections, SiLU gate, and a down projection.",
+  "kind": "code"
+}

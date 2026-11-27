@@ -1,0 +1,6 @@
+{
+  "title": "Train a BPE tokenizer",
+  "difficulty": "medium",
+  "summary": "Learn byte-pair-encoding merges from a corpus, updating pair counts incrementally.",
+  "kind": "code"
+}

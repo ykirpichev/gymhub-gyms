@@ -1,0 +1,24 @@
+{
+  "title": "Pairs without a reward model",
+  "difficulty": "medium",
+  "summary": "Which alignment method trains on pairs with only a reference policy.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Rejection-sampling fine-tuning. It ranks fresh samples with the chosen-versus-rejected labels and fine-tunes on the winners, with the frozen copy as a KL reference."
+    },
+    {
+      "id": "b",
+      "text": "PPO-based RLHF. The pairs train a reward model first, but because you keep a frozen copy, PPO needs no critic and runs offline on the pairs alone."
+    },
+    {
+      "id": "c",
+      "text": "DPO. It turns the KL-constrained preference objective into a classification loss on the pairs, with the frozen policy as the reference."
+    },
+    {
+      "id": "d",
+      "text": "Best-of-n reranking at inference. It updates the weights from the pairs without a training loss."
+    }
+  ]
+}

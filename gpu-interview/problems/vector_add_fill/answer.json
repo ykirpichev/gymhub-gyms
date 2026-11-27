@@ -1,0 +1,27 @@
+{
+  "blanks": {
+    "b1": {
+      "answers": [
+        "blockDim.x"
+      ]
+    },
+    "b2": {
+      "answers": [
+        "threadIdx.x"
+      ]
+    },
+    "b3": {
+      "answers": [
+        "<"
+      ]
+    },
+    "b4": {
+      "answers": [
+        "255",
+        "threads - 1",
+        "threads-1"
+      ]
+    }
+  },
+  "explanation": "Thread `threadIdx.x` of block `blockIdx.x` handles element `blockIdx.x * blockDim.x + threadIdx.x`. Rounding the block count up with `(n + threads - 1) / threads` covers every element, and the extra threads of the last block must skip the write: `i < n`, not `i <= n`, since the last valid index is `n - 1`. Forgetting the check is the most common kernel-round bug; it writes past the end of `c` and may not even crash."
+}

@@ -1,0 +1,11 @@
+{
+  "title": "The shape of a broadcast",
+  "difficulty": "easy",
+  "summary": "The result shape of adding a (5, 1, 3) array to a (4, 1) array.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "broadcasting"
+  ],
+  "placeholder": "e.g. (2, 3, 4)"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Open a design out loud",
+  "difficulty": "medium",
+  "summary": "Write the first five minutes of an answer: clarify, state requirements, frame the problem.",
+  "kind": "essay",
+  "minutes": 10,
+  "concepts": [
+    "requirements",
+    "problem framing",
+    "metrics"
+  ],
+  "min_words": 100,
+  "max_words": 350
+}

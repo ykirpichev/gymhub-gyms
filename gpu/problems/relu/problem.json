@@ -1,0 +1,6 @@
+{
+  "title": "ReLU",
+  "difficulty": "easy",
+  "summary": "C[i] = max(A[i], 0).",
+  "kind": "code"
+}

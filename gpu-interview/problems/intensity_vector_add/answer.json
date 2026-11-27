@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.0833"
+  ],
+  "match": "number",
+  "tolerance": 0.002,
+  "explanation": "Each element does 1 FLOP and moves 12 bytes: two 4-byte reads and one 4-byte write. 1/12 ≈ 0.083 FLOP/byte, thousands of times below the ridge point of a modern GPU, so its speed is set entirely by bandwidth. That is the reason to fuse elementwise operations: the FLOPs are free, the bytes are not."
+}

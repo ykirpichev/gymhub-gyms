@@ -1,0 +1,29 @@
+{
+  "title": "Centroids, links, density, and a mixture",
+  "difficulty": "medium",
+  "summary": "k-means, hierarchical clustering, DBSCAN, and Gaussian mixtures.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "k-means is a centroid method. Clusters are the cells of the nearest mean, the objective is within-cluster sum of squares, and k must be chosen in advance. It prefers blobs of similar size."
+    },
+    {
+      "id": "b",
+      "text": "DBSCAN assigns every point to exactly one cluster and has no way to call a point an outlier."
+    },
+    {
+      "id": "c",
+      "text": "Hierarchical clustering builds a dendrogram by merging clusters (or by splitting them) under a linkage such as single, complete, average, or Ward. You can cut the tree at more than one height instead of fixing k first."
+    },
+    {
+      "id": "d",
+      "text": "A Gaussian mixture assigns each point to exactly one component, all components share one spherical covariance, and the fit is the same hard mean update as k-means."
+    },
+    {
+      "id": "e",
+      "text": "DBSCAN grows clusters from core points that have at least minPts neighbors inside a radius \u03b5, and it can leave sparse points labeled as noise. Cluster shape need not be a ball, and k is not an input."
+    }
+  ],
+  "multiple": true
+}

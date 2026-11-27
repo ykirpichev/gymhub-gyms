@@ -1,0 +1,6 @@
+{
+  "title": "Merge intervals",
+  "difficulty": "easy",
+  "summary": "Merge overlapping or touching closed intervals into a sorted, disjoint list.",
+  "kind": "code"
+}

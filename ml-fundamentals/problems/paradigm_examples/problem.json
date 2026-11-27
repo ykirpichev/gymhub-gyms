@@ -1,0 +1,25 @@
+{
+  "title": "Three ways to learn",
+  "difficulty": "easy",
+  "summary": "Supervised, unsupervised, and semi-supervised, told apart by what is labeled.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Predicting a sale price from past sales, each of which has a recorded price, is supervised regression."
+    },
+    {
+      "id": "b",
+      "text": "Fitting a document classifier on a few thousand labeled articles plus a large pile of unlabeled ones is semi-supervised learning."
+    },
+    {
+      "id": "c",
+      "text": "Semi-supervised learning means every label is present and some features are blank."
+    },
+    {
+      "id": "d",
+      "text": "Grouping shoppers by their purchase vectors when nobody has assigned a segment label is unsupervised clustering."
+    }
+  ],
+  "multiple": true
+}

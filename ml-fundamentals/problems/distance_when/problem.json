@@ -1,0 +1,24 @@
+{
+  "title": "Angle, not document length",
+  "difficulty": "easy",
+  "summary": "Pick among cosine, Euclidean, Manhattan, and Mahalanobis.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Mahalanobis distance. Comparing bag-of-words angles is defined by the inverse covariance of the vocabulary."
+    },
+    {
+      "id": "b",
+      "text": "Euclidean distance on the raw counts. Two documents on the same topic should look far apart whenever one is much longer."
+    },
+    {
+      "id": "c",
+      "text": "Manhattan distance on the raw counts. The L1 norm cancels document length."
+    },
+    {
+      "id": "d",
+      "text": "Cosine similarity. It uses the angle between the count vectors and ignores how long each document is."
+    }
+  ]
+}

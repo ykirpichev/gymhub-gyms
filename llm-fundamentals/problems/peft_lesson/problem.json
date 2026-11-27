@@ -1,0 +1,14 @@
+{
+  "title": "Fine-tuning without updating every weight",
+  "difficulty": "easy",
+  "summary": "A lesson: LoRA and its parameter count, QLoRA, adapters and prompt tuning, and when full fine-tuning is worth it.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "LoRA",
+    "QLoRA",
+    "adapters",
+    "prefix tuning",
+    "PEFT"
+  ]
+}

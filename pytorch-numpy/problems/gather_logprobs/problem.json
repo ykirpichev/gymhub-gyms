@@ -1,0 +1,12 @@
+{
+  "title": "Log-probability of the right class",
+  "difficulty": "easy",
+  "summary": "Pick each row's target log-probability with one indexing expression, and average the loss.",
+  "kind": "code",
+  "minutes": 8,
+  "concepts": [
+    "advanced indexing",
+    "log-softmax",
+    "cross-entropy"
+  ]
+}

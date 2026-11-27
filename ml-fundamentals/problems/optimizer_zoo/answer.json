@@ -1,0 +1,9 @@
+{
+  "correct": [
+    "b",
+    "d",
+    "e",
+    "f"
+  ],
+  "explanation": "SGD trades a noisier gradient for a cheaper step, momentum averages past gradients into a velocity, and Adam combines a first moment with an RMSProp-style second moment and bias-corrects both. RMSProp divides by the root of its running average of squared gradients, so a coordinate with huge gradients takes a smaller step, not a larger one. The normal equations cost O(nd\u00b2 + d\u00b3) to build and solve, against O(nd) per full gradient pass. Adam is not automatically the better optimizer: on some problems well-tuned SGD generalizes better."
+}

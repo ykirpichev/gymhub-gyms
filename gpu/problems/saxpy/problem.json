@@ -1,0 +1,6 @@
+{
+  "title": "SAXPY",
+  "difficulty": "easy",
+  "summary": "C = alpha * A + B.",
+  "kind": "code"
+}

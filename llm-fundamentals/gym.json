@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "id": "llm-fundamentals",
+  "title": "LLM and GenAI fundamentals",
+  "description": "Foundation models as breadth: transformer internals, attention variants, KV cache, MoE, tokenization, the training pipeline, post-training methods (SFT, DPO, GRPO, RLVR), PEFT, inference optimization, decoding, evaluation, and multimodal and diffusion models.",
+  "sources": [
+    {
+      "title": "Attention Is All You Need (Vaswani et al., 2017)",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "note": "The transformer block."
+    },
+    {
+      "title": "FlashAttention (Dao et al., 2022)",
+      "url": "https://arxiv.org/abs/2205.14135",
+      "note": "Attention and the memory hierarchy."
+    },
+    {
+      "title": "Efficient Memory Management for LLM Serving with PagedAttention (Kwon et al., 2023)",
+      "url": "https://arxiv.org/abs/2309.06180",
+      "note": "The KV cache in serving (vLLM)."
+    },
+    {
+      "title": "Mixtral of Experts (Jiang et al., 2024)",
+      "url": "https://arxiv.org/abs/2401.04088",
+      "note": "A sparse mixture-of-experts model."
+    },
+    {
+      "title": "Training language models to follow instructions (Ouyang et al., 2022)",
+      "url": "https://arxiv.org/abs/2203.02155",
+      "note": "SFT and RLHF (InstructGPT)."
+    },
+    {
+      "title": "Direct Preference Optimization (Rafailov et al., 2023)",
+      "url": "https://arxiv.org/abs/2305.18290",
+      "note": "DPO."
+    },
+    {
+      "title": "DeepSeekMath (Shao et al., 2024)",
+      "url": "https://arxiv.org/abs/2402.03300",
+      "note": "GRPO."
+    },
+    {
+      "title": "LoRA (Hu et al., 2021)",
+      "url": "https://arxiv.org/abs/2106.09685",
+      "note": "Parameter-efficient fine-tuning."
+    }
+  ],
+  "publish": "upload",
+  "runtime": "gymkit",
+  "requires": {
+    "gpu": false
+  },
+  "order": 5,
+  "langs": [],
+  "tracks": [
+    {
+      "name": "The transformer block",
+      "summary": "What happens inside one block, in order: normalization, attention, the residual stream and the MLP.",
+      "exercises": [
+        "transformer_block_lesson",
+        "why_scale_sqrt_dk",
+        "sqrt_dk_divisor",
+        "pre_norm_vs_post_norm",
+        "rmsnorm_and_swiglu",
+        "flashattention_io",
+        "explain_transformer_block",
+        "transformer_block_order"
+      ]
+    },
+    {
+      "name": "Positions, attention variants, and the KV cache",
+      "summary": "How models encode position, share keys and values across heads, and what the cache costs in memory.",
+      "exercises": [
+        "positions_kv_lesson",
+        "positional_encodings",
+        "attention_variant",
+        "gqa_cache_factor",
+        "kv_cache_gib",
+        "compare_attention_variants"
+      ]
+    },
+    {
+      "name": "Experts, tokens, and scaling",
+      "summary": "Mixture-of-experts routing, byte-level tokenization, and compute-optimal scaling.",
+      "exercises": [
+        "moe_tokens_scaling_lesson",
+        "moe_load_balance",
+        "expert_capacity",
+        "moe_active_params",
+        "byte_level_bpe",
+        "chinchilla_flops"
+      ]
+    },
+    {
+      "name": "Post-training",
+      "summary": "From a pretrained model to an assistant: SFT, preference optimization, and RL with verifiable rewards.",
+      "exercises": [
+        "post_training_lesson",
+        "dpo_vs_ppo",
+        "rlvr_when",
+        "dapo_and_rlaif",
+        "alignment_methods",
+        "why_grpo_no_critic",
+        "compare_post_training"
+      ]
+    },
+    {
+      "name": "Parameter-efficient fine-tuning",
+      "summary": "LoRA and its relatives: how few parameters can adapt a model, and when full fine-tuning still wins.",
+      "exercises": [
+        "peft_lesson",
+        "lora_basics",
+        "lora_param_count",
+        "peft_variants",
+        "peft_vs_full_ft"
+      ]
+    },
+    {
+      "name": "Inference, decoding, and prompting",
+      "summary": "Quantization, serving tricks, decoding settings and prompting strategies.",
+      "exercises": [
+        "inference_decoding_lesson",
+        "quant_choices",
+        "serving_tricks",
+        "parallel_prefill_decode",
+        "decoding_knobs",
+        "temperature_softmax",
+        "prompting_strategies",
+        "where_to_put_knowledge",
+        "decoding_methods_match"
+      ]
+    },
+    {
+      "name": "Evaluation",
+      "summary": "Retrieval metrics and how to judge a RAG system as a whole.",
+      "exercises": [
+        "llm_evaluation_lesson",
+        "rag_triad",
+        "recall_at_five",
+        "mrr_first_hit",
+        "ndcg_at_three",
+        "evaluate_rag_system"
+      ]
+    },
+    {
+      "name": "Multimodal and generative models",
+      "summary": "Connecting vision to language, and diffusion next to autoregression.",
+      "exercises": [
+        "multimodal_lesson",
+        "clip_vs_projector",
+        "vlm_and_vla",
+        "classifier_free_scale",
+        "diffusion_vs_autoregressive"
+      ]
+    }
+  ]
+}

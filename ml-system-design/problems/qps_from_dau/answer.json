@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "23148"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.02,
+  "explanation": "${10^8 \\times 20 = 2 \\times 10^9}$ requests a day, and ${2 \\times 10^9 / 86{,}400 \\approx 23{,}100}$ per second. With a peak factor of 3 you would size the serving fleet for about 70,000 QPS. A quick version: ${2 \\times 10^9 / 10^5 = 20{,}000}$, close enough for a whiteboard."
+}

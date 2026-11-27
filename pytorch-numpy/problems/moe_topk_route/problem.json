@@ -1,0 +1,14 @@
+{
+  "title": "Top-k routing for a mixture of experts",
+  "difficulty": "hard",
+  "summary": "Pick each token's top-k experts, renormalize their gates, and combine expert outputs with a scatter.",
+  "kind": "code",
+  "minutes": 25,
+  "concepts": [
+    "top-k",
+    "gather",
+    "scatter-add",
+    "mixture of experts",
+    "routing"
+  ]
+}

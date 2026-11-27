@@ -1,0 +1,9 @@
+{
+  "correct": [
+    "a",
+    "b",
+    "d",
+    "e"
+  ],
+  "explanation": "Temperature rescales logits before the softmax, top-k keeps a fixed shortlist, and top-p keeps the smallest set whose probability mass reaches p, so only top-p's cutoff moves with how peaked the distribution is. A repetition penalty is a separate edit aimed at tokens already used, not another temperature. Greedy decoding is argmax and ordinary beam search is a deterministic search, so neither one draws a fresh sample when you run it again. A grammar or schema mask rejects illegal tokens in the logit vector, while a prompt that merely says to emit JSON can still be ignored."
+}

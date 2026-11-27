@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "e"
+  ],
+  "explanation": "Anything that brings a value to the host waits for it: `.item()`, using a CUDA tensor in a Python `if`, and printing it. Forward passes, losses and optimizer steps only queue kernels. A non-blocking copy from pinned memory is queued too. A few syncs per step are harmless; one per micro-batch in a fast loop can leave the GPU idle while Python catches up. Accumulate the loss on the GPU (`total += loss.detach()`) and read it every N steps."
+}

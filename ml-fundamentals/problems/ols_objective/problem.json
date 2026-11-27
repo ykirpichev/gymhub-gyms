@@ -1,0 +1,24 @@
+{
+  "title": "What least squares minimizes",
+  "difficulty": "easy",
+  "summary": "Residuals, squared error, and a second feature that is still linear.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Adding the second feature makes the model nonlinear in the weights, so the fit needs gradient descent instead of a closed form."
+    },
+    {
+      "id": "b",
+      "text": "It minimizes the squared error on held-out rows, which is why its training error can be higher than a model fit to the training set."
+    },
+    {
+      "id": "c",
+      "text": "It minimizes the sum of absolute residuals, which is what makes the fit robust to a few large outliers."
+    },
+    {
+      "id": "d",
+      "text": "It minimizes the sum of squared residuals on the training rows. A residual is y minus the model's prediction."
+    }
+  ]
+}

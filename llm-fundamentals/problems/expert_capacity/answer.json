@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "40"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "An even split is 256 / 8 = 32 tokens, and the capacity factor 1.25 raises that to 40, which is the slack before an expert starts dropping tokens. A factor of 1.0 would cap every expert at 32 and drop anything past an even share. Capacity is a hard clip on the dispatch. The auxiliary balance loss is the separate term that trains the router toward that even split."
+}

@@ -1,0 +1,36 @@
+{
+  "title": "What eval() changes",
+  "difficulty": "medium",
+  "summary": "What model.eval() does and does not do.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "train and eval modes",
+    "dropout",
+    "batch norm",
+    "no_grad"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Dropout layers pass their input through unchanged."
+    },
+    {
+      "id": "b",
+      "text": "Autograd stops recording operations, so no memory is spent on the graph."
+    },
+    {
+      "id": "c",
+      "text": "Batch norm normalizes with its running mean and variance instead of the batch's statistics."
+    },
+    {
+      "id": "d",
+      "text": "The parameters become read-only until `model.train()` is called."
+    },
+    {
+      "id": "e",
+      "text": "Batch norm stops updating its running statistics."
+    }
+  ],
+  "multiple": true
+}

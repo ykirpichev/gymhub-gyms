@@ -1,0 +1,11 @@
+{
+  "title": "Clip by global norm",
+  "difficulty": "easy",
+  "summary": "Scale a list of gradients so their combined L2 norm is at most a limit.",
+  "kind": "code",
+  "minutes": 8,
+  "concepts": [
+    "gradient clipping",
+    "global norm"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Expert capacity",
+  "difficulty": "easy",
+  "summary": "How many tokens one expert is allowed under a capacity factor.",
+  "kind": "answer",
+  "placeholder": "tokens, e.g. 16"
+}

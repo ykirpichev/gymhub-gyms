@@ -1,0 +1,8 @@
+{
+  "title": "k nearest neighbors versus k-means",
+  "difficulty": "medium",
+  "summary": "One stores labels and votes; the other moves centroids.",
+  "kind": "essay",
+  "min_words": 70,
+  "max_words": 320
+}

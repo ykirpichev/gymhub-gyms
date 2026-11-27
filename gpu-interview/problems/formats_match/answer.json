@@ -1,0 +1,10 @@
+{
+  "pairs": {
+    "p1": "a",
+    "p2": "c",
+    "p3": "b",
+    "p4": "f",
+    "p5": "e"
+  },
+  "explanation": "BF16 trades mantissa bits for FP32's exponent range, so it rarely overflows. FP16 has three more mantissa bits but a much smaller range, hence loss scaling. FP8 E4M3 keeps a little precision and needs scales to cover the range. Int8 matmuls accumulate in int32 to avoid overflow and rescale once at the end. FP32 remains the accumulator and the format of optimizer state. No practical format accumulates in four bits: int4 values are expanded before or during the multiply."
+}

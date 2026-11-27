@@ -1,0 +1,22 @@
+{
+  "title": "A two-week plan",
+  "difficulty": "easy",
+  "summary": "Tick off a study plan that goes from the execution model to mock interviews.",
+  "kind": "checklist",
+  "minutes": 5,
+  "concepts": [
+    "study plan"
+  ],
+  "items": [
+    "Days 1–2: the *GPU execution model* track here, then the GPU gym warm-up track (vector add, ReLU, SAXPY) in CUDA.",
+    "Days 3–4: *Memory access patterns* here, then `transpose` and `reduction` in the GPU gym.",
+    "Day 5: *Rooflines and estimates*. Write the interview GPU's numbers from memory on a blank page.",
+    "Days 6–7: *Kernel algorithms on a CPU*, then `prefix_sum`, `row_softmax` and `layer_norm` in the GPU gym.",
+    "Day 8: `matmul` in the GPU gym; read Simon Boehm's matmul article and try two of its steps.",
+    "Day 9: *Low precision and quantization*.",
+    "Day 10: *Training at scale*.",
+    "Day 11: *Serving LLMs*.",
+    "Day 12: `attention` or `causal_attention` in the GPU gym, in Triton or CUDA.",
+    "Days 13–14: *Mock interview questions*, timed, out loud. Redo every exercise you got wrong."
+  ]
+}

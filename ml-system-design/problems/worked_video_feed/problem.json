@@ -1,0 +1,14 @@
+{
+  "title": "Worked design: a short-video feed",
+  "difficulty": "easy",
+  "summary": "A worked answer: clarify, size, the retrieval and ranking funnel, multi-task ranking, re-ranking, cold start, metrics and rollout.",
+  "kind": "lesson",
+  "minutes": 20,
+  "concepts": [
+    "recommendation",
+    "candidate generation",
+    "multi-task ranking",
+    "cold start",
+    "feedback loops"
+  ]
+}

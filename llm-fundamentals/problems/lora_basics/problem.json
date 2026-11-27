@@ -1,0 +1,24 @@
+{
+  "title": "What LoRA trains",
+  "difficulty": "easy",
+  "summary": "Low-rank factors, the alpha scale, and merging at inference.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "You train a rank-8 copy of W from scratch, and alpha/r = 2 averages it with the frozen W, so the served layer is half old and half new."
+    },
+    {
+      "id": "b",
+      "text": "You train two low-rank factors, but their product must stay a separate branch at inference, so every LoRA layer adds latency to the served model."
+    },
+    {
+      "id": "c",
+      "text": "You train two low-rank factors whose product is added to W. Alpha is the rank of the second factor, so B is 16 columns wide while A has 8 rows."
+    },
+    {
+      "id": "d",
+      "text": "You train two low-rank factors whose product, scaled by alpha/r, is added to W. At inference the product can be merged into W at no extra latency."
+    }
+  ]
+}

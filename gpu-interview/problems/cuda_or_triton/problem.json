@@ -1,0 +1,15 @@
+{
+  "title": "CUDA or Triton?",
+  "difficulty": "medium",
+  "summary": "When a team should write a kernel in Triton and when in CUDA.",
+  "kind": "essay",
+  "minutes": 6,
+  "concepts": [
+    "Triton",
+    "CUDA",
+    "kernel engineering",
+    "trade-offs"
+  ],
+  "min_words": 80,
+  "max_words": 300
+}

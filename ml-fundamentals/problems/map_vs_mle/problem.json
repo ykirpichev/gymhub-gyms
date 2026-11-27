@@ -1,0 +1,24 @@
+{
+  "title": "Likelihood and a prior",
+  "difficulty": "medium",
+  "summary": "What MLE maximizes, and when MAP becomes ridge.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Maximum likelihood maximizes p(data | θ); for linear regression with Gaussian noise it is least squares. MAP also multiplies by a prior, and a zero-mean Gaussian prior on the weights gives ridge regression."
+    },
+    {
+      "id": "b",
+      "text": "Maximum likelihood maximizes p(data | θ); for linear regression with Gaussian noise it is least squares. MAP also multiplies by a prior, and a zero-mean Gaussian prior on the weights gives the lasso and its sparse solutions."
+    },
+    {
+      "id": "c",
+      "text": "MAP maximizes p(θ | data). With any prior it returns exactly the maximum-likelihood answer once there are more rows than weights, so the prior only matters on tiny datasets."
+    },
+    {
+      "id": "d",
+      "text": "Maximum likelihood maximizes p(θ | data) directly, while MAP maximizes p(data | θ) and adds a prior term; a Gaussian prior on the weights makes MAP ordinary least squares."
+    }
+  ]
+}

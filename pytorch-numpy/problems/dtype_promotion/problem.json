@@ -1,0 +1,30 @@
+{
+  "title": "Integer division in PyTorch",
+  "difficulty": "easy",
+  "summary": "What dtype a division of integer tensors returns.",
+  "kind": "choice",
+  "minutes": 2,
+  "concepts": [
+    "dtype promotion",
+    "integer division"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`tensor([0, 1, 1])`, int64, because both operands are integers."
+    },
+    {
+      "id": "b",
+      "text": "`tensor([0.5000, 1.0000, 1.5000])`, float32, because `/` is true division."
+    },
+    {
+      "id": "c",
+      "text": "`tensor([0.5000, 1.0000, 1.5000], dtype=torch.float64)`, like Python's float."
+    },
+    {
+      "id": "d",
+      "text": "An error: integer tensors must be cast before division."
+    }
+  ],
+  "multiple": false
+}

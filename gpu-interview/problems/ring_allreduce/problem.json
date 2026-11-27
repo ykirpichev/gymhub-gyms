@@ -1,0 +1,13 @@
+{
+  "title": "Simulate a ring all-reduce",
+  "difficulty": "hard",
+  "summary": "Reduce-scatter then all-gather around a ring, step by step, with the exact chunk schedule.",
+  "kind": "code",
+  "minutes": 30,
+  "concepts": [
+    "ring all-reduce",
+    "reduce-scatter",
+    "all-gather",
+    "collectives"
+  ]
+}

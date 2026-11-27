@@ -1,0 +1,8 @@
+{
+  "title": "Compare SFT, DPO, GRPO, and RLVR",
+  "difficulty": "hard",
+  "summary": "Data, extra models, and when each post-training stage is the right tool.",
+  "kind": "essay",
+  "min_words": 110,
+  "max_words": 400
+}

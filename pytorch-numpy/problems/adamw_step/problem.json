@@ -1,0 +1,14 @@
+{
+  "title": "AdamW, one step",
+  "difficulty": "medium",
+  "summary": "Write the AdamW update with bias correction and decoupled weight decay.",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "Adam",
+    "AdamW",
+    "bias correction",
+    "weight decay",
+    "optimizer state"
+  ]
+}

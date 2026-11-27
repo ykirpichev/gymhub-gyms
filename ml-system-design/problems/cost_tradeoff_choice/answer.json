@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "The cost here is **prefill compute**: 6,000 new tokens per request, each about 2 × parameters FLOPs. Prefix caching helps only when prompts share prefixes, and these documents do not. A paged KV cache and shorter outputs both target decode, which is not the bottleneck. Prefill FLOPs scale with model size, so a smaller model trained for this one task (distilled from the 70B model's summaries) cuts the dominant cost several-fold. The general rule: find the bottleneck first (prefill or decode, compute or memory), then pick the lever that acts on it."
+}

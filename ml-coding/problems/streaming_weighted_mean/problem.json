@@ -1,0 +1,6 @@
+{
+  "title": "Streaming weighted mean",
+  "difficulty": "medium",
+  "summary": "Aggregate a weighted mean by count, weight sum and weighted sum so shards merge exactly.",
+  "kind": "code"
+}

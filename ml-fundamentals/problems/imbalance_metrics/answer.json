@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "a"
+  ],
+  "explanation": "A constant \"not fraud\" rule scores 99.5% accuracy and catches nothing, so accuracy is the wrong headline on a rare class. Recall is the share of real frauds caught, and precision is the share of alarms that are real. Precision depends on the base rate, so neither a rebalanced test set nor ROC AUC (which ignores the base rate) tells you how many production alerts will be real. Specificity is excellent for that same useless rule, because almost every legitimate transaction is left alone."
+}

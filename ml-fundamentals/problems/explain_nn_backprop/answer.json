@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Describes a feedforward net as stacked layers, each a weighted sum plus a bias followed by a nonlinearity, with information flowing from inputs to outputs and no cycle.\n2. Explains backpropagation as the chain rule run backward from the loss, producing a partial derivative for every weight. It computes the gradient; an optimizer such as SGD or Adam then applies the update.\n3. Says a nonlinear activation between layers is what makes the map nonlinear: a stack of purely linear layers collapses to one linear map, and depth lets later layers build on features learned earlier.\n4. Contrasts this with a classical linear model: one weight vector on features you supply, a convex loss in the usual cases, and coefficients you can read. A deep net learns the representation, needs more data and compute, and is non-convex.",
+  "pass_score": 0.7
+}

@@ -1,0 +1,39 @@
+{
+  "title": "View or copy?",
+  "difficulty": "easy",
+  "summary": "Which NumPy operations share memory with the original array.",
+  "kind": "choice",
+  "minutes": 4,
+  "concepts": [
+    "views",
+    "copies",
+    "advanced indexing"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`a[1:, ::2]`"
+    },
+    {
+      "id": "b",
+      "text": "`a[[0, 2]]`"
+    },
+    {
+      "id": "c",
+      "text": "`a.T`"
+    },
+    {
+      "id": "d",
+      "text": "`a[a > 5]`"
+    },
+    {
+      "id": "e",
+      "text": "`a.reshape(4, 3)`"
+    },
+    {
+      "id": "f",
+      "text": "`a + 0`"
+    }
+  ],
+  "multiple": true
+}

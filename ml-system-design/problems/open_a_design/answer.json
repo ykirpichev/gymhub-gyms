@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Asks or assumes scale and latency: transactions per second at peak and a synchronous decision budget (for example tens of milliseconds, because the payment waits).\n2. Notes the class imbalance (fraud well under 1% of payments) and that labels arrive late (chargebacks come days or weeks later), so labels are delayed and noisy.\n3. Discusses the asymmetric costs of false positives (blocked good customers) and false negatives (lost money), and proposes an action policy such as approve, step-up verification, or block based on score thresholds.\n4. Frames the task as binary classification of a transaction with a clear label definition, and picks metrics suited to imbalance (precision and recall at an operating point, PR-AUC, or money saved) rather than accuracy.",
+  "pass_score": 0.7
+}

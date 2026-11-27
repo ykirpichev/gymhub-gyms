@@ -1,0 +1,15 @@
+{
+  "title": "Make this softmax kernel fast",
+  "difficulty": "medium",
+  "summary": "Walk from a naive softmax kernel to one at the memory roofline.",
+  "kind": "essay",
+  "minutes": 10,
+  "concepts": [
+    "softmax",
+    "reduction",
+    "warp shuffle",
+    "kernel optimization"
+  ],
+  "min_words": 100,
+  "max_words": 400
+}

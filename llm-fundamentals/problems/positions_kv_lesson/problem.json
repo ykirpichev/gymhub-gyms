@@ -1,0 +1,15 @@
+{
+  "title": "Positions, attention variants and the KV cache",
+  "difficulty": "easy",
+  "summary": "A lesson: how models know token order, MHA versus GQA and MQA, and how big the KV cache gets.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "RoPE",
+    "ALiBi",
+    "positional encoding",
+    "GQA",
+    "MQA",
+    "KV cache"
+  ]
+}

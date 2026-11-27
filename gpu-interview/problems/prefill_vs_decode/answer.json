@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "b",
+    "c",
+    "e"
+  ],
+  "explanation": "Prefill multiplies weights by a matrix with one row per prompt token, so each byte of weight feeds thousands of FLOPs; decode multiplies by one row per sequence. Until the decode batch is large enough to reach the ridge point (hundreds of sequences, depending on the model and the KV cache reads), adding sequences costs little extra time, so throughput scales with batch. Attention in decode reads the KV cache, which is also memory traffic, not compute. Because a big prefill takes the GPU for a long step, servers split it into chunks and mix them with decode steps to keep TPOT steady."
+}

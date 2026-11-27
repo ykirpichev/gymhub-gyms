@@ -1,0 +1,6 @@
+{
+  "title": "Fused SwiGLU",
+  "difficulty": "easy",
+  "summary": "SiLU of the gate half times the up half, in one pass.",
+  "kind": "code"
+}

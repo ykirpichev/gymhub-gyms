@@ -1,0 +1,29 @@
+{
+  "title": "Knobs on the sampler",
+  "difficulty": "easy",
+  "summary": "Temperature, top-k, top-p, repetition penalty, and constrained decoding.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Top-k keeps the k largest logits and renormalizes. Top-p keeps the smallest set of tokens whose probabilities sum to at least p, so the shortlist grows when the distribution is flat and shrinks when it is peaked."
+    },
+    {
+      "id": "b",
+      "text": "Temperature divides the logits before the softmax. Above 1 the distribution gets flatter. Toward 0 it approaches greedy argmax."
+    },
+    {
+      "id": "c",
+      "text": "Greedy decoding and beam search both draw independent random samples, so running either of them twice gives different text."
+    },
+    {
+      "id": "d",
+      "text": "A repetition penalty down-weights tokens that already appeared. It is a different control from temperature."
+    },
+    {
+      "id": "e",
+      "text": "Constrained decoding masks any logit that would break a grammar or a schema, so the sample stays inside that language. Asking the model to \"emit JSON\" is a softer request, not the same guarantee."
+    }
+  ],
+  "multiple": true
+}

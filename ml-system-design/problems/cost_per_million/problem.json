@@ -1,0 +1,12 @@
+{
+  "title": "Cost per million tokens",
+  "difficulty": "easy",
+  "summary": "GPU dollars per hour over tokens per hour.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "cost",
+    "throughput"
+  ],
+  "placeholder": "dollars"
+}

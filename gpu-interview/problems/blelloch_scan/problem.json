@@ -1,0 +1,14 @@
+{
+  "title": "Work-efficient scan",
+  "difficulty": "hard",
+  "summary": "The up-sweep and down-sweep of the Blelloch exclusive scan, with the tree in between.",
+  "kind": "code",
+  "minutes": 25,
+  "concepts": [
+    "prefix sum",
+    "scan",
+    "up-sweep",
+    "down-sweep",
+    "work efficiency"
+  ]
+}

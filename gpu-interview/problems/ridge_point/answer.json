@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "333"
+  ],
+  "match": "number",
+  "tolerance": 4,
+  "explanation": "The ridge point is peak compute over bandwidth: $10^{15} / (3 \\times 10^{12}) \\approx 333$ FLOP/byte. A kernel needs to do over 300 FLOPs for every byte it moves to keep the Tensor Cores busy, which only large matmuls and attention with long sequences do. For FP32 on the CUDA cores (60 TFLOP/s) the ridge point is 20: the same GPU has very different ridge points for different kinds of math."
+}

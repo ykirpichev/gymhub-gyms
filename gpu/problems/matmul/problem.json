@@ -1,0 +1,6 @@
+{
+  "title": "Matrix multiply",
+  "difficulty": "medium",
+  "summary": "C = A @ B for row-major float32 matrices.",
+  "kind": "code"
+}

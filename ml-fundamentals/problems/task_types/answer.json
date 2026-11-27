@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "The diagnosis is a discrete label, and the coded charts carry it, so assigning new charts is supervised classification; 5,000 labeled examples is plenty to learn from even though most charts are uncoded. Looking for groups nobody has named has no label to train against, which is clustering. A diagnosis is not a number to regress, and treating \"uncoded\" as a class teaches the model who was coded, not what the patient had."
+}

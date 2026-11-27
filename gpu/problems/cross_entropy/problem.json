@@ -1,0 +1,6 @@
+{
+  "title": "Cross-entropy",
+  "difficulty": "medium",
+  "summary": "Per-row loss of a softmax over a large vocabulary, in one pass with an online log-sum-exp.",
+  "kind": "code"
+}

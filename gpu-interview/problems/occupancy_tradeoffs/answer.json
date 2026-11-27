@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "e"
+  ],
+  "explanation": "Occupancy is one way to hide latency; instruction-level parallelism (several independent loads or FMAs per thread) is another. Matmul kernels deliberately use many registers for a per-thread output tile, accept low occupancy and win on reuse. Capping registers can force spills to local memory, which is slow off-chip memory, so raising occupancy that way can make a kernel slower. The rule of thumb interviewers want: enough occupancy to hide latency, then stop optimizing it and look at bytes and instructions."
+}

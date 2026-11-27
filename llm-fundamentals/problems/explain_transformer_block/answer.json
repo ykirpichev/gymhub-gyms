@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Names the residual stream and the two sublayers, attention and a position-wise feed-forward, each added back onto that stream, with the norm applied before the sublayer in a pre-norm block.\n2. Describes attention as queries, keys, and values: scores from a dot product, a softmax over those scores, and a weighted sum of values, usually split across heads.\n3. Explains the scale: if the features are uncorrelated and unit-variance, the dot product has variance d_k, so its magnitude grows like sqrt(d_k).\n4. Connects that growth to a saturating softmax (near one-hot weights and a vanishing gradient) and says dividing by sqrt(d_k) keeps the logits O(1).",
+  "pass_score": 0.7
+}

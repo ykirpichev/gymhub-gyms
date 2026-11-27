@@ -1,0 +1,33 @@
+{
+  "title": "From fastest to slowest",
+  "difficulty": "easy",
+  "summary": "Put the places a kernel reads from in order of latency.",
+  "kind": "order",
+  "minutes": 2,
+  "concepts": [
+    "memory hierarchy",
+    "latency"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "A register"
+    },
+    {
+      "id": "b",
+      "text": "Global memory (HBM)"
+    },
+    {
+      "id": "c",
+      "text": "Shared memory"
+    },
+    {
+      "id": "d",
+      "text": "Host memory, read over PCIe"
+    },
+    {
+      "id": "e",
+      "text": "The L2 cache"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Examples, reasoning, and a vote",
+  "difficulty": "easy",
+  "summary": "Zero-shot, few-shot, chain-of-thought, and self-consistency.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Few-shot examples are found by running gradient descent on the prompt tokens at test time."
+    },
+    {
+      "id": "b",
+      "text": "Chain-of-thought asks the model for intermediate steps. Self-consistency samples several of those traces, usually at nonzero temperature, and majority-votes the final answer."
+    },
+    {
+      "id": "c",
+      "text": "Zero-shot prompting gives the instruction and no examples. Few-shot prompting puts examples in the context. Neither one updates weights."
+    },
+    {
+      "id": "d",
+      "text": "Self-consistency is a training algorithm. It backpropagates through every sampled trace and writes a new checkpoint."
+    }
+  ],
+  "multiple": true
+}

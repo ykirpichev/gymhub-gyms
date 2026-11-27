@@ -1,0 +1,6 @@
+{
+  "title": "Decision-tree split",
+  "difficulty": "medium",
+  "summary": "The numeric split with the lowest weighted Gini, using midpoint thresholds and a fixed tie-break.",
+  "kind": "code"
+}

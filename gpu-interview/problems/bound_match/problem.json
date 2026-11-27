@@ -1,0 +1,48 @@
+{
+  "title": "Memory-bound or compute-bound?",
+  "difficulty": "medium",
+  "summary": "Classify common kernels on the interview GPU.",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": [
+    "roofline",
+    "memory-bound",
+    "compute-bound"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "Softmax over rows of an FP32 activation matrix"
+    },
+    {
+      "id": "p2",
+      "text": "LayerNorm on a 16384 × 8192 BF16 matrix"
+    },
+    {
+      "id": "p3",
+      "text": "A 7B model's decode step at batch size 1"
+    },
+    {
+      "id": "p4",
+      "text": "An 8192 × 8192 × 8192 BF16 matmul"
+    },
+    {
+      "id": "p5",
+      "text": "Attention forward pass with flash attention, sequence length 8192, head dimension 128"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "PCIe bandwidth"
+    },
+    {
+      "id": "b",
+      "text": "Memory bandwidth"
+    },
+    {
+      "id": "c",
+      "text": "Tensor Core throughput"
+    }
+  ]
+}

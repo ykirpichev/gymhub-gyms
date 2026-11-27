@@ -1,0 +1,6 @@
+{
+  "title": "Course schedule",
+  "difficulty": "medium",
+  "summary": "Topological order of tasks with prerequisites, smallest label first, or an empty list on a cycle.",
+  "kind": "code"
+}

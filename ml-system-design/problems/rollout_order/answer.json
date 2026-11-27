@@ -1,0 +1,11 @@
+{
+  "order": [
+    "b",
+    "d",
+    "a",
+    "f",
+    "c",
+    "e"
+  ],
+  "explanation": "Each stage risks a little more and checks something the previous one could not: offline quality, then production compatibility without user impact (shadow), then real users at a tiny scale (canary), then a statistically sound comparison (A/B), then full traffic, with monitoring for as long as the model is live."
+}

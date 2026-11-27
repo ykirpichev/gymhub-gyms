@@ -1,0 +1,6 @@
+{
+  "title": "MLP forward and backward pass",
+  "difficulty": "hard",
+  "summary": "Backpropagation by hand through a one-hidden-layer ReLU network with a softmax cross-entropy output.",
+  "kind": "code"
+}

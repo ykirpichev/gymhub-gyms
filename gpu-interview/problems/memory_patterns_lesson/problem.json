@@ -1,0 +1,13 @@
+{
+  "title": "Coalescing and banks in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: sectors, coalescing, bank conflicts and the padding trick.",
+  "kind": "lesson",
+  "minutes": 7,
+  "concepts": [
+    "coalescing",
+    "memory sectors",
+    "bank conflicts",
+    "padding"
+  ]
+}

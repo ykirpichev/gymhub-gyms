@@ -1,0 +1,6 @@
+{
+  "title": "Direct Preference Optimization loss",
+  "difficulty": "hard",
+  "summary": "DPO loss, implicit rewards and preference accuracy from policy and reference log-probabilities, stable for large margins.",
+  "kind": "code"
+}

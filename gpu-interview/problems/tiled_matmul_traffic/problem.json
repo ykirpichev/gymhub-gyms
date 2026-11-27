@@ -1,0 +1,13 @@
+{
+  "title": "Tiled matmul traffic",
+  "difficulty": "medium",
+  "summary": "Count the global-memory bytes a tiled matmul reads, and the arithmetic intensity that tiling buys.",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "tiling",
+    "matmul",
+    "arithmetic intensity",
+    "data reuse"
+  ]
+}

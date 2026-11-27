@@ -1,0 +1,6 @@
+{
+  "title": "Gradient boosting step",
+  "difficulty": "hard",
+  "summary": "One boosting round for squared loss: fit a regression stump to the negative gradient and add it with shrinkage.",
+  "kind": "code"
+}

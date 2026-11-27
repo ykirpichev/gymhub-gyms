@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "ml-coding",
+  "title": "ML coding",
+  "description": "ML coding interview practice in Python and NumPy, no GPU needed: classic models, data preparation and metrics, language-model mechanics, GenAI building blocks and the control loop around agents. The LLM gym has batched GPU versions of several of them, with a benchmark.",
+  "sources": [
+    {
+      "title": "AIMLInterviews (Alireza Dirafzoon, MIT)",
+      "url": "https://github.com/alirezadir/AIMLInterviews",
+      "note": "The interview guide whose ML coding catalog sets this gym's topics."
+    },
+    {
+      "title": "AIMLInterviews: ML coding catalog",
+      "url": "https://github.com/alirezadir/AIMLInterviews/blob/main/src/MLC/ml-coding.md",
+      "note": "The topic list. Statements, tests and solutions here were written for this gym."
+    }
+  ],
+  "publish": "upload",
+  "runtime": "gymkit",
+  "requires": {
+    "gpu": false
+  },
+  "order": 3,
+  "langs": [
+    {
+      "id": "python",
+      "label": "Python",
+      "editor": "python",
+      "file": "solution.py"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Classic ML: models",
+      "summary": "The models an ML coding round asks for, written from the math: regression, classification, clustering, trees and a small network.",
+      "exercises": [
+        "ml_coding_round_lesson",
+        "softmax_cross_entropy",
+        "linear_regression_gd",
+        "logistic_regression_gd",
+        "knn_classify",
+        "kmeans",
+        "decision_tree_split",
+        "pca",
+        "conv2d",
+        "perceptron",
+        "linear_svm",
+        "mlp_backprop",
+        "naive_bayes_text",
+        "matrix_factorization",
+        "gradient_boosting_step"
+      ]
+    },
+    {
+      "name": "Classic ML: data and evaluation",
+      "summary": "Metrics, sampling, splits and preprocessing, done without leaking test data into training.",
+      "exercises": [
+        "ml_coding_data_lesson",
+        "binary_metrics_roc_auc",
+        "multiclass_metrics",
+        "reservoir_sampling",
+        "dataset_split",
+        "standardize_features",
+        "categorical_preprocessing",
+        "sampling_strategies",
+        "streaming_weighted_mean"
+      ]
+    },
+    {
+      "name": "Language models",
+      "summary": "The pieces between text and a next-token distribution: tokenization, attention, masks, positions and sampling.",
+      "exercises": [
+        "ml_coding_lm_lesson",
+        "tfidf",
+        "scaled_dot_product_attention",
+        "byte_pair_encoding",
+        "causal_attention_mask",
+        "sinusoidal_position_encoding",
+        "top_k_top_p_sampling",
+        "kv_cache",
+        "pad_batches"
+      ]
+    },
+    {
+      "name": "Generative AI",
+      "summary": "Building blocks of modern generative systems: low-rank adapters, contrastive and preference losses, retrieval and guidance.",
+      "exercises": [
+        "ml_coding_genai_lesson",
+        "lora_linear",
+        "contrastive_loss",
+        "rag_retrieval",
+        "dpo_loss",
+        "classifier_free_guidance"
+      ]
+    },
+    {
+      "name": "Agentic AI",
+      "summary": "The control loop around a model that calls tools: validating, retrying, planning and remembering, all bounded.",
+      "exercises": [
+        "ml_coding_agents_lesson",
+        "tool_argument_validation",
+        "tool_registry",
+        "planner_executor",
+        "retry_with_idempotency",
+        "sliding_window_memory",
+        "bounded_agent_loop"
+      ]
+    }
+  ]
+}

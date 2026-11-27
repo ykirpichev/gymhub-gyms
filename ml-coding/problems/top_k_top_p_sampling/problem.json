@@ -1,0 +1,6 @@
+{
+  "title": "Temperature, top-k, and top-p sampling",
+  "difficulty": "medium",
+  "summary": "Temperature-scaled softmax, then top-k, then top-p, renormalized, plus one inverse-CDF sample.",
+  "kind": "code"
+}

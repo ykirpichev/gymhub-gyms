@@ -1,0 +1,24 @@
+{
+  "title": "Picking an attention variant",
+  "difficulty": "medium",
+  "summary": "Choose MHA, MQA, GQA, or MLA from a cache and quality constraint.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Multi-head attention: a distinct key head and value head for every query head."
+    },
+    {
+      "id": "b",
+      "text": "Multi-query attention: a single key head and a single value head, shared by all queries."
+    },
+    {
+      "id": "c",
+      "text": "Multi-head latent attention: keys and values compressed into one latent per token, which is what the cache stores, then up-projected back to every head."
+    },
+    {
+      "id": "d",
+      "text": "Grouped-query attention: query heads clustered into groups, with one key/value head stored per group."
+    }
+  ]
+}

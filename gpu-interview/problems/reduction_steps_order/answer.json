@@ -1,0 +1,11 @@
+{
+  "order": [
+    "d",
+    "c",
+    "e",
+    "a",
+    "f",
+    "b"
+  ],
+  "explanation": "This is the order of Mark Harris's reduction walk-through (see Sources), and interviewers like it because each step fixes the bottleneck the previous one exposed: divergence, then bank conflicts, then idle threads, then instruction overhead, then too little work per thread. The last step changes the kernel from compute-overhead-bound to bandwidth-bound: most of the summing happens in registers while loads stream in, and only one block-level reduction per block remains. The GPU gym's `reduction` exercise benchmarks each version."
+}

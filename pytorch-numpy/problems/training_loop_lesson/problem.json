@@ -1,0 +1,15 @@
+{
+  "title": "The training loop in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: modules, parameters and buffers, train and eval modes, the step order, and what a checkpoint holds.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "nn.Module",
+    "parameters",
+    "buffers",
+    "optimizer",
+    "training loop",
+    "state_dict"
+  ]
+}

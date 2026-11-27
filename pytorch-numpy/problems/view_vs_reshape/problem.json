@@ -1,0 +1,31 @@
+{
+  "title": "view, reshape or contiguous?",
+  "difficulty": "medium",
+  "summary": "What happens when you view a transposed tensor.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "view",
+    "reshape",
+    "contiguity"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Returns the 24 elements of `y` in row-major order of `y`, as a view sharing memory with `x`."
+    },
+    {
+      "id": "b",
+      "text": "Raises an error, because `y` is not contiguous and `view` never copies; `y.reshape(24)` would copy."
+    },
+    {
+      "id": "c",
+      "text": "Returns the 24 elements in `x`'s memory order, so the result equals `x.view(24)`."
+    },
+    {
+      "id": "d",
+      "text": "Silently makes `y` contiguous in place first, then returns a view of it."
+    }
+  ],
+  "multiple": false
+}

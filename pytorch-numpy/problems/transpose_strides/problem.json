@@ -1,0 +1,12 @@
+{
+  "title": "Strides of a transpose",
+  "difficulty": "easy",
+  "summary": "The byte strides of a transposed float64 array.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "strides",
+    "transpose"
+  ],
+  "placeholder": "e.g. (8, 64)"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Chinchilla compute",
+  "difficulty": "medium",
+  "summary": "Tokens per parameter, then the 6ND training-FLOP estimate.",
+  "kind": "answer",
+  "placeholder": "FLOPs, e.g. 1e21"
+}

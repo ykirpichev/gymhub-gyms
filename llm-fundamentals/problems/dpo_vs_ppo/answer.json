@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "DPO writes the optimal policy of the KL-regularized reward objective in closed form, cancels the reward model, and leaves a binary loss on the chosen-versus-rejected log-probability ratios against a reference policy. PPO-based RLHF fits a reward model on the pairs and then runs online PPO with a critic and a KL penalty, which is the loop you wanted to avoid. Rejection sampling needs a scorer for fresh samples, and fixed pair labels cannot rank responses that were never labeled. Reranking at inference does not train on the pairs at all."
+}

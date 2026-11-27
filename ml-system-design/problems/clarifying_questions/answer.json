@@ -1,0 +1,9 @@
+{
+  "correct": [
+    "a",
+    "b",
+    "c",
+    "e"
+  ],
+  "explanation": "Scale decides the architecture (a multi-stage funnel is needed at millions of videos, not at thousands). The objective decides the label: optimising clicks alone rewards clickbait, while watch time or retention needs different labels and delayed feedback. The latency budget limits how many candidates you can score and how big the ranker can be. Freshness decides whether you need streaming features and a way to handle new items (the cold-start problem). The framework and the page design matter to the team, but they do not change the ML design."
+}

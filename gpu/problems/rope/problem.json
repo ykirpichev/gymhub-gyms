@@ -1,0 +1,6 @@
+{
+  "title": "Rotary embeddings (RoPE)",
+  "difficulty": "medium",
+  "summary": "Rotate pairs of query features by an angle that depends on the token position.",
+  "kind": "code"
+}

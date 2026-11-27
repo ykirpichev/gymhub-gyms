@@ -1,0 +1,14 @@
+{
+  "title": "A dynamic batching server",
+  "difficulty": "medium",
+  "summary": "Simulate max-batch and max-wait batching on one worker and return each request's latency.",
+  "kind": "code",
+  "minutes": 25,
+  "concepts": [
+    "dynamic batching",
+    "latency",
+    "throughput",
+    "queueing",
+    "simulation"
+  ]
+}

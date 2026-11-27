@@ -1,0 +1,13 @@
+{
+  "title": "Unpack int4 weights",
+  "difficulty": "medium",
+  "summary": "Turn packed bytes back into signed 4-bit values, low nibble first.",
+  "kind": "code",
+  "minutes": 10,
+  "concepts": [
+    "int4",
+    "bit manipulation",
+    "sign extension",
+    "packing"
+  ]
+}

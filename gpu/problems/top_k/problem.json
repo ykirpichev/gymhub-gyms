@@ -1,0 +1,6 @@
+{
+  "title": "Top-k per row",
+  "difficulty": "hard",
+  "summary": "The k largest values of each row, largest first, as used when sampling from a language model.",
+  "kind": "code"
+}

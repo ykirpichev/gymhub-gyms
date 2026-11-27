@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "With 10 mantissa bits, FP16 represents every integer up to 2,048 exactly. Between 2,048 and 4,096 the gap is 2, so 2,048 + 1 = 2,049 is a tie that rounds to even, 2,048, and the sum stays there forever: it never gets near the overflow. This *swamping* is why matmul and reduction kernels accumulate in FP32 even with FP16 or BF16 inputs, and why a long reduction should combine partial sums in a tree. In BF16 the sum stalls even earlier, at 256."
+}

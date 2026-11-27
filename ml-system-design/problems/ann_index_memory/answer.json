@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "12.8"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.01,
+  "explanation": "${10^8 \\times 128 \\times 1 = 1.28 \\times 10^{10}}$ bytes $= 12.8$ GB, against 51.2 GB in float32. That fits in one large server's RAM. Product quantisation compresses further (for example 16 bytes per vector, 1.6 GB) at some cost in recall, and an HNSW graph adds roughly 50 to 150 bytes per vector for its links."
+}

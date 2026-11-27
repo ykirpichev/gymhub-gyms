@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "36.1"
+  ],
+  "match": "number",
+  "tolerance": 0.2,
+  "explanation": "70 × 10⁹ weights × 0.5 bytes = 35 GB. Scales: 70 × 10⁹ / 128 = 547 million groups × 2 bytes = 1.09 GB. Total ≈ 36.1 GB, which fits on one 48 GB GPU with room for a KV cache, where BF16 (140 GB) needs two 80 GB GPUs. Group size is the knob: groups of 32 would make the scales 4.4 GB, a 12% overhead, for lower error; a zero point per group (asymmetric) would double the overhead again."
+}

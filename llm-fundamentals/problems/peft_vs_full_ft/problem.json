@@ -1,0 +1,8 @@
+{
+  "title": "Full fine-tune or LoRA",
+  "difficulty": "medium",
+  "summary": "When to update every weight, and what rank and alpha control.",
+  "kind": "essay",
+  "min_words": 80,
+  "max_words": 320
+}

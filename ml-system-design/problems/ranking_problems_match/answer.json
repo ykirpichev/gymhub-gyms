@@ -1,0 +1,9 @@
+{
+  "pairs": {
+    "p1": "a",
+    "p2": "e",
+    "p3": "c",
+    "p4": "d"
+  },
+  "explanation": "Position bias, cold start, redundancy and feedback loops are the four classic ranking problems, and each has its own fix. More epochs make a biased model more confident in its bias."
+}

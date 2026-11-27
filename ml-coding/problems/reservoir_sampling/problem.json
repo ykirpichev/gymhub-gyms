@@ -1,0 +1,6 @@
+{
+  "title": "Reservoir sampling",
+  "difficulty": "medium",
+  "summary": "Keep a uniform random sample of k items from a stream of unknown length in O(k) memory.",
+  "kind": "code"
+}

@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "d"
+  ],
+  "explanation": "RoPE never adds a position vector; the rotation makes q_m · k_n depend on m − n. ALiBi's bias is a per-head slope times the distance, added to the scores, which is why it can run past the trained length without a position table. Position interpolation linearly compresses new indices into the trained window, and YaRN changes that by frequency (high frequencies stay closer to their original rotations) plus an attention temperature. A learned absolute table has no row for a position it never trained, and it is added to embeddings, not inside the softmax."
+}

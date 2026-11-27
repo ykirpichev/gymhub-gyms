@@ -1,0 +1,6 @@
+{
+  "title": "Longest increasing subsequence",
+  "difficulty": "medium",
+  "summary": "The length of the longest strictly increasing subsequence in O(n log n), with patience sorting.",
+  "kind": "code"
+}

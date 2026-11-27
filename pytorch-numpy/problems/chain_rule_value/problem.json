@@ -1,0 +1,12 @@
+{
+  "title": "A chain rule by hand",
+  "difficulty": "easy",
+  "summary": "The gradient of a small composed function at a point.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "chain rule",
+    "autograd"
+  ],
+  "placeholder": "a number"
+}

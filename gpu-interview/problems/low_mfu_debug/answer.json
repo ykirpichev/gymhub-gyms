@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Starts by profiling a few steps (for example the PyTorch profiler or Nsight Systems) to split step time into compute kernels, communication, data loading and gaps, and checks whether communication overlaps with compute.\n2. Names communication causes and fixes: inter-node all-gather and reduce-scatter not overlapped, so prefetching or bucketing, or hybrid sharding (shard inside a node, replicate across nodes), or larger micro-batches per GPU.\n3. Names compute-side causes and fixes: small or poorly shaped matmuls, unfused elementwise kernels or missing flash attention, too much recomputation, CPU launch overhead (CUDA graphs, `torch.compile`).\n4. Mentions checking the input pipeline and stragglers (a slow data loader or one slow GPU or node holds back the whole collective), and re-measuring MFU after each change.",
+  "pass_score": 0.7
+}

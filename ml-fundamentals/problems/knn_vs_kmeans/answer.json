@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Describes k-nearest neighbors as supervised: to score a query, find the k closest training rows under a distance and vote their labels or average their targets. It stores the training set rather than a fixed-length weight vector.\n2. Says what k does in kNN: a small k follows local noise, a large k pulls toward the global majority or mean.\n3. Describes k-means as unsupervised: alternate assigning each point to the nearest centroid and replacing each centroid by the mean of its points, until assignments settle. Here k is a cluster count, not a neighborhood size.\n4. Contrasts the two directly: kNN predicts a label for a new point from labeled neighbors; k-means has no labels and returns a partition of the points it was given.",
+  "pass_score": 0.7
+}

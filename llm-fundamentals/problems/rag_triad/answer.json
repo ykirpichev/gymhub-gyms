@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "Context relevance asks whether the retrieved text is about the question, so a wrong product is a retrieval miss rather than a generation miss. Faithfulness asks whether the answer's claims follow from that context, so an extra refund rule is an ungrounded claim, the RAG form of a hallucination. Answer relevance would fail only if the answer did not address the question that was asked. BLEU, and token-level precision, recall, and F1, are not the triad."
+}

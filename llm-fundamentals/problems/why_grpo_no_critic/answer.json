@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Says the critic estimates a baseline: the advantage is a return minus a learned value, which cuts the variance of the policy gradient.\n2. Names the cost being avoided: another network of similar size, plus its optimizer state, and a value target that is hard to fit when a long chain of thought receives a single outcome reward at the end.\n3. Describes the group: for one prompt, sample several responses and score each with the same reward function, such as a verifier.\n4. States the advantage: each response's reward minus the group mean, divided by the group standard deviation; with an outcome reward that one number applies to every token of the response.\n5. Says a group whose rewards all tie (all correct or all wrong) has advantage zero, so that prompt contributes no policy gradient.",
+  "pass_score": 0.7
+}

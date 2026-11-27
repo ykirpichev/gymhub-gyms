@@ -1,0 +1,12 @@
+{
+  "title": "LayerNorm forward and backward",
+  "difficulty": "hard",
+  "summary": "Derive and implement the gradients of layer normalization with a scale and a shift.",
+  "kind": "code",
+  "minutes": 30,
+  "concepts": [
+    "layer norm",
+    "backward pass",
+    "derivation"
+  ]
+}

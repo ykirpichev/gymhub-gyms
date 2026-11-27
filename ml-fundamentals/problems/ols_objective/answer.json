@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "d"
+  ],
+  "explanation": "Ordinary least squares picks weights to minimize the sum of squared training residuals, and a residual is the observed y minus \u0177. Minimizing absolute residuals is a different, more outlier-robust estimator (least absolute deviations). A second feature still enters linearly, so the closed-form normal equations still apply, and the held-out rows are not part of the fit."
+}

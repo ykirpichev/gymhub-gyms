@@ -1,0 +1,24 @@
+{
+  "title": "A match score versus a sentence",
+  "difficulty": "easy",
+  "summary": "Which fusion design scores a pair, and which one answers in text.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Product 1: a vision encoder plus a projector into an LLM (early fusion), since the projector is trained as a similarity. Product 2: CLIP with a text decoder that reads its image embedding."
+    },
+    {
+      "id": "b",
+      "text": "Product 1: a contrastive dual encoder such as CLIP or SigLIP (late fusion). Product 2: a vision encoder plus a projector into an LLM, as in LLaVA (early fusion)."
+    },
+    {
+      "id": "c",
+      "text": "Product 1: LLaVA, scoring the caption by its log-likelihood under the language model (early fusion). Product 2: SigLIP, whose text tower decodes the answer word by word."
+    },
+    {
+      "id": "d",
+      "text": "Product 1: a contrastive dual encoder such as CLIP (late fusion). Product 2: Flamingo-style cross-attention, which is early fusion because the visual features enter the LLM's input sequence."
+    }
+  ]
+}

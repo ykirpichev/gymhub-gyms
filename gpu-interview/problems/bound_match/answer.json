@@ -1,0 +1,10 @@
+{
+  "pairs": {
+    "p1": "b",
+    "p2": "b",
+    "p3": "b",
+    "p4": "c",
+    "p5": "c"
+  },
+  "explanation": "Softmax, LayerNorm and batch-1 decode do a handful of FLOPs per byte, far below the ridge point of 333, so bandwidth bounds them. The big matmul does about 2,700 FLOPs per byte. Flash attention never writes the `N × N` score matrix to HBM, so its intensity grows with sequence length, and at 8K it is compute-bound; the original unfused attention, which writes the scores out, is memory-bound. PCIe only matters for host-device copies, which none of these kernels do."
+}

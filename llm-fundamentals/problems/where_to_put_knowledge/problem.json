@@ -1,0 +1,24 @@
+{
+  "title": "A wiki that changes every week",
+  "difficulty": "medium",
+  "summary": "Choose RAG, a long prompt, or fine-tuning for fresh cited facts.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Put the entire wiki in the prompt. A long context is always cheaper than an index, and a model cannot miss a page that is inside its window."
+    },
+    {
+      "id": "b",
+      "text": "Raise the decoding temperature so the model is more willing to recall the wiki from pretraining."
+    },
+    {
+      "id": "c",
+      "text": "Fine-tune the base model on this week's wiki so the facts live in the weights, then quote from memory."
+    },
+    {
+      "id": "d",
+      "text": "Retrieval-augmented generation: index the wiki, fetch a few passages per question, and answer from those passages so the quote has a source."
+    }
+  ]
+}

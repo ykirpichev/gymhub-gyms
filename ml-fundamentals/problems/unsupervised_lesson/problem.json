@@ -1,0 +1,15 @@
+{
+  "title": "Learning without labels",
+  "difficulty": "easy",
+  "summary": "A lesson: clustering families, dimensionality reduction with PCA, and what each assumes.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "k-means",
+    "hierarchical clustering",
+    "DBSCAN",
+    "Gaussian mixtures",
+    "PCA",
+    "t-SNE"
+  ]
+}

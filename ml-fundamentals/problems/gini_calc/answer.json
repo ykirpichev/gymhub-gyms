@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.375"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "The class proportions are 6/8 = 0.75 and 2/8 = 0.25. Gini is 1 \u2212 (0.75\u00b2 + 0.25\u00b2) = 1 \u2212 0.625 = 0.375. A pure node would score 0, and this is not the entropy of the same counts (about 0.811 bits with a base-2 log)."
+}

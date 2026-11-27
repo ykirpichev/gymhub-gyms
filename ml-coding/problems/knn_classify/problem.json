@@ -1,0 +1,6 @@
+{
+  "title": "k-nearest neighbours classifier",
+  "difficulty": "medium",
+  "summary": "Vectorised pairwise distances, top-k neighbours and a majority vote with deterministic tie-breaking.",
+  "kind": "code"
+}

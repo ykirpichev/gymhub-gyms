@@ -1,0 +1,6 @@
+{
+  "title": "Stable softmax and cross-entropy",
+  "difficulty": "easy",
+  "summary": "Row-wise softmax and mean cross-entropy that survive huge logits, with label validation.",
+  "kind": "code"
+}

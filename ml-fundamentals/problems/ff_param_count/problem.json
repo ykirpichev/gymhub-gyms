@@ -1,0 +1,7 @@
+{
+  "title": "Parameters in a tiny net",
+  "difficulty": "easy",
+  "summary": "Count weights and biases in a two-layer fully connected net.",
+  "kind": "answer",
+  "placeholder": "parameter count, e.g. 10"
+}

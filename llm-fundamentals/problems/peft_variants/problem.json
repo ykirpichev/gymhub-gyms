@@ -1,0 +1,25 @@
+{
+  "title": "QLoRA, adapters, and prefixes",
+  "difficulty": "medium",
+  "summary": "How the common parameter-efficient methods differ at train time and at serve time.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "QLoRA stores the frozen base in a 4-bit quantization and trains the LoRA factors in higher precision, so optimizer state is kept for the adapter rather than for every base weight."
+    },
+    {
+      "id": "b",
+      "text": "Raising the LoRA rank always increases the effective step size, because alpha/r grows with r when alpha is held fixed."
+    },
+    {
+      "id": "c",
+      "text": "A Houlsby adapter is a small bottleneck MLP inserted on the sublayer path. Unless it is fused, those extra layers still run at inference."
+    },
+    {
+      "id": "d",
+      "text": "Prefix tuning learns continuous key/value prefixes in the blocks. Prompt tuning learns a soft prompt only on the input embeddings. Both occupy sequence positions."
+    }
+  ],
+  "multiple": true
+}

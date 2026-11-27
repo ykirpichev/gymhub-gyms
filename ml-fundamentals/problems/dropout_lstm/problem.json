@@ -1,0 +1,24 @@
+{
+  "title": "Dropout on an LSTM",
+  "difficulty": "hard",
+  "summary": "Where a mask may change across time, and where it must not.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Draw a fresh mask on the hidden state at every time step, since independent noise across time is the strongest regularizer, and turn dropout off at test time with the usual scaling."
+    },
+    {
+      "id": "b",
+      "text": "Leave the recurrent connection undropped, or reuse one mask across all time steps (variational dropout). Drop the non-recurrent connections as usual, and turn dropout off at test time."
+    },
+    {
+      "id": "c",
+      "text": "Skip dropout: the forget gate already zeroes parts of the state at random during training, so it regularizes the same way and extra dropout only slows convergence."
+    },
+    {
+      "id": "d",
+      "text": "Apply dropout to the cell state with a fresh mask at every step, because the cell state, not the hidden state, is where an LSTM overfits. Leave the inputs and outputs undropped."
+    }
+  ]
+}

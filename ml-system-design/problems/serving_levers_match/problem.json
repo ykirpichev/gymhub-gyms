@@ -1,0 +1,71 @@
+{
+  "title": "Match the technique to what it improves",
+  "difficulty": "medium",
+  "summary": "Which serving technique addresses which bottleneck.",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": [
+    "continuous batching",
+    "prefix caching",
+    "speculative decoding",
+    "chunked prefill",
+    "quantization",
+    "disaggregation"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "Continuous batching"
+    },
+    {
+      "id": "p2",
+      "text": "Prefix caching"
+    },
+    {
+      "id": "p3",
+      "text": "Speculative decoding"
+    },
+    {
+      "id": "p4",
+      "text": "Chunked prefill"
+    },
+    {
+      "id": "p5",
+      "text": "FP8 weight quantisation"
+    },
+    {
+      "id": "p6",
+      "text": "Separate prefill and decode GPU pools"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "The tokenizer splits words into too many tokens"
+    },
+    {
+      "id": "b",
+      "text": "A 30,000-token prompt freezes everyone's token stream for a second"
+    },
+    {
+      "id": "c",
+      "text": "Every request recomputes the same 2,000-token system prompt"
+    },
+    {
+      "id": "d",
+      "text": "Short replies wait for the longest reply in their batch to finish"
+    },
+    {
+      "id": "e",
+      "text": "A single user at batch size 1 gets too few tokens per second"
+    },
+    {
+      "id": "f",
+      "text": "The model barely fits and decode is bound by reading weights"
+    },
+    {
+      "id": "g",
+      "text": "One pool cannot meet both a TTFT target and a TPOT target at a good cost"
+    }
+  ]
+}

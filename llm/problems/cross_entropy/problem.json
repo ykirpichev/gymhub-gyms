@@ -1,0 +1,6 @@
+{
+  "title": "Cross-entropy loss",
+  "difficulty": "easy",
+  "summary": "Mean token cross-entropy from logits, with ignored targets and label smoothing.",
+  "kind": "code"
+}

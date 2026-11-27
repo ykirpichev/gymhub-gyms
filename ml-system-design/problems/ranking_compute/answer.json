@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "100"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.01,
+  "explanation": "${500 \\times 20{,}000 = 10^7}$ candidates per second, times ${10^7}$ FLOPs each, is ${10^{14}}$ FLOP/s $= 100$ TFLOP/s. A GPU that sustains 100 TFLOP/s on this small model would be a stretch (small batched MLPs rarely reach peak), so plan for several GPUs or many CPUs per region, or cut the candidates with a cheaper pre-ranker. This is why funnels have a light ranker before the heavy one."
+}

@@ -1,0 +1,13 @@
+{
+  "title": "An int8 matmul with rescaling",
+  "difficulty": "medium",
+  "summary": "Multiply int8 activations by int8 weights with an integer accumulator, then apply both scales.",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "int8 matmul",
+    "int32 accumulation",
+    "dequantization",
+    "W8A8"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "correct": [
+    "a",
+    "b",
+    "c",
+    "e"
+  ],
+  "explanation": "A fake zero is not a cure for a value missing because it was extreme, and a rare class is not cured by quoting accuracy after you copied minority rows. Covariate shift (inputs changed, labeling rule unchanged) is not label shift and not concept drift, where P(Y|X) itself moves. Squared error and k-means are both levered by one far point, which you should look at before you drop it, so the \"three names, one event\" line is the false statement."
+}

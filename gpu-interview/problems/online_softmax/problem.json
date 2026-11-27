@@ -1,0 +1,12 @@
+{
+  "title": "Online softmax",
+  "difficulty": "medium",
+  "summary": "Softmax in one pass over chunks, keeping a running max and a rescaled running sum.",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "online softmax",
+    "numerical stability",
+    "flash attention"
+  ]
+}

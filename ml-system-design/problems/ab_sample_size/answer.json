@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "57760"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.01,
+  "explanation": "$(1.96 + 0.8416)^2 = 7.849$. The variance term is ${0.1 \\times 0.9 + 0.105 \\times 0.895 = 0.09 + 0.093975 = 0.183975}$. Divided by $(0.005)^2 = 0.000025$ and multiplied: ${7.849 \\times 0.183975 / 0.000025 \\approx 57{,}760}$ users per arm, about 115,500 in total. To detect a lift of 0.25 points instead, you would need four times as many."
+}

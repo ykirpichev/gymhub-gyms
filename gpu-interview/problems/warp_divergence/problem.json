@@ -1,0 +1,31 @@
+{
+  "title": "What a warp does at a branch",
+  "difficulty": "easy",
+  "summary": "Divergence inside a warp, and why the same branch can be free or cost double.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "warps",
+    "SIMT",
+    "divergence"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Each warp runs only one side of the branch, so the cost is one call per thread, as with no branch at all."
+    },
+    {
+      "id": "b",
+      "text": "Each thread runs both functions, because the compiler cannot know which side a thread will take."
+    },
+    {
+      "id": "c",
+      "text": "Every warp holds both even and odd lanes, so each warp runs both sides one after the other: about twice the time of one call."
+    },
+    {
+      "id": "d",
+      "text": "Odd threads wait at the branch until even threads finish the whole kernel, then run."
+    }
+  ],
+  "multiple": false
+}

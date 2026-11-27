@@ -1,0 +1,14 @@
+{
+  "title": "Data and features for production models",
+  "difficulty": "easy",
+  "summary": "A lesson: label sources, delayed and biased feedback, negative sampling, feature stores, point-in-time joins and training/serving skew.",
+  "kind": "lesson",
+  "minutes": 12,
+  "concepts": [
+    "labels",
+    "feature store",
+    "point-in-time join",
+    "training-serving skew",
+    "negative sampling"
+  ]
+}

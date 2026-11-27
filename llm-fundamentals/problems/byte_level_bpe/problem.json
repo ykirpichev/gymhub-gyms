@@ -1,0 +1,24 @@
+{
+  "title": "A tokenizer with no unknown token",
+  "difficulty": "easy",
+  "summary": "Which byte or word scheme can encode any string.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Byte-level BPE. The base vocabulary is the 256 bytes, and BPE merges are learned on top, so every byte string has a tokenization."
+    },
+    {
+      "id": "b",
+      "text": "A whitespace word tokenizer with a fixed 50,000-word list, which never splits a word into pieces."
+    },
+    {
+      "id": "c",
+      "text": "SentencePiece Unigram, which is BPE under another name. The two training algorithms are the same."
+    },
+    {
+      "id": "d",
+      "text": "Character BPE whose seed vocabulary is a list of Unicode characters, with an <unk> for anything left off that list."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Quantizing weights and the cache",
+  "difficulty": "medium",
+  "summary": "PTQ versus QAT, and what GPTQ, AWQ, FP8, and KV quantization each change.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "At long context the KV cache can exceed the weights, so quantizing K and V is a separate lever from quantizing the weight matrices. The rounding error is reread on later steps."
+    },
+    {
+      "id": "b",
+      "text": "FP8 is INT8 under another name: both store 8-bit integers with one scale per tensor, so any INT8 kernel can run an FP8 checkpoint unchanged."
+    },
+    {
+      "id": "c",
+      "text": "INT4 weight post-training quantization and quantization-aware training produce the same weights, because both round to the same grid; QAT only adds a calibration set."
+    },
+    {
+      "id": "d",
+      "text": "Post-training quantization compresses a finished model, sometimes with a small calibration set. Quantization-aware training simulates the rounding while training so the weights can adapt to it."
+    },
+    {
+      "id": "e",
+      "text": "GPTQ is a post-training method that quantizes weights layer by layer and uses second-order (Hessian) information to compensate for the rounding. AWQ is a post-training method that protects the weight channels that multiply large activations."
+    }
+  ],
+  "multiple": true
+}

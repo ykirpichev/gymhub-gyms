@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "128"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.01,
+  "explanation": "${5 \\times 10^8 \\times 64 \\times 4}$ bytes $= 1.28 \\times 10^{11}$ bytes $= 128$ GB. That is more RAM than a typical serving machine has, so you would shard it across machines, store it in float16 or int8 (64 or 32 GB), compute user embeddings on the fly from features instead of storing them, or serve them from a key-value store and fetch one per request."
+}

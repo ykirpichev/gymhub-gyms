@@ -1,0 +1,12 @@
+{
+  "title": "Pairwise squared distances",
+  "difficulty": "medium",
+  "summary": "All pairwise squared Euclidean distances between two point sets, with no Python loops.",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "broadcasting",
+    "vectorization",
+    "numerical stability"
+  ]
+}

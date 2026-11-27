@@ -1,0 +1,6 @@
+{
+  "title": "Layer norm",
+  "difficulty": "medium",
+  "summary": "Normalize each row to mean 0 and variance 1, then scale and shift.",
+  "kind": "code"
+}

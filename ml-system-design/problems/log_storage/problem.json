@@ -1,0 +1,12 @@
+{
+  "title": "A year of event logs",
+  "difficulty": "easy",
+  "summary": "Events per day times bytes times days, in TB.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "storage",
+    "logging"
+  ],
+  "placeholder": "TB"
+}

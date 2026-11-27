@@ -1,0 +1,60 @@
+{
+  "title": "Match each memory to its description",
+  "difficulty": "easy",
+  "summary": "Registers, shared memory, L2, HBM and local memory: who sees them and what they cost.",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": [
+    "memory hierarchy",
+    "shared memory",
+    "local memory"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "Registers"
+    },
+    {
+      "id": "p2",
+      "text": "Shared memory"
+    },
+    {
+      "id": "p3",
+      "text": "L2 cache"
+    },
+    {
+      "id": "p4",
+      "text": "Global memory (HBM)"
+    },
+    {
+      "id": "p5",
+      "text": "Local memory"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "Shared by all SMs, caches global memory, tens of megabytes"
+    },
+    {
+      "id": "b",
+      "text": "Private to one thread but stored off-chip; where register spills go"
+    },
+    {
+      "id": "c",
+      "text": "Private to one thread, about a cycle away; the more each thread uses, the fewer threads fit on an SM"
+    },
+    {
+      "id": "d",
+      "text": "Visible only to the host CPU, never read by kernels"
+    },
+    {
+      "id": "e",
+      "text": "On-chip, visible to every thread of one block, split into 32 banks"
+    },
+    {
+      "id": "f",
+      "text": "Off-chip, terabytes per second when accesses coalesce, hundreds of cycles away"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Numerics and speed in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: dtype defaults and promotion, stable formulas, mixed precision, determinism, and why GPU timing needs a synchronize.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "dtype",
+    "numerical stability",
+    "mixed precision",
+    "determinism",
+    "asynchronous execution"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Model FLOPs utilization",
+  "difficulty": "medium",
+  "summary": "The MFU of a 7B training run from its token throughput.",
+  "kind": "answer",
+  "minutes": 4,
+  "concepts": [
+    "MFU",
+    "training FLOPs",
+    "6ND"
+  ],
+  "placeholder": "a percentage"
+}

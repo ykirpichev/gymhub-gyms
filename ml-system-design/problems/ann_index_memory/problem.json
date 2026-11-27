@@ -1,0 +1,13 @@
+{
+  "title": "Size an ANN index",
+  "difficulty": "easy",
+  "summary": "Vectors times dimension times bytes, after int8 quantisation.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "ANN",
+    "quantisation",
+    "memory sizing"
+  ],
+  "placeholder": "GB"
+}

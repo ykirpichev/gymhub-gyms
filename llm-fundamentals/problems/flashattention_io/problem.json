@@ -1,0 +1,24 @@
+{
+  "title": "What FlashAttention changes",
+  "difficulty": "easy",
+  "summary": "Whether the tiled kernel is exact, and what memory it avoids.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "It keeps attention inside a fixed local window plus a few global tokens, which is why its memory grows linearly with N while the output stays close to full attention."
+    },
+    {
+      "id": "b",
+      "text": "It computes standard softmax attention exactly, but it writes the N×N matrix to HBM in smaller chunks, trading extra memory traffic for fewer FLOPs."
+    },
+    {
+      "id": "c",
+      "text": "It computes standard softmax attention. Q, K, and V are tiled so the N×N matrix is never stored in HBM, and the softmax is accumulated with a running max and sum in on-chip SRAM."
+    },
+    {
+      "id": "d",
+      "text": "It is exact in the forward pass, but the backward pass still stores the N×N probabilities in HBM, so the memory saving applies only at inference."
+    }
+  ]
+}

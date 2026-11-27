@@ -1,0 +1,14 @@
+{
+  "title": "Inside one transformer block",
+  "difficulty": "easy",
+  "summary": "A lesson: the residual stream, attention, the MLP and normalization, with the shapes at each step.",
+  "kind": "lesson",
+  "minutes": 10,
+  "concepts": [
+    "transformer",
+    "self-attention",
+    "residual stream",
+    "layer norm",
+    "MLP"
+  ]
+}

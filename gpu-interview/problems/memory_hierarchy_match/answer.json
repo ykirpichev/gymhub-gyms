@@ -1,0 +1,10 @@
+{
+  "pairs": {
+    "p1": "c",
+    "p2": "e",
+    "p3": "a",
+    "p4": "f",
+    "p5": "b"
+  },
+  "explanation": "Registers are the fastest and the scarcest: they are split between all resident threads, so register use limits occupancy. Shared memory is the block's scratchpad, explicitly managed, with bank conflicts as its pitfall. L2 sits between all SMs and HBM. Global memory has huge bandwidth only when a warp's accesses fall into few memory sectors. \"Local\" memory is misleadingly named: it is per-thread but lives in global memory, so spills and dynamically indexed per-thread arrays are slow."
+}

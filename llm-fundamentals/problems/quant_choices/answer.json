@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "d",
+    "e"
+  ],
+  "explanation": "GPTQ and AWQ are both post-training weight methods: GPTQ uses an approximate Hessian so later weights compensate for earlier rounding, and AWQ rescales channels that meet large activations. Quantization-aware training simulates rounding during a training run so the weights adapt to it, which usually keeps more accuracy than post-training rounding to the same grid. FP8 keeps a floating-point exponent and mantissa, unlike INT8, and needs its own kernels, which recent GPUs implement in hardware. Quantizing the KV cache is a separate lever, because at long context the cache can exceed the weights and every later token rereads that rounding error."
+}

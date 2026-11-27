@@ -1,0 +1,7 @@
+{
+  "title": "Sum of squared residuals",
+  "difficulty": "easy",
+  "summary": "Predict with a fitted line, then add up the squared residuals.",
+  "kind": "answer",
+  "placeholder": "SSE, e.g. 12"
+}

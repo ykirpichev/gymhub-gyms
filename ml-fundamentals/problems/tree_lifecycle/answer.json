@@ -1,0 +1,10 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "d",
+    "e",
+    "f"
+  ],
+  "explanation": "A leaf holds the prediction, while a logit is the linear log-odds in logistic regression. Practical trees grow by greedy purity splits, stop on depth, sample size, or purity, and predict by a walk to a leaf; pruning is what stops that walk from memorizing the sample. An exhaustive search for a globally optimal tree is not the algorithm anyone trains, because that search is intractable."
+}

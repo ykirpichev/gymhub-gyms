@@ -1,0 +1,13 @@
+{
+  "title": "Segment sums",
+  "difficulty": "medium",
+  "summary": "Sum the rows of each group with one scatter-add, and count the groups.",
+  "kind": "code",
+  "minutes": 10,
+  "concepts": [
+    "scatter-add",
+    "np.add.at",
+    "bincount",
+    "segment reduction"
+  ]
+}

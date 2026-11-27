@@ -1,0 +1,15 @@
+{
+  "title": "Experts, tokenizers and scaling laws",
+  "difficulty": "easy",
+  "summary": "A lesson: mixture-of-experts routing and load balance, byte-level BPE, and compute-optimal training.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "mixture of experts",
+    "routing",
+    "load balancing",
+    "BPE",
+    "scaling laws",
+    "Chinchilla"
+  ]
+}

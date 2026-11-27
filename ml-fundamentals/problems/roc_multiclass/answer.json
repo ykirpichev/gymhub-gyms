@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "b",
+    "d",
+    "e"
+  ],
+  "explanation": "The ROC curve is true positive rate against false positive rate as the threshold sweeps. A stricter threshold flags fewer cases, so recall and the false positive rate usually fall together; you trade one against the other by moving along the curve. AUC summarizes the ranking, with a random ranker near 0.5, and it says nothing about calibration. Macro-F1 averages per-class F1 so each class counts once, while micro-F1 pools the cells and follows the frequent classes."
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Put the design framework in order",
+  "difficulty": "easy",
+  "summary": "The order in which a strong answer covers the design.",
+  "kind": "order",
+  "minutes": 2,
+  "concepts": [
+    "interview framework"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "Plan the A/B test and monitoring"
+    },
+    {
+      "id": "b",
+      "text": "Choose offline and online metrics"
+    },
+    {
+      "id": "c",
+      "text": "Design the data pipeline and features"
+    },
+    {
+      "id": "d",
+      "text": "Design training and serving"
+    },
+    {
+      "id": "e",
+      "text": "Pick a baseline model, then the model to ship"
+    },
+    {
+      "id": "f",
+      "text": "Clarify the product goal, users and constraints"
+    },
+    {
+      "id": "g",
+      "text": "Turn the goal into an ML task with a label"
+    }
+  ]
+}

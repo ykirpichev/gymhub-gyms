@@ -1,0 +1,6 @@
+{
+  "title": "Mixture-of-experts layer",
+  "difficulty": "hard",
+  "summary": "Top-k routing, per-expert SwiGLU MLPs on the tokens they receive, and a weighted combine.",
+  "kind": "code"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "AI labels and long reasoning RL",
+  "difficulty": "medium",
+  "summary": "Match RLAIF and DAPO to two alignment setups.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Team A is RLAIF. Team B is DAPO."
+    },
+    {
+      "id": "b",
+      "text": "Team A is KTO. Team B is plain GRPO with no change to the clip, the groups, or the averaging."
+    },
+    {
+      "id": "c",
+      "text": "Team A is PPO-based RLHF. Team B is DPO."
+    },
+    {
+      "id": "d",
+      "text": "Team A is ORPO. Team B is SimPO."
+    }
+  ]
+}

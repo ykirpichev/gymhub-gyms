@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "d"
+  ],
+  "explanation": "Low training error with much higher validation error is the signature of high variance (overfitting). A validation error that still improves with more data confirms it: more data, stronger regularization (shallower trees, a lower learning rate, subsampling) or a simpler model all shrink the gap. High bias would show high error on both sets. Leakage would make validation error look too good, not too bad."
+}

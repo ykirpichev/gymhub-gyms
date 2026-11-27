@@ -1,0 +1,13 @@
+{
+  "title": "Bytes sent by a ring all-reduce",
+  "difficulty": "medium",
+  "summary": "How much each GPU sends to all-reduce 1 GB of gradients over 8 GPUs.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "all-reduce",
+    "ring",
+    "communication volume"
+  ],
+  "placeholder": "gigabytes"
+}

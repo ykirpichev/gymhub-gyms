@@ -1,0 +1,6 @@
+{
+  "title": "Append-only KV cache",
+  "difficulty": "medium",
+  "summary": "Fixed-capacity keys and values, with prefill, one-step append, scaled attention, and a memory estimate.",
+  "kind": "code"
+}

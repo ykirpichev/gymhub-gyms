@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "(5, 4, 3)",
+    "5, 4, 3",
+    "(5,4,3)"
+  ],
+  "explanation": "Align from the right: `(5, 1, 3)` and `(_, 4, 1)`. The last axes are 3 and 1, giving 3; the middle are 1 and 4, giving 4; the first is 5 and missing, giving 5. The result is `(5, 4, 3)`, and neither input is copied: the size-1 axes are read with stride 0."
+}

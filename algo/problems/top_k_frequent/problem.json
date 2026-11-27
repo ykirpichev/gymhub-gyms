@@ -1,0 +1,6 @@
+{
+  "title": "Top k frequent words",
+  "difficulty": "easy",
+  "summary": "The k most frequent words, ties broken alphabetically.",
+  "kind": "code"
+}

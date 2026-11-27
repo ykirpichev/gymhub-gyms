@@ -1,0 +1,53 @@
+{
+  "title": "Match the problem to the fix",
+  "difficulty": "medium",
+  "summary": "Common ranking-system problems and their standard fixes.",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": [
+    "position bias",
+    "cold start",
+    "feedback loops",
+    "diversity"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "Items shown at the top get clicked more regardless of quality"
+    },
+    {
+      "id": "p2",
+      "text": "New videos never get shown, so they never get engagement data"
+    },
+    {
+      "id": "p3",
+      "text": "The top ten results are near-duplicates of each other"
+    },
+    {
+      "id": "p4",
+      "text": "The model only learns from items it already chose to show"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "Train with position as a feature and fix it at serving, or estimate propensities from randomised slots"
+    },
+    {
+      "id": "b",
+      "text": "Train for more epochs"
+    },
+    {
+      "id": "c",
+      "text": "Re-rank for diversity, for example with maximal marginal relevance"
+    },
+    {
+      "id": "d",
+      "text": "Reserve a small share of traffic for exploration and log propensities"
+    },
+    {
+      "id": "e",
+      "text": "Content-based features and a new-item boost or bandit exploration"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Largest rectangle in a histogram",
+  "difficulty": "hard",
+  "summary": "The largest axis-aligned rectangle under a bar chart, in one pass with a monotonic stack.",
+  "kind": "code"
+}

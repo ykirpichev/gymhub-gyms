@@ -1,0 +1,9 @@
+{
+  "title": "Four metrics from one confusion matrix",
+  "difficulty": "easy",
+  "summary": "Fill in precision, recall, F1 and accuracy from four counts.",
+  "kind": "fill",
+  "minutes": 4,
+  "concepts": ["precision", "recall", "F1"],
+  "text": "A fraud model flags 50 transactions: 40 are fraud (true positives) and 10 are not (false positives). It misses 20 frauds (false negatives) and correctly passes 130 transactions (true negatives).\n\n- Precision is [[precision]]\n- Recall is [[recall]]\n- F1 is [[f1]]\n- Accuracy is [[accuracy]]\n\nIf the team cares most about catching fraud, the metric to raise is [[priority]]."
+}

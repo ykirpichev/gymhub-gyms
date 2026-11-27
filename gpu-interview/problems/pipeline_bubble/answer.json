@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "20"
+  ],
+  "match": "number",
+  "tolerance": 0.5,
+  "explanation": "The bubble fraction is $\\frac{p-1}{m+p-1} = \\frac{3}{15} = 20\\%$: the pipeline takes `p − 1` steps to fill and as many to drain. Doubling the micro-batches to 24 brings it to 11%. The 1F1B schedule has the same bubble but keeps only `p` micro-batches of activations alive instead of `m`, and interleaved schedules (several smaller stages per GPU) shrink the bubble itself, at the cost of more communication."
+}

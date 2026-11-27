@@ -1,0 +1,6 @@
+{
+  "title": "LoRA linear layer",
+  "difficulty": "easy",
+  "summary": "A frozen linear layer plus a scaled low-rank update, computed without forming the full update matrix.",
+  "kind": "code"
+}

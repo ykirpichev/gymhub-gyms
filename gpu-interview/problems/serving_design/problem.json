@@ -1,0 +1,16 @@
+{
+  "title": "Design an LLM serving deployment",
+  "difficulty": "hard",
+  "summary": "Size and design serving for a 70B chat model with latency targets.",
+  "kind": "essay",
+  "minutes": 15,
+  "concepts": [
+    "serving design",
+    "KV cache",
+    "batching",
+    "quantization",
+    "tensor parallelism"
+  ],
+  "min_words": 120,
+  "max_words": 450
+}

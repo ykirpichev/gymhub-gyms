@@ -1,0 +1,6 @@
+{
+  "title": "Learn and apply byte-pair encoding",
+  "difficulty": "easy",
+  "summary": "Learn BPE merges from a word corpus with deterministic tie-breaking, then encode new words by replaying them.",
+  "kind": "code"
+}

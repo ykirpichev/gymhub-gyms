@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "Checkpointing keeps only each block's input and recomputes the block's internals during the backward pass, so activation memory falls from all intermediate tensors per block to one, and compute rises by about a third (one more forward of the checkpointed part, against a forward plus a backward that costs about two forwards). Recomputation is deterministic for the same kernels and inputs; dropout uses the saved random state. Optimizer state is unaffected; for that you would use ZeRO or FSDP. Selective checkpointing (only the cheap-to-recompute, memory-heavy parts such as attention scores) gets most of the saving for less compute."
+}

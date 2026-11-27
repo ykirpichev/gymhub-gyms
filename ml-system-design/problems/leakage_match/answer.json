@@ -1,0 +1,9 @@
+{
+  "pairs": {
+    "p1": "b",
+    "p2": "d",
+    "p3": "e",
+    "p4": "a"
+  },
+  "explanation": "Each fix removes a path for information the model will not have at prediction time. Label-derived features make offline metrics look perfect and fail online. Random splits of time series let the model interpolate between neighbouring days. Joining current aggregates onto past events leaks the future. Sharing identities across splits measures memorisation instead of generalisation. The learning rate has nothing to do with leakage."
+}

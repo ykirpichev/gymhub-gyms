@@ -1,0 +1,6 @@
+{
+  "title": "Sliding-window conversation memory",
+  "difficulty": "medium",
+  "summary": "Keep pinned messages and as much recent history as fits, replacing evicted messages with one summary.",
+  "kind": "code"
+}

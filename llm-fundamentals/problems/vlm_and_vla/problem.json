@@ -1,0 +1,8 @@
+{
+  "title": "Vision, language, and action",
+  "difficulty": "medium",
+  "summary": "How a VLM attaches a vision encoder, and two ways a VLA emits actions.",
+  "kind": "essay",
+  "min_words": 80,
+  "max_words": 340
+}

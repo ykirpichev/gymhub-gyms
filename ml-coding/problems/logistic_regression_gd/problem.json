@@ -1,0 +1,6 @@
+{
+  "title": "Logistic regression with gradient descent",
+  "difficulty": "hard",
+  "summary": "Full-batch gradient descent on L2-regularised binary cross-entropy with a sigmoid and loss that never overflow.",
+  "kind": "code"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Two gradient steps",
+  "difficulty": "easy",
+  "summary": "Differentiate a scalar loss and apply two gradient-descent updates.",
+  "kind": "answer",
+  "placeholder": "w, e.g. 1.5"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "A custom autograd Function",
+  "difficulty": "hard",
+  "summary": "Write a torch.autograd.Function for log-sum-exp with a stable forward and a hand-written backward.",
+  "kind": "code",
+  "minutes": 20,
+  "concepts": [
+    "torch.autograd.Function",
+    "custom backward",
+    "log-sum-exp",
+    "save_for_backward"
+  ]
+}

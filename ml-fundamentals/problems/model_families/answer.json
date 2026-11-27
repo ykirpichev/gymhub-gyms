@@ -1,0 +1,10 @@
+{
+  "correct": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "f"
+  ],
+  "explanation": "Parametric models such as linear and logistic regression keep a fixed-length weight vector; k-nearest neighbors stores the sample instead, and a tree's leaves are not chosen in advance. Polynomial features stay linear in the weights, while a hidden nonlinearity does not. Linear discriminant analysis uses the labels, so the tree statement is the one that does not belong."
+}

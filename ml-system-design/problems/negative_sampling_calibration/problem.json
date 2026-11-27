@@ -1,0 +1,12 @@
+{
+  "title": "Correct a model trained on downsampled negatives",
+  "difficulty": "medium",
+  "summary": "Undo negative downsampling to get a calibrated probability.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "calibration",
+    "negative sampling"
+  ],
+  "placeholder": "e.g. 0.05"
+}

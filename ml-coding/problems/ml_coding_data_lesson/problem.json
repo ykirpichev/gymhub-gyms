@@ -1,0 +1,15 @@
+{
+  "title": "Data handling and metrics in code",
+  "difficulty": "easy",
+  "summary": "A lesson: computing metrics from counts, sampling in one pass, splits without leakage, and preprocessing that is fit once.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "metrics",
+    "ROC AUC",
+    "reservoir sampling",
+    "data splits",
+    "standardization",
+    "leakage"
+  ]
+}

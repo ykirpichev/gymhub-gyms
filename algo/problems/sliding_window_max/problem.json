@@ -1,0 +1,6 @@
+{
+  "title": "Sliding window maximum",
+  "difficulty": "medium",
+  "summary": "Maximum of every length-k window in one pass with a monotonic deque.",
+  "kind": "code"
+}

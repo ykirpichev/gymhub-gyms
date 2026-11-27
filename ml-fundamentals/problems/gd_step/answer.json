@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "1.08"
+  ],
+  "match": "number",
+  "tolerance": 0.001,
+  "explanation": "The derivative is dL/dw = 2(w \u2212 3). At w = 0 it is \u22126, so the first step moves to 0 \u2212 0.1 \u00b7 (\u22126) = 0.6. At w = 0.6 it is \u22124.8, so the second step moves to 0.6 + 0.48 = 1.08. Each step closes 20% of the remaining gap to 3, which is why the second step is shorter than the first; stepping along the derivative instead of against it would walk away from the minimum."
+}

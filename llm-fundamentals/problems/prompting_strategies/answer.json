@@ -1,0 +1,7 @@
+{
+  "correct": [
+    "b",
+    "c"
+  ],
+  "explanation": "Zero-shot and few-shot are both in-context: the weights stay frozen, and the only difference is whether demonstrations sit in the prompt. Chain-of-thought spends extra tokens on intermediate steps. Self-consistency spends extra samples of those traces and votes, which is test-time compute, not a weight update. Nothing in few-shot prompting optimizes the prompt tokens with gradients."
+}

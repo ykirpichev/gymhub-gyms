@@ -1,0 +1,4 @@
+{
+  "pairs": {"greedy": "argmax", "temperature": "flatten", "topk": "fixed", "topp": "mass", "beam": "sequences"},
+  "explanation": "Greedy is the argmax at every step. Temperature divides the logits: T > 1 flattens, T < 1 sharpens. Top-k keeps a fixed count, top-p a variable count that covers a probability mass. Beam search scores whole sequences rather than single tokens. Lowering repeated tokens is a repetition penalty, a separate knob."
+}

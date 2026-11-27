@@ -1,0 +1,6 @@
+{
+  "title": "Int8 weight matvec",
+  "difficulty": "medium",
+  "summary": "y = scale * (W @ x) with int8 weights, per-row scales and an FP16 vector: quantized LLM decoding.",
+  "kind": "code"
+}

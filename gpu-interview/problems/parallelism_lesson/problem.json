@@ -1,0 +1,15 @@
+{
+  "title": "Parallelism in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: what each kind of parallelism splits, what it communicates, and the memory of one training step.",
+  "kind": "lesson",
+  "minutes": 10,
+  "concepts": [
+    "data parallel",
+    "tensor parallel",
+    "pipeline parallel",
+    "ZeRO",
+    "FSDP",
+    "all-reduce"
+  ]
+}

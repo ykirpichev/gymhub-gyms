@@ -1,0 +1,16 @@
+{
+  "title": "From a pretrained model to an assistant",
+  "difficulty": "easy",
+  "summary": "A lesson: SFT, reward models and RLHF with PPO, DPO, GRPO, and RL from verifiable rewards.",
+  "kind": "lesson",
+  "minutes": 10,
+  "concepts": [
+    "SFT",
+    "RLHF",
+    "PPO",
+    "DPO",
+    "GRPO",
+    "RLVR",
+    "reward model"
+  ]
+}

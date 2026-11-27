@@ -1,0 +1,6 @@
+{
+  "title": "Planner/executor boundary",
+  "difficulty": "medium",
+  "summary": "Execute a bounded tool plan with step references, skip what depends on failures, and return a structured trace.",
+  "kind": "code"
+}

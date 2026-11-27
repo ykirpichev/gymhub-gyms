@@ -1,0 +1,6 @@
+{
+  "title": "Matrix transpose",
+  "difficulty": "easy",
+  "summary": "C is the transpose of row-major A.",
+  "kind": "code"
+}

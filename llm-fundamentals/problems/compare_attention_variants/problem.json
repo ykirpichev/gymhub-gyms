@@ -1,0 +1,8 @@
+{
+  "title": "Compare the attention variants",
+  "difficulty": "hard",
+  "summary": "MHA, MQA, GQA, and MLA, judged by quality and KV-cache cost.",
+  "kind": "essay",
+  "min_words": 90,
+  "max_words": 360
+}

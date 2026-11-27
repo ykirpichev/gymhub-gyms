@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "e"
+  ],
+  "explanation": "Basic slicing (`start:stop:step`) only changes the offset, shape and strides, so it is a view; so is the transpose. `a` is contiguous, so `reshape(4, 3)` can reuse the buffer and returns a view. Indexing with a list of integers or a boolean mask is advanced indexing, which gathers arbitrary elements into a new array: a copy. Arithmetic always allocates a new result. `np.shares_memory(a, b)` checks it when you are unsure."
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Put the rollout in order",
+  "difficulty": "easy",
+  "summary": "The stages between a trained model and full traffic.",
+  "kind": "order",
+  "minutes": 2,
+  "concepts": [
+    "shadow",
+    "canary",
+    "A/B test",
+    "rollout"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "Serve a small canary slice and watch errors and latency"
+    },
+    {
+      "id": "b",
+      "text": "Evaluate offline on a held-out, time-split dataset"
+    },
+    {
+      "id": "c",
+      "text": "Ramp to all traffic with a rollback plan"
+    },
+    {
+      "id": "d",
+      "text": "Run in shadow mode on live traffic without serving its results"
+    },
+    {
+      "id": "e",
+      "text": "Monitor drift and quality, and retrain on a schedule"
+    },
+    {
+      "id": "f",
+      "text": "Run an A/B test for a fixed duration on the primary metric"
+    }
+  ]
+}

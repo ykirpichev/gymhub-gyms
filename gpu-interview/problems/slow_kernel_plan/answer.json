@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Starts by measuring with a profiler (Nsight Compute or Nsight Systems) and comparing achieved DRAM bandwidth and bytes moved with the minimum, before changing code.\n2. Checks the global access pattern: coalescing, sectors per request, alignment or vectorized (`float4`) loads, and whether `X` is read more than once.\n3. Checks parallelism and latency hiding: enough blocks for all SMs (rows per block, grid size), occupancy, and stalls on barriers or the reduction.\n4. Proposes concrete fixes tied to what was found (for example one block per row with a warp-shuffle reduction, keeping the row in registers, vector loads) and says to re-measure after each change.",
+  "pass_score": 0.7
+}

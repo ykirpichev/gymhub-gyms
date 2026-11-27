@@ -1,0 +1,6 @@
+{
+  "title": "Row softmax",
+  "difficulty": "medium",
+  "summary": "Softmax over the last dimension of a matrix.",
+  "kind": "code"
+}

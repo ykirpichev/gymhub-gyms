@@ -1,0 +1,14 @@
+{
+  "title": "Fill in a Triton softmax",
+  "difficulty": "medium",
+  "summary": "One program per row, a mask for the tail, and the max, exp and sum in registers.",
+  "kind": "fill",
+  "minutes": 5,
+  "concepts": [
+    "Triton",
+    "masking",
+    "softmax"
+  ],
+  "code": true,
+  "text": "@triton.jit\ndef softmax_kernel(x_ptr, y_ptr, n_cols, stride, BLOCK: tl.constexpr):\n    row = tl.[[b1]](0)\n    cols = tl.[[b2]](0, BLOCK)\n    mask = cols [[b3]] n_cols\n    x = tl.load(x_ptr + row * stride + cols, mask=mask, other=[[b4]])\n    x = x - tl.[[b5]](x, axis=0)\n    num = tl.exp(x)\n    y = num / tl.[[b6]](num, axis=0)\n    tl.store(y_ptr + row * stride + cols, y, mask=mask)"
+}

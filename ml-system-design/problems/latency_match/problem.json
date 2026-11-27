@@ -1,0 +1,50 @@
+{
+  "title": "Match the operation to its latency",
+  "difficulty": "easy",
+  "summary": "Orders of magnitude for memory, network and disk.",
+  "kind": "match",
+  "minutes": 3,
+  "concepts": [
+    "latency numbers"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "Read a value from an in-process hash map"
+    },
+    {
+      "id": "p2",
+      "text": "Fetch a key from an in-memory cache over the network in the same data centre"
+    },
+    {
+      "id": "p3",
+      "text": "A network round trip from Europe to the US west coast"
+    },
+    {
+      "id": "p4",
+      "text": "Read 1 MB sequentially from an SSD"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "about 0.5 to 1 ms"
+    },
+    {
+      "id": "b",
+      "text": "about 100 ns"
+    },
+    {
+      "id": "c",
+      "text": "about 1 ms"
+    },
+    {
+      "id": "d",
+      "text": "about 10 seconds"
+    },
+    {
+      "id": "e",
+      "text": "about 150 ms"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Size a chunk index",
+  "difficulty": "easy",
+  "summary": "Chunks times dimension times bytes, in GB.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "vector index",
+    "memory sizing"
+  ],
+  "placeholder": "GB"
+}

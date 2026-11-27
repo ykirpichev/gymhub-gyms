@@ -1,0 +1,6 @@
+{
+  "title": "Top-k / top-p filtering",
+  "difficulty": "medium",
+  "summary": "Mask logits outside the top-k set and the nucleus (top-p) set before sampling.",
+  "kind": "code"
+}

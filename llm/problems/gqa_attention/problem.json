@@ -1,0 +1,6 @@
+{
+  "title": "Grouped-query attention",
+  "difficulty": "medium",
+  "summary": "Causal attention where groups of query heads share one key/value head, without copying the KV heads.",
+  "kind": "code"
+}

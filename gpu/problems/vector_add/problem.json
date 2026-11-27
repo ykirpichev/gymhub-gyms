@@ -1,0 +1,6 @@
+{
+  "title": "Vector add",
+  "difficulty": "easy",
+  "summary": "C = A + B for two float32 vectors.",
+  "kind": "code"
+}

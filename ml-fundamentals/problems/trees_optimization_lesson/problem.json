@@ -1,0 +1,16 @@
+{
+  "title": "Trees, ensembles and gradient descent",
+  "difficulty": "easy",
+  "summary": "A lesson: how a tree picks a split, why bagging and boosting help, and the update rules of common optimizers.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "decision trees",
+    "Gini impurity",
+    "bagging",
+    "boosting",
+    "gradient descent",
+    "momentum",
+    "Adam"
+  ]
+}

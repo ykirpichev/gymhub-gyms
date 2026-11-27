@@ -1,0 +1,33 @@
+{
+  "title": "Parametric, nonparametric, linear",
+  "difficulty": "medium",
+  "summary": "What is fixed about a model: its parameter count, and whether it is linear in those parameters.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Linear discriminant analysis is supervised. It uses class labels to choose a separating projection; the usual form models classes as Gaussians that share one covariance."
+    },
+    {
+      "id": "b",
+      "text": "Linear regression and logistic regression are parametric: once the features are chosen, a weight vector of fixed length summarizes the fit."
+    },
+    {
+      "id": "c",
+      "text": "k-nearest neighbors is nonparametric. The predictor stores the training rows, so what you keep grows with the sample."
+    },
+    {
+      "id": "d",
+      "text": "\"Linear\" means linear in the parameters. Expanding each row with squares and products, then running least squares, is still linear in the weights."
+    },
+    {
+      "id": "e",
+      "text": "A decision tree whose depth is not capped has a parameter count fixed before any row is seen, the same way logistic regression does."
+    },
+    {
+      "id": "f",
+      "text": "A multilayer network with a nonlinear activation between the weight layers is nonlinear. It does not collapse to one weight vector on a feature map you fixed before training."
+    }
+  ],
+  "multiple": true
+}

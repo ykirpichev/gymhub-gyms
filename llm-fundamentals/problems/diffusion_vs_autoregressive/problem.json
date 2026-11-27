@@ -1,0 +1,8 @@
+{
+  "title": "Diffusion versus next token",
+  "difficulty": "medium",
+  "summary": "When to denoise and when to predict the next token, plus faster samplers.",
+  "kind": "essay",
+  "min_words": 110,
+  "max_words": 400
+}

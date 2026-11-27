@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "1365"
+  ],
+  "match": "number",
+  "tolerance": 10,
+  "explanation": "$2 \\times 4096^3 = 1.374 \\times 10^{11}$ FLOPs; three matrices of $4096^2 \\times 2$ bytes = 100,663,296 bytes. Ratio ≈ 1,365, about four times the BF16 ridge point of 333, so the matmul is compute-bound with a bound of 137 µs. Intensity grows with size (it is about $n/3$ FLOPs per byte for square BF16 matrices), so small matmuls are memory-bound: at $n = 512$ it is about 170, below the ridge. In practice a kernel reaches the bound only if its tiles reuse data well, which is the topic of the tiling exercise later in this gym."
+}

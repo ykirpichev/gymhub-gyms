@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "e"
+  ],
+  "explanation": "`eval()` sets `self.training = False` on every submodule, and only layers that check that flag change: dropout becomes the identity, and batch norm uses (and stops updating) its running statistics. It does nothing to autograd. Gradients are still recorded unless you also use `torch.no_grad()` or `torch.inference_mode()`, and the parameters can still be changed. Forgetting `eval()` makes validation scores noisy and batch-size dependent; forgetting `no_grad()` only wastes memory and time."
+}

@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "a"
+  ],
+  "explanation": "Tensor parallelism shards each layer's matmuls and pays a collective every layer, pipeline parallelism places layers on different GPUs and needs microbatches to hide the bubble, and context parallelism (Ring Attention, Ulysses) splits the tokens of one long sequence, and the KV cache with them, so the context fits. Replicating the whole cache on every GPU is the opposite of what it is for. In Megatron's vocabulary, \"sequence parallelism\" is a different thing: the LayerNorm and dropout shard that sits next to tensor parallelism. Prefill is a fat matrix multiply over the prompt and is usually compute-bound; decode loads the weights and the growing cache for one new token and is usually bandwidth-bound, which is why batching, grouped-query attention and speculative decoding aim at decode. Swapping the two phases, or the names of tensor and pipeline parallelism, are the other mistakes."
+}

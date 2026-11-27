@@ -1,0 +1,7 @@
+{
+  "correct": [
+    "a",
+    "d"
+  ],
+  "explanation": "Latent semantic analysis is a truncated SVD of a term-document matrix and is unsupervised; a new document is folded in with the singular vectors you already have. A first-order HMM has a transition that looks only at the current hidden state and an emission that looks only at the current state, so an observation does not drive the next state. Viterbi and forward-backward are swapped in the remaining statement: Viterbi finds one most likely path by dynamic programming in O(TK\u00b2), and forward-backward sums over paths to give a posterior per time step."
+}

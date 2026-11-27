@@ -1,0 +1,31 @@
+{
+  "title": "A broadcasting bug in a loss",
+  "difficulty": "medium",
+  "summary": "Spot why a regression loss trains badly while running without errors.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "broadcasting",
+    "debugging",
+    "loss functions"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`**` on a tensor is elementwise, so the squared error is fine; the learning rate must be too high."
+    },
+    {
+      "id": "b",
+      "text": "`mean()` over a `(N, 1)` tensor averages only the first column, so half the targets are ignored."
+    },
+    {
+      "id": "c",
+      "text": "The subtraction raises a shape error only on the GPU, and the CPU silently drops the extra axis."
+    },
+    {
+      "id": "d",
+      "text": "`pred - y` broadcasts to `(N, N)`, so the loss compares every prediction with every target."
+    }
+  ],
+  "multiple": false
+}

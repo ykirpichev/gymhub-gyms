@@ -1,0 +1,6 @@
+{
+  "title": "LoRA linear layer",
+  "difficulty": "medium",
+  "summary": "Forward pass of a low-rank adapter on a linear layer, the merged weight, and the parameter savings.",
+  "kind": "code"
+}

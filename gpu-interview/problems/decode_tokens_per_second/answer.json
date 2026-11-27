@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "214"
+  ],
+  "match": "number",
+  "tolerance": 3,
+  "explanation": "The weights are 7 × 10⁹ × 2 = 14 GB. Reading them takes 14 × 10⁹ / 3 × 10¹² = 4.67 ms, so at most 214 tokens/s. The compute is only $2 \\times 7 \\times 10^9$ FLOPs per token, 14 µs at 1,000 TFLOP/s: decoding at batch 1 uses about 0.3% of the GPU's math. This one calculation explains most of LLM serving: batching many sequences reuses each weight read for every sequence in the batch, quantizing the weights to 8 or 4 bits cuts the bytes, and speculative decoding verifies several tokens per weight read."
+}

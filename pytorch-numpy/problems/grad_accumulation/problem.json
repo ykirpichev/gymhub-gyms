@@ -1,0 +1,13 @@
+{
+  "title": "Gradients accumulate",
+  "difficulty": "easy",
+  "summary": "What .grad holds after two backward passes without zeroing it.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "autograd",
+    "gradient accumulation",
+    "zero_grad"
+  ],
+  "placeholder": "a number"
+}

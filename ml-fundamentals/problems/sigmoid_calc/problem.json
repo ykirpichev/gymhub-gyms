@@ -1,0 +1,7 @@
+{
+  "title": "From logit to probability",
+  "difficulty": "easy",
+  "summary": "Evaluate the logistic sigmoid at a positive logit.",
+  "kind": "answer",
+  "placeholder": "probability, e.g. 0.500"
+}

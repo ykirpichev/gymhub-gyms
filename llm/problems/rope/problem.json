@@ -1,0 +1,6 @@
+{
+  "title": "Rotary position embedding",
+  "difficulty": "medium",
+  "summary": "Rotate query/key channel pairs by position-dependent angles (rotate_half convention).",
+  "kind": "code"
+}

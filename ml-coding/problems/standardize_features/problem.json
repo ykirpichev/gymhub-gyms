@@ -1,0 +1,6 @@
+{
+  "title": "Feature standardization with training statistics",
+  "difficulty": "easy",
+  "summary": "Standardize features with the training mean and population standard deviation, including constant columns.",
+  "kind": "code"
+}

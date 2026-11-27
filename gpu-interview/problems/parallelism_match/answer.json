@@ -1,0 +1,10 @@
+{
+  "pairs": {
+    "p1": "e",
+    "p2": "c",
+    "p3": "d",
+    "p4": "f",
+    "p5": "a"
+  },
+  "explanation": "Data parallelism replicates the model and splits examples, then all-reduces gradients. Tensor parallelism splits each matmul (Megatron splits the first MLP matmul by columns and the second by rows, so only one all-reduce is needed per block). Pipeline parallelism splits by depth. FSDP looks like data parallelism but stores only a shard of every tensor, gathering each layer's weights just before using them. Expert parallelism places experts on different GPUs and moves tokens with an all-to-all. Splitting the vocabulary is done for the embedding and output layers inside tensor parallelism, not as a strategy on its own."
+}

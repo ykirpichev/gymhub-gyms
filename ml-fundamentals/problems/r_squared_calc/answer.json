@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.75"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "The mean of y is 4, so the total sum of squares is (2\u22124)\u00b2 + (6\u22124)\u00b2 = 8. The residual sum of squares against these predictions is (2\u22123)\u00b2 + (4\u22124)\u00b2 + (6\u22125)\u00b2 = 2. R\u00b2 = 1 \u2212 SSE/SST = 0.75, the share of squared error removed relative to predicting the mean; SSE/SST = 0.25 is the share left over, not R\u00b2."
+}

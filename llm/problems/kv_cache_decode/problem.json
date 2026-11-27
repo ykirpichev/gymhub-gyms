@@ -1,0 +1,6 @@
+{
+  "title": "KV-cache decode step",
+  "difficulty": "hard",
+  "summary": "One decoding step of attention against a padded KV cache with a different valid length per sequence.",
+  "kind": "code"
+}

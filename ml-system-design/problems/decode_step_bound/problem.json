@@ -1,0 +1,13 @@
+{
+  "title": "The fastest a decode step can be",
+  "difficulty": "medium",
+  "summary": "Weight bytes over memory bandwidth bounds decode latency.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "decode",
+    "memory-bound",
+    "roofline"
+  ],
+  "placeholder": "ms"
+}

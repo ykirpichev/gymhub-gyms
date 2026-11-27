@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "`out[idx] += 1` runs as `out[idx] = out[idx] + 1`: it gathers `[0, 0, 0, 0]`, adds 1, and writes `1` to positions 1, 3, 1, 1. Writing the same value to position 1 three times leaves 1. To count, use `np.add.at(out, idx, 1)` or `np.bincount(idx, minlength=4)`, which give `[0, 3, 0, 1]`. The same trap exists in PyTorch with `out[idx] += 1`; use `index_add_`."
+}

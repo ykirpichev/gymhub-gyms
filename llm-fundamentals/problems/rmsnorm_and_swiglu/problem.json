@@ -1,0 +1,25 @@
+{
+  "title": "RMSNorm and SwiGLU",
+  "difficulty": "medium",
+  "summary": "What a modern decoder block changes in the norm and the feed-forward.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "After training, the SwiGLU gate is dropped, so inference has the same FLOPs as a ReLU feed-forward of hidden size 4d."
+    },
+    {
+      "id": "b",
+      "text": "SwiGLU has three weight matrices, so its hidden width is often set near (8/3) times the model width rather than 4 times, to match the parameter count of a two-matrix feed-forward."
+    },
+    {
+      "id": "c",
+      "text": "RMSNorm divides by the root mean square of the vector and does not subtract the mean."
+    },
+    {
+      "id": "d",
+      "text": "RMSNorm also drops the learned per-channel scale, and that missing scale is where most of its savings over LayerNorm come from."
+    }
+  ],
+  "multiple": true
+}

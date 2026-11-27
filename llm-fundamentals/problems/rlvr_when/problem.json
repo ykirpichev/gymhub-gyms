@@ -1,0 +1,24 @@
+{
+  "title": "A reward you can check",
+  "difficulty": "easy",
+  "summary": "Pick the post-training signal when unit tests can score a program.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "DPO, because the pass/fail bit on a single response is already a complete preference pair, so the test results feed DPO as they are."
+    },
+    {
+      "id": "b",
+      "text": "Reinforcement learning with a verifiable reward: the test outcome is the reward, not a learned model of human taste."
+    },
+    {
+      "id": "c",
+      "text": "Supervised fine-tuning on the prompts alone, with the tests used only to set the learning rate."
+    },
+    {
+      "id": "d",
+      "text": "The KL penalty against the reference model, which is itself a reward for whether the program passed."
+    }
+  ]
+}

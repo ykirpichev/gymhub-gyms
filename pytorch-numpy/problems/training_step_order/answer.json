@@ -1,0 +1,12 @@
+{
+  "order": [
+    "a",
+    "c",
+    "f",
+    "e",
+    "g",
+    "d",
+    "b"
+  ],
+  "explanation": "Zero the old gradients, run the forward pass and the loss, backpropagate, clip the fresh gradients, update the weights, then advance the learning-rate schedule. Clipping must come after `backward()` (there is nothing to clip before) and before `step()` (after it, the update already used the unclipped gradients). Since PyTorch 1.1, stepping the scheduler before the optimizer skips the first value of the schedule and triggers a warning. `zero_grad()` can also sit right after `step()`; what matters is that it comes before the next `backward()`."
+}

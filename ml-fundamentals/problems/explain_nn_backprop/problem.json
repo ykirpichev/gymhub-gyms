@@ -1,0 +1,8 @@
+{
+  "title": "A network and the backward pass",
+  "difficulty": "hard",
+  "summary": "Feedforward nets, backpropagation, and what depth adds beyond a linear model.",
+  "kind": "essay",
+  "min_words": 80,
+  "max_words": 360
+}

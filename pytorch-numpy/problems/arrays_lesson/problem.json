@@ -1,0 +1,14 @@
+{
+  "title": "Arrays in memory",
+  "difficulty": "easy",
+  "summary": "A lesson: buffer, shape, strides, dtype, views versus copies, and contiguity.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "strides",
+    "views",
+    "copies",
+    "contiguity",
+    "dtype"
+  ]
+}

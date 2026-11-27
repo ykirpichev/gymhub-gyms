@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "Computing the target under `no_grad` records no graph at all (and saves memory); `.detach()` on the result cuts the edge after the fact. Either way the loss's gradient reaches only `online_net`. Wrapping `backward()` in `no_grad` doesn't stop anything that was recorded before. `eval()` only switches dropout and batch-norm behaviour; it does not turn off autograd. `requires_grad_(False)` is refused on a non-leaf tensor that is part of a graph; detach it instead."
+}

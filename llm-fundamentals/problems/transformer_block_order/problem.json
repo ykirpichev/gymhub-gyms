@@ -1,0 +1,16 @@
+{
+  "title": "One pre-norm block, in order",
+  "difficulty": "medium",
+  "summary": "Order the operations a token's vector goes through in a pre-norm decoder block.",
+  "kind": "order",
+  "minutes": 3,
+  "concepts": ["transformer block", "residual stream", "pre-norm"],
+  "items": [
+    {"id": "mlp", "text": "Apply the feed-forward network (for example SwiGLU)"},
+    {"id": "norm1", "text": "Normalize the residual stream for attention (RMSNorm)"},
+    {"id": "add2", "text": "Add the feed-forward output back to the residual stream"},
+    {"id": "attn", "text": "Causal self-attention over this and earlier positions"},
+    {"id": "norm2", "text": "Normalize the residual stream for the feed-forward network (RMSNorm)"},
+    {"id": "add1", "text": "Add the attention output back to the residual stream"}
+  ]
+}

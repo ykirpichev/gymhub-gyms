@@ -1,0 +1,6 @@
+{
+  "title": "k-means clustering",
+  "difficulty": "medium",
+  "summary": "Lloyd's algorithm from given centroids, keeping empty clusters and breaking distance ties by index.",
+  "kind": "code"
+}

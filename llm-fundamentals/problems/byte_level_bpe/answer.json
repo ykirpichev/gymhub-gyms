@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "a"
+  ],
+  "explanation": "Byte-level BPE starts from the 256 bytes, so any UTF-8 string is representable and there is no unknown token. Character BPE still needs a policy for characters missing from its seed list, and a closed word list cannot represent a new string without an unknown token or a character fallback. SentencePiece is a toolkit that can train either BPE or a Unigram model, and Unigram drops pieces by likelihood rather than merging the most frequent pair, so calling Unigram a renamed BPE is a mistake."
+}

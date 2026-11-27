@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "1"
+  ],
+  "match": "number",
+  "tolerance": 0.01,
+  "explanation": "2 × 32 × 8 × 128 × 2048 × 4 × 2 = 1,073,741,824 bytes, which is exactly 2^30, so 1 GiB. Dropping the leading 2, the keys or the values, yields 0.5 GiB. Dividing by 10^9 instead of 2^30 reports a decimal GB near 1.07, which is a different unit. The same product grows linearly with batch and with sequence length, which is why a long context is often limited by cache bandwidth rather than by the weight matrices."
+}

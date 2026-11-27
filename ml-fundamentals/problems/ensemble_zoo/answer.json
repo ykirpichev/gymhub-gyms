@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "b",
+    "d",
+    "f"
+  ],
+  "explanation": "Bagging averages bootstrap models, and a random forest also randomizes the features tried at each split. Gradient boosting adds models in sequence, each fit to the negative gradient of the loss, and impurity importance over-credits features with many split points, so permutation importance is the fairer check. AdaBoost is sequential and gives accurate learners a larger vote. XGBoost's distinguishing parts are an explicit penalty on the trees and a second-order split gain, not bootstrap sampling. A tree ensemble can certainly overfit a small, nearly linear table, which is why a regularized linear model belongs on the shortlist. Parallel trees on bootstrap samples describe bagging, not boosting."
+}

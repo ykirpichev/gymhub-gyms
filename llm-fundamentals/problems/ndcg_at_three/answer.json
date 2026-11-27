@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.5897053367"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "Gains are 2 to the power of the grade, minus 1, so the returned grades 1, 0, 3 become gains 1, 0, and 7, and with discounts 1, 1/log2(3), and 1/2 the DCG is 4.5. The ideal grades 3, 1, 0 become gains 7, 1, and 0, so the ideal DCG is 7 + 1/log2(3), about 7.631, and the ratio is about 0.590. Parking the gain of 7 at position 3 cuts it in half, while the ideal ranking collects that gain at position 1. Using the raw grade instead of the exponential gain produces about 0.689, which is a different metric."
+}

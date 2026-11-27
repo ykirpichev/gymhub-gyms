@@ -1,0 +1,6 @@
+{
+  "title": "Prefix sum",
+  "difficulty": "medium",
+  "summary": "Inclusive scan: B[i] = A[0] + A[1] + ... + A[i].",
+  "kind": "code"
+}

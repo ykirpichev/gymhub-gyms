@@ -1,0 +1,6 @@
+{
+  "title": "Validate JSON tool arguments",
+  "difficulty": "easy",
+  "summary": "Check a model's tool-call arguments against a small JSON Schema subset and report every error in a fixed order.",
+  "kind": "code"
+}

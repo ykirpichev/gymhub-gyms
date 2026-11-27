@@ -1,0 +1,8 @@
+{
+  "title": "How you would evaluate a RAG system",
+  "difficulty": "hard",
+  "summary": "Hallucination, the RAG triad, retrieval metrics, judges, and regression sets.",
+  "kind": "essay",
+  "min_words": 110,
+  "max_words": 400
+}

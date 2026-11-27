@@ -1,0 +1,24 @@
+{
+  "title": "When one expert gets every token",
+  "difficulty": "easy",
+  "summary": "Name router collapse and the usual loss that spreads tokens.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The experts overfit to their first batches. Raise the router temperature until routing is nearly uniform, and average all eight experts instead of taking the top one."
+    },
+    {
+      "id": "b",
+      "text": "The router's learning rate is too high. Freeze the router after warmup so the assignment stays fixed and each expert specializes on what it already receives."
+    },
+    {
+      "id": "c",
+      "text": "The router collapsed onto one expert. Add a load-balancing term that penalizes an uneven token mix, often together with a per-expert capacity."
+    },
+    {
+      "id": "d",
+      "text": "One expert is simply the best one. Prune the seven idle experts and keep the winner, since a dense layer of the same size performs the same."
+    }
+  ]
+}

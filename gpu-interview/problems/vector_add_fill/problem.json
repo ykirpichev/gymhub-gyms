@@ -1,0 +1,14 @@
+{
+  "title": "Fill in the vector-add kernel",
+  "difficulty": "easy",
+  "summary": "The global index, the bounds check and the grid size of a 1D launch.",
+  "kind": "fill",
+  "minutes": 3,
+  "concepts": [
+    "thread indexing",
+    "bounds check",
+    "launch configuration"
+  ],
+  "code": true,
+  "text": "__global__ void add(const float* a, const float* b, float* c, int n) {\n    int i = blockIdx.x * [[b1]] + [[b2]];\n    if (i [[b3]] n) {\n        c[i] = a[i] + b[i];\n    }\n}\n\n// host\nint threads = 256;\nint blocks = (n + [[b4]]) / threads;\nadd<<<blocks, threads>>>(a, b, c, n);"
+}

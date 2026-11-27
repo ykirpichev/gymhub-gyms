@@ -1,0 +1,6 @@
+{
+  "title": "LRU cache",
+  "difficulty": "medium",
+  "summary": "Design a fixed-capacity cache with O(1) get and put that evicts the least recently used key.",
+  "kind": "code"
+}

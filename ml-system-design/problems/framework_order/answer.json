@@ -1,0 +1,12 @@
+{
+  "order": [
+    "f",
+    "g",
+    "b",
+    "c",
+    "e",
+    "d",
+    "a"
+  ],
+  "explanation": "Clarifying comes first because every later choice depends on scale and constraints. The label and metrics come before data and features, since they decide which data you need. Model choice comes after data, because the data size and freshness limit which models make sense. Serving and training follow from the model, and the A/B test and monitoring close the loop. In a real interview you will revisit earlier steps (a latency budget may force a simpler model), but this is the order to present."
+}

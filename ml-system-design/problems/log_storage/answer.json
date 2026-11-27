@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "146"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.01,
+  "explanation": "${2 \\times 10^9 \\times 200 = 4 \\times 10^{11}}$ bytes, 400 GB a day, and $\\times 365 \\approx 146$ TB a year, before replication (usually ×3). Columnar formats such as Parquet compress logs like this several times, and many teams keep only a sample of negative impressions, since unclicked impressions vastly outnumber clicks."
+}

@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "b",
+    "c",
+    "e"
+  ],
+  "explanation": "Lanes that read consecutive 4-byte words starting at an aligned address fill 4 sectors completely, so the row reads coalesce. The `float4` load reads 16 bytes per lane, 512 contiguous bytes, every sector fully used; it also needs four times fewer load instructions. Reading a column puts every lane `N × 4` bytes apart, one sector per lane, 32 sectors for 128 useful bytes. A stride of 2 touches 8 sectors and uses half of each."
+}

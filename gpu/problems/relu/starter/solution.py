@@ -1,0 +1,6 @@
+# GPU_GYM_STARTER
+import torch
+
+
+def solve(A: torch.Tensor, C: torch.Tensor, N: int) -> None:
+    pass

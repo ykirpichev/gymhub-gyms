@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "d"
+  ],
+  "explanation": "Grouped-query attention is the midpoint: the number of key/value heads sits strictly between 1 and the number of query heads, and the KV cache scales with that smaller number. Multi-head attention does not shrink the cache. Multi-query attention is the single shared head the pilot already rejected. Multi-head latent attention also shrinks the cache, but by storing a joint low-rank latent rather than by sharing full key/value heads, which this constraint ruled out."
+}

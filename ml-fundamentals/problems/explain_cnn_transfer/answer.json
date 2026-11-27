@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Says a convolutional layer applies the same small local filter at every spatial position (locality and weight sharing), so it has far fewer parameters than a dense layer on raw pixels and responds to a pattern wherever it appears.\n2. Describes a stack of convolution, nonlinearity, and pooling as building a hierarchy, with early maps responding to simple local patterns and later maps to larger combinations, typically ending in a classification head.\n3. Describes transfer learning as starting from a network trained on a large related task, keeping the early feature layers, and retraining the head (and possibly later blocks) on the smaller target set.\n4. Gives practical guidance: it helps most with few target labels and a relevant source task; freeze more when data are scarce and unfreeze more as the target set grows; choose what to freeze and the learning rate on held-out target data.",
+  "pass_score": 0.7
+}

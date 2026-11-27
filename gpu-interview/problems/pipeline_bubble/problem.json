@@ -1,0 +1,13 @@
+{
+  "title": "The pipeline bubble",
+  "difficulty": "medium",
+  "summary": "The idle fraction of a GPipe schedule with 4 stages and 12 micro-batches.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "pipeline parallelism",
+    "bubble",
+    "micro-batches"
+  ],
+  "placeholder": "a percentage, e.g. 25"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Fill in a grid-stride loop",
+  "difficulty": "easy",
+  "summary": "Let a fixed-size grid cover any n.",
+  "kind": "fill",
+  "minutes": 3,
+  "concepts": [
+    "grid-stride loop",
+    "launch configuration"
+  ],
+  "code": true,
+  "text": "__global__ void scale(float* x, float a, int n) {\n    for (int i = blockIdx.x * blockDim.x + threadIdx.x; i < n; i += [[b1]]) {\n        x[i] *= a;\n    }\n}"
+}

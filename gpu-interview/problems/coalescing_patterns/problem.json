@@ -1,0 +1,34 @@
+{
+  "title": "Which loads coalesce?",
+  "difficulty": "easy",
+  "summary": "Pick the access patterns that use every byte of every sector a warp fetches.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "coalescing",
+    "row-major layout"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`A[t * N + col]`: each lane reads one element of a column."
+    },
+    {
+      "id": "b",
+      "text": "`A[row * N + t]`: each lane reads one element of a row."
+    },
+    {
+      "id": "c",
+      "text": "`A[row * N + 32 * blockIdx.x + t]`: a row segment that starts at a multiple of 32 elements."
+    },
+    {
+      "id": "d",
+      "text": "`A[row * N + 2 * t]`: every other element of a row."
+    },
+    {
+      "id": "e",
+      "text": "`reinterpret_cast<const float4*>(A)[row * N / 4 + t]`: one `float4` per lane along a row, 512 bytes per warp in 16 sectors, all used."
+    }
+  ],
+  "multiple": true
+}

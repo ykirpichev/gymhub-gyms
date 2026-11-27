@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "14"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.02,
+  "explanation": "FLOPs per token: 2 × 70 × 10⁹ = 1.4 × 10¹¹. Tokens per second to prefill: 200 × 250 = 50,000. Total: 50,000 × 1.4 × 10¹¹ = 7 × 10¹⁵ FLOP/s. Divide by 5 × 10¹⁴ per GPU: **14 GPUs**. Without the cache, with 2,000-token prompts, the same arithmetic gives 112 GPUs. That eight-fold gap is why prefix caching and session affinity come first in a chat design."
+}

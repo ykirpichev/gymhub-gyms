@@ -1,0 +1,6 @@
+{
+  "title": "Prefix suggestions",
+  "difficulty": "medium",
+  "summary": "Autocomplete: the three smallest words that start with each prefix, with a trie or a sorted list.",
+  "kind": "code"
+}

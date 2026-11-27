@@ -1,0 +1,6 @@
+{
+  "title": "Permission-aware tool registry",
+  "difficulty": "medium",
+  "summary": "Register Python functions as tools, validate and bind model arguments, and refuse side effects without approval.",
+  "kind": "code"
+}

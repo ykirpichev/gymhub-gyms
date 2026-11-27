@@ -1,0 +1,6 @@
+{
+  "title": "Perceptron learning rule",
+  "difficulty": "easy",
+  "summary": "Online perceptron with labels in {-1, +1}: update on every mistake, including a zero margin, for a fixed number of epochs.",
+  "kind": "code"
+}

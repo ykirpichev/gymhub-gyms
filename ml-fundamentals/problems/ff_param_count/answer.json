@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "19"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "The first layer has 4\u00d73 weights and 3 biases, and the output layer has 3 weights and 1 bias, which totals 19. ReLU and sigmoid contribute no parameters, and the input units have none of their own. Leaving out every bias produces 15, the usual miss on this count."
+}

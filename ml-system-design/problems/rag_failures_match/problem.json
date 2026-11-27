@@ -1,0 +1,61 @@
+{
+  "title": "Match the RAG failure to the fix",
+  "difficulty": "medium",
+  "summary": "Diagnose common RAG failures.",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": [
+    "retrieval recall",
+    "grounding",
+    "access control",
+    "freshness"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "The answer is in the corpus, but the right chunk is never among the retrieved ones"
+    },
+    {
+      "id": "p2",
+      "text": "The right chunk is in the prompt, but the answer contradicts it"
+    },
+    {
+      "id": "p3",
+      "text": "A user receives content from a document they are not allowed to open"
+    },
+    {
+      "id": "p4",
+      "text": "Answers describe a policy that changed last week"
+    },
+    {
+      "id": "p5",
+      "text": "Searches for error code \"E-4012\" return unrelated pages"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "Instruct the model to answer only from the context with citations, and check faithfulness"
+    },
+    {
+      "id": "b",
+      "text": "Fine-tune the model on the whole corpus every night"
+    },
+    {
+      "id": "c",
+      "text": "Add keyword (BM25) retrieval and fuse it with vector search"
+    },
+    {
+      "id": "d",
+      "text": "Improve retrieval: hybrid search, better chunking, query rewriting; measure recall@k"
+    },
+    {
+      "id": "e",
+      "text": "Filter by the user's permissions inside the retrieval query"
+    },
+    {
+      "id": "f",
+      "text": "Re-index changed documents incrementally and prefer recent versions"
+    }
+  ]
+}

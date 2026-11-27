@@ -1,0 +1,6 @@
+{
+  "title": "Linear SVM with hinge loss",
+  "difficulty": "medium",
+  "summary": "Train a primal linear SVM with full-batch subgradient descent on mean hinge loss plus an L2 penalty on the weights.",
+  "kind": "code"
+}

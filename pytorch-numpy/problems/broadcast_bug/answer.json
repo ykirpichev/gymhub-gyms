@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "d"
+  ],
+  "explanation": "Aligning `(N, 1)` with `(N,)` from the right gives `(N, N)`: entry `(i, j)` is `pred[i] - y[j]`. The mean of that pushes every prediction toward the mean of all targets, so the model learns little beyond the average. Fix it with `pred.squeeze(1)` or `y[:, None]`, and an `assert pred.shape == y.shape`. PyTorch's `nn.MSELoss` warns about exactly this broadcast."
+}

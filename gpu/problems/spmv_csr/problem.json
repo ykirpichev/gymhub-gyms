@@ -1,0 +1,6 @@
+{
+  "title": "Sparse matvec (CSR)",
+  "difficulty": "medium",
+  "summary": "Multiply a sparse matrix in CSR format by a dense vector, with rows of very different lengths.",
+  "kind": "code"
+}

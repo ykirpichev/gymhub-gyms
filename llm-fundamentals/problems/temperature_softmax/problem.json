@@ -1,0 +1,7 @@
+{
+  "title": "A three-token softmax",
+  "difficulty": "medium",
+  "summary": "Probability of the leading token after a temperature of 2.",
+  "kind": "answer",
+  "placeholder": "probability, e.g. 0.500"
+}

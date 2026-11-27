@@ -1,0 +1,4 @@
+{
+  "order": ["goal", "split", "fit_prep", "train", "tune", "test", "monitor"],
+  "explanation": "The metric comes first, because it decides everything after. Splitting comes before any fitting, so preprocessing learns its statistics from the training set alone. The test set is used once, after every choice is made; using it to choose would make its score optimistic."
+}

@@ -1,0 +1,29 @@
+{
+  "title": "ROC, AUC, and a multiclass average",
+  "difficulty": "medium",
+  "summary": "What a threshold sweeps, what AUC ranks, and macro versus micro F1.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "An AUC above 0.5 means the model is calibrated: when it says 0.8, the event happens about 80% of the time."
+    },
+    {
+      "id": "b",
+      "text": "Macro-F1 averages the per-class F1 scores without weighting by how common each class is, so a rare class counts as much as a common one. Micro-F1 pools the counts first and is dominated by frequent classes."
+    },
+    {
+      "id": "c",
+      "text": "Raising the threshold on a fixed score usually raises recall and lowers the false positive rate, so a stricter threshold improves both numbers at once."
+    },
+    {
+      "id": "d",
+      "text": "AUC is the probability that a random positive outranks a random negative. It compares models without picking one threshold, and a useless ranking scores about 0.5."
+    },
+    {
+      "id": "e",
+      "text": "An ROC curve plots true positive rate against false positive rate as the decision threshold moves."
+    }
+  ],
+  "multiple": true
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Average requests per second",
+  "difficulty": "easy",
+  "summary": "Daily active users to average QPS.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "QPS",
+    "capacity planning"
+  ],
+  "placeholder": "e.g. 5000"
+}

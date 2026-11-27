@@ -1,0 +1,29 @@
+{
+  "title": "A topic SVD and a hidden chain",
+  "difficulty": "hard",
+  "summary": "Latent semantic analysis, and the probabilities an HMM and Viterbi use.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Latent semantic analysis factorizes a term-document matrix by truncated SVD. The fit does not use document labels, and a new document is folded in by projecting its term vector with the term singular vectors already learned."
+    },
+    {
+      "id": "b",
+      "text": "In a first-order HMM the next hidden state depends on the current state and on the previous observation, which is what makes the emissions informative."
+    },
+    {
+      "id": "c",
+      "text": "Viterbi computes, for every time step, the posterior probability of each hidden state by summing over all paths, while forward-backward returns the single most likely path."
+    },
+    {
+      "id": "d",
+      "text": "In a first-order hidden Markov model the hidden state is Markov, with transitions P(state_t | state_{t\u22121}), and the observation is drawn from an emission P(observation_t | state_t)."
+    },
+    {
+      "id": "e",
+      "text": "Latent semantic analysis needs a label on every document, because its truncated SVD is fit to separate the classes, as in linear discriminant analysis."
+    }
+  ],
+  "multiple": true
+}

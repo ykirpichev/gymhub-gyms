@@ -1,0 +1,6 @@
+{
+  "title": "Train/validation/test split without leakage",
+  "difficulty": "easy",
+  "summary": "Reproducible disjoint train, validation and test indices, optionally stratified by label.",
+  "kind": "code"
+}

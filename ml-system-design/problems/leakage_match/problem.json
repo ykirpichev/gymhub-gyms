@@ -1,0 +1,52 @@
+{
+  "title": "Spot the leak",
+  "difficulty": "medium",
+  "summary": "Match each leaky setup with the fix.",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": [
+    "data leakage",
+    "splits",
+    "point-in-time join"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "A churn model uses \"account closed date is set\" as a feature"
+    },
+    {
+      "id": "p2",
+      "text": "A demand forecast is evaluated on a random 20% of days from the same year"
+    },
+    {
+      "id": "p3",
+      "text": "Training rows get each user's current lifetime spend joined on"
+    },
+    {
+      "id": "p4",
+      "text": "A face recogniser has photos of the same people in train and test"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "Split by person so test identities are unseen"
+    },
+    {
+      "id": "b",
+      "text": "Remove features derived from the label or its consequences"
+    },
+    {
+      "id": "c",
+      "text": "Increase the learning rate"
+    },
+    {
+      "id": "d",
+      "text": "Split by time: train on the past, test on a later period"
+    },
+    {
+      "id": "e",
+      "text": "Join features as of each event's timestamp"
+    }
+  ]
+}

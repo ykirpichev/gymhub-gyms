@@ -1,0 +1,6 @@
+{
+  "title": "Dijkstra shortest paths",
+  "difficulty": "medium",
+  "summary": "Single-source shortest paths on a directed graph with non-negative weights using a binary heap.",
+  "kind": "code"
+}

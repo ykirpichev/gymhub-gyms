@@ -1,0 +1,11 @@
+{
+  "pairs": {
+    "p1": "b",
+    "p2": "a",
+    "p3": "g",
+    "p4": "c",
+    "p5": "e",
+    "p6": "f"
+  },
+  "explanation": "Indices on the right of `->` are kept; the rest are summed. `ij,jk->ik` sums over `j`: a matmul. `ii->` takes the diagonal and sums it. `i,j->ij` keeps both indices, so nothing is summed: an outer product. The attention string sums over the head dimension `d`, giving query-by-key scores per batch and head. `ij->ji` reorders. `bi,bi->b` multiplies matching rows and sums over `i`. An elementwise product would be `ij,ij->ij`, which is not in the list."
+}

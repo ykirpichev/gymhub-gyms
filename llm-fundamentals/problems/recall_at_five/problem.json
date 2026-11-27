@@ -1,0 +1,7 @@
+{
+  "title": "Recall at 5",
+  "difficulty": "easy",
+  "summary": "Read a ranked list and compute the fraction of relevant documents in the top 5.",
+  "kind": "answer",
+  "placeholder": "recall, e.g. 0.75"
+}

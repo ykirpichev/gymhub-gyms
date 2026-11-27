@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "Classifier-free guidance mixes the conditional and unconditional predictions of one network, which learned the unconditional path by sometimes dropping the condition, and a scale above 1 extrapolates past the conditional prediction. That tightens prompt following and usually costs diversity. Older classifier guidance really did add a separate classifier gradient, and this formula does not. DDIM is a sampler that skips timesteps, while flow matching and consistency models are different training targets, not this extrapolation."
+}

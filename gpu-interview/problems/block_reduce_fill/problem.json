@@ -1,0 +1,15 @@
+{
+  "title": "Fill in a shared-memory reduction",
+  "difficulty": "medium",
+  "summary": "The tree reduction in shared memory, with its barriers and the final warp shuffle.",
+  "kind": "fill",
+  "minutes": 5,
+  "concepts": [
+    "reduction",
+    "shared memory",
+    "__syncthreads",
+    "warp shuffle"
+  ],
+  "code": true,
+  "text": "__global__ void block_sum(const float* x, float* partial, int n) {\n    __shared__ float s[256];\n    int t = threadIdx.x;\n    int i = blockIdx.x * blockDim.x + t;\n    s[t] = (i < n) ? x[i] : [[b1]];\n    [[b2]]\n\n    for (int stride = blockDim.x / 2; stride >= 32; stride [[b3]]) {\n        if (t < stride) s[t] += s[t + stride];\n        __syncthreads();\n    }\n\n    if (t < 32) {\n        float v = s[t];\n        for (int offset = 16; offset > 0; offset /= 2)\n            v += __shfl_down_sync(0xffffffff, v, [[b4]]);\n        if (t == [[b5]]) partial[blockIdx.x] = v;\n    }\n}"
+}

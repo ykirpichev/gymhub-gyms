@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "11.3137"
+  ],
+  "match": "number",
+  "tolerance": 0.01,
+  "explanation": "Each head gets d_k = 4096 / 32 = 128 dimensions, so the divisor is sqrt(128) ≈ 11.31. Dividing by sqrt(4096) = 64 uses the model width instead of the head width and shrinks the scores too much, flattening the softmax; the divisor depends on the head dimension only, not on the number of heads or the sequence length."
+}

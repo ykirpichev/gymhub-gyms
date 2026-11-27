@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.875"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "The four cells are TP = 30, FN = 10, FP = 20, and TN = 140. Specificity is the true negative rate TN/(TN+FP) = 140/160 = 0.875. That is not recall, which is 30/40 = 0.75, and not precision, which is 30/50 = 0.60."
+}

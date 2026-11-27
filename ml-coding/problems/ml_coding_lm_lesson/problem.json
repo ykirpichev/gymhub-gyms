@@ -1,0 +1,17 @@
+{
+  "title": "Language-model mechanics in NumPy",
+  "difficulty": "easy",
+  "summary": "A lesson: TF-IDF, attention with masks, tokenization, positional encodings, sampling filters, KV caches and padding.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "TF-IDF",
+    "attention",
+    "causal mask",
+    "BPE",
+    "positional encoding",
+    "sampling",
+    "KV cache",
+    "padding"
+  ]
+}

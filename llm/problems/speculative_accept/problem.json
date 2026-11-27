@@ -1,0 +1,6 @@
+{
+  "title": "Speculative decoding: accept and resample",
+  "difficulty": "hard",
+  "summary": "Batched verification of draft tokens with rejection sampling, so the output matches the target model exactly.",
+  "kind": "code"
+}

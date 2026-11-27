@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.4518627619"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "Dividing by 2 yields logits 1, 0.5, and 0.5, and the softmax is e^1 / (e^1 + 2 e^0.5), about 0.452, with the other two tokens near 0.274 each. Softmax on the unscaled logits is about 0.576, which is the temperature-1 answer. Temperature does not drop tokens. It only rescales the logits in front of the same softmax."
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Shared-memory bank conflicts",
+  "difficulty": "medium",
+  "summary": "Compute the conflict degree of a warp's shared-memory access, and see why a padded tile fixes a column read.",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "shared memory",
+    "bank conflicts",
+    "broadcast",
+    "padding"
+  ]
+}

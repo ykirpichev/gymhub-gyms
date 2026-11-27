@@ -1,0 +1,8 @@
+{
+  "title": "Walk through a transformer block",
+  "difficulty": "medium",
+  "summary": "One pre-norm block, including why the attention scores are scaled.",
+  "kind": "essay",
+  "min_words": 80,
+  "max_words": 320
+}

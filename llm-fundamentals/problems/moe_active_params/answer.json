@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "17.5"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "Active expert weights are layers times top-k times size, 16 × 2 × 0.5 = 16 billion, and the 1.5 billion shared weights bring one token to 17.5 billion. The stored total is 16 × 8 × 0.5 + 1.5 = 65.5 billion, because the six idle experts in each layer still occupy memory. Active parameters set the FLOPs per token. Total parameters set how many bytes you must load onto the GPU."
+}

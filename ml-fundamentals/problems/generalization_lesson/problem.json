@@ -1,0 +1,14 @@
+{
+  "title": "Bias, variance and the data you train on",
+  "difficulty": "easy",
+  "summary": "A lesson: under- and overfitting, regularization, and the data problems that hurt more than the model.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "bias-variance",
+    "regularization",
+    "overfitting",
+    "data leakage",
+    "class imbalance"
+  ]
+}

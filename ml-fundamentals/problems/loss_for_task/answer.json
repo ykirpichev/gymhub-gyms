@@ -1,0 +1,4 @@
+{
+  "pairs": {"price": "mse", "spam": "bce", "digits": "ce", "margin": "hinge", "robust": "mae"},
+  "explanation": "Squaring makes large errors dominate, which suits prices and hurts with outliers; absolute error (or Huber, which is squared near zero and linear beyond) limits their pull. Cross-entropy trains probabilities: binary with a sigmoid, multi-class with a softmax. The hinge loss is zero once a point is on the right side with margin, which is what an SVM optimizes. Contrastive loss is for learning embeddings, not for these tasks."
+}

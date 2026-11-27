@@ -1,0 +1,7 @@
+{
+  "title": "nDCG at 3",
+  "difficulty": "hard",
+  "summary": "Graded discounted gain, normalized by the ideal order.",
+  "kind": "answer",
+  "placeholder": "nDCG, e.g. 0.500"
+}

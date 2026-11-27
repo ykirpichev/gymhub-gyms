@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "b",
+    "d"
+  ],
+  "explanation": "Supervised learning fits inputs to known targets, and a numeric target such as a price makes it regression. Clustering unlabeled purchase vectors is unsupervised. Semi-supervised learning uses a small labeled set together with unlabeled inputs; blank features with a complete label column are a missing-data problem, not a third learning paradigm."
+}

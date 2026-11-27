@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "id": "gpu-interview",
+  "title": "GPU and ML systems interview",
+  "description": "Practice for GPU kernel, ML performance and ML systems interviews, the loops for roles such as GPU kernel engineer, ML performance engineer and ML infrastructure engineer. Each track pairs short questions (the facts and back-of-the-envelope numbers interviewers expect you to produce on the spot) with Python coding exercises that run on any CPU and model what a GPU does: warp shuffles, memory sectors, shared-memory banks, scans, online softmax, flash attention tiles, quantized matmuls, ring all-reduce, a paged KV cache and a continuous-batching scheduler. Every coding exercise says what interviewers look for and which follow-up questions to expect. Pair it with the GPU gym, where you write the same kernels in CUDA and Triton on a real GPU.",
+  "runtime": "gymkit",
+  "requires": {
+    "gpu": false
+  },
+  "order": 6,
+  "publish": "upload",
+  "sources": [
+    {
+      "title": "CUDA C++ Programming Guide (NVIDIA)",
+      "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/",
+      "note": "The execution model, memory hierarchy, warps and synchronization that the first two tracks ask about."
+    },
+    {
+      "title": "CUDA C++ Best Practices Guide (NVIDIA)",
+      "url": "https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/",
+      "note": "Coalescing, shared memory, occupancy and the order to optimize in."
+    },
+    {
+      "title": "Optimizing Parallel Reduction in CUDA (Mark Harris)",
+      "url": "https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf",
+      "note": "The classic seven-step reduction walk-through behind the reduction ordering question."
+    },
+    {
+      "title": "How to Optimize a CUDA Matmul Kernel (Simon Boehm)",
+      "url": "https://siboehm.com/articles/22/CUDA-MMM",
+      "note": "From a naive matmul to a fast one, one optimization at a time."
+    },
+    {
+      "title": "Parallel Prefix Sum (Scan) with CUDA, GPU Gems 3 ch. 39",
+      "url": "https://developer.nvidia.com/gpugems/gpugems3/part-vi-gpu-computing/chapter-39-parallel-prefix-sum-scan-cuda",
+      "note": "The work-efficient up-sweep and down-sweep scan."
+    },
+    {
+      "title": "Roofline: an insightful visual performance model (Williams, Waterman, Patterson, 2009)",
+      "url": "https://dl.acm.org/doi/10.1145/1498765.1498785",
+      "note": "Arithmetic intensity and the ridge point."
+    },
+    {
+      "title": "Making Deep Learning Go Brrrr From First Principles (Horace He)",
+      "url": "https://horace.io/brrr_intro.html",
+      "note": "Compute, memory bandwidth and overhead: where the time goes in a training step."
+    },
+    {
+      "title": "How to Scale Your Model (Google DeepMind)",
+      "url": "https://jax-ml.github.io/scaling-book/",
+      "note": "Rooflines, collectives and parallelism for transformers, with worked numbers."
+    },
+    {
+      "title": "Online normalizer calculation for softmax (Milakov and Gimelshein, 2018)",
+      "url": "https://arxiv.org/abs/1805.02867",
+      "note": "The one-pass softmax that flash attention builds on."
+    },
+    {
+      "title": "FlashAttention (Dao et al., 2022)",
+      "url": "https://arxiv.org/abs/2205.14135",
+      "note": "Tiled attention with an online softmax."
+    },
+    {
+      "title": "LLM.int8() (Dettmers et al., 2022)",
+      "url": "https://arxiv.org/abs/2208.07339",
+      "note": "Int8 matmuls with per-row and per-column scales."
+    },
+    {
+      "title": "Megatron-LM (Shoeybi et al., 2019)",
+      "url": "https://arxiv.org/abs/1909.08053",
+      "note": "Tensor parallelism inside a transformer layer."
+    },
+    {
+      "title": "ZeRO (Rajbhandari et al., 2019)",
+      "url": "https://arxiv.org/abs/1910.02054",
+      "note": "Sharding optimizer state, gradients and weights across data-parallel ranks."
+    },
+    {
+      "title": "GPipe (Huang et al., 2018)",
+      "url": "https://arxiv.org/abs/1811.06965",
+      "note": "Pipeline parallelism with micro-batches, and its bubble."
+    },
+    {
+      "title": "PaLM (Chowdhery et al., 2022)",
+      "url": "https://arxiv.org/abs/2204.02311",
+      "note": "Defines model FLOPs utilization (MFU), appendix B."
+    },
+    {
+      "title": "Orca: continuous batching (Yu et al., OSDI 2022)",
+      "url": "https://www.usenix.org/conference/osdi22/presentation/yu",
+      "note": "Iteration-level scheduling for LLM serving."
+    },
+    {
+      "title": "PagedAttention / vLLM (Kwon et al., 2023)",
+      "url": "https://arxiv.org/abs/2309.06180",
+      "note": "A paged KV cache with block tables."
+    },
+    {
+      "title": "Fast Inference from Transformers via Speculative Decoding (Leviathan et al., 2022)",
+      "url": "https://arxiv.org/abs/2211.17192",
+      "note": "Draft, verify, and the acceptance rule that keeps the target distribution."
+    },
+    {
+      "title": "GPU MODE lectures",
+      "url": "https://github.com/gpu-mode/lectures",
+      "note": "Lectures on CUDA, Triton, profiling and flash attention: good listening between sessions."
+    }
+  ],
+  "langs": [
+    {
+      "id": "python",
+      "label": "Python",
+      "editor": "python",
+      "file": "solution.py"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Start here",
+      "summary": "How GPU and ML systems interviews run, what interviewers listen for, and a plan for using this gym and the GPU gym together.",
+      "exercises": [
+        "how_interviews_work",
+        "two_week_plan"
+      ]
+    },
+    {
+      "name": "GPU execution model",
+      "summary": "Threads, blocks, warps and the memory hierarchy: the vocabulary every kernel question assumes.",
+      "exercises": [
+        "execution_model_lesson",
+        "vector_add_fill",
+        "grid_stride_fill",
+        "warp_divergence",
+        "memory_hierarchy_match",
+        "memory_latency_order",
+        "syncthreads_in_branch",
+        "occupancy_registers",
+        "occupancy_shared",
+        "occupancy_tradeoffs",
+        "occupancy_calculator"
+      ]
+    },
+    {
+      "name": "Memory access patterns",
+      "summary": "Coalescing, shared-memory banks and wide loads: how the addresses a warp touches decide a kernel's speed.",
+      "exercises": [
+        "memory_patterns_lesson",
+        "coalescing_patterns",
+        "warp_sectors",
+        "bank_conflicts",
+        "transpose_padding"
+      ]
+    },
+    {
+      "name": "Rooflines and estimates",
+      "summary": "Back-of-the-envelope performance: arithmetic intensity, the ridge point, and lower bounds you can say in an interview without a profiler.",
+      "exercises": [
+        "roofline_lesson",
+        "intensity_vector_add",
+        "ridge_point",
+        "rmsnorm_time_bound",
+        "gemm_intensity",
+        "decode_tokens_per_second",
+        "fusion_speedup",
+        "bound_match",
+        "slow_kernel_plan"
+      ]
+    },
+    {
+      "name": "Kernel algorithms on a CPU",
+      "summary": "The parallel algorithms inside common kernels (reductions, scans, online softmax, tiled matmul and flash attention), written in Python step by step so you can check every intermediate value.",
+      "exercises": [
+        "block_reduce_fill",
+        "reduction_steps_order",
+        "warp_butterfly",
+        "blelloch_scan",
+        "online_softmax",
+        "triton_softmax_fill",
+        "tiled_matmul_traffic",
+        "matmul_steps_order",
+        "flash_attention_tiles"
+      ]
+    },
+    {
+      "name": "Low precision and quantization",
+      "summary": "FP16, BF16, FP8 and integer formats: what each trades away, why Tensor Cores accumulate in FP32, and how int8 and int4 weights are stored and multiplied.",
+      "exercises": [
+        "precision_lesson",
+        "formats_match",
+        "fp16_accumulation",
+        "quantize_int8_rows",
+        "int8_matmul",
+        "unpack_int4",
+        "int4_model_memory"
+      ]
+    },
+    {
+      "name": "Training at scale",
+      "summary": "Memory budgets, collectives and the parallelism strategies for training models that do not fit on one GPU, with the numbers an ML systems round asks for.",
+      "exercises": [
+        "parallelism_lesson",
+        "adam_memory",
+        "ring_allreduce_bytes",
+        "ring_allreduce",
+        "parallelism_match",
+        "pipeline_bubble",
+        "mfu",
+        "activation_checkpointing",
+        "low_mfu_debug"
+      ]
+    },
+    {
+      "name": "Serving LLMs",
+      "summary": "Prefill and decode, the KV cache, batching and speculative decoding: the inference side of an ML systems round, with schedulers and allocators you write yourself.",
+      "exercises": [
+        "serving_lesson",
+        "prefill_vs_decode",
+        "paged_kv_allocator",
+        "continuous_batching",
+        "speculative_verify",
+        "serving_design"
+      ]
+    },
+    {
+      "name": "Mock interview questions",
+      "summary": "Deep-dive questions as interviewers ask them. Answer out loud first, then write it down and compare with the rubric.",
+      "exercises": [
+        "deep_dive_lesson",
+        "explain_flash_attention",
+        "optimize_softmax",
+        "cuda_or_triton",
+        "final_checklist"
+      ]
+    }
+  ]
+}

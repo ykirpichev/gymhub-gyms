@@ -1,0 +1,38 @@
+{
+  "blanks": {
+    "b1": {
+      "answers": [
+        "program_id"
+      ]
+    },
+    "b2": {
+      "answers": [
+        "arange"
+      ]
+    },
+    "b3": {
+      "answers": [
+        "<"
+      ]
+    },
+    "b4": {
+      "answers": [
+        "-float('inf')",
+        "float('-inf')",
+        "-float(\"inf\")",
+        "float(\"-inf\")"
+      ]
+    },
+    "b5": {
+      "answers": [
+        "max"
+      ]
+    },
+    "b6": {
+      "answers": [
+        "sum"
+      ]
+    }
+  },
+  "explanation": "`tl.program_id(0)` is the row, `tl.arange(0, BLOCK)` the column offsets, and the mask `cols < n_cols` keeps loads and stores inside the row. Padding lanes load `-inf`, which never wins the max and becomes `exp(-inf) = 0` in the sum. Subtracting `tl.max` keeps `exp` from overflowing, and `tl.sum` gives the normalizer, all in registers: the row is read once and written once, which is the memory-bound optimum. For rows longer than a block fits, you would loop over chunks with the online softmax from the previous exercise."
+}

@@ -1,0 +1,15 @@
+{
+  "title": "The control loop around an agent",
+  "difficulty": "easy",
+  "summary": "A lesson: tool schemas and validation, plans, retries with idempotency, memory windows, and loops with budgets.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "tool use",
+    "validation",
+    "idempotency",
+    "retries",
+    "memory",
+    "agent loop"
+  ]
+}

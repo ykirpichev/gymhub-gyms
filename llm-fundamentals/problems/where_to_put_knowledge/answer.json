@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "d"
+  ],
+  "explanation": "Retrieval keeps the facts in an index you can rebuild when the wiki changes, and the fetched text is what the answer quotes. The wiki does not fit the window, and even a packed window can miss the middle, so stuffing the whole wiki is not available here. Fine-tuning stores a snapshot without a citation and would have to be repeated every week, while temperature does not insert documents the model never saw. A long context is the better tool for a small packet you already selected, and fine-tuning is the better tool for a stable format rather than a fact base that changes weekly."
+}

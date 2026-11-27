@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "a"
+  ],
+  "explanation": "Tags that can co-occur need an independent sigmoid per tag and binary cross-entropy, so any subset can be on. A softmax forces the scores to sum to one, which is right when exactly one class is true and wrong for a photo that is both beach and sunset. One linear unit does not give a probability per tag, and a raw score is not yet a probability."
+}

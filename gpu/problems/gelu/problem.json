@@ -1,0 +1,6 @@
+{
+  "title": "GELU activation",
+  "difficulty": "easy",
+  "summary": "Y = GELU(X) with the tanh approximation, elementwise.",
+  "kind": "code"
+}

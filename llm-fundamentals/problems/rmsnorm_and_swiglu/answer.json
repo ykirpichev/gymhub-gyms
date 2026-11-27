@@ -1,0 +1,7 @@
+{
+  "correct": [
+    "b",
+    "c"
+  ],
+  "explanation": "RMSNorm rescales each vector by the inverse of its root mean square and keeps a learned gain; it skips the mean subtraction and the shift that LayerNorm computes, and that is where the savings come from. SwiGLU is a down-projection of Swish(x W_gate) multiplied elementwise by x W_up, and all three matrices run at inference. A hidden width near (8/3)d keeps that parameter count close to a two-matrix feed-forward of width 4d. The gate is not discarded after training, so a SwiGLU layer does not have the FLOPs of a ReLU layer of width 4d."
+}

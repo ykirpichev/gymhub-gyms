@@ -1,0 +1,15 @@
+{
+  "title": "Number formats in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: exponent and mantissa bits, range versus precision, and where each format is used.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "FP32",
+    "FP16",
+    "BF16",
+    "FP8",
+    "int8",
+    "mixed precision"
+  ]
+}

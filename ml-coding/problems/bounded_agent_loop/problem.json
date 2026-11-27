@@ -1,0 +1,6 @@
+{
+  "title": "Bounded agent tool-use loop",
+  "difficulty": "hard",
+  "summary": "Run a scripted tool-use loop that stops on a final answer, a step budget, or a repeated call, and return the trace.",
+  "kind": "code"
+}

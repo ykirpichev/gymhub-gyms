@@ -1,0 +1,6 @@
+{
+  "title": "Sinusoidal positional encoding",
+  "difficulty": "easy",
+  "summary": "The (L, d) Transformer position matrix with sine on even channels and cosine on odd ones, for any width.",
+  "kind": "code"
+}

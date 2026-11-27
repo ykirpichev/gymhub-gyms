@@ -1,0 +1,6 @@
+{
+  "title": "FP16 matmul on Tensor Cores",
+  "difficulty": "hard",
+  "summary": "C = A @ B with FP16 inputs and an FP32 result: the shape Tensor Cores are built for.",
+  "kind": "code"
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Is more occupancy always better?",
+  "difficulty": "medium",
+  "summary": "What occupancy buys and when trading it away pays off.",
+  "kind": "choice",
+  "minutes": 4,
+  "concepts": [
+    "occupancy",
+    "ILP",
+    "register pressure"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Occupancy hides latency: with more warps resident, the SM has more warps ready to issue while others wait on memory."
+    },
+    {
+      "id": "b",
+      "text": "A kernel at 100% occupancy is necessarily faster than the same kernel at 50%."
+    },
+    {
+      "id": "c",
+      "text": "A kernel that keeps several independent loads in flight per thread can reach full bandwidth at low occupancy."
+    },
+    {
+      "id": "d",
+      "text": "Forcing fewer registers per thread to raise occupancy never hurts, because the compiler always finds a way to fit."
+    },
+    {
+      "id": "e",
+      "text": "Fast matmul kernels often run at low occupancy on purpose: large per-thread tiles in registers raise data reuse."
+    }
+  ],
+  "multiple": true
+}

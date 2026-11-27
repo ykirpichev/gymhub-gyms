@@ -1,0 +1,6 @@
+{
+  "title": "Minimum shipping capacity",
+  "difficulty": "medium",
+  "summary": "Binary search on the answer: the smallest daily capacity that ships every package in order within D days.",
+  "kind": "code"
+}

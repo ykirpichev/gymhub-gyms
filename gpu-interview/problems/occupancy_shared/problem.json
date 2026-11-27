@@ -1,0 +1,12 @@
+{
+  "title": "Occupancy limited by shared memory",
+  "difficulty": "medium",
+  "summary": "The same calculation when each block reserves a large shared-memory tile.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "occupancy",
+    "shared memory"
+  ],
+  "placeholder": "a percentage, e.g. 75"
+}

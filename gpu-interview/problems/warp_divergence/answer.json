@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "A warp issues one instruction for all its active lanes. Lanes 0, 2, 4, … take one side and 1, 3, 5, … the other, so every warp executes side A with half its lanes masked, then side B with the other half masked: roughly double the cost. With a warp-aligned condition such as `(threadIdx.x / 32) % 2 == 0` all lanes of a warp agree, each warp runs one side, and the branch costs almost nothing. Each thread still only *computes* its own side; the masked lanes do no work but the warp spends the time."
+}

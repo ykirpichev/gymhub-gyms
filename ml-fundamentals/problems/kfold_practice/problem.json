@@ -1,0 +1,24 @@
+{
+  "title": "Choosing depth without touching the test set",
+  "difficulty": "easy",
+  "summary": "Train, cross-validation, and a test set that is scored once.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Use leave-one-out (k = n) on the non-test rows: every extra fold makes the estimate strictly better, and on 10,000 rows the extra fits cost nothing."
+    },
+    {
+      "id": "b",
+      "text": "Hold out a test set first. Pick the depth with 5- or 10-fold cross-validation on the other rows, refit on all of them, and score the test set once."
+    },
+    {
+      "id": "c",
+      "text": "Cross-validate on every row, including the rows you will publish as the test score, pick the depth that wins, and report that same cross-validation score."
+    },
+    {
+      "id": "d",
+      "text": "Pick the depth on the test set, then report k-fold error on the other rows, since the test rows never touched training and k-fold averages over more data."
+    }
+  ]
+}

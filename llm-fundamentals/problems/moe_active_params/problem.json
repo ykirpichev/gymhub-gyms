@@ -1,0 +1,7 @@
+{
+  "title": "Active parameters in an MoE",
+  "difficulty": "medium",
+  "summary": "Count parameters a single token actually uses.",
+  "kind": "answer",
+  "placeholder": "billions, e.g. 12.5"
+}

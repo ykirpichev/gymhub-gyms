@@ -1,0 +1,24 @@
+{
+  "title": "Tags that can all be true",
+  "difficulty": "easy",
+  "summary": "The output activation when classes are not mutually exclusive.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "One sigmoid per tag, trained with binary cross-entropy, so any subset of tags can fire."
+    },
+    {
+      "id": "b",
+      "text": "A softmax over the tags, because softmax is the usual head for more than two classes."
+    },
+    {
+      "id": "c",
+      "text": "No nonlinearity on the way out, so the raw scores stay probabilities."
+    },
+    {
+      "id": "d",
+      "text": "A single linear unit, because several labels means regression."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Indexing in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: basic and advanced indexing, gather, take_along_axis, and scatter-add with repeated indices.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "advanced indexing",
+    "gather",
+    "scatter",
+    "take_along_axis"
+  ]
+}

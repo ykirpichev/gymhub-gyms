@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "d"
+  ],
+  "explanation": "With a million users per arm, the standard deviation of the treatment count under a fair split is about 700, so a 15,000-user gap is a sample ratio mismatch: something drops or misassigns users (a crash in treatment, a bot filter, a redirect), and every metric is suspect. Stopping at the first significant day is peeking, which inflates the false-positive rate. A decaying lift is a novelty effect. Guardrails exist precisely so that a primary-metric win cannot hide a regression users feel. Offline metrics do not replace the online test."
+}

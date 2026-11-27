@@ -1,0 +1,66 @@
+{
+  "title": "Match the einsum to the operation",
+  "difficulty": "medium",
+  "summary": "Read einsum strings as matmuls, traces, outer products and attention scores.",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": [
+    "einsum"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "`\"ij,jk->ik\"`"
+    },
+    {
+      "id": "p2",
+      "text": "`\"ii->\"`"
+    },
+    {
+      "id": "p3",
+      "text": "`\"i,j->ij\"`"
+    },
+    {
+      "id": "p4",
+      "text": "`\"bhqd,bhkd->bhqk\"`"
+    },
+    {
+      "id": "p5",
+      "text": "`\"ij->ji\"`"
+    },
+    {
+      "id": "p6",
+      "text": "`\"bi,bi->b\"`"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "Trace"
+    },
+    {
+      "id": "b",
+      "text": "Matrix product"
+    },
+    {
+      "id": "c",
+      "text": "Attention scores for each batch and head"
+    },
+    {
+      "id": "d",
+      "text": "Elementwise product of two matrices of the same shape"
+    },
+    {
+      "id": "e",
+      "text": "Transpose"
+    },
+    {
+      "id": "f",
+      "text": "Row-wise dot product of two batches of vectors"
+    },
+    {
+      "id": "g",
+      "text": "Outer product"
+    }
+  ]
+}

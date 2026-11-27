@@ -1,0 +1,6 @@
+{
+  "title": "Worked example: vector add",
+  "difficulty": "easy",
+  "summary": "C = A + B. Already solved, use it to check the toolchain.",
+  "kind": "code"
+}

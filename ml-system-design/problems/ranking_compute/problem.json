@@ -1,0 +1,12 @@
+{
+  "title": "Compute for the ranking stage",
+  "difficulty": "medium",
+  "summary": "Candidates times QPS times FLOPs per candidate.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "compute budget",
+    "ranking"
+  ],
+  "placeholder": "TFLOP/s"
+}

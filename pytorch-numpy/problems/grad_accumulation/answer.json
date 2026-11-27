@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "11"
+  ],
+  "match": "number",
+  "tolerance": 0.001,
+  "explanation": "The first backward adds $2x = 6$, the second adds $5$: `x.grad` is 11. PyTorch adds into `.grad` instead of overwriting it, so a training loop that forgets `optimizer.zero_grad()` (or `model.zero_grad(set_to_none=True)`) sums gradients across steps and diverges. The same behaviour is used deliberately for gradient accumulation: run several micro-batches' backward passes, then take one optimizer step, dividing each loss by the number of micro-batches."
+}

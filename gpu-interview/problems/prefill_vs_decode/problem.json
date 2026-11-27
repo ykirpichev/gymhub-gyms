@@ -1,0 +1,35 @@
+{
+  "title": "Prefill and decode",
+  "difficulty": "easy",
+  "summary": "Which phase of generation is bound by what, and what that means for scheduling.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "prefill",
+    "decode",
+    "roofline"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Decode at batch size 1 is compute-bound, because attention over a long context does many FLOPs."
+    },
+    {
+      "id": "b",
+      "text": "Prefill of a 2,000-token prompt is usually compute-bound: each weight read is used for 2,000 tokens."
+    },
+    {
+      "id": "c",
+      "text": "Doubling the decode batch from 8 to 16 roughly doubles throughput while the step stays memory-bound."
+    },
+    {
+      "id": "d",
+      "text": "Prefill and decode have the same arithmetic intensity, since they run the same layers."
+    },
+    {
+      "id": "e",
+      "text": "A long prefill scheduled in the same step as decodes can stall them; chunked prefill splits it across steps."
+    }
+  ],
+  "multiple": true
+}

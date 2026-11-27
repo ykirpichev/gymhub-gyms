@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "id": "gpu",
+  "title": "GPU gym",
+  "description": "Write GPU kernels in CUDA, Triton or PyTorch: indexing warm-ups, coalescing and shared memory, reductions and scans, the kernels around a transformer layer, tiled matmul, flash attention, MoE, sparse rows, sorting, and FP16 Tensor Core and int8 kernels. Checked against PyTorch and benchmarked against your GPU's bandwidth or FLOP/s.",
+  "sources": [
+    {
+      "title": "LeetGPU",
+      "url": "https://leetgpu.com",
+      "note": "Same exercise shape: fill in solve and write the outputs in place. The exercises here are an original set."
+    },
+    {
+      "title": "NVIDIA CUDA Samples",
+      "url": "https://github.com/NVIDIA/cuda-samples",
+      "note": "Official CUDA examples: memory management, thread blocks, streams, reductions."
+    },
+    {
+      "title": "NVIDIA Accelerated Computing Hub",
+      "url": "https://github.com/NVIDIA/accelerated-computing-hub",
+      "note": "Courses on CUDA C++, CUDA Python and accelerated computing."
+    },
+    {
+      "title": "Learning CUDA",
+      "url": "https://lnkd.in/gpuffurr",
+      "note": "CUDA fundamentals, profiling and matrix multiplication."
+    },
+    {
+      "title": "Triton Puzzles (GPU MODE)",
+      "url": "https://github.com/gpu-mode/Triton-Puzzles",
+      "note": "Puzzles from basic Triton operations up to flash attention and quantized kernels."
+    },
+    {
+      "title": "GPU Puzzles (Sasha Rush)",
+      "url": "https://github.com/srush/GPU-Puzzles",
+      "note": "Progressively harder CUDA puzzles, a good warm-up before this gym's first track."
+    },
+    {
+      "title": "Triton tutorials (GPU MODE)",
+      "url": "https://github.com/gpu-mode/triton-tutorials",
+      "note": "Vector add, fused softmax, matmul, flash attention and MoE kernels, step by step."
+    },
+    {
+      "title": "Triton",
+      "url": "https://github.com/triton-lang/triton",
+      "note": "The Triton language and compiler, with its official tutorials."
+    },
+    {
+      "title": "NVIDIA CUTLASS",
+      "url": "https://github.com/NVIDIA/cutlass",
+      "note": "High-performance GEMM and Tensor Core kernels: where matmul goes after this gym."
+    },
+    {
+      "title": "GPU MODE lectures",
+      "url": "https://github.com/gpu-mode/lectures",
+      "note": "Lectures and notebooks on CUDA, Triton, profiling and flash attention."
+    },
+    {
+      "title": "GPU MODE reference kernels",
+      "url": "https://github.com/gpu-mode/reference-kernels",
+      "note": "Reference problems from the GPU MODE leaderboard to compare your kernels against."
+    },
+    {
+      "title": "FlashAttention (Dao et al., 2022)",
+      "url": "https://arxiv.org/abs/2205.14135",
+      "note": "The tiled, online-softmax attention behind attention and causal_attention."
+    },
+    {
+      "title": "RoFormer: rotary position embedding (Su et al., 2021)",
+      "url": "https://arxiv.org/abs/2104.09864",
+      "note": "The rotation in rope."
+    }
+  ],
+  "runtime": "gpu_gym",
+  "requires": {
+    "gpu": true
+  },
+  "order": 0,
+  "langs": [
+    {
+      "id": "cuda",
+      "label": "CUDA",
+      "editor": "cpp",
+      "file": "solution.cu"
+    },
+    {
+      "id": "pytorch",
+      "label": "PyTorch",
+      "editor": "python",
+      "file": "solution.py"
+    },
+    {
+      "id": "triton",
+      "label": "Triton",
+      "editor": "python",
+      "file": "triton_solution.py"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Warm-up: indexing and launch config",
+      "summary": "One thread per element: global indices, bounds checks, grid sizes and wide loads.",
+      "exercises": [
+        "playground",
+        "vector_add",
+        "relu",
+        "saxpy",
+        "gelu",
+        "reverse"
+      ]
+    },
+    {
+      "name": "Memory patterns",
+      "summary": "Coalesced reads and writes, shared-memory tiles, and reusing what neighbouring threads load.",
+      "exercises": [
+        "transpose",
+        "conv1d",
+        "conv2d"
+      ]
+    },
+    {
+      "name": "Cooperation in a block",
+      "summary": "Threads working together through shared memory, warp shuffles, atomics and scans.",
+      "exercises": [
+        "reduction",
+        "histogram",
+        "matvec",
+        "prefix_sum"
+      ]
+    },
+    {
+      "name": "Row-wise model kernels",
+      "summary": "One block per row: a reduction, then an elementwise pass, as in softmax and layer norm.",
+      "exercises": [
+        "row_softmax",
+        "layer_norm"
+      ]
+    },
+    {
+      "name": "LLM building blocks",
+      "summary": "The memory-bound kernels around a transformer layer: embeddings, fused activations, RMSNorm, rotary embeddings and the loss.",
+      "exercises": [
+        "embedding",
+        "swiglu",
+        "rms_norm",
+        "rope",
+        "cross_entropy"
+      ]
+    },
+    {
+      "name": "Compute-bound",
+      "summary": "Tiling for data reuse, from a plain matmul to flash attention and the grouped matmul of a mixture-of-experts layer.",
+      "exercises": [
+        "matmul",
+        "attention",
+        "causal_attention",
+        "moe_matmul"
+      ]
+    },
+    {
+      "name": "Data-dependent work",
+      "summary": "Irregular and data-dependent kernels: sparse rows of very different lengths, selection and sorting.",
+      "exercises": [
+        "spmv_csr",
+        "top_k",
+        "sort"
+      ]
+    },
+    {
+      "name": "Low precision",
+      "summary": "Tensor Core matmul with FP16 inputs and an FP32 accumulator, and a matvec over int8 weights with per-row scales.",
+      "exercises": [
+        "gemm_fp16",
+        "int8_matvec"
+      ]
+    }
+  ],
+  "warmup": [
+    "playground"
+  ]
+}

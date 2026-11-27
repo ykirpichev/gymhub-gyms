@@ -1,0 +1,7 @@
+{
+  "title": "F1 from a confusion matrix",
+  "difficulty": "easy",
+  "summary": "Compute precision, recall and F1 by hand.",
+  "kind": "answer",
+  "placeholder": "F1, e.g. 0.123"
+}

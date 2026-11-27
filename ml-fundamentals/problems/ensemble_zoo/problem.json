@@ -1,0 +1,37 @@
+{
+  "title": "Bagging, boosting, and a feature score",
+  "difficulty": "medium",
+  "summary": "Random forests, AdaBoost, gradient boosting, XGBoost, and what an importance number is.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Boosting fits many trees at the same time on bootstrap samples and averages them, which is why it mainly lowers variance rather than bias."
+    },
+    {
+      "id": "b",
+      "text": "Bagging trains each model on a bootstrap sample and averages them. A random forest is bagged trees that also try only a random subset of features at each split, which lowers variance against one deep tree."
+    },
+    {
+      "id": "c",
+      "text": "AdaBoost fits its weak learners in parallel on reweighted copies of the data and averages them with equal votes, so a more accurate learner gets no extra say."
+    },
+    {
+      "id": "d",
+      "text": "Gradient boosting adds models in sequence, each fit to the negative gradient of the ensemble's loss. For squared error that target is the residual."
+    },
+    {
+      "id": "e",
+      "text": "XGBoost differs from gradient boosting mainly in training each tree on a bootstrap sample, as a random forest does, and that sampling is where its regularization comes from."
+    },
+    {
+      "id": "f",
+      "text": "Mean decrease in impurity tends to favor features with more candidate split points. Permutation importance (the drop in a held-out score when a column is shuffled) is the fairer check, and neither number is a causal effect."
+    },
+    {
+      "id": "g",
+      "text": "On a small table whose signal is close to linear, a tree ensemble cannot overfit, because averaging many trees cancels their variance, so a linear baseline adds nothing."
+    }
+  ],
+  "multiple": true
+}

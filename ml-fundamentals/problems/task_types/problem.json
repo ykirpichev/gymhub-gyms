@@ -1,0 +1,24 @@
+{
+  "title": "Name the tasks",
+  "difficulty": "easy",
+  "summary": "Two goals on the same charts: one has labels to learn from, one does not.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Regression for the diagnosis, since the 5,000 coded charts give a numeric target to fit, and classification for the groups."
+    },
+    {
+      "id": "b",
+      "text": "Supervised classification for the diagnosis, trained on the 5,000 coded charts, and clustering to look for unnamed groups."
+    },
+    {
+      "id": "c",
+      "text": "Clustering for both goals, because most charts are uncoded and a model trained on 10% of the data cannot be trusted."
+    },
+    {
+      "id": "d",
+      "text": "Classification for both goals, adding \"uncoded\" as a fourth diagnosis so the uncoded charts form their own known group."
+    }
+  ]
+}

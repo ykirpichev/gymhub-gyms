@@ -1,0 +1,6 @@
+{
+  "title": "Minimum spanning tree",
+  "difficulty": "medium",
+  "summary": "Kruskal's algorithm: sort the edges and join components with union-find.",
+  "kind": "code"
+}

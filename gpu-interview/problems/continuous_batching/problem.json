@@ -1,0 +1,13 @@
+{
+  "title": "Continuous versus static batching",
+  "difficulty": "hard",
+  "summary": "Simulate a decode scheduler both ways and see why continuous batching wins.",
+  "kind": "code",
+  "minutes": 30,
+  "concepts": [
+    "continuous batching",
+    "scheduling",
+    "latency",
+    "throughput"
+  ]
+}

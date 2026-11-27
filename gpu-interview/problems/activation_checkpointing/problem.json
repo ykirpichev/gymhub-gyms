@@ -1,0 +1,31 @@
+{
+  "title": "Recompute instead of store",
+  "difficulty": "medium",
+  "summary": "What activation checkpointing trades, and when it is the right tool.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "activation checkpointing",
+    "memory",
+    "recomputation"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Memory drops and the step gets faster, because fewer activations are written to HBM."
+    },
+    {
+      "id": "b",
+      "text": "Activation memory drops to roughly one saved input per block, and each step costs about one extra forward pass of compute."
+    },
+    {
+      "id": "c",
+      "text": "Only the optimizer state shrinks, so the batch of 4 still does not fit."
+    },
+    {
+      "id": "d",
+      "text": "The result changes slightly, because recomputed activations differ from the stored ones in their rounding."
+    }
+  ],
+  "multiple": false
+}

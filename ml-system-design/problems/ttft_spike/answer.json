@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "d"
+  ],
+  "explanation": "TPOT is fine, so running sequences are healthy; requests are **waiting** to start because every replica's KV cache is full. That is a capacity and queueing problem. More replicas, cheaper prefills and admission control all reduce the wait. Raising the maximum batch size does not help when memory, not the limit, is what stops admission (and if it did admit more, preemptions would follow). A larger model is slower and needs more memory."
+}

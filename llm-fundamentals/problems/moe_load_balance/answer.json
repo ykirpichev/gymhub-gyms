@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "If the router always prefers one expert, that expert trains and the others starve, so the parameters you stored for them buy almost no capacity. The usual fix is an auxiliary loss on the fraction of tokens dispatched to each expert (and on the router's average probability), often with a capacity limit so overflow is not all dumped on the winner. Averaging every expert turns the layer dense and gives up the compute saving, freezing a collapsed router keeps the collapse, and pruning throws away the capacity that the mixture was for."
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Measuring a classifier",
+  "difficulty": "easy",
+  "summary": "A lesson: the confusion matrix, precision, recall, ROC and PR curves, and cross-validation.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "confusion matrix",
+    "precision",
+    "recall",
+    "specificity",
+    "ROC AUC",
+    "cross-validation"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Optimizer memory for a 7B model",
+  "difficulty": "easy",
+  "summary": "Bytes of training state for a 7B model under mixed-precision Adam.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "mixed precision",
+    "Adam",
+    "memory budget"
+  ],
+  "placeholder": "gigabytes (10⁹ bytes)"
+}

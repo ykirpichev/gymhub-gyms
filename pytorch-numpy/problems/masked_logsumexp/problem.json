@@ -1,0 +1,13 @@
+{
+  "title": "Stable log-sum-exp with masks",
+  "difficulty": "medium",
+  "summary": "log(sum(exp(x))) over rows without overflow, including rows that are entirely masked.",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "log-sum-exp",
+    "numerical stability",
+    "masking",
+    "infinity handling"
+  ]
+}

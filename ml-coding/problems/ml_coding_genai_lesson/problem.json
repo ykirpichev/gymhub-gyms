@@ -1,0 +1,14 @@
+{
+  "title": "Generative-AI building blocks",
+  "difficulty": "easy",
+  "summary": "A lesson: LoRA layers, contrastive losses, retrieval for RAG, the DPO loss, and classifier-free guidance, as formulas you can code.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "LoRA",
+    "InfoNCE",
+    "RAG retrieval",
+    "DPO",
+    "classifier-free guidance"
+  ]
+}

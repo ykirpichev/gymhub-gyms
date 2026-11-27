@@ -1,0 +1,17 @@
+{
+  "title": "The order of an ML project",
+  "difficulty": "easy",
+  "summary": "Put the steps of a supervised project in order, so no test data leaks.",
+  "kind": "order",
+  "minutes": 3,
+  "concepts": ["workflow", "data leakage"],
+  "items": [
+    {"id": "tune", "text": "Compare models and settings on the validation set"},
+    {"id": "split", "text": "Split the data into training, validation and test sets"},
+    {"id": "monitor", "text": "Deploy, and monitor the inputs and errors in use"},
+    {"id": "fit_prep", "text": "Fit preprocessing (scaling, encodings) on the training set only"},
+    {"id": "goal", "text": "Define the prediction target and the metric that matters"},
+    {"id": "test", "text": "Score the chosen model on the test set, once"},
+    {"id": "train", "text": "Train candidate models on the training set"}
+  ]
+}

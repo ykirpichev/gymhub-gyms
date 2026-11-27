@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Says logistic regression models the probability of a class from labeled examples, rather than an unbounded numeric target the way linear regression does.\n2. Defines the logit (log-odds) as a linear score z = w\u00b7x + b.\n3. Writes the sigmoid 1/(1+e^{\u2212z}) as the map from that score into (0, 1), and notes that a 0.5 threshold is the same cut as z = 0.\n4. Says training minimizes binary cross-entropy (logistic loss), \u2212[y ln p + (1\u2212y) ln(1\u2212p)], not squared error on the probability.\n5. Says the decision boundary is linear in the features even though the probability is a nonlinear function of z.",
+  "pass_score": 0.7
+}

@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.5833333333"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "Reciprocal rank is 1 over the rank of the first hit: 1, 1/4, and 1/2. The mean is (1 + 0.25 + 0.5) / 3 ≈ 0.583. MRR ignores relevant documents after the first one, and it ignores how many relevant documents exist, so it is not a substitute for recall@k. The mean of the ranks themselves, (1 + 4 + 2) / 3 ≈ 2.33, is a different statistic."
+}

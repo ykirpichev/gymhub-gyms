@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "89.5"
+  ],
+  "match": "number",
+  "tolerance": 1.5,
+  "explanation": "`X` is 8192 × 4096 × 4 = 134,217,728 bytes; reading it and writing `Y` moves 268,435,456 bytes, plus 16 KB of weights. 268.45 × 10⁶ / 3 × 10¹² = 89.5 µs. The FLOPs (about 3 per element) don't matter: the intensity is under 0.5. A kernel that reads `X` twice (once for the sum of squares, once to scale) has a bound of about 134 µs, which is why the fast version keeps each row in registers between the two passes. The GPU gym's `rms_norm` reports your kernel's share of this bound."
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Parallelism and the two phases",
+  "difficulty": "hard",
+  "summary": "Tensor, pipeline, and sequence parallelism, and prefill versus decode.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Tensor parallelism shards the matrices inside each layer and all-reduces every layer. Pipeline parallelism puts different layers on different GPUs and hides the bubble with microbatches. Context parallelism splits one long sequence, and its KV cache, across GPUs. Prefill is usually compute-bound; decode, one token at a time, is usually memory-bandwidth-bound."
+    },
+    {
+      "id": "b",
+      "text": "Pipeline parallelism shards the matrices inside each layer and all-reduces every layer. Tensor parallelism puts different layers on different GPUs and passes activations from stage to stage. Context parallelism splits one long sequence, and its KV cache, across GPUs. Prefill is usually compute-bound; decode is usually memory-bandwidth-bound."
+    },
+    {
+      "id": "c",
+      "text": "Tensor parallelism shards the matrices inside each layer, pipeline parallelism puts different layers on different GPUs, and context parallelism splits a long sequence and its KV cache. Prefill is usually bandwidth-bound, because it streams the whole prompt through memory; decode is usually compute-bound, because each new token attends over the full cache."
+    },
+    {
+      "id": "d",
+      "text": "Tensor parallelism shards the matrices inside each layer and all-reduces every layer. Pipeline parallelism puts different layers on different GPUs and hides the bubble with microbatches. Context parallelism replicates the full KV cache on every GPU so each one can attend over the whole prompt. Prefill is usually compute-bound; decode is usually memory-bandwidth-bound."
+    }
+  ]
+}

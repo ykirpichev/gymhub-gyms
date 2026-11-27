@@ -1,0 +1,13 @@
+{
+  "title": "Fit a linear model with autograd",
+  "difficulty": "easy",
+  "summary": "A complete small training loop in PyTorch: parameters, MSE, backward, an SGD step.",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "training loop",
+    "torch.optim.SGD",
+    "nn.Parameter",
+    "MSE"
+  ]
+}

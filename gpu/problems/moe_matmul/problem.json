@@ -1,0 +1,6 @@
+{
+  "title": "MoE grouped matmul",
+  "difficulty": "hard",
+  "summary": "Multiply each token by the weight matrix of the expert it was routed to.",
+  "kind": "code"
+}

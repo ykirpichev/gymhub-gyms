@@ -1,0 +1,7 @@
+{
+  "title": "Specificity from the matrix",
+  "difficulty": "easy",
+  "summary": "True negative rate from the four confusion-matrix counts.",
+  "kind": "answer",
+  "placeholder": "specificity, e.g. 0.500"
+}

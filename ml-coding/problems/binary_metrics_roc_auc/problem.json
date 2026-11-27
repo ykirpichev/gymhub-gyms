@@ -1,0 +1,6 @@
+{
+  "title": "Binary metrics and ROC-AUC",
+  "difficulty": "medium",
+  "summary": "Precision, recall, F1, accuracy at a threshold, plus ROC-AUC with tied scores counted as half.",
+  "kind": "code"
+}

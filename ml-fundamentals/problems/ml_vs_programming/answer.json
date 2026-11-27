@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Contrasts traditional programming (a person writes the rule that maps inputs to outputs) with machine learning (the rule is fit from examples).\n2. Says you reach for learning when the rule is hard to write by hand and examples are available, and that the result depends on the data and on the objective you optimize.\n3. Lists a build order: define the decision and the label, collect and clean data, hold out data you will not train on, train, evaluate with a metric that matches the decision, then deploy.\n4. Says the deployed model has to be watched, because new data can differ from the sample you trained on.",
+  "pass_score": 0.7
+}

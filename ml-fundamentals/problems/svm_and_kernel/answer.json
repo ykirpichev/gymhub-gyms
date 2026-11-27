@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Describes the goal: a separating hyperplane whose margin (the gap to the nearest points) is as wide as possible.\n2. Says support vectors are the points on the margin or on the wrong side of it, and that they determine the boundary while points well inside their side do not.\n3. Writes the hinge loss as max(0, 1 \u2212 y f(x)) with labels y in {\u22121, +1}: zero once a point is past the margin and linear in the violation otherwise, which is how a soft margin tolerates overlap; a penalty (often called C) trades violations against margin width.\n4. Explains the kernel trick: replace dot products with K(x, x\u2032) so a feature map \u03c6 never has to be written out. A nonlinear kernel (RBF or polynomial) makes the boundary nonlinear in the original features.",
+  "pass_score": 0.7
+}

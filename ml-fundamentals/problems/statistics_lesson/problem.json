@@ -1,0 +1,16 @@
+{
+  "title": "The statistics ML interviews assume",
+  "difficulty": "easy",
+  "summary": "A lesson: Bayes' rule, MLE and MAP, R², p-values, and which distance to use.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "Bayes rule",
+    "MLE",
+    "MAP",
+    "R-squared",
+    "p-value",
+    "cosine similarity",
+    "distances"
+  ]
+}

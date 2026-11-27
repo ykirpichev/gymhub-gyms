@@ -1,0 +1,23 @@
+{
+  "title": "Which loss for which task",
+  "difficulty": "medium",
+  "summary": "Match five tasks with the loss you would train them with.",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": ["loss functions"],
+  "prompts": [
+    {"id": "price", "text": "Predict a house price; large errors should cost much more than small ones"},
+    {"id": "spam", "text": "Predict the probability that an email is spam"},
+    {"id": "digits", "text": "Classify a handwritten digit as one of 0 to 9"},
+    {"id": "margin", "text": "Train a linear classifier that maximizes the margin, with labels $\\pm 1$"},
+    {"id": "robust", "text": "Predict delivery time when a few records are wildly wrong"}
+  ],
+  "options": [
+    {"id": "mse", "text": "Mean squared error, $\\frac{1}{n}\\sum (y - \\hat{y})^2$"},
+    {"id": "bce", "text": "Binary cross-entropy on a sigmoid output"},
+    {"id": "ce", "text": "Categorical cross-entropy on a softmax output"},
+    {"id": "hinge", "text": "Hinge loss, $\\max(0,\\, 1 - y \\cdot w^\\top x)$"},
+    {"id": "mae", "text": "Mean absolute error, or the Huber loss"},
+    {"id": "infonce", "text": "Contrastive (InfoNCE) loss over pairs of embeddings"}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "d"
+  ],
+  "explanation": "CUDA kernels are queued on a stream and the Python call returns immediately. Synchronize before starting and before stopping the timer (`torch.cuda.synchronize()`), or record `torch.cuda.Event(enable_timing=True)` events around the call. Also run a few warm-up iterations first (the first call pays for cuBLAS heuristics and memory allocation) and take the median of several runs. PyTorch does not cache results of operations."
+}

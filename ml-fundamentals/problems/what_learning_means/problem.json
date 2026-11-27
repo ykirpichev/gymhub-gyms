@@ -1,0 +1,8 @@
+{
+  "title": "What learning from data means",
+  "difficulty": "easy",
+  "summary": "A lesson: examples, a model, a loss, and data the model never saw.",
+  "kind": "lesson",
+  "minutes": 5,
+  "concepts": ["empirical risk", "generalization"]
+}

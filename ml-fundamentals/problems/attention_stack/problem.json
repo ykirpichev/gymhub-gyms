@@ -1,0 +1,33 @@
+{
+  "title": "From one vector to a transformer block",
+  "difficulty": "medium",
+  "summary": "Sequence-to-sequence, attention, self-attention, and where embeddings sit.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "A token embedding is a fixed random vector per vocabulary entry. Only the layers above it are trained, which is why similar tokens do not end up near each other."
+    },
+    {
+      "id": "b",
+      "text": "Attention lets each decoder step take a weighted sum of encoder states. The weights come from a score between the decoder's query and the encoder keys, so different output steps can look at different input positions."
+    },
+    {
+      "id": "c",
+      "text": "A basic sequence-to-sequence model encodes the input into a single vector and decodes the output one step at a time from that vector. The fixed vector is a bottleneck on long inputs."
+    },
+    {
+      "id": "d",
+      "text": "Self-attention needs a recurrent step to pass information along the sequence, because the weights at one position cannot depend on positions that come later."
+    },
+    {
+      "id": "e",
+      "text": "Self-attention is a 1\u00d71 convolution over the sequence, so one position cannot read any other; positional encodings are what let tokens mix."
+    },
+    {
+      "id": "f",
+      "text": "An encoder block in a transformer is multi-head self-attention, a position-wise feedforward network, residual connections, and layer normalization. Positional encodings are added to the token embeddings because self-attention does not see order on its own."
+    }
+  ],
+  "multiple": true
+}

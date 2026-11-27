@@ -1,0 +1,29 @@
+{
+  "title": "Filling the GPU during decode",
+  "difficulty": "medium",
+  "summary": "Paged attention, continuous batching, prefix cache, and speculative decoding.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Continuous batching waits until every sequence in the batch has finished, then admits a full new batch at once, so the GPU never runs a partly filled batch."
+    },
+    {
+      "id": "b",
+      "text": "Prefix caching reuses the KV cache of a shared prompt prefix, such as a system prompt or a repeated document, across requests."
+    },
+    {
+      "id": "c",
+      "text": "Speculative decoding serves the draft model's distribution. The target model is only a teacher used earlier, to distill the draft."
+    },
+    {
+      "id": "d",
+      "text": "Speculative decoding lets a cheap draft propose several tokens, then checks them in one target forward pass. With the usual rejection correction, accepted tokens follow the target model's distribution."
+    },
+    {
+      "id": "e",
+      "text": "Paged attention stores the KV cache in fixed-size blocks and allocates them like virtual-memory pages, so a finished request's pages can be reused without a contiguous max-length buffer per request."
+    }
+  ],
+  "multiple": true
+}

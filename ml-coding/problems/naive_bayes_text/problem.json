@@ -1,0 +1,6 @@
+{
+  "title": "Multinomial Naive Bayes for text",
+  "difficulty": "medium",
+  "summary": "Train a multinomial Naive Bayes text classifier with add-alpha smoothing and predict in log space.",
+  "kind": "code"
+}

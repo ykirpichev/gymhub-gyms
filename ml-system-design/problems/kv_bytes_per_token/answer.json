@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "327680"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.005,
+  "explanation": "${2 \\times 80 \\times 8 \\times 128 \\times 2 = 327{,}680}$ bytes, 320 KiB. The leading 2 counts keys and values. With 64 KV heads (no grouped-query attention) it would be 8 times as much, 2.6 MB per token, which is why GQA is standard in large models."
+}

@@ -1,0 +1,29 @@
+{
+  "title": "PCA, ICA, and t-SNE",
+  "difficulty": "medium",
+  "summary": "Variance, independence, and a plot that is not a feature map.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "PCA finds orthogonal directions of largest variance. They are eigenvectors of the covariance, and the fit does not use labels."
+    },
+    {
+      "id": "b",
+      "text": "The leading principal components are the directions that best separate the classes, so keeping them is a safe first step before any classifier."
+    },
+    {
+      "id": "c",
+      "text": "ICA looks for sources that are statistically independent, not merely uncorrelated, and it relies on non-Gaussian structure. Unlike PCA, it does not rank components by how much variance they explain."
+    },
+    {
+      "id": "d",
+      "text": "PCA and ICA return the same directions once the data are centered and whitened, because whitening removes the only difference between the two methods."
+    },
+    {
+      "id": "e",
+      "text": "Classical t-SNE preserves global distances, so the gap between two clusters in the plot measures how far apart the groups are in the original space."
+    }
+  ],
+  "multiple": true
+}

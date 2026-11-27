@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.5"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "The top 5 are D3, D7, D1, D9 and D5, which hold two of the four relevant documents (D7 and D9), so recall@5 = 2 / 4 = 0.5. D2 and D11 are retrieved, but below the cutoff, so they do not count; recall@8 would be 1.0. Precision@5 is 2 / 5 = 0.4, which answers a different question: how much of what you showed was relevant."
+}

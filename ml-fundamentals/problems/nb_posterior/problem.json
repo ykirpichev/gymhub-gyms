@@ -1,0 +1,7 @@
+{
+  "title": "A naive Bayes posterior",
+  "difficulty": "hard",
+  "summary": "Two conditionally independent features, equal class priors.",
+  "kind": "answer",
+  "placeholder": "P(spam | features), e.g. 0.500"
+}

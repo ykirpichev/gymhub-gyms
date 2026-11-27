@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Describes the usual VLM stack: a vision encoder such as a ViT produces features, a projector (a linear map or a small MLP) maps them to the language model's embedding size, and those visual tokens are inserted into the text sequence.\n2. Discrete action tokens bin continuous robot actions and emit the bins with the same autoregressive head as text. The setup reuses the language loss, and the bin width limits resolution while the token rate limits how fast the controller can run.\n3. A flow-matching action head is a continuous module, conditioned on the vision-language state, that predicts a velocity from noise to an action chunk. Actions stay continuous and can be issued at a higher control rate, at the cost of extra integration steps and more machinery than a token head.",
+  "pass_score": 0.7
+}

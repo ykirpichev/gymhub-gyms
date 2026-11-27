@@ -1,0 +1,7 @@
+{
+  "title": "The attention divisor",
+  "difficulty": "easy",
+  "summary": "Find the head dimension from the model shape, then the sqrt(d_k) divisor.",
+  "kind": "answer",
+  "placeholder": "divisor, e.g. 5.66"
+}

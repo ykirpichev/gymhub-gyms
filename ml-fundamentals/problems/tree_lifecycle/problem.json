@@ -1,0 +1,33 @@
+{
+  "title": "How a tree is grown and read",
+  "difficulty": "medium",
+  "summary": "Leaves, greedy splits, stopping, inference, and pruning.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "A leaf stores the prediction: a class or class distribution, or a number in regression. A logit is a different object, the log-odds w\u00b7x+b inside logistic regression, not a name for a leaf."
+    },
+    {
+      "id": "b",
+      "text": "Training searches every possible tree and returns a globally optimal partition of the features."
+    },
+    {
+      "id": "c",
+      "text": "Growth stops for rules you set: a maximum depth, too few samples left to split, or a node that is already pure."
+    },
+    {
+      "id": "d",
+      "text": "The usual trainer grows the tree greedily, picking at each node a feature and a threshold that most improve a split criterion such as Gini or entropy (classification) or variance (regression)."
+    },
+    {
+      "id": "e",
+      "text": "Pruning, or a hard depth limit, reduces variance. An unpruned tree is free to memorize the training rows."
+    },
+    {
+      "id": "f",
+      "text": "Inference starts at the root and follows the test in each internal node until a leaf, which supplies the prediction."
+    }
+  ],
+  "multiple": true
+}

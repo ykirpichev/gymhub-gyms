@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Builds a golden set of realistic questions (from search logs or support tickets) with reference answers and the source documents, covering easy, hard, multi-document and unanswerable questions.\n2. Measures retrieval on its own (recall@k or MRR of the correct chunks) so retrieval failures are not blamed on the model.\n3. Measures generation quality: faithfulness to the retrieved context, correctness against references, and refusal when the answer is not in the corpus, using human raters or an LLM judge checked against human labels.\n4. Sets launch criteria and plans online monitoring: thumbs up/down, escalation or follow-up rates, a canary or staged rollout, regression tests on the golden set for every change, and checks for permission leaks and prompt injection.",
+  "pass_score": 0.7
+}

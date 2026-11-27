@@ -1,0 +1,12 @@
+{
+  "title": "Compute strides after a permute",
+  "difficulty": "medium",
+  "summary": "Write the shape and element strides of a contiguous tensor after permute, as PyTorch reports them.",
+  "kind": "code",
+  "minutes": 10,
+  "concepts": [
+    "strides",
+    "permute",
+    "contiguity"
+  ]
+}

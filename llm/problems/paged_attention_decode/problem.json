@@ -1,0 +1,6 @@
+{
+  "title": "Paged attention decode",
+  "difficulty": "hard",
+  "summary": "One decode step against a paged KV cache: block tables, a shared block pool, and per-sequence lengths.",
+  "kind": "code"
+}

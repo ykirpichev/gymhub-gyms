@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "d"
+  ],
+  "explanation": "The towers only meet at the final dot product, which is what allows precomputed item vectors and ANN search. The same separation rules out cross features that depend on the user–item pair, so a ranker with those features follows. In-batch negatives are sampled in proportion to item popularity; the logQ correction (subtracting the log of an item's sampling probability from its logit) removes that bias. ANN indexes such as HNSW return most, not all, of the true nearest neighbours."
+}

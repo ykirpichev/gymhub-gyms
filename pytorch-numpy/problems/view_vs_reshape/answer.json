@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "`view` only reinterprets the existing buffer with new strides. Flattening `y` in its own row-major order would need elements in an order the buffer doesn't hold with any single stride, so PyTorch raises an error that suggests `.reshape(...)`. `reshape` returns a view when one exists and otherwise copies, here producing `y`'s elements in its row-major order. `.contiguous().view(24)` does the same thing explicitly. Nothing in PyTorch silently reorders a tensor in place."
+}

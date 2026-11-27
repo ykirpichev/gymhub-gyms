@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "d"
+  ],
+  "explanation": "Chunking trades precision against context. Small chunks match precisely but may be meaningless alone; large ones carry context but blur the embedding and crowd the prompt. Titles and headings restore context cheaply. A re-ranker can only re-order what retrieval returns: if chunking split the answer across pieces that are never retrieved together, the re-ranker cannot fix it. Teams tune chunk size on retrieval recall over a golden set."
+}

@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "112"
+  ],
+  "match": "number",
+  "tolerance": 1,
+  "explanation": "2 + 2 + 4 + 4 + 4 = 16 bytes per parameter, × 7 × 10⁹ = 112 GB. It does not fit on an 80 GB GPU before a single activation is stored. ZeRO stage 1 shards the 12 bytes of optimizer state across data-parallel ranks; with 8 GPUs that leaves 2 + 2 + 12/8 = 5.5 bytes per parameter, 38.5 GB each. Stage 3 (FSDP) shards everything: 2 bytes per parameter per GPU, at the price of gathering the weights layer by layer."
+}

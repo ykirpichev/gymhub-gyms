@@ -1,0 +1,6 @@
+{
+  "title": "RMSNorm",
+  "difficulty": "medium",
+  "summary": "Divide each row by its root mean square, then scale by a weight.",
+  "kind": "code"
+}

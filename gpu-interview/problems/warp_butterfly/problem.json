@@ -1,0 +1,12 @@
+{
+  "title": "Warp shuffle butterfly",
+  "difficulty": "easy",
+  "summary": "Simulate the XOR butterfly that leaves a warp's sum in every lane.",
+  "kind": "code",
+  "minutes": 10,
+  "concepts": [
+    "warp shuffle",
+    "butterfly reduction",
+    "__shfl_xor_sync"
+  ]
+}

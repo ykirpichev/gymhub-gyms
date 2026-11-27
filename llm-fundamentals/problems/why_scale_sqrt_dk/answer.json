@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "If the coordinates are uncorrelated and unit-variance, each of the d_k products in q·k has variance about 1, so the dot product has variance d_k and a typical size of sqrt(d_k). Softmax on logits that large saturates: one weight goes to 1, the others go to 0, and the softmax Jacobian goes to 0. Dividing by sqrt(d_k) puts the logits back near variance 1. It does not normalize q and k by their lengths, so logits are not bounded like a cosine; the softmax denominator sums over key positions, not over d_k; and the scaling acts on the scores, not on the residual stream."
+}

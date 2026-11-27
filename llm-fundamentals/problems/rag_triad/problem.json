@@ -1,0 +1,24 @@
+{
+  "title": "Two RAG failures",
+  "difficulty": "easy",
+  "summary": "Which legs of the RAG triad fail when retrieval or the answer is ungrounded.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Both failures are answer relevance. Context relevance is BLEU of the answer against a reference."
+    },
+    {
+      "id": "b",
+      "text": "Neither failure is in the triad. The triad is precision, recall, and F1 of the final token."
+    },
+    {
+      "id": "c",
+      "text": "Context relevance failed on the wrong-product passages. Faithfulness failed when the answer added a rule the passages do not support."
+    },
+    {
+      "id": "d",
+      "text": "Faithfulness failed on the wrong-product passages, because retrieval is a generation error. Answer relevance failed on the invented refund rule."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Gini of one node",
+  "difficulty": "easy",
+  "summary": "Impurity of a node with two class counts.",
+  "kind": "answer",
+  "placeholder": "Gini, e.g. 0.250"
+}

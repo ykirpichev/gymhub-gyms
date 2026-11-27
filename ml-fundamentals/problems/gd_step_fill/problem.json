@@ -1,0 +1,9 @@
+{
+  "title": "One gradient step, by hand",
+  "difficulty": "easy",
+  "summary": "Fill in a gradient-descent update and what happens when the step is too large.",
+  "kind": "fill",
+  "minutes": 3,
+  "concepts": ["gradient descent", "learning rate"],
+  "text": "The loss is $L(w) = (w - 3)^2$, so $\\frac{dL}{dw} = 2(w - 3)$. At $w = 5$ the gradient is [[grad]]. One gradient-descent step with learning rate $\\eta = 0.1$ moves $w$ to [[w_new]]. The update subtracts the gradient because the gradient points in the direction where the loss [[direction]]. With $\\eta = 1.5$, the same step lands at $w =$ [[w_big]], further from the minimum than where it started."
+}

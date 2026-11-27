@@ -1,0 +1,24 @@
+{
+  "title": "What the guidance scale does",
+  "difficulty": "easy",
+  "summary": "How classifier-free guidance mixes conditional and unconditional predictions.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "It is the training target of flow matching. A scale above 1 turns the model into a one-step consistency model."
+    },
+    {
+      "id": "b",
+      "text": "It switches the sampler to DDIM. The scale is the number of timesteps skipped between denoising steps."
+    },
+    {
+      "id": "c",
+      "text": "It pushes the denoising prediction past the conditional estimate, away from the unconditional one, so samples follow the caption more closely and are usually less diverse."
+    },
+    {
+      "id": "d",
+      "text": "It mixes in the gradient of a separately trained image classifier. The scale is that classifier's loss weight, which is why the method is classifier-free."
+    }
+  ]
+}

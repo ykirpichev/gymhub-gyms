@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "id": "pytorch-numpy",
+  "title": "PyTorch and NumPy",
+  "description": "Tensor fluency for ML engineers, the skill every ML coding round assumes and few courses teach directly. Each track starts with a lesson, then has short questions and coding exercises: arrays, views and strides; broadcasting and einsum; indexing, gathers and scatters; autograd; modules and training loops; and the numerics and performance traps that cost hours in real code. Exercises run on a CPU. The PyTorch ones need `torch` on the grading machine, so they run on the board's runners, not in the browser.",
+  "runtime": "gymkit",
+  "requires": {
+    "gpu": false
+  },
+  "order": 7,
+  "publish": "upload",
+  "sources": [
+    {
+      "title": "NumPy user guide: the absolute basics, indexing, broadcasting",
+      "url": "https://numpy.org/doc/stable/user/index.html",
+      "note": "Arrays, views and copies, indexing and broadcasting rules."
+    },
+    {
+      "title": "NumPy: Broadcasting",
+      "url": "https://numpy.org/doc/stable/user/basics.broadcasting.html",
+      "note": "The rules the broadcasting track drills."
+    },
+    {
+      "title": "NumPy: Indexing on ndarrays",
+      "url": "https://numpy.org/doc/stable/user/basics.indexing.html",
+      "note": "Basic versus advanced indexing, and which one copies."
+    },
+    {
+      "title": "PyTorch: Tensor views",
+      "url": "https://pytorch.org/docs/stable/tensor_view.html",
+      "note": "Which operations return views, and contiguity."
+    },
+    {
+      "title": "PyTorch: A gentle introduction to torch.autograd",
+      "url": "https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html",
+      "note": "The computation graph and backward."
+    },
+    {
+      "title": "PyTorch: Extending torch.autograd",
+      "url": "https://pytorch.org/docs/stable/notes/extending.html",
+      "note": "Writing a custom `torch.autograd.Function`."
+    },
+    {
+      "title": "PyTorch: Autograd mechanics",
+      "url": "https://pytorch.org/docs/stable/notes/autograd.html",
+      "note": "In-place operations, `no_grad`, `detach` and gradient accumulation."
+    },
+    {
+      "title": "PyTorch: Reproducibility",
+      "url": "https://pytorch.org/docs/stable/notes/randomness.html",
+      "note": "Seeds and deterministic algorithms."
+    },
+    {
+      "title": "PyTorch: Automatic mixed precision",
+      "url": "https://pytorch.org/docs/stable/amp.html",
+      "note": "`autocast` and gradient scaling."
+    },
+    {
+      "title": "einsum is all you need (Tim Rocktäschel)",
+      "url": "https://rockt.ai/2018/04/30/einsum",
+      "note": "A short, practical einsum tutorial."
+    },
+    {
+      "title": "From Python to NumPy (Nicolas Rougier)",
+      "url": "https://www.labri.fr/perso/nrougier/from-python-to-numpy/",
+      "note": "Vectorization, with many worked problems."
+    },
+    {
+      "title": "100 NumPy exercises (Nicolas Rougier)",
+      "url": "https://github.com/rougier/numpy-100",
+      "note": "Short drills; good warm-ups between sessions."
+    }
+  ],
+  "langs": [
+    {
+      "id": "python",
+      "label": "Python",
+      "editor": "python",
+      "file": "solution.py"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Arrays, views and strides",
+      "summary": "What an array is in memory (a buffer, a shape, strides and a dtype), and which operations share that buffer.",
+      "exercises": [
+        "arrays_lesson",
+        "view_or_copy",
+        "transpose_strides",
+        "permute_strides",
+        "view_vs_reshape"
+      ]
+    },
+    {
+      "name": "Broadcasting and einsum",
+      "summary": "The two tools that replace most loops in tensor code: broadcasting for elementwise work across shapes, einsum for every kind of contraction.",
+      "exercises": [
+        "broadcasting_lesson",
+        "broadcast_shape_answer",
+        "broadcast_bug",
+        "einsum_match",
+        "pairwise_sq_dists",
+        "einsum_attention"
+      ]
+    },
+    {
+      "name": "Indexing, gathers and scatters",
+      "summary": "Picking, masking and accumulating by index: the operations behind embeddings, losses, top-k, segment sums and MoE routing.",
+      "exercises": [
+        "indexing_lesson",
+        "repeated_index_add",
+        "gather_logprobs",
+        "segment_sum",
+        "moe_topk_route"
+      ]
+    },
+    {
+      "name": "Autograd",
+      "summary": "How PyTorch computes gradients: the graph it records, when it frees it, what `no_grad` and `detach` cut, and how to write a backward by hand.",
+      "exercises": [
+        "autograd_lesson",
+        "grad_accumulation",
+        "chain_rule_value",
+        "no_grad_vs_detach",
+        "inplace_error",
+        "softmax_vjp",
+        "logsumexp_function"
+      ]
+    },
+    {
+      "name": "Modules, optimizers and training loops",
+      "summary": "`nn.Module`, the training step in the right order, optimizers written from their update rules, and the layers interviewers ask you to derive.",
+      "exercises": [
+        "training_loop_lesson",
+        "training_step_order",
+        "eval_mode",
+        "adamw_step",
+        "clip_grad_norm",
+        "layernorm_backward",
+        "torch_linear_fit"
+      ]
+    },
+    {
+      "name": "Numerics and performance",
+      "summary": "Float precision, stable formulas, dtypes, randomness and the GPU's asynchrony: the details that make tensor code right and fast.",
+      "exercises": [
+        "numerics_lesson",
+        "gpu_timing",
+        "hidden_syncs",
+        "dtype_promotion",
+        "masked_logsumexp",
+        "kahan_sum",
+        "sliding_windows"
+      ]
+    }
+  ]
+}

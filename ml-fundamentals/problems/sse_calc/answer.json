@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "5"
+  ],
+  "match": "number",
+  "tolerance": 0.001,
+  "explanation": "The line predicts \u0177 = 1, 1 and 4 for x = 1, 1 and 2.5, so the residuals are 3 \u2212 1 = 2, 0 \u2212 1 = \u22121 and 4 \u2212 4 = 0. Their squares are 4, 1 and 0, which add to 5. The sum of absolute residuals is 3, so the squared criterion and the absolute criterion do not agree on this table."
+}

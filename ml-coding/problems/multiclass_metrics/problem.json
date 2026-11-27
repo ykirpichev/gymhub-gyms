@@ -1,0 +1,6 @@
+{
+  "title": "Multiclass metrics and macro averaging",
+  "difficulty": "medium",
+  "summary": "Confusion matrix, per-class precision, recall and F1, and their macro and micro averages over K classes.",
+  "kind": "code"
+}

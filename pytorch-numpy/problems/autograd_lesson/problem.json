@@ -1,0 +1,14 @@
+{
+  "title": "Autograd in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: the recorded graph, backward, gradient accumulation, no_grad, detach and in-place operations.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "autograd",
+    "computation graph",
+    "backward",
+    "no_grad",
+    "detach"
+  ]
+}

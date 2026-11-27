@@ -1,0 +1,9 @@
+{
+  "correct": [
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "explanation": "Backprop through time is the chain rule on the unrolled net, and a shared matrix is reused every step, so its singular values decide whether those products vanish or explode. The LSTM cell is multiplied by the forget gate, which can stay near 1 and carry a gradient; a forget gate near 0 cuts that path, so the memory is not unconditional. Clipping stops a blow-up and does nothing for a signal that has already gone to zero."
+}

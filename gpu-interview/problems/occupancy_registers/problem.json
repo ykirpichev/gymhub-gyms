@@ -1,0 +1,12 @@
+{
+  "title": "Occupancy limited by registers",
+  "difficulty": "medium",
+  "summary": "Compute the occupancy of a kernel from its register use.",
+  "kind": "answer",
+  "minutes": 4,
+  "concepts": [
+    "occupancy",
+    "registers"
+  ],
+  "placeholder": "a percentage, e.g. 75"
+}

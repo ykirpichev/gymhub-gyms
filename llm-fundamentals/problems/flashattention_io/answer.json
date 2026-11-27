@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "FlashAttention is an IO-aware exact algorithm: tiles of Q, K, and V stream through SRAM, and the online softmax never materializes the score matrix in HBM. It trades a little recomputation (extra FLOPs) for far fewer HBM reads and writes, the opposite of the chunked-write story. The backward pass recomputes the scores from the saved softmax statistics instead of storing them, which is why long-context training got cheaper. A local window is a different, approximate algorithm."
+}

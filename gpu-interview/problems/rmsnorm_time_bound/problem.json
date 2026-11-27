@@ -1,0 +1,13 @@
+{
+  "title": "A lower bound for RMSNorm",
+  "difficulty": "medium",
+  "summary": "The fastest an FP32 RMSNorm over an 8192 × 4096 matrix can run on the interview GPU.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "roofline",
+    "memory-bound",
+    "bytes moved"
+  ],
+  "placeholder": "microseconds"
+}

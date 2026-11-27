@@ -1,0 +1,25 @@
+{
+  "title": "Uniform, reservoir, stratified",
+  "difficulty": "medium",
+  "summary": "Three ways to draw a sample, including from a stream.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Stratified sampling draws inside predefined groups (a class label, a region) so a rare group is not missing from a small sample purely by chance. The draw can be proportional to the group or can deliberately oversample it."
+    },
+    {
+      "id": "b",
+      "text": "A simple random sample of a finite table gives every row the same inclusion probability."
+    },
+    {
+      "id": "c",
+      "text": "Reservoir sampling upweights the most recent items, the way an exponential moving average does."
+    },
+    {
+      "id": "d",
+      "text": "Reservoir sampling keeps a uniform sample of size k from a stream whose length you do not know in advance. After t items have arrived, each of those t items is equally likely to be in the reservoir."
+    }
+  ],
+  "multiple": true
+}

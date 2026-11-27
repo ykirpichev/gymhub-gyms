@@ -1,0 +1,6 @@
+{
+  "title": "Pad variable-length token batches",
+  "difficulty": "medium",
+  "summary": "Right-pad token-id sequences into a batch, with a boolean mask, lengths, and optional truncation.",
+  "kind": "code"
+}

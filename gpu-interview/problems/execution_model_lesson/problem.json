@@ -1,0 +1,13 @@
+{
+  "title": "The CUDA execution model in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: grids, blocks, warps, SMs, and where each kind of memory lives.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "thread hierarchy",
+    "warps",
+    "SIMT",
+    "memory hierarchy"
+  ]
+}

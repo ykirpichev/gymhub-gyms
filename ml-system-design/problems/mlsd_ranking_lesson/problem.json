@@ -1,0 +1,17 @@
+{
+  "title": "The recommendation and search funnel",
+  "difficulty": "easy",
+  "summary": "A lesson: candidate generation, two-tower retrieval and ANN indexes, the ranker, re-ranking for diversity and business rules, and ranking metrics.",
+  "kind": "lesson",
+  "minutes": 15,
+  "concepts": [
+    "candidate generation",
+    "two-tower",
+    "ANN",
+    "ranking",
+    "re-ranking",
+    "NDCG",
+    "position bias",
+    "cold start"
+  ]
+}

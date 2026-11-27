@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Identifies the problems with one thread per row: too few threads to fill the GPU at small row counts and, more importantly, uncoalesced loads, since neighbouring threads read addresses a whole row apart.\n2. Proposes one block (or one warp) per row with threads striding across the columns, so loads coalesce, and the max and sum done as parallel reductions with warp shuffles and a small shared-memory step.\n3. Reduces memory traffic toward one read and one write per element: keeps the row in registers or shared memory between passes, or uses the online softmax to fuse the max and sum passes.\n4. States the target as the memory roofline (bytes moved over bandwidth) and says to verify with a profiler, mentioning vectorized loads or `expf`/`__expf` as further tuning.",
+  "pass_score": 0.7
+}

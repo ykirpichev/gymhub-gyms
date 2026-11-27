@@ -1,0 +1,14 @@
+{
+  "title": "Size prefill with a prefix cache",
+  "difficulty": "medium",
+  "summary": "Compute-bound prefill: messages per second times new tokens times FLOPs per token, over useful GPU throughput.",
+  "kind": "answer",
+  "minutes": 4,
+  "concepts": [
+    "prefill",
+    "prefix caching",
+    "compute-bound",
+    "capacity planning"
+  ],
+  "placeholder": "GPUs"
+}

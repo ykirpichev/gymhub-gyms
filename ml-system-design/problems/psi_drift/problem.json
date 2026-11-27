@@ -1,0 +1,13 @@
+{
+  "title": "Detect drift with the population stability index",
+  "difficulty": "medium",
+  "summary": "Bin a baseline and a current sample with fixed edges and compute PSI and a verdict.",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "drift",
+    "PSI",
+    "monitoring",
+    "binning"
+  ]
+}

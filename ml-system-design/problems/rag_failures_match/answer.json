@@ -1,0 +1,10 @@
+{
+  "pairs": {
+    "p1": "d",
+    "p2": "a",
+    "p3": "e",
+    "p4": "f",
+    "p5": "c"
+  },
+  "explanation": "Each failure points at a stage: retrieval recall, grounding, access control, freshness and lexical matching. Nightly fine-tuning on the corpus is slow, costly, does not give citations, and does not enforce permissions; RAG exists to avoid it for knowledge that changes."
+}

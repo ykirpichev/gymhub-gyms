@@ -1,0 +1,24 @@
+{
+  "title": "99.5% accuracy, no frauds caught",
+  "difficulty": "easy",
+  "summary": "Why accuracy, precision, and recall part ways on a rare class.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Accuracy is the wrong headline here. Report precision and recall on the fraud class: recall is the share of frauds caught, precision the share of fraud alerts that are real."
+    },
+    {
+      "id": "b",
+      "text": "Accuracy is fine once the test set is resampled to 50% fraud: quote accuracy on that balanced set, and it then reflects how good the alerts will be in production."
+    },
+    {
+      "id": "c",
+      "text": "Report ROC AUC alone. It does not depend on the 0.5% base rate, so it also tells you what share of the fraud alerts in production will be real."
+    },
+    {
+      "id": "d",
+      "text": "Report specificity and the false positive rate. With 99.5% of traffic legitimate, those two numbers describe almost every decision the model makes."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "algo",
+  "title": "Algo gym",
+  "description": "Classic algorithms and data structures in Python or C++: sort-and-sweep, monotonic stacks and deques, binary search on the answer, heaps, LRU caches, tries, union-find, BFS, Dijkstra, topological sort, minimum spanning trees, and dynamic programming. Every exercise has an editorial with the idea, the cost and the pitfalls. Hidden-size tests and time limits reward the right complexity, not just a right answer.",
+  "sources": [
+    {
+      "title": "CP-Algorithms",
+      "url": "https://cp-algorithms.com",
+      "note": "Clear write-ups of union-find, Dijkstra, inversion counting and more."
+    },
+    {
+      "title": "Neural Machine Translation of Rare Words with Subword Units (Sennrich et al., 2015)",
+      "url": "https://arxiv.org/abs/1508.07909",
+      "note": "Byte-pair encoding, the algorithm in bpe_train."
+    },
+    {
+      "title": "Introduction to Algorithms (Cormen, Leiserson, Rivest, Stein)",
+      "url": "https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
+      "note": "Topological sort, Kruskal's algorithm and the cut property, BFS and dynamic programming."
+    }
+  ],
+  "runtime": "gymkit",
+  "requires": {
+    "gpu": false
+  },
+  "order": 2,
+  "langs": [
+    {
+      "id": "python",
+      "file": "solution.py",
+      "label": "Python",
+      "editor": "python"
+    },
+    {
+      "id": "cpp",
+      "file": "solution.cpp",
+      "label": "C++",
+      "editor": "cpp"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Arrays and intervals",
+      "summary": "Sorting, sweeping, monotonic stacks and deques, divide and conquer, and binary search on the answer.",
+      "exercises": [
+        "merge_intervals",
+        "meeting_rooms",
+        "sliding_window_max",
+        "largest_rectangle",
+        "count_inversions",
+        "ship_capacity"
+      ]
+    },
+    {
+      "name": "Data structures",
+      "summary": "Heaps, hash maps with linked lists, tries and sorted lists, union-find, and the pair counts that byte-pair encoding updates as it merges.",
+      "exercises": [
+        "top_k_frequent",
+        "running_median",
+        "lru_cache",
+        "prefix_suggestions",
+        "union_find",
+        "bpe_train"
+      ]
+    },
+    {
+      "name": "Graphs",
+      "summary": "Breadth-first search, shortest paths with a heap, topological order, and minimum spanning trees.",
+      "exercises": [
+        "grid_shortest_path",
+        "dijkstra",
+        "course_schedule",
+        "kruskal_mst"
+      ]
+    },
+    {
+      "name": "Dynamic programming",
+      "summary": "Tables over prefixes and budgets: edit distance, longest increasing subsequence and the 0/1 knapsack.",
+      "exercises": [
+        "edit_distance",
+        "longest_increasing_subsequence",
+        "knapsack"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "What fusion saves",
+  "difficulty": "easy",
+  "summary": "The speedup from fusing a bias add and a GELU into one kernel.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "kernel fusion",
+    "memory-bound"
+  ],
+  "placeholder": "e.g. 1.5"
+}

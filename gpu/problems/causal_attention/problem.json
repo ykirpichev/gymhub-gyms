@@ -1,0 +1,6 @@
+{
+  "title": "Causal flash attention",
+  "difficulty": "hard",
+  "summary": "Multi-head causal attention without storing the score matrix, skipping the masked tiles.",
+  "kind": "code"
+}

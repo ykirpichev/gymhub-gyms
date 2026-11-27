@@ -1,0 +1,12 @@
+{
+  "title": "Symmetric int8 quantization per row",
+  "difficulty": "easy",
+  "summary": "Quantize a weight matrix to int8 with one scale per output row.",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "int8",
+    "symmetric quantization",
+    "per-channel scales"
+  ]
+}

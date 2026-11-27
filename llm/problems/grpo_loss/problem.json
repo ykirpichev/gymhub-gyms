@@ -1,0 +1,6 @@
+{
+  "title": "GRPO loss",
+  "difficulty": "hard",
+  "summary": "Group-relative advantages, the clipped policy-ratio objective and a KL penalty, over masked completion tokens.",
+  "kind": "code"
+}

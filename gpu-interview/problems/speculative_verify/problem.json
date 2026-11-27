@@ -1,0 +1,12 @@
+{
+  "title": "Speculative decoding: the verify step",
+  "difficulty": "hard",
+  "summary": "Accept or reject draft tokens so the output follows the target model's distribution exactly.",
+  "kind": "code",
+  "minutes": 25,
+  "concepts": [
+    "speculative decoding",
+    "rejection sampling",
+    "verification"
+  ]
+}

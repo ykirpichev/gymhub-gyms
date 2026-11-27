@@ -1,0 +1,6 @@
+{
+  "title": "Causal self-attention",
+  "difficulty": "medium",
+  "summary": "Scaled dot-product attention with a causal mask, from matmuls and a stable softmax.",
+  "kind": "code"
+}

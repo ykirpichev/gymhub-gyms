@@ -1,0 +1,6 @@
+{
+  "title": "Missing values and unseen categories",
+  "difficulty": "medium",
+  "summary": "Impute and one-hot encode mixed columns from the training rows only, with an unknown bucket.",
+  "kind": "code"
+}

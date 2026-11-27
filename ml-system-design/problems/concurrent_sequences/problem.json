@@ -1,0 +1,13 @@
+{
+  "title": "How many conversations fit",
+  "difficulty": "medium",
+  "summary": "Free memory divided by KV bytes per sequence.",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "KV cache",
+    "concurrency",
+    "capacity planning"
+  ],
+  "placeholder": "sequences"
+}

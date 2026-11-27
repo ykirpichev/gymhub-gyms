@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Defines bias as error from overly simple assumptions (the model cannot represent the true relationship), leading to underfitting.\n2. Defines variance as sensitivity to the particular training sample (the model fits noise), leading to overfitting.\n3. Explains the trade-off: increasing model complexity typically lowers bias and raises variance; expected error decomposes into bias squared + variance + irreducible noise.\n4. Gives a diagnosis: high train and validation error means high bias; low train error with much higher validation error means high variance (learning curves).\n5. Names at least one remedy for each side: e.g. more features or a more flexible model for bias; more data, regularization, or a simpler model or ensembling (bagging) for variance.",
+  "pass_score": 0.7
+}

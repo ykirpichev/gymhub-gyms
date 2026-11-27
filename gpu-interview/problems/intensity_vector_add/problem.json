@@ -1,0 +1,11 @@
+{
+  "title": "Intensity of a vector add",
+  "difficulty": "easy",
+  "summary": "FLOPs per byte of c = a + b in FP32.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "arithmetic intensity"
+  ],
+  "placeholder": "FLOPs per byte, e.g. 0.5"
+}

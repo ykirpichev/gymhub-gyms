@@ -1,0 +1,12 @@
+{
+  "title": "Softmax backward by hand",
+  "difficulty": "medium",
+  "summary": "The vector-Jacobian product of softmax, without building the Jacobian.",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "softmax",
+    "backward",
+    "vector-Jacobian product"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Principal component analysis",
+  "difficulty": "medium",
+  "summary": "Top components of centered data, ordered by explained-variance ratio, with a fixed sign.",
+  "kind": "code"
+}

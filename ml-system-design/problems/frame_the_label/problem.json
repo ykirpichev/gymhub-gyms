@@ -1,0 +1,31 @@
+{
+  "title": "From product goal to ML task",
+  "difficulty": "medium",
+  "summary": "Turn \"more engagement\" into a prediction with a well-defined label.",
+  "kind": "choice",
+  "minutes": 5,
+  "concepts": [
+    "problem framing",
+    "labels",
+    "proxy metrics"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Predict whether the user clicks the article, and rank by click probability alone."
+    },
+    {
+      "id": "b",
+      "text": "Predict the probability of a click and the expected read time after a click, and rank by a weighted combination, with the weights tuned in A/B tests."
+    },
+    {
+      "id": "c",
+      "text": "Predict the number of articles the user will read this week, and show the same list to everyone."
+    },
+    {
+      "id": "d",
+      "text": "Cluster articles by topic and show the largest cluster first."
+    }
+  ],
+  "multiple": false
+}

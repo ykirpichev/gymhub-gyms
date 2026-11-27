@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "id": "ml-fundamentals",
+  "title": "ML fundamentals",
+  "description": "The breadth interview: learning paradigms, linear models, trees and ensembles, optimization, evaluation, unsupervised learning, regularization, data handling, deep learning and statistics. Quick questions, small calculations and short written answers.",
+  "sources": [
+    {
+      "title": "AIMLInterviews (Alireza Dirafzoon, MIT)",
+      "url": "https://github.com/alirezadir/AIMLInterviews",
+      "note": "The interview guide whose ML fundamentals syllabus sets this course's topics."
+    },
+    {
+      "title": "AIMLInterviews: ML fundamentals syllabus",
+      "url": "https://github.com/alirezadir/AIMLInterviews/blob/main/src/ml-fundamental.md",
+      "note": "The topic list. Questions and rubrics here were written for this course."
+    }
+  ],
+  "publish": "upload",
+  "runtime": "gymkit",
+  "requires": {
+    "gpu": false
+  },
+  "order": 4,
+  "langs": [],
+  "tracks": [
+    {
+      "name": "Learning paradigms",
+      "summary": "What learning from data means, which kinds of problems it solves, and the workflow every project follows.",
+      "exercises": [
+        "what_learning_means",
+        "paradigm_examples",
+        "task_types",
+        "model_families",
+        "ml_vs_programming",
+        "ml_workflow_order"
+      ]
+    },
+    {
+      "name": "Linear models and losses",
+      "summary": "Least squares, the logistic model, the margin, and which loss fits which task.",
+      "exercises": [
+        "linear_models_lesson",
+        "ols_objective",
+        "sse_calc",
+        "sigmoid_calc",
+        "bce_calc",
+        "explain_logistic",
+        "svm_and_kernel",
+        "loss_for_task"
+      ]
+    },
+    {
+      "name": "Trees, ensembles, and optimization",
+      "summary": "How trees split, how ensembles combine them, and how gradient methods take a step.",
+      "exercises": [
+        "trees_optimization_lesson",
+        "tree_lifecycle",
+        "gini_calc",
+        "ensemble_zoo",
+        "gd_step",
+        "optimizer_zoo",
+        "gd_step_fill"
+      ]
+    },
+    {
+      "name": "Evaluation and model selection",
+      "summary": "Turning a confusion matrix into the right metric, and choosing a model without touching the test set.",
+      "exercises": [
+        "evaluation_lesson",
+        "specificity_calc",
+        "precision_recall_calc",
+        "imbalance_metrics",
+        "roc_multiclass",
+        "kfold_practice",
+        "confusion_fill"
+      ]
+    },
+    {
+      "name": "Unsupervised learning",
+      "summary": "Clustering, topics and projections: structure found without labels.",
+      "exercises": [
+        "unsupervised_lesson",
+        "knn_vs_kmeans",
+        "clustering_families",
+        "topics_and_hmm",
+        "projection_trio"
+      ]
+    },
+    {
+      "name": "Generalization and data",
+      "summary": "Bias, variance and regularization, and the data problems a training loss does not show.",
+      "exercises": [
+        "generalization_lesson",
+        "bias_variance_symptoms",
+        "explain_bias_variance",
+        "explain_regularization",
+        "sampling_methods",
+        "data_issues"
+      ]
+    },
+    {
+      "name": "Deep learning",
+      "summary": "Parameter counts, backpropagation, recurrent cells, dropout and attention.",
+      "exercises": [
+        "deep_learning_lesson",
+        "ff_param_count",
+        "explain_nn_backprop",
+        "multilabel_activation",
+        "rnn_lstm",
+        "dropout_lstm",
+        "attention_stack",
+        "explain_cnn_transfer"
+      ]
+    },
+    {
+      "name": "Statistics and distances",
+      "summary": "Bayes, likelihood, R², p-values, and which distance suits which data.",
+      "exercises": [
+        "statistics_lesson",
+        "nb_posterior",
+        "map_vs_mle",
+        "r_squared_calc",
+        "pvalue_meaning",
+        "distance_when",
+        "cosine_calc"
+      ]
+    }
+  ]
+}

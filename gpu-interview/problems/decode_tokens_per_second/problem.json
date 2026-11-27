@@ -1,0 +1,13 @@
+{
+  "title": "Tokens per second at batch size 1",
+  "difficulty": "medium",
+  "summary": "The memory-bandwidth ceiling on single-sequence LLM decoding.",
+  "kind": "answer",
+  "minutes": 4,
+  "concepts": [
+    "decode",
+    "memory-bound",
+    "LLM inference"
+  ],
+  "placeholder": "tokens per second"
+}

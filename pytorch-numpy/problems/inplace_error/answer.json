@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "a"
+  ],
+  "explanation": "Sigmoid's derivative is $\\sigma(x)(1 - \\sigma(x))$, so autograd saves the output `y`. `mul_` overwrote that saved tensor; autograd notices through the tensor's version counter and refuses to compute a wrong gradient. `mul_` itself is differentiable, and `x` is not modified in place (that would be a different error). The fix is `y = y * 2`, which allocates a new tensor and leaves the saved one intact."
+}

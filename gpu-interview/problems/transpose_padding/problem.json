@@ -1,0 +1,31 @@
+{
+  "title": "Why the tile is 32 by 33",
+  "difficulty": "easy",
+  "summary": "The extra column in a shared-memory transpose tile.",
+  "kind": "choice",
+  "minutes": 2,
+  "concepts": [
+    "shared memory",
+    "bank conflicts",
+    "transpose"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "To hold a halo column from the neighbouring tile, like a convolution does."
+    },
+    {
+      "id": "b",
+      "text": "So that a column read puts the 32 lanes in 32 different banks instead of all in one."
+    },
+    {
+      "id": "c",
+      "text": "Because a 32 × 32 tile is 4 KB, and shared memory is allocated in units larger than 4 KB."
+    },
+    {
+      "id": "d",
+      "text": "To align each row of the tile to a 128-byte boundary for coalesced global reads."
+    }
+  ],
+  "multiple": false
+}

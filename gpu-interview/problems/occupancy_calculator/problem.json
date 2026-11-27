@@ -1,0 +1,13 @@
+{
+  "title": "Occupancy calculator",
+  "difficulty": "medium",
+  "summary": "Write the occupancy calculation an interviewer asks you to do by hand, and name the limiter.",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "occupancy",
+    "registers",
+    "shared memory",
+    "warps"
+  ]
+}

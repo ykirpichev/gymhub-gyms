@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "d"
+  ],
+  "explanation": "Cosine similarity is the normalized dot product, so it keeps the angle and drops the length of each document. Euclidean distance is the straight-line L2 length of the difference, and Manhattan distance is the sum of absolute coordinate differences; both still grow when one document is a longer copy of the other. Mahalanobis distance is the square root of (x\u2212\u03bc)\u1d40\u03a3\u207b\u00b9(x\u2212\u03bc) (that expression itself is the squared distance), which rescales by a covariance once you have one, and it is not the bag-of-words angle."
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Sliding windows without copies",
+  "difficulty": "medium",
+  "summary": "Build overlapping windows of a 1-D array as a strided view, then reduce them.",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "stride tricks",
+    "sliding_window_view",
+    "as_strided",
+    "views"
+  ]
+}

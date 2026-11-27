@@ -1,0 +1,4 @@
+{
+  "rubric": "1. Says regularization adds a penalty on the weights to the training loss so the fit is less free to follow noise, which is a remedy for high variance rather than for a model that is already too weak to fit the signal.\n2. Describes L2 / ridge as a penalty proportional to the sum of squared weights: coefficients shrink toward zero but are not driven to exact zeros.\n3. Describes L1 / lasso as a penalty proportional to the sum of absolute weights: the geometry of that penalty produces exact zeros, so some features drop out.\n4. Says when to turn it up: when the model overfits (low training error, much higher validation error), choosing the strength on validation data or by cross-validation, and that a stronger penalty trades higher bias for lower variance.",
+  "pass_score": 0.7
+}

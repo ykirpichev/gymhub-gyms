@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.8"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "Naive Bayes multiplies the class prior by one likelihood per feature, which is the conditional-independence assumption. The spam numerator is 0.5\u00b70.8\u00b70.6 = 0.24 and the ham numerator is 0.5\u00b70.4\u00b70.3 = 0.06, so the posterior is 0.24/0.30 = 0.80. Using only one feature gives 2/3, and adding the feature probabilities instead of multiplying is a different model."
+}

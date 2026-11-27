@@ -1,0 +1,31 @@
+{
+  "title": "Timing GPU code",
+  "difficulty": "easy",
+  "summary": "Why a naive timer reports a matmul as almost free.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "CUDA asynchrony",
+    "benchmarking",
+    "synchronize"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "The matmul was cached from an earlier call, so PyTorch skipped it."
+    },
+    {
+      "id": "b",
+      "text": "`time.time()` cannot measure anything below a millisecond, so it rounds down."
+    },
+    {
+      "id": "c",
+      "text": "Python's `@` operator runs on the CPU, and the GPU work starts only at `c.cpu()`."
+    },
+    {
+      "id": "d",
+      "text": "The kernel launch is asynchronous: the timer measured queuing the work, not running it."
+    }
+  ],
+  "multiple": false
+}

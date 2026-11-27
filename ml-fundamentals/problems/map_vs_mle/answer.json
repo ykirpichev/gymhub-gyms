@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "a"
+  ],
+  "explanation": "Maximum likelihood maximizes the probability of the data given the parameters, and for linear regression with Gaussian noise that is ordinary least squares. MAP maximizes the posterior, likelihood times prior: a zero-mean Gaussian prior is the squared (ridge) penalty, while the lasso's absolute-value penalty comes from a Laplace prior. With more data the prior's pull shrinks, but the two estimates coincide exactly only for a flat prior, and swapping which one is the posterior reverses the definitions."
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Kahan summation in float32",
+  "difficulty": "medium",
+  "summary": "Sum many float32 values naively and with compensation, and see the difference.",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "floating point",
+    "summation error",
+    "Kahan summation",
+    "float32"
+  ]
+}

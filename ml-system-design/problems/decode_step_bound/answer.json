@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "10.45"
+  ],
+  "match": "number",
+  "tolerance": 0.15,
+  "explanation": "Aggregate bandwidth is ${4 \\times 3.35 = 13.4}$ TB/s, and ${140 \\text{ GB} / 13.4 \\text{ TB/s} \\approx 10.4}$ ms, so at most about 96 tokens per second for one user however fast the GPUs compute. Real steps take longer (KV reads, communication between the GPUs, kernel launches). Weight quantisation to FP8 halves this bound, and batching shares one weight read among all sequences in the step."
+}

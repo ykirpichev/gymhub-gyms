@@ -1,0 +1,4 @@
+{
+  "rubric": "1. States the problem: standard attention materializes the N × N score and probability matrices in HBM, so memory traffic and memory use grow quadratically with sequence length and the kernel is memory-bound.\n2. Explains tiling: blocks of Q stay in on-chip SRAM (shared memory and registers) while blocks of K and V stream through, so scores are computed and used without being written to HBM.\n3. Explains the online softmax: a running max and running sum per query row, with the partial output rescaled when the max changes, so the result is exact, not an approximation.\n4. Mentions the backward pass recomputes the scores from Q, K and the saved log-sum-exp instead of storing them, trading cheap FLOPs for expensive memory, with the outcome of linear memory and a large speedup at long sequence lengths.",
+  "pass_score": 0.7
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Counting LoRA parameters",
+  "difficulty": "medium",
+  "summary": "Trainable parameters for query and value LoRA across every layer.",
+  "kind": "answer",
+  "placeholder": "parameter count"
+}

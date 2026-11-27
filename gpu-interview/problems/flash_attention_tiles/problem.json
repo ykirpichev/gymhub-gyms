@@ -1,0 +1,13 @@
+{
+  "title": "Flash attention, tile by tile",
+  "difficulty": "hard",
+  "summary": "Attention over key and value blocks with a running max, sum and output, and an optional causal mask.",
+  "kind": "code",
+  "minutes": 35,
+  "concepts": [
+    "flash attention",
+    "online softmax",
+    "tiling",
+    "causal mask"
+  ]
+}

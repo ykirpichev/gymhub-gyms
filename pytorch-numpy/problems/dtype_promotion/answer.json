@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "`/` is true division in PyTorch, as in Python 3, and integer inputs promote to the *default float dtype*, float32. Floor division is `//` or `torch.div(t, 2, rounding_mode=\"floor\")`. NumPy also does true division but returns float64. These defaults are why the same formula gives slightly different results in NumPy and PyTorch."
+}

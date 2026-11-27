@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "llm",
+  "title": "LLM gym",
+  "description": "GPU implementations of language-model pieces in PyTorch: RMSNorm, SwiGLU and mixture-of-experts MLPs, LoRA, rotary embeddings, causal and grouped-query attention, KV-cache and paged-attention decode steps, cross-entropy, sampling filters, beam search, speculative decoding and the GRPO loss. Batched CUDA tensors, graded and benchmarked on your GPU, each with an editorial. The ML coding gym has CPU interview versions of several of them.",
+  "sources": [
+    {
+      "title": "Attention Is All You Need (Vaswani et al., 2017)",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "note": "The transformer this gym takes apart."
+    },
+    {
+      "title": "Root Mean Square Layer Normalization (Zhang and Sennrich, 2019)",
+      "url": "https://arxiv.org/abs/1910.07467",
+      "note": "rms_norm."
+    },
+    {
+      "title": "RoFormer: rotary position embedding (Su et al., 2021)",
+      "url": "https://arxiv.org/abs/2104.09864",
+      "note": "rope."
+    },
+    {
+      "title": "LoRA (Hu et al., 2021)",
+      "url": "https://arxiv.org/abs/2106.09685",
+      "note": "lora_linear."
+    },
+    {
+      "title": "FlashAttention (Dao et al., 2022)",
+      "url": "https://arxiv.org/abs/2205.14135",
+      "note": "Attention without the full score matrix."
+    },
+    {
+      "title": "The Curious Case of Neural Text Degeneration (Holtzman et al., 2019)",
+      "url": "https://arxiv.org/abs/1904.09751",
+      "note": "Top-p sampling, in sampling_filter."
+    },
+    {
+      "title": "nanoGPT (Karpathy)",
+      "url": "https://github.com/karpathy/nanoGPT",
+      "note": "A small, readable GPT where all of these pieces fit together."
+    },
+    {
+      "title": "GLU Variants Improve Transformer (Shazeer, 2020)",
+      "url": "https://arxiv.org/abs/2002.05202",
+      "note": "SwiGLU, in swiglu_mlp and moe_layer."
+    },
+    {
+      "title": "Mixtral of Experts (Jiang et al., 2024)",
+      "url": "https://arxiv.org/abs/2401.04088",
+      "note": "Top-2 routing over 8 SwiGLU experts, in moe_layer."
+    },
+    {
+      "title": "GQA: Training Generalized Multi-Query Transformer Models (Ainslie et al., 2023)",
+      "url": "https://arxiv.org/abs/2305.13245",
+      "note": "gqa_attention."
+    },
+    {
+      "title": "Efficient Memory Management for LLM Serving with PagedAttention (Kwon et al., 2023)",
+      "url": "https://arxiv.org/abs/2309.06180",
+      "note": "vLLM's paged KV cache, in paged_attention_decode."
+    },
+    {
+      "title": "Fast Inference from Transformers via Speculative Decoding (Leviathan et al., 2022)",
+      "url": "https://arxiv.org/abs/2211.17192",
+      "note": "The accept-and-resample rule in speculative_accept."
+    },
+    {
+      "title": "DeepSeekMath (Shao et al., 2024)",
+      "url": "https://arxiv.org/abs/2402.03300",
+      "note": "Group Relative Policy Optimization, in grpo_loss."
+    }
+  ],
+  "runtime": "gymkit",
+  "requires": {
+    "gpu": true
+  },
+  "order": 1,
+  "langs": [
+    {
+      "id": "pytorch",
+      "file": "solution.py",
+      "label": "PyTorch",
+      "editor": "python"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Model building blocks",
+      "summary": "Norms, gated and mixture-of-experts MLPs, the training loss and low-rank adapters on batched CUDA tensors.",
+      "exercises": [
+        "rms_norm",
+        "swiglu_mlp",
+        "moe_layer",
+        "cross_entropy",
+        "lora_linear"
+      ]
+    },
+    {
+      "name": "Attention",
+      "summary": "Rotary embeddings, causal and grouped-query attention, and decode steps against padded and paged KV caches.",
+      "exercises": [
+        "rope",
+        "causal_attention",
+        "gqa_attention",
+        "kv_cache_decode",
+        "paged_attention_decode"
+      ]
+    },
+    {
+      "name": "Tokens and decoding",
+      "summary": "Sampling filters, beam search, speculative decoding, and the GRPO loss that trains on sampled answers.",
+      "exercises": [
+        "sampling_filter",
+        "beam_search_step",
+        "speculative_accept",
+        "grpo_loss"
+      ]
+    }
+  ]
+}

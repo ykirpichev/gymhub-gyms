@@ -1,0 +1,15 @@
+{
+  "title": "Worked design: an LLM chat service",
+  "difficulty": "easy",
+  "summary": "A worked answer: size traffic in tokens, choose the model and GPUs, plan prefill and decode capacity, use prefix caching and routing, and price it per user.",
+  "kind": "lesson",
+  "minutes": 20,
+  "concepts": [
+    "LLM serving",
+    "capacity planning",
+    "KV cache",
+    "prefix caching",
+    "model routing",
+    "cost"
+  ]
+}

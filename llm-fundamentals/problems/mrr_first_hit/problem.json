@@ -1,0 +1,7 @@
+{
+  "title": "Mean reciprocal rank",
+  "difficulty": "easy",
+  "summary": "Average of 1/rank of the first relevant hit.",
+  "kind": "answer",
+  "placeholder": "MRR, e.g. 0.500"
+}

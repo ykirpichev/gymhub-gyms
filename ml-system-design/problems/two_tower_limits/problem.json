@@ -1,0 +1,35 @@
+{
+  "title": "Why the ranker comes after retrieval",
+  "difficulty": "medium",
+  "summary": "What a two-tower model can and cannot do.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "two-tower",
+    "ANN",
+    "cross features"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Item embeddings can be computed offline for the whole catalogue because the item tower does not depend on the user."
+    },
+    {
+      "id": "b",
+      "text": "A two-tower model can use \"how many times has this user watched this creator\" as an input."
+    },
+    {
+      "id": "c",
+      "text": "Training with in-batch negatives over-penalises popular items unless you correct for how often each item is sampled."
+    },
+    {
+      "id": "d",
+      "text": "An ANN index trades a little recall for search over millions of vectors in milliseconds."
+    },
+    {
+      "id": "e",
+      "text": "Two-tower retrieval removes the need for a separate ranker, because its dot product is already the best score."
+    }
+  ],
+  "multiple": true
+}

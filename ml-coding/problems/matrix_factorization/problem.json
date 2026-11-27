@@ -1,0 +1,6 @@
+{
+  "title": "Matrix factorization with SGD",
+  "difficulty": "medium",
+  "summary": "Fit user and item factors to the observed ratings only, with SGD and L2 regularization, and report the training RMSE.",
+  "kind": "code"
+}

@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "6291456"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "Each adapted matrix contributes 16 × (4096 + 4096) = 131,072 parameters, query plus value is 262,144 per layer, and 24 layers make 6,291,456. Alpha scales the update by alpha/r = 2 and adds no weights, so multiplying the count by alpha is the usual slip. Frozen matrices, including key and output, add nothing to the trainable count. The adapter, not a second full copy of the model, is what you store for the task."
+}

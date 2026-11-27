@@ -1,0 +1,31 @@
+{
+  "title": "no_grad or detach?",
+  "difficulty": "medium",
+  "summary": "Where gradients stop in a target network update.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "no_grad",
+    "detach",
+    "stop-gradient"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Wrap the whole step, including `loss.backward()`, in `torch.no_grad()` so the target network gets no gradients."
+    },
+    {
+      "id": "b",
+      "text": "Set `target_net.eval()`, which stops the target network from recording gradients."
+    },
+    {
+      "id": "c",
+      "text": "Compute `target` under `torch.no_grad()` or call `.detach()` on it; both stop gradients there."
+    },
+    {
+      "id": "d",
+      "text": "Call `target.requires_grad_(False)` after computing it, which removes it from the existing graph."
+    }
+  ],
+  "multiple": false
+}

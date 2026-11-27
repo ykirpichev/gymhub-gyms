@@ -1,0 +1,6 @@
+{
+  "title": "TF-IDF matrix",
+  "difficulty": "medium",
+  "summary": "Build a sorted vocabulary and an L2-normalized TF-IDF matrix with smoothed IDF from tokenized documents.",
+  "kind": "code"
+}

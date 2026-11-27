@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "13.5"
+  ],
+  "match": "number",
+  "tolerance": 0.001,
+  "explanation": "$z = \\log(x^3) + x^3 = 3 \\log x + x^3$, so $dz/dx = 3/x + 3x^2 = 1.5 + 12 = 13.5$. Autograd gets the same number by multiplying local derivatives along the graph: $dz/dy = 1/y + 1 = 1/8 + 1$ and $dy/dx = 3x^2 = 12$, so $1.125 \\times 12 = 13.5$."
+}

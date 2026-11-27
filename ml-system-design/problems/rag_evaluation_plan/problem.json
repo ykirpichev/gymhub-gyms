@@ -1,0 +1,15 @@
+{
+  "title": "Evaluate a RAG assistant before launch",
+  "difficulty": "hard",
+  "summary": "Write an evaluation plan for an internal documentation assistant.",
+  "kind": "essay",
+  "minutes": 12,
+  "concepts": [
+    "RAG evaluation",
+    "golden set",
+    "LLM judge",
+    "online metrics"
+  ],
+  "min_words": 120,
+  "max_words": 400
+}

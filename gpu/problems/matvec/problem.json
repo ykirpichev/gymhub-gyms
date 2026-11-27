@@ -1,0 +1,6 @@
+{
+  "title": "Matrix-vector multiply",
+  "difficulty": "medium",
+  "summary": "y = A @ x for a row-major M x K matrix.",
+  "kind": "code"
+}

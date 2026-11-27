@@ -1,0 +1,16 @@
+{
+  "title": "From offline metrics to a safe launch",
+  "difficulty": "easy",
+  "summary": "A lesson: offline against online metrics, A/B test design and sample size, pitfalls such as SRM and novelty, rollout stages, and drift monitoring.",
+  "kind": "lesson",
+  "minutes": 12,
+  "concepts": [
+    "A/B testing",
+    "sample size",
+    "SRM",
+    "canary",
+    "shadow",
+    "drift",
+    "PSI"
+  ]
+}

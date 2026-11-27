@@ -1,0 +1,36 @@
+{
+  "title": "Time to first token spikes at peak",
+  "difficulty": "medium",
+  "summary": "Diagnose a TTFT p99 regression at peak traffic.",
+  "kind": "choice",
+  "minutes": 4,
+  "concepts": [
+    "TTFT",
+    "queueing",
+    "autoscaling",
+    "admission control"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Add replicas, or autoscale on queue length and KV-cache usage rather than on GPU utilisation."
+    },
+    {
+      "id": "b",
+      "text": "Increase the maximum batch size so more requests are admitted at once, since memory is the bottleneck."
+    },
+    {
+      "id": "c",
+      "text": "Enable prefix caching for the shared system prompt, so each prefill does less work."
+    },
+    {
+      "id": "d",
+      "text": "Apply admission control: cap queue length and return a fast \"busy\" error or route to another region instead of queueing for seconds."
+    },
+    {
+      "id": "e",
+      "text": "Switch to a larger model, since bigger models generate faster."
+    }
+  ],
+  "multiple": true
+}

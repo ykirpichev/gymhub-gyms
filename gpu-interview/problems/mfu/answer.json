@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "42"
+  ],
+  "match": "number",
+  "tolerance": 1,
+  "explanation": "6 × 7 × 10⁹ × 80,000 = 3.36 × 10¹⁵ FLOP/s achieved, against 8 × 10¹⁵ peak: 42%. The 6 counts 2 FLOPs per parameter in the forward pass and 4 in the backward pass. MFU counts only the model's FLOPs, so recomputation from activation checkpointing does not raise it (the *hardware* FLOPs utilization, HFU, would include it). 42% is respectable; the next exercise asks what you would do at 20%."
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Build a causal attention mask",
+  "difficulty": "easy",
+  "summary": "Combine a causal mask with key and query padding into a (B, L, L) boolean attention mask.",
+  "kind": "code"
+}

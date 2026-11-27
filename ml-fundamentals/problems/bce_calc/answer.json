@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.2231"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "With y = 1 the binary cross-entropy \u2212[y ln p + (1\u2212y) ln(1\u2212p)] reduces to \u2212ln(p). \u2212ln(0.8) \u2248 0.223. A base-10 or base-2 logarithm is a different scale, and \u2212ln(0.2) would be the loss of a much less confident correct call."
+}

@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "d"
+  ],
+  "explanation": "QLoRA keeps a quantized frozen base, typically 4-bit NormalFloat, and trains full-precision adapters, so Adam moments are not stored for every base weight. A bottleneck adapter adds depth and therefore latency, while merged LoRA does not. Prefix tuning and prompt tuning learn extra vectors rather than a low-rank update of an existing matrix, and those vectors occupy sequence positions. If alpha is held fixed, raising the rank lowers alpha/r, so the update is scaled down rather than up."
+}

@@ -1,0 +1,33 @@
+{
+  "title": "SGD, momentum, RMSProp, Adam",
+  "difficulty": "hard",
+  "summary": "What each optimizer accumulates, and what the normal equations cost instead.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Adam reaches a better minimum than SGD on every problem, so it should replace SGD wherever a gradient is available."
+    },
+    {
+      "id": "b",
+      "text": "Stochastic gradient descent estimates the gradient on a minibatch. On a linear model, one step with batch size B costs O(Bd); that step does not have to read all n rows."
+    },
+    {
+      "id": "c",
+      "text": "RMSProp keeps a moving average of squared gradients and multiplies the step by its square root, so a coordinate with a consistently huge gradient takes a larger step."
+    },
+    {
+      "id": "d",
+      "text": "For dense linear regression, forming and solving the normal equations costs O(nd\u00b2 + d\u00b3). One full pass of gradient descent on the same squared loss costs O(nd)."
+    },
+    {
+      "id": "e",
+      "text": "Momentum keeps an exponentially decayed sum of past gradients (a velocity) and steps along that velocity, which damps zig-zags when curvature differs by direction."
+    },
+    {
+      "id": "f",
+      "text": "Adam keeps a momentum-like first moment and an RMSProp-like second moment, and it bias-corrects both because they start at zero and would otherwise stay shrunk."
+    }
+  ],
+  "multiple": true
+}

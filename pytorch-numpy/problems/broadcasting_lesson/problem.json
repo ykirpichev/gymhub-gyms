@@ -1,0 +1,12 @@
+{
+  "title": "Broadcasting and einsum in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: the broadcasting rules, with examples, and how to read an einsum string.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "broadcasting",
+    "einsum",
+    "vectorization"
+  ]
+}

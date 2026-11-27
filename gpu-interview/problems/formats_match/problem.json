@@ -1,0 +1,61 @@
+{
+  "title": "Match the format to its trait",
+  "difficulty": "easy",
+  "summary": "FP32, BF16, FP16, FP8 and int8 by what each is known for.",
+  "kind": "match",
+  "minutes": 3,
+  "concepts": [
+    "number formats",
+    "BF16",
+    "FP16",
+    "FP8"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "BF16"
+    },
+    {
+      "id": "p2",
+      "text": "FP16"
+    },
+    {
+      "id": "p3",
+      "text": "FP8 E4M3"
+    },
+    {
+      "id": "p4",
+      "text": "int8"
+    },
+    {
+      "id": "p5",
+      "text": "FP32"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "Same exponent range as FP32 with a 7-bit mantissa; the default for training"
+    },
+    {
+      "id": "b",
+      "text": "Eight bits with three mantissa bits, used for matmul inputs with a scale per tensor or block"
+    },
+    {
+      "id": "c",
+      "text": "Overflows above 65,504, so FP16 training scales the loss"
+    },
+    {
+      "id": "d",
+      "text": "Four bits per value, accumulated in four bits"
+    },
+    {
+      "id": "e",
+      "text": "The accumulator inside Tensor Core matmuls and the format of optimizer state"
+    },
+    {
+      "id": "f",
+      "text": "Integers from −127 to 127 multiplied with an int32 accumulator, then rescaled"
+    }
+  ]
+}

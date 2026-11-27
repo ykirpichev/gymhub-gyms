@@ -1,0 +1,12 @@
+{
+  "title": "How an ML system design interview works",
+  "difficulty": "easy",
+  "summary": "A lesson: what the round tests, a nine-step framework, and how to spend 45 minutes.",
+  "kind": "lesson",
+  "minutes": 10,
+  "concepts": [
+    "interview framework",
+    "requirements",
+    "trade-offs"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "order": [
+    "a",
+    "c",
+    "e",
+    "b",
+    "d"
+  ],
+  "explanation": "Registers take about a cycle, shared memory tens of cycles, L2 a couple of hundred, HBM several hundred, and host memory over PCIe (or zero-copy / unified memory that has to migrate) microseconds. The gaps matter more than the exact numbers: each step out costs several times the step before, and the PCIe step is why you keep data on the device between kernels."
+}

@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "15.36"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.01,
+  "explanation": "${10^7 \\times 768 \\times 2}$ bytes $= 1.536 \\times 10^{10}$ bytes $\\approx 15.4$ GB. That fits in one machine's memory, so a single-node HNSW index works; at a billion chunks you would shard, quantise (int8 or product quantisation), or use a disk-based index."
+}

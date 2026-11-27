@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "c",
+    "e"
+  ],
+  "explanation": "k-means is nearest centroids and a sum of squares, hierarchical clustering is a dendrogram of linkages you can cut at any height, and DBSCAN is density with an explicit noise label, so the claim that every point must join a cluster is false. A Gaussian mixture is the soft version: each point gets a responsibility under every component, components can have their own covariances, and the fit is expectation-maximization; one shared spherical covariance with hard assignments is k-means. None of these needs class labels to run."
+}

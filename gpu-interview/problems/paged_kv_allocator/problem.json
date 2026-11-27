@@ -1,0 +1,13 @@
+{
+  "title": "A paged KV-cache allocator",
+  "difficulty": "medium",
+  "summary": "Block tables for many sequences over a fixed pool of KV blocks, with all-or-nothing appends.",
+  "kind": "code",
+  "minutes": 25,
+  "concepts": [
+    "PagedAttention",
+    "KV cache",
+    "block table",
+    "memory allocation"
+  ]
+}

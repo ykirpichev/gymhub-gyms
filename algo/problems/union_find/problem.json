@@ -1,0 +1,6 @@
+{
+  "title": "Union-find",
+  "difficulty": "medium",
+  "summary": "Disjoint-set union with path compression and union by size, answering connectivity queries.",
+  "kind": "code"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "0/1 knapsack",
+  "difficulty": "medium",
+  "summary": "The most value that fits in a weight budget, each item taken at most once: a one-row DP.",
+  "kind": "code"
+}

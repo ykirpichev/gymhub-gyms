@@ -1,0 +1,16 @@
+{
+  "title": "Design harmful content detection",
+  "difficulty": "hard",
+  "summary": "Practice: classifiers, human review and policy for posts on a social network.",
+  "kind": "essay",
+  "minutes": 25,
+  "concepts": [
+    "classification",
+    "human in the loop",
+    "precision and recall",
+    "adversarial drift",
+    "multimodal"
+  ],
+  "min_words": 300,
+  "max_words": 900
+}

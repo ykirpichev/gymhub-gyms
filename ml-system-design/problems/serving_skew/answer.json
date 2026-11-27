@@ -1,0 +1,9 @@
+{
+  "correct": [
+    "a",
+    "b",
+    "c",
+    "e"
+  ],
+  "explanation": "Skew is any difference between the features the model trained on and the features it sees online: two implementations of the same logic, future values joined into training rows (which is also leakage), different defaults for missing values, and different preprocessing. The usual fixes are one feature definition materialised to both stores, logging the exact features used at serving time and training on those logs, and monitoring feature distributions online against training. A different seed changes the model slightly but is not skew."
+}

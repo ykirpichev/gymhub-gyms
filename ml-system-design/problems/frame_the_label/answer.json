@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "Click probability alone is easy to learn but rewards clickbait headlines, which hurts long-term engagement. Combining a click model with a \"quality after the click\" model (read time, or a \"read more than 30 seconds\" label) is how production rankers handle it: a multi-task model predicts several engagement signals, and a value function combines them. The weights are a product decision tuned online. A weekly count is not a per-article ranking signal, and clustering ignores the individual user."
+}

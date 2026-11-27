@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "a"
+  ],
+  "explanation": "A p-value of 0.03 is the probability, computed as if the null were true, of a result at least as extreme as the one observed. It is not the probability that the null is true or that the alternative is, which are posterior probabilities and need a prior. It is not the chance of replicating the result, which depends on the true effect and the power. And it says nothing about practical size: a tiny effect gives a small p-value with enough data."
+}

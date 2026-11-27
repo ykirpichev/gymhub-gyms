@@ -1,0 +1,12 @@
+{
+  "title": "Count the sectors a warp touches",
+  "difficulty": "easy",
+  "summary": "Model a warp's global load: how many 32-byte sectors it fetches and how much of them it uses.",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "coalescing",
+    "memory sectors",
+    "access efficiency"
+  ]
+}

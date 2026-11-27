@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "50"
+  ],
+  "match": "number",
+  "tolerance": 0.5,
+  "explanation": "One block needs 256 × 64 = 16,384 registers, so 65,536 / 16,384 = 4 blocks fit: 1,024 threads, 50% of 2,048. The thread limit alone would allow 8 blocks and the block limit 32, so registers are the limiter. Cutting to 32 registers per thread (with `__launch_bounds__` or `-maxrregcount`) would allow 8 blocks and 100% occupancy, *if* the kernel does not spill. Whether that makes it faster is the follow-up question; see the next exercise."
+}

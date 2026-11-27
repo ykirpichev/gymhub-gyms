@@ -1,0 +1,16 @@
+{
+  "title": "Design product search ranking",
+  "difficulty": "hard",
+  "summary": "Practice: query understanding, hybrid retrieval and learning to rank for an online shop.",
+  "kind": "essay",
+  "minutes": 25,
+  "concepts": [
+    "search",
+    "learning to rank",
+    "query understanding",
+    "hybrid retrieval",
+    "position bias"
+  ],
+  "min_words": 300,
+  "max_words": 900
+}

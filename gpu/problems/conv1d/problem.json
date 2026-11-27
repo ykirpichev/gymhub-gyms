@@ -1,0 +1,6 @@
+{
+  "title": "1D convolution",
+  "difficulty": "easy",
+  "summary": "Valid 1D convolution of a signal with a short kernel.",
+  "kind": "code"
+}

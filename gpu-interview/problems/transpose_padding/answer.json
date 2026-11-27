@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "With 32 columns, element `[t][c]` is word `32t + c`, so every lane of a column read lands in bank `c`: a 32-way conflict that serializes the read. With 33 columns it is word `33t + c`, bank `(t + c) % 32`, which is different for every lane. Padding costs 128 bytes of shared memory per tile. It does nothing for global memory: the global reads and writes are already coalesced because the tile is loaded and stored by rows. The GPU gym's `transpose` exercise benchmarks the difference."
+}

@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "b",
+    "c",
+    "f"
+  ],
+  "explanation": "A plain sequence-to-sequence model squeezes the input into one vector, and attention replaces that bottleneck with a weighted sum of encoder states. A transformer encoder block is multi-head self-attention plus a position-wise feedforward, residuals and layer norm, with positional encodings because attention alone cannot see order. Self-attention mixes all positions in one step without recurrence (a decoder masks later positions, but that is a mask, not a recurrent step). Token embeddings are learned rows of a table, and similar tokens do end up nearby. A 1\u00d71 convolution cannot mix positions, which is exactly what self-attention does; positional encodings add order, not mixing."
+}

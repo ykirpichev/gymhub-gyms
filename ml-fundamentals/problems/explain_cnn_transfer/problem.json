@@ -1,0 +1,8 @@
+{
+  "title": "Convolutions and a borrowed net",
+  "difficulty": "medium",
+  "summary": "What a conv net assumes about images, and how transfer learning uses one.",
+  "kind": "essay",
+  "min_words": 70,
+  "max_words": 340
+}

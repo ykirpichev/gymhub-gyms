@@ -1,0 +1,13 @@
+{
+  "title": "Plan the capacity of an LLM replica",
+  "difficulty": "hard",
+  "summary": "From model shape, GPUs and context length to max batch, step time, tokens per second and cost per million tokens.",
+  "kind": "code",
+  "minutes": 25,
+  "concepts": [
+    "capacity planning",
+    "KV cache",
+    "memory-bound decode",
+    "cost per token"
+  ]
+}

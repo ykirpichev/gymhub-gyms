@@ -1,0 +1,6 @@
+{
+  "title": "Attention",
+  "difficulty": "hard",
+  "summary": "Single-head scaled dot-product attention, softmax(Q K^T / sqrt(d)) V.",
+  "kind": "code"
+}

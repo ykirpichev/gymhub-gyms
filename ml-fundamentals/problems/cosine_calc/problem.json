@@ -1,0 +1,7 @@
+{
+  "title": "Cosine of two short vectors",
+  "difficulty": "easy",
+  "summary": "Normalized dot product, not the Euclidean distance.",
+  "kind": "answer",
+  "placeholder": "similarity, e.g. 0.500"
+}

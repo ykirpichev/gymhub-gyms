@@ -1,0 +1,31 @@
+{
+  "title": "Repeated indices in a scatter",
+  "difficulty": "easy",
+  "summary": "What out[idx] += 1 does when idx repeats.",
+  "kind": "choice",
+  "minutes": 2,
+  "concepts": [
+    "scatter",
+    "advanced indexing",
+    "np.add.at"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`[0, 3, 0, 1]`, since each occurrence of an index adds 1."
+    },
+    {
+      "id": "b",
+      "text": "`[0, 1, 0, 1]`, since the repeated index is written, not accumulated."
+    },
+    {
+      "id": "c",
+      "text": "An error, because NumPy does not allow repeated indices in an assignment."
+    },
+    {
+      "id": "d",
+      "text": "`[1, 1, 1, 1]`, because the right-hand side broadcasts over the whole array."
+    }
+  ],
+  "multiple": false
+}

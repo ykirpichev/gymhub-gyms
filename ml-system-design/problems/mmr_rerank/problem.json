@@ -1,0 +1,13 @@
+{
+  "title": "Diversify results with maximal marginal relevance",
+  "difficulty": "medium",
+  "summary": "Greedy re-ranking that trades relevance against similarity to what is already chosen.",
+  "kind": "code",
+  "minutes": 20,
+  "concepts": [
+    "re-ranking",
+    "diversity",
+    "MMR",
+    "greedy algorithms"
+  ]
+}

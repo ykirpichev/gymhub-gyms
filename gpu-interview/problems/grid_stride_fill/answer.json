@@ -1,0 +1,13 @@
+{
+  "blanks": {
+    "b1": {
+      "answers": [
+        "blockDim.x * gridDim.x",
+        "gridDim.x * blockDim.x",
+        "blockDim.x*gridDim.x",
+        "gridDim.x*blockDim.x"
+      ]
+    }
+  },
+  "explanation": "The whole grid has `blockDim.x * gridDim.x` threads, so after each thread handles element `i`, the next element nobody has touched is `i + blockDim.x * gridDim.x`. Consecutive threads still touch consecutive addresses in every iteration, so the loop keeps coalescing. Interviewers like this pattern because it decouples the launch size from the problem size: you can size the grid to the hardware (say 4 blocks per SM) and reuse per-thread setup across iterations."
+}

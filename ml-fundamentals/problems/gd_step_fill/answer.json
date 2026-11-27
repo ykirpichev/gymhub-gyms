@@ -1,0 +1,9 @@
+{
+  "blanks": {
+    "grad": {"answers": [4], "match": "number", "tolerance": 0.001},
+    "w_new": {"answers": [4.6], "match": "number", "tolerance": 0.001},
+    "direction": {"answers": ["increases", "grows", "goes up", "rises", "increases fastest", "increases most"]},
+    "w_big": {"answers": [-1], "match": "number", "tolerance": 0.001}
+  },
+  "explanation": "The gradient is 2(5 − 3) = 4, so w − η·4 = 5 − 0.4 = 4.6. The gradient points uphill, so the step goes the other way. With η = 1.5 the step is 6: 5 − 6 = −1, which is 4 from the minimum at 3 instead of 2. Too large a learning rate overshoots and can diverge."
+}

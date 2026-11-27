@@ -1,0 +1,29 @@
+{
+  "title": "Missing cells, rare classes, shift, outliers",
+  "difficulty": "medium",
+  "summary": "Four data problems that a training loss will not notice for you.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "If a value is missing completely at random, dropping that row mainly costs sample size. If it is missing because the true value would have been extreme, filling the hole with the column mean hides the tail; a missingness indicator plus an imputation is safer than writing a fake zero and treating it as observed."
+    },
+    {
+      "id": "b",
+      "text": "One extreme point can dominate a squared-error fit and can drag a k-means centroid, because both are built from means or sums of squares. Inspect the point before deleting it: it may be a bad measurement, or it may be the event you care about."
+    },
+    {
+      "id": "c",
+      "text": "Class weights or resampling can stop a rare class from being ignored in training. The live data still has the original base rate, so you judge the model with precision and recall on a set that has that base rate, not with accuracy on a training set you have artificially balanced."
+    },
+    {
+      "id": "d",
+      "text": "Covariate shift, label shift, and concept drift are three names for one event: the inputs changed and the conditional label rule did not."
+    },
+    {
+      "id": "e",
+      "text": "Covariate shift means P(X) at deployment differs from P(X) in training while P(Y|X) stays the same. A test score from the old distribution is not a promise about the new one; you detect the change and reweight or collect new data."
+    }
+  ],
+  "multiple": true
+}

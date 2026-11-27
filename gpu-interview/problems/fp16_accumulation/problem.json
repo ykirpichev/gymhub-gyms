@@ -1,0 +1,31 @@
+{
+  "title": "Summing in half precision",
+  "difficulty": "medium",
+  "summary": "What happens when a long sum is accumulated in FP16, and why kernels accumulate in FP32.",
+  "kind": "choice",
+  "minutes": 4,
+  "concepts": [
+    "FP16",
+    "accumulation",
+    "rounding error"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "100,000 exactly, because 1.0 is exactly representable in FP16."
+    },
+    {
+      "id": "b",
+      "text": "`inf`, because the sum overflows past the FP16 maximum of 65,504."
+    },
+    {
+      "id": "c",
+      "text": "2,048: from there the step between FP16 numbers is 2, so adding 1 rounds back to the same value."
+    },
+    {
+      "id": "d",
+      "text": "About 99,900, because each add loses about 10⁻³ of relative precision."
+    }
+  ],
+  "multiple": false
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Pick the cheapest fix that meets the goal",
+  "difficulty": "medium",
+  "summary": "Read which resource is the bottleneck before choosing a cost lever.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "cost",
+    "bottleneck analysis",
+    "LLM serving"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Enable prefix caching, and route each client's requests to the same replica so the cache hits."
+    },
+    {
+      "id": "b",
+      "text": "Switch to a paged KV cache to fit more decode sequences."
+    },
+    {
+      "id": "c",
+      "text": "Serve most requests with a smaller model distilled for summarisation, checked on a held-out set."
+    },
+    {
+      "id": "d",
+      "text": "Lower the maximum output length from 150 to 100 tokens."
+    }
+  ],
+  "multiple": false
+}

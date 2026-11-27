@@ -1,0 +1,12 @@
+{
+  "title": "Size a user embedding table",
+  "difficulty": "easy",
+  "summary": "Rows times dimension times bytes, in GB.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "embeddings",
+    "memory sizing"
+  ],
+  "placeholder": "GB"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Reciprocal rank fusion",
+  "difficulty": "easy",
+  "summary": "Fuse several ranked lists into one using only ranks.",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "hybrid retrieval",
+    "rank fusion",
+    "RRF"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "KV-cache bytes per token",
+  "difficulty": "easy",
+  "summary": "The KV-cache formula for a 70B model with grouped-query attention.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "KV cache",
+    "GQA",
+    "memory sizing"
+  ],
+  "placeholder": "bytes"
+}

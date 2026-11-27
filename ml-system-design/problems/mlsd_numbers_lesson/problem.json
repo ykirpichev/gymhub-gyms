@@ -1,0 +1,13 @@
+{
+  "title": "Numbers every design needs",
+  "difficulty": "easy",
+  "summary": "A lesson: QPS from daily users, storage and memory sizing, compute budgets, and latency numbers to know.",
+  "kind": "lesson",
+  "minutes": 10,
+  "concepts": [
+    "QPS",
+    "capacity planning",
+    "latency budget",
+    "storage"
+  ]
+}

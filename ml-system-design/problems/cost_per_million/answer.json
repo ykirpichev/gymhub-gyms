@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.694"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "The replica costs $10 an hour and produces ${4{,}000 \\times 3{,}600 = 14.4}$ million tokens an hour, so 10 / 14.4 ≈ $0.69 per million. This ignores idle time: a fleet that runs at 40% average utilisation pays 2.5 times as much per token, which is why autoscaling and batch (offline) traffic that fills the troughs matter."
+}

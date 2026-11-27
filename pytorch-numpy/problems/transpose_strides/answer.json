@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "(8, 56)",
+    "8, 56",
+    "(8,56)"
+  ],
+  "explanation": "`a` has strides `(56, 8)`: a row is 7 float64s, 56 bytes, and the next element in a row is 8 bytes on. `a.T` swaps the axes and their strides, giving `(8, 56)`, with no data moved. Its shape is `(7, 5)` and it is not C-contiguous: walking its rows jumps 56 bytes at a time."
+}

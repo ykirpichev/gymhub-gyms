@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "Verifiable-reward RL uses an automatic checker, such as tests, an exact answer, or a schema check, as the scalar reward, so the policy can be updated without human rankings. One pass/fail on one sample is not a preference pair, and DPO wants two responses and a winner. Supervised fine-tuning needs a target completion, not a bare prompt plus a test. The KL term only keeps the policy near a reference and does not know whether the tests passed."
+}

@@ -1,0 +1,12 @@
+{
+  "title": "The ridge point",
+  "difficulty": "easy",
+  "summary": "Where the interview GPU turns from memory-bound to compute-bound for BF16 matmuls.",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "roofline",
+    "ridge point"
+  ],
+  "placeholder": "FLOPs per byte"
+}

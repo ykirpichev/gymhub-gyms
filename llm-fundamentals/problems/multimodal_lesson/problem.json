@@ -1,0 +1,15 @@
+{
+  "title": "Vision-language models and diffusion",
+  "difficulty": "easy",
+  "summary": "A lesson: CLIP and contrastive training, connecting a vision encoder to an LLM, VLAs, and diffusion with guidance.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "CLIP",
+    "contrastive learning",
+    "vision-language models",
+    "VLA",
+    "diffusion",
+    "classifier-free guidance"
+  ]
+}

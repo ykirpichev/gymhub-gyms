@@ -1,0 +1,6 @@
+{
+  "title": "2D convolution",
+  "difficulty": "medium",
+  "summary": "Cross-correlation of a multi-channel image with stride, zero padding and bias.",
+  "kind": "code"
+}

@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "b",
+    "d"
+  ],
+  "explanation": "Simple random sampling gives every row the same probability. Reservoir sampling keeps that uniform guarantee for a stream: after t arrivals, each of them is equally likely to occupy the reservoir, with no preference for recent items. Stratified sampling draws inside groups so a rare class is not missed; the moving-average story is a different algorithm."
+}

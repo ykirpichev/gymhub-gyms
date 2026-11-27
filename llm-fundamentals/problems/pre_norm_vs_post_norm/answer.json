@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "In a pre-norm block the output is x plus a function of normalized x, so the skip itself is untouched and backpropagation has a path of gradient 1 through every layer. Post-norm wraps the sum, so the norm's Jacobian sits on that same path and deep stacks need a careful warmup. Pre-norm leaves the residual stream itself unnormalized (which is why a final norm is added), both forms normalize inside every block, and neither is batch normalization."
+}

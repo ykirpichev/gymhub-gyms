@@ -1,0 +1,13 @@
+{
+  "title": "Batched attention scores with einsum",
+  "difficulty": "medium",
+  "summary": "Multi-head attention scores and outputs from (B, T, H, D) tensors, with einsum.",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "einsum",
+    "attention",
+    "multi-head",
+    "softmax"
+  ]
+}

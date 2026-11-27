@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "Selection and the final report have to use different rows: cross-validation chooses the depth, and the test set is scored once. k of 5 or 10 is the usual compromise; leave-one-out needs n fits and gives a high-variance estimate, so it is not a free upgrade. Publishing the score you used to choose the depth, or choosing on the test set, makes the number look better than a new sample will."
+}

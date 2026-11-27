@@ -1,0 +1,13 @@
+{
+  "title": "The roofline in one page",
+  "difficulty": "easy",
+  "summary": "A lesson: arithmetic intensity, the ridge point, and the two lower bounds on a kernel's time.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "roofline",
+    "arithmetic intensity",
+    "memory-bound",
+    "compute-bound"
+  ]
+}

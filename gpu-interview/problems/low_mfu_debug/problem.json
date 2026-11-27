@@ -1,0 +1,15 @@
+{
+  "title": "A training run at 20% MFU",
+  "difficulty": "hard",
+  "summary": "How you would find and fix the time lost in a slow multi-GPU training run.",
+  "kind": "essay",
+  "minutes": 10,
+  "concepts": [
+    "MFU",
+    "profiling",
+    "communication overlap",
+    "data loading"
+  ],
+  "min_words": 100,
+  "max_words": 400
+}

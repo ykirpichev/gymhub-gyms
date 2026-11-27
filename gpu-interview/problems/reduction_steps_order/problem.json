@@ -1,0 +1,39 @@
+{
+  "title": "Optimizing a reduction, in order",
+  "difficulty": "medium",
+  "summary": "The classic sequence of reduction optimizations, from the naive kernel to a fast one.",
+  "kind": "order",
+  "minutes": 4,
+  "concepts": [
+    "reduction",
+    "divergence",
+    "bank conflicts",
+    "warp shuffle"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "Add two elements during the load from global memory, halving the number of blocks."
+    },
+    {
+      "id": "b",
+      "text": "Have each thread sum many elements with a grid-stride loop before the block reduction, so a fixed grid covers any `n`."
+    },
+    {
+      "id": "c",
+      "text": "Make active threads contiguous with `index = 2 * stride * t`: no divergence, but bank conflicts."
+    },
+    {
+      "id": "d",
+      "text": "Interleaved addressing with `if (t % (2 * stride) == 0)`: correct, but warps diverge."
+    },
+    {
+      "id": "e",
+      "text": "Sequential addressing (`s[t] += s[t + stride]` for halving strides): no conflicts, but half the threads idle from the first step."
+    },
+    {
+      "id": "f",
+      "text": "Finish the last 32 values with warp shuffles instead of shared memory and barriers."
+    }
+  ]
+}

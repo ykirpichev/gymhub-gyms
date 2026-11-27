@@ -1,0 +1,37 @@
+{
+  "title": "No reward model and no critic",
+  "difficulty": "hard",
+  "summary": "Which alignment methods train without fitting a reward model or a value network.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "A Bradley-Terry reward model trained on the pairs, then used only to rank samples, with the policy weights left frozen."
+    },
+    {
+      "id": "b",
+      "text": "SimPO on chosen/rejected pairs, using the length-normalized average log probability as the implicit reward and a target margin, with no reference model."
+    },
+    {
+      "id": "c",
+      "text": "DPO on chosen/rejected pairs, with a frozen reference policy in the log-probability ratios."
+    },
+    {
+      "id": "d",
+      "text": "KTO on unpaired thumbs-up and thumbs-down labels, with the implied reward compared to a frozen reference policy."
+    },
+    {
+      "id": "e",
+      "text": "PPO-based RLHF, which fits a reward model on human pairs and trains a critic."
+    },
+    {
+      "id": "f",
+      "text": "GRPO that scores a group of sampled responses with an external scalar reward and a group-normalized advantage, and trains no value network."
+    },
+    {
+      "id": "g",
+      "text": "ORPO on chosen/rejected pairs: a supervised loss on the chosen response plus an odds-ratio penalty, with no reference model."
+    }
+  ],
+  "multiple": true
+}

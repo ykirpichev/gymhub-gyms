@@ -1,0 +1,17 @@
+{
+  "title": "LLM serving as a system",
+  "difficulty": "easy",
+  "summary": "A lesson: the request path, prefill and decode, KV-cache sizing, batching strategies, TTFT and TPOT, throughput against latency, cost per token, and the levers that move each.",
+  "kind": "lesson",
+  "minutes": 18,
+  "concepts": [
+    "LLM serving",
+    "KV cache",
+    "continuous batching",
+    "TTFT",
+    "TPOT",
+    "cost per token",
+    "prefix caching",
+    "disaggregation"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "An in-place error",
+  "difficulty": "medium",
+  "summary": "Which line makes backward fail, and why.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "in-place operations",
+    "saved tensors",
+    "autograd"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Sigmoid saved its output `y` for its backward, and line B changed `y` in place."
+    },
+    {
+      "id": "b",
+      "text": "`x` is a leaf that requires grad, and leaves can never be used in in-place operations."
+    },
+    {
+      "id": "c",
+      "text": "`sum()` cannot follow an in-place operation; it needs a fresh tensor."
+    },
+    {
+      "id": "d",
+      "text": "`mul_` has no backward formula, so autograd cannot differentiate through line B."
+    }
+  ],
+  "multiple": false
+}

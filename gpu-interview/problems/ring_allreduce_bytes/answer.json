@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "1.75"
+  ],
+  "match": "number",
+  "tolerance": 0.01,
+  "explanation": "Each phase has `N − 1 = 7` steps, each sending one chunk of `1 GB / 8`. Two phases: 2 × 7 / 8 × 1 GB = 1.75 GB. At 200 GB/s of NVLink bandwidth per GPU that is about 9 ms, which DDP hides by starting the all-reduce of each gradient bucket while the backward pass still computes the earlier layers. Across nodes on a 50 GB/s network the same all-reduce takes 35 ms, which is why multi-node training cares about overlap and gradient bucketing."
+}

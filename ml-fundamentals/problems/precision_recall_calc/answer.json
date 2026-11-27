@@ -1,0 +1,6 @@
+{
+  "answers": ["0.5333"],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "TP = 40, FP = 60, FN = 10. Precision = 40 / 100 = 0.40; recall = 40 / 50 = 0.80; F1 = 2PR / (P + R) = 0.64 / 1.2 ≈ 0.533. Accuracy is 93%, which hides how many false alarms the model raises."
+}

@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "b",
+    "d",
+    "e"
+  ],
+  "explanation": "Paged attention removes fragmentation from reserved max-length slots, and prefix caching skips a repeated prefill. Continuous batching is the opposite of waiting for a whole batch: a new request joins on the next iteration, so the GPU is not idle while the longest sequence finishes. Speculative decoding is exact for the target model when draft tokens are accepted or corrected with the standard rejection rule, so the draft only proposes candidates; serving the draft's distribution without that correction is the claim that does not hold."
+}

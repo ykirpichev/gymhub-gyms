@@ -1,0 +1,8 @@
+{
+  "title": "L1 and L2 in words",
+  "difficulty": "medium",
+  "summary": "What a penalty changes, and how lasso differs from ridge.",
+  "kind": "essay",
+  "min_words": 70,
+  "max_words": 320
+}

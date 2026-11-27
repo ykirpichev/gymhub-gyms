@@ -1,0 +1,6 @@
+{
+  "title": "Scaled dot-product attention",
+  "difficulty": "medium",
+  "summary": "Batched softmax(QK^T / sqrt(d_k)) V with a boolean mask applied before a stable softmax.",
+  "kind": "code"
+}

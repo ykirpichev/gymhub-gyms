@@ -1,0 +1,6 @@
+{
+  "title": "Classifier-free guidance",
+  "difficulty": "easy",
+  "summary": "guided = uncond + w * (cond - uncond), including a batch stacked as conditional then unconditional.",
+  "kind": "code"
+}

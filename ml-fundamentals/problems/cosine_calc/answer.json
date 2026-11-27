@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.7071"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "The dot product is 1\u00b71 + 0\u00b71 = 1, the Euclidean norms are 1 and \u221a2, and 1/(1\u00b7\u221a2) \u2248 0.707. That is the similarity, not the angle in degrees (45) and not the Euclidean distance between the points, which is 1. Scaling both vectors by the same positive constant would leave the similarity unchanged."
+}

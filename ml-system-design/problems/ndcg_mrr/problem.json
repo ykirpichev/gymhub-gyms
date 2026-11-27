@@ -1,0 +1,12 @@
+{
+  "title": "NDCG and MRR for a ranker",
+  "difficulty": "medium",
+  "summary": "Mean NDCG@k with graded relevance and MRR@k over a set of queries.",
+  "kind": "code",
+  "minutes": 20,
+  "concepts": [
+    "NDCG",
+    "MRR",
+    "ranking metrics"
+  ]
+}

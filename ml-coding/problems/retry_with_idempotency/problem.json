@@ -1,0 +1,6 @@
+{
+  "title": "Retry with idempotency",
+  "difficulty": "medium",
+  "summary": "Retry a transient exception with capped exponential backoff, and return the stored result for a repeated idempotency key.",
+  "kind": "code"
+}

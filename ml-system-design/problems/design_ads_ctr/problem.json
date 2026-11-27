@@ -1,0 +1,16 @@
+{
+  "title": "Design ads click-through prediction",
+  "difficulty": "hard",
+  "summary": "Practice: the ranking model behind an ad auction, with calibration, delayed feedback and scale.",
+  "kind": "essay",
+  "minutes": 25,
+  "concepts": [
+    "CTR prediction",
+    "calibration",
+    "auctions",
+    "feature hashing",
+    "delayed feedback"
+  ],
+  "min_words": 300,
+  "max_words": 900
+}

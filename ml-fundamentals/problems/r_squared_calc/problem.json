@@ -1,0 +1,7 @@
+{
+  "title": "R\u00b2 against the mean",
+  "difficulty": "medium",
+  "summary": "One minus the ratio of residual sum of squares to total sum of squares.",
+  "kind": "answer",
+  "placeholder": "R\u00b2, e.g. 0.50"
+}

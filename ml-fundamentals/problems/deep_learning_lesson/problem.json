@@ -1,0 +1,16 @@
+{
+  "title": "Neural networks from the bottom up",
+  "difficulty": "easy",
+  "summary": "A lesson: layers and parameter counts, backpropagation, activations, and the architectures that came before transformers.",
+  "kind": "lesson",
+  "minutes": 9,
+  "concepts": [
+    "neural networks",
+    "backpropagation",
+    "activations",
+    "CNN",
+    "RNN",
+    "LSTM",
+    "transfer learning"
+  ]
+}

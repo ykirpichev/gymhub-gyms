@@ -1,0 +1,14 @@
+{
+  "title": "Linear models and their losses",
+  "difficulty": "easy",
+  "summary": "A lesson: least squares, logistic regression, the hinge loss, and how to pick a loss for a task.",
+  "kind": "lesson",
+  "minutes": 8,
+  "concepts": [
+    "linear regression",
+    "logistic regression",
+    "cross-entropy",
+    "hinge loss",
+    "loss functions"
+  ]
+}

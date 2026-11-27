@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "3e21"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.01,
+  "explanation": "D is 20 × 5×10^9 = 1×10^11 tokens, and C = 6 × 5×10^9 × 1×10^11 = 3×10^21 FLOPs. The 6 is the usual dense-matmul estimate, about 2N FLOPs per token forward and about 4N backward, and it undercounts when attention at a very long context stops being a small fraction of the work. Stopping after ND and forgetting the 6 yields 1×10^21. The 20-token ratio is a compute-optimal rule of thumb, not a requirement that every model be trained that long."
+}

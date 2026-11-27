@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "d"
+  ],
+  "explanation": "LoRA freezes W and learns factors B and A of rank r, and the forward pass uses W + (alpha/r) BA. Alpha only scales the update and adds no parameters, so it is not a second rank. The update has the same shape as W, so you can add it in once and serve a plain matrix at the original latency; keeping a separate branch is an option, not a requirement. Nothing is averaged with W and nothing is trained from scratch."
+}

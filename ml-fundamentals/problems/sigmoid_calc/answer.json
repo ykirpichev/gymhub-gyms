@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "0.8808"
+  ],
+  "match": "number",
+  "tolerance": 0.005,
+  "explanation": "The sigmoid turns a logit into a probability, \u03c3(z) = 1/(1+e^{\u2212z}). At z = 2 that is 1/(1+e^{\u22122}) \u2248 0.881, not the logit itself and not 1\u2212\u03c3(2) \u2248 0.119. A logit of 0 would have been probability 0.5; a positive logit sits above one half."
+}

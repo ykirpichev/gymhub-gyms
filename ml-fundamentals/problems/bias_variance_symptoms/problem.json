@@ -1,0 +1,24 @@
+{
+  "title": "Reading learning curves",
+  "difficulty": "easy",
+  "summary": "Diagnose high bias versus high variance from train and validation error.",
+  "kind": "choice",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The validation set is leaking into training"
+    },
+    {
+      "id": "b",
+      "text": "The model is well fitted; ship it"
+    },
+    {
+      "id": "c",
+      "text": "High bias: the model is too simple, so add features or switch to a deeper, more flexible model"
+    },
+    {
+      "id": "d",
+      "text": "High variance: get more data, regularize more, or simplify the model"
+    }
+  ]
+}

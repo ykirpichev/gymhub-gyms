@@ -1,0 +1,10 @@
+{
+  "correct": [
+    "b",
+    "c",
+    "d",
+    "f",
+    "g"
+  ],
+  "explanation": "DPO, SimPO, ORPO, and KTO are offline losses, so the pair or the binary label is the training signal and none of them fits a reward model or a critic. SimPO and ORPO are reference-free, while DPO and the usual KTO loss keep a frozen reference inside the implied reward, and that reference is not a value network. GRPO samples online, but the advantage is the group's mean and standard deviation of an external reward, so it has no critic and does not have to train a reward model. PPO-based RLHF trains both a reward model and a critic, and the Bradley-Terry option is itself that reward model."
+}

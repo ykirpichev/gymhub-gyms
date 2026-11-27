@@ -1,0 +1,31 @@
+{
+  "title": "A barrier inside a branch",
+  "difficulty": "medium",
+  "summary": "What happens when only some threads of a block reach __syncthreads().",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "__syncthreads",
+    "synchronization",
+    "undefined behavior"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Nothing: threads 64 to 127 skip the barrier, and the barrier only waits for the threads that reach it."
+    },
+    {
+      "id": "b",
+      "text": "It deadlocks every time, because the barrier counts 128 threads and only 64 arrive, so the program always hangs."
+    },
+    {
+      "id": "c",
+      "text": "The only bug is the out-of-range index `127 - threadIdx.x`, which reads past the end of the tile."
+    },
+    {
+      "id": "d",
+      "text": "The barrier is in divergent code, which is undefined behavior: it may hang or appear to work, and the later read can see unwritten values."
+    }
+  ],
+  "multiple": false
+}

@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "12.5"
+  ],
+  "match": "number",
+  "tolerance": 0.2,
+  "explanation": "102,400 / 40,960 = 2.5, so 2 blocks fit: 256 threads, 12.5% occupancy. Big shared-memory tiles are common in matmul and attention kernels, and they often run fast at low occupancy anyway, because each thread does a lot of independent work from registers (instruction-level parallelism) and the tile reuse cuts global traffic. Low occupancy is a symptom to check, not automatically a problem."
+}

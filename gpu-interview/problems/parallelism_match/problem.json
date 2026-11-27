@@ -1,0 +1,62 @@
+{
+  "title": "What each strategy splits",
+  "difficulty": "medium",
+  "summary": "Match each parallelism strategy to what it splits across GPUs.",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": [
+    "data parallel",
+    "tensor parallel",
+    "pipeline parallel",
+    "FSDP",
+    "expert parallel"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "Data parallelism"
+    },
+    {
+      "id": "p2",
+      "text": "Tensor parallelism"
+    },
+    {
+      "id": "p3",
+      "text": "Pipeline parallelism"
+    },
+    {
+      "id": "p4",
+      "text": "FSDP (ZeRO stage 3)"
+    },
+    {
+      "id": "p5",
+      "text": "Expert parallelism"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "The experts of a mixture-of-experts layer, with tokens sent to the GPU of their expert"
+    },
+    {
+      "id": "b",
+      "text": "The vocabulary of the tokenizer, so each GPU sees a different set of words"
+    },
+    {
+      "id": "c",
+      "text": "The weight matrices inside each layer, so one matmul runs across several GPUs"
+    },
+    {
+      "id": "d",
+      "text": "The layers: each GPU runs a contiguous group of layers"
+    },
+    {
+      "id": "e",
+      "text": "The batch: each GPU runs the whole model on different examples"
+    },
+    {
+      "id": "f",
+      "text": "Weights, gradients and optimizer state across data-parallel ranks, gathered layer by layer"
+    }
+  ]
+}

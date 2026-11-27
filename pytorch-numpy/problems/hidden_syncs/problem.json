@@ -1,0 +1,39 @@
+{
+  "title": "Hidden synchronizations",
+  "difficulty": "medium",
+  "summary": "Which lines in a GPU training loop force the CPU to wait for the GPU.",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "CUDA asynchrony",
+    "synchronization",
+    "performance"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`total += loss.item()`"
+    },
+    {
+      "id": "b",
+      "text": "`loss = criterion(model(x), y)`"
+    },
+    {
+      "id": "c",
+      "text": "`if torch.isnan(loss): break`"
+    },
+    {
+      "id": "d",
+      "text": "`optimizer.step()`"
+    },
+    {
+      "id": "e",
+      "text": "`print(f\"loss {loss}\")`"
+    },
+    {
+      "id": "f",
+      "text": "`x = x.to(\"cuda\", non_blocking=True)` with `x` in pinned memory"
+    }
+  ],
+  "multiple": true
+}

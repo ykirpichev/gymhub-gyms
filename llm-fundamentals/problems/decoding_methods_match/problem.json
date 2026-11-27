@@ -1,0 +1,23 @@
+{
+  "title": "Decoding methods and what they do",
+  "difficulty": "easy",
+  "summary": "Match five ways to pick the next token with how each one chooses.",
+  "kind": "match",
+  "minutes": 3,
+  "concepts": ["decoding", "sampling"],
+  "prompts": [
+    {"id": "greedy", "text": "Greedy decoding"},
+    {"id": "temperature", "text": "Sampling with temperature $T = 1.5$"},
+    {"id": "topk", "text": "Top-$k$ sampling"},
+    {"id": "topp", "text": "Top-$p$ (nucleus) sampling"},
+    {"id": "beam", "text": "Beam search"}
+  ],
+  "options": [
+    {"id": "argmax", "text": "Always takes the single most likely token"},
+    {"id": "flatten", "text": "Divides the logits before the softmax, which flattens the distribution and adds variety"},
+    {"id": "fixed", "text": "Samples only among a fixed number of the most likely tokens"},
+    {"id": "mass", "text": "Samples from the smallest set of tokens whose probabilities add up to a threshold"},
+    {"id": "sequences", "text": "Keeps several partial sequences and ranks them by total log-probability"},
+    {"id": "penalty", "text": "Lowers the logits of tokens that already appeared"}
+  ]
+}

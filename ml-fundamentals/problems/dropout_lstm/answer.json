@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "b"
+  ],
+  "explanation": "A new mask on the recurrent state at every step injects noise into the memory the LSTM is trying to carry, and that is true of the cell state as much as the hidden state. The patterns that hold up are dropout on the input and output connections, plus at most one mask reused across time on the recurrent path (variational dropout). The forget gate is a learned, deterministic function of the input and state, not random noise, so it is no substitute for a regularizer. Dropout is a training-time tool and is off at test time."
+}

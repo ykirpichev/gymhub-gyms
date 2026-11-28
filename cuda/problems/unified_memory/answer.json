@@ -1,7 +1,7 @@
 {
   "correct": [
-    "a",
-    "b"
+    "b",
+    "d"
   ],
   "explanation": "On discrete GPUs, managed pages migrate on demand: each fault stalls warps while the driver moves pages, which is far\nslower than one bulk copy. Prefetching (or `cudaMemAdvise` hints) restores bulk transfers. After migration the data is\nin device memory and cached normally."
 }

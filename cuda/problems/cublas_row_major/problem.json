@@ -11,15 +11,15 @@
   "choices": [
     {
       "id": "a",
-      "text": "`gemm(N, N, M, N, K, A, lda=K, B, ldb=N, C, ldc=N)`: it is the same in both layouts."
+      "text": "`gemm(N, N, M, N, K, A, lda=K, B, ldb=N, C, ldc=N)`: the call is the same in both layouts."
     },
     {
       "id": "b",
-      "text": "`gemm(N, N, N, M, K, B, ldb=N, A, lda=K, C, ldc=N)`: compute `Cᵀ = Bᵀ·Aᵀ` by swapping the operands and `M` with `N`."
+      "text": "`gemm(T, T, M, N, K, A, lda=K, B, ldb=N, C, ldc=N)`: transpose both inputs."
     },
     {
       "id": "c",
-      "text": "`gemm(T, T, M, N, K, A, lda=K, B, ldb=N, C, ldc=N)`: transpose both inputs."
+      "text": "`gemm(N, N, N, M, K, B, ldb=N, A, lda=K, C, ldc=N)`: swap the operands and `M` with `N`."
     },
     {
       "id": "d",

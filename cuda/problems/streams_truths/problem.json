@@ -16,19 +16,19 @@
     },
     {
       "id": "b",
-      "text": "`cudaMemcpyAsync` from pageable (not pinned) host memory cannot overlap with a kernel the way a pinned copy can."
-    },
-    {
-      "id": "c",
-      "text": "`cudaStreamWaitEvent(s2, e)` makes later work in `s2` wait until `e`, recorded in `s1`, has completed, without blocking the CPU."
-    },
-    {
-      "id": "d",
       "text": "Putting each kernel in its own stream always makes a program faster."
     },
     {
-      "id": "e",
+      "id": "c",
+      "text": "`cudaMemcpyAsync` from pageable (not pinned) host memory cannot overlap with a kernel the way a pinned copy can."
+    },
+    {
+      "id": "d",
       "text": "The default (legacy) stream overlaps freely with all other streams."
+    },
+    {
+      "id": "e",
+      "text": "`cudaStreamWaitEvent(s2, e)` makes later work in `s2` wait until `e`, recorded in `s1`, has completed, without blocking the CPU."
     }
   ],
   "multiple": true

@@ -15,15 +15,15 @@
     },
     {
       "id": "b",
-      "text": "Not every thread of the block reaches the barrier, which is undefined behaviour; move `__syncthreads()` out of the branch so all threads hit it."
+      "text": "Only a performance problem: threads 128–255 wait at the barrier for nothing."
     },
     {
       "id": "c",
-      "text": "Only a performance problem: the second half of the block waits for nothing."
+      "text": "Replace it with `__syncwarp()`, which synchronizes the whole block more cheaply."
     },
     {
       "id": "d",
-      "text": "Replace it with `__syncwarp()`, which synchronizes the whole block more cheaply."
+      "text": "Threads 128–255 never reach the barrier: undefined behaviour. Call `__syncthreads()` outside the branch."
     }
   ],
   "multiple": false

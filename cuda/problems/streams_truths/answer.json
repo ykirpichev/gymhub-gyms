@@ -1,8 +1,8 @@
 {
   "correct": [
     "a",
-    "b",
-    "c"
+    "c",
+    "e"
   ],
   "explanation": "Streams are in-order queues; separate streams may overlap. Pageable copies go through a staging buffer and are\neffectively synchronous. Events are the way to express cross-stream dependencies. Streams only help when there is\nindependent work and free resources; a kernel that fills the GPU leaves nothing to overlap with. The legacy default\nstream synchronizes with other blocking streams (compile with `--default-stream per-thread` or use non-blocking\nstreams to avoid it)."
 }

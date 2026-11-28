@@ -12,19 +12,19 @@
   "choices": [
     {
       "id": "a",
-      "text": "The kernel's first touch of each page causes a GPU page fault, and pages migrate in small batches during the kernel."
-    },
-    {
-      "id": "b",
-      "text": "Calling `cudaMemPrefetchAsync` to the GPU before the launch moves the data in bulk first."
-    },
-    {
-      "id": "c",
       "text": "Managed memory always lives in host RAM, so the GPU reads it over PCIe for the whole run."
     },
     {
-      "id": "d",
+      "id": "b",
+      "text": "The kernel's first touch of each page causes a GPU page fault, and pages migrate in small batches during the kernel."
+    },
+    {
+      "id": "c",
       "text": "Managed memory disables the L2 cache."
+    },
+    {
+      "id": "d",
+      "text": "Calling `cudaMemPrefetchAsync` to the GPU before the launch moves the data in bulk first."
     }
   ],
   "multiple": true

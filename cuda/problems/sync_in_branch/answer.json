@@ -1,6 +1,6 @@
 {
   "correct": [
-    "b"
+    "d"
   ],
   "explanation": "`__syncthreads()` must be reached by all threads of the block (or none). Here threads 128–255 never arrive, so the\nkernel can hang or read stale data, depending on the hardware. Split the branch: do the stores under `if`, call\n`__syncthreads()` unconditionally, then do the loads under another `if`. `__syncwarp()` only synchronizes one warp."
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Lesson: shared memory, banks and tiles",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "lesson",
+  "minutes": 18,
+  "concepts": [
+    "shared memory",
+    "__syncthreads",
+    "bank conflicts",
+    "tiling",
+    "register tiling"
+  ]
+}

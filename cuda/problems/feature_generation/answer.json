@@ -1,0 +1,9 @@
+{
+  "pairs": {
+    "p1": "e",
+    "p2": "a",
+    "p3": "b",
+    "p4": "c"
+  },
+  "explanation": "Volta (V100) introduced Tensor Cores; Ampere (A100) added asynchronous global-to-shared copies and TF32/BF16; Hopper\n(H100) added TMA, clusters, warpgroup MMA and FP8; Blackwell (B200) added Tensor Memory, single-thread MMA issue and\nFP4/FP6 with hardware block scaling. Pascal (P100) had no Tensor Cores."
+}

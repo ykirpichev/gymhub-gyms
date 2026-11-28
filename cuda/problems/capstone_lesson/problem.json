@@ -1,0 +1,14 @@
+{
+  "title": "Lesson: one kernel, many versions",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "lesson",
+  "minutes": 20,
+  "concepts": [
+    "optimization ladder",
+    "softmax",
+    "GEMM",
+    "fusion",
+    "online softmax"
+  ]
+}

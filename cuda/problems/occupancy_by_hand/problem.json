@@ -1,0 +1,12 @@
+{
+  "title": "Occupancy by hand",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 5,
+  "concepts": [
+    "occupancy",
+    "registers"
+  ],
+  "placeholder": "a percentage, e.g. 50"
+}

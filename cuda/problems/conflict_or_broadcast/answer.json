@@ -1,0 +1,9 @@
+{
+  "correct": [
+    "a",
+    "b",
+    "d",
+    "f"
+  ],
+  "explanation": "`s[t]`: banks 0–31, one each. `s[0]`: one word, broadcast. `s[2t]`: banks 0, 2, …, 30, each hit by two lanes with\ndifferent words: 2-way. `s[3t]`: 3 is odd, so `3t mod 32` takes 32 different values: no conflict. `s[32t + 5]`: all in\nbank 5, 32-way. `s[33t mod 1024]` lands in bank `33t mod 32 = t mod 32`: no conflict."
+}

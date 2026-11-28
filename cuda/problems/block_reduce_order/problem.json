@@ -1,0 +1,37 @@
+{
+  "title": "Order a fast block reduction",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "order",
+  "minutes": 3,
+  "concepts": [
+    "reduction",
+    "warp shuffle"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "Warp 0 loads the 8 partials and reduces them with shuffles"
+    },
+    {
+      "id": "b",
+      "text": "Thread 0 writes the block's sum (or `atomicAdd`s it to the global total)"
+    },
+    {
+      "id": "c",
+      "text": "`__syncthreads()`"
+    },
+    {
+      "id": "d",
+      "text": "Each warp reduces its 32 values with `__shfl_down_sync`"
+    },
+    {
+      "id": "e",
+      "text": "Lane 0 of each warp writes the warp's partial sum to shared memory"
+    },
+    {
+      "id": "f",
+      "text": "Each thread loads (or sums, with a grid-stride loop) its values into a register"
+    }
+  ]
+}

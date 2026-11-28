@@ -1,0 +1,12 @@
+{
+  "title": "Time of a memory-bound kernel",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 4,
+  "concepts": [
+    "bandwidth",
+    "back-of-the-envelope"
+  ],
+  "placeholder": "microseconds"
+}

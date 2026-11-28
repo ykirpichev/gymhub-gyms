@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "b",
+    "d"
+  ],
+  "explanation": "Launches are queued and return at once. Ordinary `cudaMemcpy` runs in the same (default) stream, so it waits for the\nkernel. Errors *during* the kernel (an illegal address) appear at a later synchronizing call, not at the launch. An\ninvalid configuration (more than 1024 threads per block) is detected at launch and reported by\n`cudaGetLastError()`. Blocks run in any order, possibly at the same time, which is why they must not depend on\neach other."
+}

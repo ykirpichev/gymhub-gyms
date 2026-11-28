@@ -1,0 +1,14 @@
+{
+  "title": "Read a profile",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "essay",
+  "minutes": 10,
+  "concepts": [
+    "Nsight Compute",
+    "memory-bound",
+    "diagnosis"
+  ],
+  "min_words": 60,
+  "max_words": 250
+}

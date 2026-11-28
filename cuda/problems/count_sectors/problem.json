@@ -1,0 +1,11 @@
+{
+  "title": "Count the sectors",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "coalescing",
+    "memory transactions"
+  ]
+}

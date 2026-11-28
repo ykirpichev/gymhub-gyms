@@ -1,0 +1,15 @@
+{
+  "title": "Lesson: SMs, warps and latency hiding",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "lesson",
+  "minutes": 15,
+  "concepts": [
+    "SM",
+    "warp",
+    "SIMT",
+    "divergence",
+    "occupancy",
+    "latency hiding"
+  ]
+}

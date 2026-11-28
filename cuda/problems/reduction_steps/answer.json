@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "10"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "1024 → 512 → … → 1 is log₂ 1024 = 10 halvings. With warp shuffles for the last 32 values, only the first 5 steps need\n`__syncthreads()`; the last 5 happen inside one warp."
+}

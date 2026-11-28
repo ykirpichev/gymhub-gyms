@@ -1,0 +1,11 @@
+{
+  "title": "Simulate a launch",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "code",
+  "minutes": 10,
+  "concepts": [
+    "thread indexing",
+    "grid-stride loop"
+  ]
+}

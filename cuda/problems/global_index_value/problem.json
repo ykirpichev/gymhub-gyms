@@ -1,0 +1,11 @@
+{
+  "title": "Which thread owns the element?",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "thread indexing"
+  ],
+  "placeholder": "a whole number"
+}

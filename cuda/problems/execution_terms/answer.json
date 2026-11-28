@@ -1,0 +1,10 @@
+{
+  "pairs": {
+    "p1": "b",
+    "p2": "d",
+    "p3": "c",
+    "p4": "e",
+    "p5": "f"
+  },
+  "explanation": "A grid is made of blocks, a block of warps, a warp of 32 threads; blocks are placed on SMs. Occupancy is about one SM's\nwarp slots, not about how many SMs are busy (that is sometimes called \"wave\" or SM utilization)."
+}

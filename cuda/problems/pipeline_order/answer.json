@@ -1,0 +1,10 @@
+{
+  "order": [
+    "e",
+    "d",
+    "c",
+    "b",
+    "a"
+  ],
+  "explanation": "The stage cycles empty → loading → full → computing → empty. With several stages in the ring, the producer loads ahead\nwhile consumers compute on earlier stages, so memory latency is hidden behind Tensor Core work."
+}

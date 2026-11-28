@@ -1,0 +1,34 @@
+{
+  "title": "What TMA does",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "TMA",
+    "Hopper"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "One thread can start the copy of a whole multi-dimensional tile between global and shared memory."
+    },
+    {
+      "id": "b",
+      "text": "The tile's shape, strides and swizzle are described by a tensor map created on the host."
+    },
+    {
+      "id": "c",
+      "text": "Completion is tracked by an mbarrier that counts the bytes that arrived."
+    },
+    {
+      "id": "d",
+      "text": "Every thread of the block must compute an address for its part of the tile."
+    },
+    {
+      "id": "e",
+      "text": "TMA copies go directly into registers, skipping shared memory."
+    }
+  ],
+  "multiple": true
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Occupancy calculator",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "occupancy",
+    "registers",
+    "shared memory"
+  ]
+}

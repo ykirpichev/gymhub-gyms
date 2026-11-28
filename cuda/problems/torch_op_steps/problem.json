@@ -1,0 +1,33 @@
+{
+  "title": "Order a custom PyTorch op",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "order",
+  "minutes": 3,
+  "concepts": [
+    "PyTorch extensions",
+    "custom operators"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "Run `torch.library.opcheck` and compare with the reference using `torch.testing.assert_close`"
+    },
+    {
+      "id": "b",
+      "text": "Write the kernel and test it against a reference on small inputs"
+    },
+    {
+      "id": "c",
+      "text": "Register the operator with `TORCH_LIBRARY` and build it with `torch.utils.cpp_extension`"
+    },
+    {
+      "id": "d",
+      "text": "Write a C++ wrapper that checks devices, dtypes and contiguity, allocates the output and launches on the current stream"
+    },
+    {
+      "id": "e",
+      "text": "Add a fake (meta) implementation so `torch.compile` can trace output shapes"
+    }
+  ]
+}

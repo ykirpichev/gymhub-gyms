@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "32"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "`tile[r][c]` is word `32r + c`, in bank `(32r + c) % 32 = c` for every `r`: all 32 lanes hit one bank with 32\ndifferent words, a 32-way conflict. With a row of 33, the word is `33r + c` and the bank `(r + c) % 32`, different for\nevery lane: no conflict. Use the bank widget above with stride 32, then 33."
+}

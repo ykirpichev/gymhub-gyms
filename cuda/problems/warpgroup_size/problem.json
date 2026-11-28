@@ -1,0 +1,12 @@
+{
+  "title": "How many threads issue a wgmma?",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 1,
+  "concepts": [
+    "wgmma",
+    "warpgroup"
+  ],
+  "placeholder": "a whole number"
+}

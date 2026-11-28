@@ -1,0 +1,37 @@
+{
+  "title": "The optimization loop",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "order",
+  "minutes": 2,
+  "concepts": [
+    "APOD",
+    "profiling"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "Measure again and keep the change only if it is faster"
+    },
+    {
+      "id": "b",
+      "text": "Pick the hottest kernel and estimate its limit with the roofline"
+    },
+    {
+      "id": "c",
+      "text": "Profile that kernel to find what limits it"
+    },
+    {
+      "id": "d",
+      "text": "Profile the whole application to find where time goes"
+    },
+    {
+      "id": "e",
+      "text": "Change one thing and re-test for correctness"
+    },
+    {
+      "id": "f",
+      "text": "Write a correct version and a test that checks results against a reference"
+    }
+  ]
+}

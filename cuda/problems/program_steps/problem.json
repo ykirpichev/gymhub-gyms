@@ -1,0 +1,36 @@
+{
+  "title": "The steps of a CUDA program",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "order",
+  "minutes": 2,
+  "concepts": [
+    "host code"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "Allocate device memory with `cudaMalloc`"
+    },
+    {
+      "id": "b",
+      "text": "Copy the inputs host to device with `cudaMemcpy`"
+    },
+    {
+      "id": "c",
+      "text": "Free device memory with `cudaFree`"
+    },
+    {
+      "id": "d",
+      "text": "Check `cudaGetLastError()` for a bad launch"
+    },
+    {
+      "id": "e",
+      "text": "Copy the result device to host, which waits for the kernel"
+    },
+    {
+      "id": "f",
+      "text": "Launch the kernel with `<<<grid, block>>>`"
+    }
+  ]
+}

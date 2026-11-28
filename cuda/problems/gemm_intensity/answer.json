@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "1365"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.01,
+  "explanation": "2N³ / (3 × 2 × N²) = N / 3 = 1365 FLOP/byte, far above the ridge point: a large GEMM is compute-bound. Intensity grows\nwith N, which is why small GEMMs (small batches, decode) are memory-bound and large ones are not. Check it in the\nroofline widget (kernel: square GEMM)."
+}

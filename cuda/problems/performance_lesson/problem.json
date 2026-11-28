@@ -1,0 +1,16 @@
+{
+  "title": "Lesson: roofline, Nsight, streams and graphs",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "lesson",
+  "minutes": 22,
+  "concepts": [
+    "roofline",
+    "arithmetic intensity",
+    "Nsight Systems",
+    "Nsight Compute",
+    "streams",
+    "CUDA Graphs",
+    "fusion"
+  ]
+}

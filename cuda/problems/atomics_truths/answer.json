@@ -1,0 +1,7 @@
+{
+  "correct": [
+    "a",
+    "b"
+  ],
+  "explanation": "Same-address atomics are processed one at a time, so contention costs. Privatization reduces contention and global\ntraffic. The order of atomic float additions is not fixed, so results can differ in the last bits. An atomic is\ncorrect on its own; a barrier is only needed before *reading* the combined result in the same block."
+}

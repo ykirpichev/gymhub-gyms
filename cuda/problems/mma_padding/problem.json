@@ -1,0 +1,12 @@
+{
+  "title": "Tensor Core tiles and padding",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "Tensor Cores",
+    "tile shapes",
+    "decode"
+  ]
+}

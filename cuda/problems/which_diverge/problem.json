@@ -1,0 +1,33 @@
+{
+  "title": "Which branches diverge?",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "divergence"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`if (t % 2 == 0)`"
+    },
+    {
+      "id": "b",
+      "text": "`if (t / 32 == 3)`"
+    },
+    {
+      "id": "c",
+      "text": "`if (blockIdx.x % 2 == 0)`"
+    },
+    {
+      "id": "d",
+      "text": "`if (t < 100)`"
+    },
+    {
+      "id": "e",
+      "text": "`if (x[blockIdx.x * 256 + t] > 0)` on random data"
+    }
+  ],
+  "multiple": true
+}

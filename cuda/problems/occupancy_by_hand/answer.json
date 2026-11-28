@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "25"
+  ],
+  "match": "number",
+  "tolerance": 0.5,
+  "explanation": "Registers limit to 21 warps; whole blocks of 8 warps means 2 blocks (16 warps). Warp slots would allow 8 blocks and block\nslots 32, so registers decide: 16 / 64 = 25%. Capping registers at 64 per thread (`__launch_bounds__` or\n`-maxrregcount`) would allow 4 blocks (50%), at the risk of spilling to slow local memory. Check it in the occupancy\nwidget above."
+}

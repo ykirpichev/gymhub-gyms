@@ -1,0 +1,61 @@
+{
+  "title": "Match the execution terms",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "match",
+  "minutes": 3,
+  "concepts": [
+    "SM",
+    "warp",
+    "block",
+    "grid"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "Warp"
+    },
+    {
+      "id": "p2",
+      "text": "Block"
+    },
+    {
+      "id": "p3",
+      "text": "Grid"
+    },
+    {
+      "id": "p4",
+      "text": "SM"
+    },
+    {
+      "id": "p5",
+      "text": "Occupancy"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "The number of SMs that are busy"
+    },
+    {
+      "id": "b",
+      "text": "32 threads that issue instructions together"
+    },
+    {
+      "id": "c",
+      "text": "All the blocks of one kernel launch"
+    },
+    {
+      "id": "d",
+      "text": "Threads that share shared memory and can meet at a barrier"
+    },
+    {
+      "id": "e",
+      "text": "The processor that runs resident blocks and schedules their warps"
+    },
+    {
+      "id": "f",
+      "text": "Resident warps as a fraction of the maximum per SM"
+    }
+  ]
+}

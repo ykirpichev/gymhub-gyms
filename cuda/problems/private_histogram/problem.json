@@ -1,0 +1,12 @@
+{
+  "title": "Privatized histogram",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "histogram",
+    "atomics",
+    "privatization"
+  ]
+}

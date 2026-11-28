@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "8"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "The addresses span 256 bytes (0 to 251), which is 8 sectors. The warp uses 128 of the 256 bytes moved: 50% efficiency.\nIn the widget above, set stride 2 to see it. With stride 32 every lane lands in its own sector: 32 sectors for 128\nuseful bytes."
+}

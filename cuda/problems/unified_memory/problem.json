@@ -1,0 +1,31 @@
+{
+  "title": "Unified memory surprises",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "unified memory",
+    "page faults",
+    "prefetch"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "The kernel's first touch of each page causes a GPU page fault, and pages migrate in small batches during the kernel."
+    },
+    {
+      "id": "b",
+      "text": "Calling `cudaMemPrefetchAsync` to the GPU before the launch moves the data in bulk first."
+    },
+    {
+      "id": "c",
+      "text": "Managed memory always lives in host RAM, so the GPU reads it over PCIe for the whole run."
+    },
+    {
+      "id": "d",
+      "text": "Managed memory disables the L2 cache."
+    }
+  ],
+  "multiple": true
+}

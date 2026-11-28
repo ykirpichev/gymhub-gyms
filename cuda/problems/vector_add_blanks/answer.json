@@ -1,0 +1,32 @@
+{
+  "blanks": {
+    "b1": {
+      "answers": [
+        "__global__"
+      ]
+    },
+    "b2": {
+      "answers": [
+        "blockDim.x"
+      ]
+    },
+    "b3": {
+      "answers": [
+        "<"
+      ]
+    },
+    "b4": {
+      "answers": [
+        "255"
+      ],
+      "match": "number",
+      "tolerance": 0
+    },
+    "b5": {
+      "answers": [
+        "grid"
+      ]
+    }
+  },
+  "explanation": "`__global__` makes it a kernel. The block's size `blockDim.x` scales the block index. The check `i < n` drops the extra\nthreads of the rounded-up grid, and `(n + 255) / 256` is the rounded-up number of blocks. The grid comes first in\n`<<<grid, block>>>`."
+}

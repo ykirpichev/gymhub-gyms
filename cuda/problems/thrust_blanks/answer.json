@@ -1,0 +1,20 @@
+{
+  "blanks": {
+    "b1": {
+      "answers": [
+        "device_vector"
+      ]
+    },
+    "b2": {
+      "answers": [
+        "sort"
+      ]
+    },
+    "b3": {
+      "answers": [
+        "reduce"
+      ]
+    }
+  },
+  "explanation": "`thrust::device_vector` owns GPU memory and copies on construction; `thrust::sort` dispatches to CUB's radix sort for\narithmetic keys; `thrust::reduce` sums with an initial value. Each call launches kernels and the result of `reduce`\ncomes back to the host."
+}

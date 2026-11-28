@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "7"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "Warps are 32 threads: 200 / 32 = 6.25, rounded up to 7. The seventh warp has only 8 active lanes, but it still takes\na full warp slot. Prefer block sizes that are multiples of 32."
+}

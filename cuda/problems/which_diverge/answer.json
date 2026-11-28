@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "a",
+    "d",
+    "e"
+  ],
+  "explanation": "`t % 2` splits every warp in half. `t / 32` is the warp's index, the same for all its lanes, so a branch on it is\nuniform. `blockIdx.x` is the same for the whole block. `t < 100` splits only warp 3 (threads 96–127); the other warps\nare uniform, so only one warp in eight pays. Data-dependent branches on random data diverge in nearly every warp."
+}

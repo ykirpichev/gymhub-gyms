@@ -1,0 +1,3 @@
+{
+  "rubric": "1. Maps one row (or a few rows) to a block or warp group, with each thread handling several elements via vectorized 16-byte loads.\n2. Computes the sum of squares with a warp-shuffle reduction plus a cross-warp step in shared memory, then the RMS normalization with the weight.\n3. Computes the row's maximum absolute value after normalization (a second reduction over values kept in registers) and sets scale = amax / 448, guarding against zero.\n4. Quantifies traffic: fused reads BF16 once (2 B/elem) and writes FP8 (1 B/elem) plus a scale per row, versus about 2 + 2 + 2 + 1 B/elem for separate ops.\n5. Tests against a PyTorch reference with suitable tolerances and benchmarks against the bandwidth bound for several token counts."
+}

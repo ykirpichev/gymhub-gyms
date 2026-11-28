@@ -1,0 +1,11 @@
+{
+  "order": [
+    "f",
+    "d",
+    "e",
+    "c",
+    "a",
+    "b"
+  ],
+  "explanation": "Registers first (and as many elements per thread as possible: more work per thread means fewer partials). Shuffles\nneed no barrier inside a warp; the barrier is only needed before one warp reads what the others wrote to shared memory."
+}

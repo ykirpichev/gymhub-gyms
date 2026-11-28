@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "id": "cuda",
+  "title": "CUDA, from first kernel to Blackwell",
+  "description": "A course that takes you from your first CUDA kernel to the features of Hopper and Blackwell GPUs and the libraries that real GPU code is built on. Each track opens with an illustrated lesson that has interactive widgets you can play with (thread indexing, coalescing, bank conflicts, occupancy, the roofline, streams, FP8 and FP4 number formats), then short questions that check the idea and Python exercises that model what the hardware does, so they run in your browser with no GPU. Tracks: the programming model; how the GPU executes warps; the memory hierarchy; shared memory and tiling; parallel patterns (reductions, scans, atomics, warp shuffles); performance and profiling (roofline, Nsight, streams, CUDA Graphs); Tensor Cores and the modern architectures (TMA, thread block clusters, wgmma, Tensor Memory, FP8, NVFP4); the libraries (cuBLAS, cuDNN, CUTLASS and CuTe, Thrust and CUB, Triton, PyTorch extensions); and a capstone that optimizes a kernel step by step. Every track ends by pointing to the GPU gym, where you write the same kernels in CUDA and Triton and benchmark them on a real GPU. - [cuBLAS](https://docs.nvidia.com/cuda/cublas/) and [cuDNN](https://docs.nvidia.com/deeplearning/cudnn/): vendor libraries for GEMM and deep learning",
+  "runtime": "gymkit",
+  "requires": {
+    "gpu": false
+  },
+  "order": 8,
+  "publish": "upload",
+  "sources": [
+    {
+      "title": "CUDA C++ Programming Guide",
+      "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/",
+      "note": "the reference for the programming model, memory spaces and compute capabilities"
+    },
+    {
+      "title": "CUDA C++ Best Practices Guide",
+      "url": "https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/",
+      "note": "coalescing, occupancy, streams and the APOD cycle"
+    },
+    {
+      "title": "Programming Massively Parallel Processors, 4th ed. (Hwu, Kirk, El Hajj)",
+      "url": "https://www.elsevier.com/books/programming-massively-parallel-processors/hwu/978-0-323-91231-0",
+      "note": "the textbook for tiling, reductions, scans and histograms"
+    },
+    {
+      "title": "NVIDIA H100 Tensor Core GPU architecture whitepaper",
+      "url": "https://resources.nvidia.com/en-us-tensor-core",
+      "note": "Hopper SMs, TMA, thread block clusters, FP8"
+    },
+    {
+      "title": "NVIDIA Blackwell architecture technical brief",
+      "url": "https://resources.nvidia.com/en-us-blackwell-architecture",
+      "note": "fifth-generation Tensor Cores, FP4 and microscaling"
+    },
+    {
+      "title": "CUDA Hopper and Blackwell tuning guides",
+      "url": "https://docs.nvidia.com/cuda/hopper-tuning-guide/",
+      "note": "what changes per generation"
+    },
+    {
+      "title": "PTX ISA: wgmma, tcgen05, cp.async.bulk",
+      "url": "https://docs.nvidia.com/cuda/parallel-thread-execution/",
+      "note": "the instructions behind Tensor Cores and TMA"
+    },
+    {
+      "title": "OCP Microscaling Formats (MX) specification",
+      "url": "https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf",
+      "note": "MXFP8, MXFP6 and MXFP4"
+    },
+    {
+      "title": "Optimizing Parallel Reduction in CUDA (Mark Harris)",
+      "url": "https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf",
+      "note": "the classic seven-step reduction"
+    },
+    {
+      "title": "Roofline: an insightful visual performance model (Williams, Waterman, Patterson)",
+      "url": "https://doi.org/10.1145/1498765.1498785",
+      "note": "the roofline model"
+    },
+    {
+      "title": "Nsight Compute documentation",
+      "url": "https://docs.nvidia.com/nsight-compute/",
+      "note": "metrics, Speed of Light and stall reasons"
+    },
+    {
+      "title": "CUTLASS and CuTe",
+      "url": "https://github.com/NVIDIA/cutlass",
+      "note": "templates and layouts for GEMM on every architecture"
+    },
+    {
+      "title": "CCCL: Thrust, CUB and libcu++",
+      "url": "https://github.com/NVIDIA/cccl",
+      "note": "the CUDA C++ core libraries"
+    },
+    {
+      "title": "Triton tutorials",
+      "url": "https://triton-lang.org/main/getting-started/tutorials/index.html",
+      "note": "block-level GPU programming in Python"
+    },
+    {
+      "title": "PyTorch custom C++ and CUDA operators",
+      "url": "https://pytorch.org/tutorials/advanced/cpp_custom_ops.html",
+      "note": "putting your kernel behind a PyTorch op"
+    },
+    {
+      "title": "GPU MODE lectures",
+      "url": "https://github.com/gpu-mode/lectures",
+      "note": "community lectures on CUDA, Triton and profiling"
+    },
+    {
+      "title": "How to Optimize a CUDA Matmul Kernel (Simon Boehm)",
+      "url": "https://siboehm.com/articles/22/CUDA-MMM",
+      "note": "a GEMM taken from naive to near cuBLAS, step by step"
+    },
+    {
+      "title": "Outperforming cuBLAS on H100 (Pranjal Shankhdhar)",
+      "url": "https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog",
+      "note": "a Hopper GEMM worklog with TMA, wgmma and clusters"
+    }
+  ],
+  "langs": [
+    {
+      "id": "python",
+      "label": "Python",
+      "editor": "python",
+      "file": "solution.py"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Your first kernels",
+      "summary": "Why a GPU is fast, how a CUDA program is laid out, and how each thread finds its piece of the work.",
+      "exercises": [
+        "model_lesson",
+        "blocks_needed",
+        "global_index_value",
+        "launch_semantics",
+        "program_steps",
+        "vector_add_blanks",
+        "launch_owners",
+        "pixel_of_thread"
+      ]
+    },
+    {
+      "name": "How the GPU runs your threads",
+      "summary": "SMs, warps and the SIMT model: why branches can cost double, and how occupancy hides memory latency.",
+      "exercises": [
+        "execution_lesson",
+        "warps_in_block",
+        "which_diverge",
+        "sync_in_branch",
+        "execution_terms",
+        "occupancy_by_hand",
+        "simt_cost",
+        "occupancy_calc"
+      ]
+    },
+    {
+      "name": "The memory hierarchy",
+      "summary": "Registers, shared memory, caches and HBM: how far each is, how fast it is, and why the order of your loads matters.",
+      "exercises": [
+        "memory_lesson",
+        "memory_order",
+        "where_it_lives",
+        "strided_sectors",
+        "vector_add_time",
+        "unified_memory",
+        "count_sectors",
+        "aos_to_soa"
+      ]
+    },
+    {
+      "name": "Shared memory and tiling",
+      "summary": "Use on-chip shared memory to reuse data: banks and conflicts, the tiled transpose, and the tiled matrix multiply.",
+      "exercises": [
+        "shared_lesson",
+        "padding_tile",
+        "conflict_or_broadcast",
+        "transpose_blanks",
+        "tiling_reuse",
+        "bank_degree",
+        "tiled_matmul"
+      ]
+    },
+    {
+      "name": "Parallel patterns",
+      "summary": "Reductions, warp shuffles, scans, atomics and histograms: the building blocks behind softmax, sorting and top-k.",
+      "exercises": [
+        "patterns_lesson",
+        "reduction_steps",
+        "block_reduce_order",
+        "atomics_truths",
+        "shfl_down_sum",
+        "hillis_steele",
+        "private_histogram"
+      ]
+    },
+    {
+      "name": "Performance and profiling",
+      "summary": "Predict a kernel's speed with the roofline, measure it with Nsight, and overlap work with streams and CUDA Graphs.",
+      "exercises": [
+        "performance_lesson",
+        "ridge_point_h100",
+        "gemm_intensity",
+        "profiler_match",
+        "optimization_loop",
+        "streams_truths",
+        "stream_pipeline",
+        "read_a_profile"
+      ]
+    },
+    {
+      "name": "Tensor Cores and modern GPUs",
+      "summary": "From Volta to Blackwell: Tensor Cores, TMA, thread block clusters, warp specialization, Tensor Memory, FP8, FP4 and microscaling.",
+      "exercises": [
+        "architectures_lesson",
+        "feature_generation",
+        "e4m3_max",
+        "tma_truths",
+        "pipeline_order",
+        "warpgroup_size",
+        "to_e4m3",
+        "mma_padding"
+      ]
+    },
+    {
+      "name": "The library stack",
+      "summary": "cuBLAS, cuDNN, CUTLASS and CuTe, Thrust and CUB, Triton, cuTile and PyTorch extensions: what each is for and how to use it well.",
+      "exercises": [
+        "libraries_lesson",
+        "library_match",
+        "cublas_row_major",
+        "thrust_blanks",
+        "torch_op_steps",
+        "cute_layout",
+        "grouped_pid"
+      ]
+    },
+    {
+      "name": "Capstone: optimize a kernel end to end",
+      "summary": "Put it all together: take softmax and GEMM from naive to near the hardware limit, then do it yourself on a real GPU.",
+      "exercises": [
+        "capstone_lesson",
+        "gemm_ladder",
+        "kernel_time",
+        "plan_fused_kernel",
+        "real_gpu_path"
+      ]
+    }
+  ]
+}

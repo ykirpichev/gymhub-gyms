@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "128"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "A warpgroup is 4 consecutive warps, 4 × 32 = 128 threads. On Blackwell, `tcgen05.mma` is issued by a single thread on\nbehalf of the block, and the accumulator lives in Tensor Memory rather than in those threads' registers."
+}

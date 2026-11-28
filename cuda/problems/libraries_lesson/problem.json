@@ -1,0 +1,17 @@
+{
+  "title": "Lesson: don't write what a library already does",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "lesson",
+  "minutes": 22,
+  "concepts": [
+    "cuBLAS",
+    "cuDNN",
+    "CUTLASS",
+    "CuTe",
+    "Thrust",
+    "CUB",
+    "Triton",
+    "PyTorch extensions"
+  ]
+}

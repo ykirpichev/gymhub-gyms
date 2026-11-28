@@ -1,0 +1,34 @@
+{
+  "title": "What a launch does",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "asynchronous launch",
+    "errors"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "The host continues before the kernel finishes."
+    },
+    {
+      "id": "b",
+      "text": "A `cudaMemcpy` from device to host after the launch waits for the kernel to finish first."
+    },
+    {
+      "id": "c",
+      "text": "If the kernel reads out of bounds, the launch line itself returns an error."
+    },
+    {
+      "id": "d",
+      "text": "A block size of 2048 makes the launch fail, which `cudaGetLastError()` reports."
+    },
+    {
+      "id": "e",
+      "text": "The blocks of the grid run in order, block 0 first."
+    }
+  ],
+  "multiple": true
+}

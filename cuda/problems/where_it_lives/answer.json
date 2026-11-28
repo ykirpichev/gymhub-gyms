@@ -1,0 +1,10 @@
+{
+  "pairs": {
+    "p1": "e",
+    "p2": "c",
+    "p3": "f",
+    "p4": "a",
+    "p5": "d"
+  },
+  "explanation": "Scalars go in registers. Arrays indexed by a runtime value cannot be registers (registers have no addresses), so the\ncompiler puts them in per-thread local memory, which is DRAM. Shared memory is per block; constant memory is read\nthrough a cache that broadcasts one address to a whole warp efficiently. `cudaMalloc` memory is global."
+}

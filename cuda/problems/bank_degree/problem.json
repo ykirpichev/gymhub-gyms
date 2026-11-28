@@ -1,0 +1,10 @@
+{
+  "title": "Bank conflict degree",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "shared memory banks"
+  ]
+}

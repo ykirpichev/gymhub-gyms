@@ -1,0 +1,14 @@
+{
+  "title": "Fill in the tiled transpose",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "fill",
+  "minutes": 5,
+  "concepts": [
+    "shared memory",
+    "transpose",
+    "__syncthreads"
+  ],
+  "code": true,
+  "text": "__global__ void transpose(const float* in, float* out, int n) {\n    __shared__ float tile[32][[b1]]];\n    int x = blockIdx.x * 32 + threadIdx.x;\n    int y = blockIdx.y * 32 + threadIdx.y;\n    tile[threadIdx.y][threadIdx.x] = in[y * n + x];\n    [[b2]];\n    x = blockIdx.[[b3]] * 32 + threadIdx.x;\n    y = blockIdx.[[b4]] * 32 + threadIdx.y;\n    out[y * n + x] = tile[threadIdx.[[b5]]][threadIdx.[[b6]]];\n}"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Grouped tile order for L2 reuse",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "Triton",
+    "tile scheduling",
+    "L2 cache"
+  ]
+}

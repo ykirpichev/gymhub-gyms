@@ -1,0 +1,12 @@
+{
+  "title": "Padding the tile",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "bank conflicts",
+    "padding"
+  ],
+  "placeholder": "a whole number"
+}

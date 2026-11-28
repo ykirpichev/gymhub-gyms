@@ -1,0 +1,37 @@
+{
+  "title": "Bank conflict or broadcast?",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "choice",
+  "minutes": 4,
+  "concepts": [
+    "bank conflicts"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`s[t]`"
+    },
+    {
+      "id": "b",
+      "text": "`s[0]` (every lane reads the same word)"
+    },
+    {
+      "id": "c",
+      "text": "`s[2 * t]`"
+    },
+    {
+      "id": "d",
+      "text": "`s[3 * t]`"
+    },
+    {
+      "id": "e",
+      "text": "`s[32 * t + 5]`"
+    },
+    {
+      "id": "f",
+      "text": "`s[(t * 33) % 1024]`"
+    }
+  ],
+  "multiple": true
+}

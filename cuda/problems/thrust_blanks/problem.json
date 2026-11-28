@@ -1,0 +1,12 @@
+{
+  "title": "Fill in Thrust",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "fill",
+  "minutes": 3,
+  "concepts": [
+    "Thrust"
+  ],
+  "code": true,
+  "text": "#include <thrust/device_vector.h>\n#include <thrust/sort.h>\n#include <thrust/reduce.h>\nstd::vector<float> h = load();\nthrust::[[b1]]<float> d(h.begin(), h.end());   // copies to the GPU\nthrust::[[b2]](d.begin(), d.end());\nfloat total = thrust::[[b3]](d.begin(), d.end(), 0.0f);"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Which statements about atomics are true?",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "atomics",
+    "histogram"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`atomicAdd` on floats gives the same bits on every run, because the hardware adds in thread order."
+    },
+    {
+      "id": "b",
+      "text": "Many threads doing `atomicAdd` on the same global address serialize, which can make a kernel far slower than a reduction."
+    },
+    {
+      "id": "c",
+      "text": "Atomics need a `__syncthreads()` after each call to be correct."
+    },
+    {
+      "id": "d",
+      "text": "A shared-memory histogram per block, merged into global memory at the end, cuts global atomics to one per bin per block."
+    }
+  ],
+  "multiple": true
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Plan a fused kernel",
+  "difficulty": "hard",
+  "summary": "",
+  "kind": "essay",
+  "minutes": 20,
+  "concepts": [
+    "fusion",
+    "RMSNorm",
+    "FP8",
+    "kernel design"
+  ],
+  "min_words": 120,
+  "max_words": 400
+}

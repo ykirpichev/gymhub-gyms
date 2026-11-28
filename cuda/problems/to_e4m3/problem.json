@@ -1,0 +1,12 @@
+{
+  "title": "Round to FP8 E4M3",
+  "difficulty": "hard",
+  "summary": "",
+  "kind": "code",
+  "minutes": 25,
+  "concepts": [
+    "FP8",
+    "rounding",
+    "number formats"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Sectors of a strided load",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "coalescing",
+    "sectors"
+  ],
+  "placeholder": "a whole number"
+}

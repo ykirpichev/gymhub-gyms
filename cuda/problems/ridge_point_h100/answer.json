@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "295"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.03,
+  "explanation": "989 × 10¹² / 3.35 × 10¹² ≈ 295 FLOP/byte. Below that, the kernel cannot reach peak math no matter how well it is\nwritten. On a B200 (2250 TFLOP/s, 8 TB/s) the ridge is about 281; with FP8 it doubles, with FP4 it doubles again."
+}

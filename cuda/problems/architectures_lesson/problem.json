@@ -1,0 +1,17 @@
+{
+  "title": "Lesson: what changed from Volta to Blackwell",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "lesson",
+  "minutes": 25,
+  "concepts": [
+    "Tensor Cores",
+    "wgmma",
+    "tcgen05",
+    "TMA",
+    "clusters",
+    "warp specialization",
+    "FP8",
+    "FP4"
+  ]
+}

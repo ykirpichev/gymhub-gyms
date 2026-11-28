@@ -1,0 +1,11 @@
+{
+  "order": [
+    "d",
+    "a",
+    "b",
+    "e",
+    "f",
+    "c"
+  ],
+  "explanation": "Coalescing makes DRAM traffic efficient; shared-memory tiling reduces how often data comes from DRAM; register tiling\nreduces shared-memory traffic per FLOP; vector loads cut instruction count; warp tiling matches the scheduler and\nregister-file layout; Tensor Cores and async pipelines (cp.async, TMA) are the final step on modern GPUs."
+}

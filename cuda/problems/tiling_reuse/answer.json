@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "128"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "Each block loads a tile of A once per step along K, and the element is needed by every block in its row of C tiles:\nN / T = 4096 / 32 = 128 blocks. Traffic falls by the tile size, 32×. Bigger tiles save more but need more shared\nmemory and registers, which lowers occupancy: the tiling widget shows the shared memory per block."
+}

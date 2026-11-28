@@ -1,0 +1,11 @@
+{
+  "pairs": {
+    "p1": "a",
+    "p2": "e",
+    "p3": "f",
+    "p4": "d",
+    "p5": "b",
+    "p6": "g"
+  },
+  "explanation": "cuBLASLt has FP8 and epilogues; cuDNN has fused attention graphs; CUTLASS is for custom GEMMs; Thrust and CUB's\ndevice-wide algorithms sort; CUB's block primitives go inside kernels; NCCL does collectives. cuFFT (Fourier\ntransforms) fits none of these."
+}

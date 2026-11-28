@@ -1,0 +1,12 @@
+{
+  "title": "Simulate a stream pipeline",
+  "difficulty": "hard",
+  "summary": "",
+  "kind": "code",
+  "minutes": 25,
+  "concepts": [
+    "streams",
+    "overlap",
+    "pipelining"
+  ]
+}

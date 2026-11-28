@@ -1,0 +1,52 @@
+{
+  "title": "Which tool answers the question?",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "match",
+  "minutes": 3,
+  "concepts": [
+    "Nsight Systems",
+    "Nsight Compute",
+    "profiling"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "Is the GPU idle between kernels while the CPU prepares the next batch?"
+    },
+    {
+      "id": "p2",
+      "text": "Why does this kernel reach only 40% of DRAM bandwidth?"
+    },
+    {
+      "id": "p3",
+      "text": "How many registers and spill bytes does each kernel use?"
+    },
+    {
+      "id": "p4",
+      "text": "How long does this kernel take, from the host program?"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "Nsight Systems timeline"
+    },
+    {
+      "id": "b",
+      "text": "Nsight Compute on that kernel"
+    },
+    {
+      "id": "c",
+      "text": "Compile with `-Xptxas -v`"
+    },
+    {
+      "id": "d",
+      "text": "`nvidia-smi`"
+    },
+    {
+      "id": "e",
+      "text": "CUDA events around the launch"
+    }
+  ]
+}

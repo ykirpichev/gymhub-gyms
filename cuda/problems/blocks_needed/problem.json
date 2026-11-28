@@ -1,0 +1,11 @@
+{
+  "title": "How many blocks?",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 2,
+  "concepts": [
+    "launch configuration"
+  ],
+  "placeholder": "a whole number"
+}

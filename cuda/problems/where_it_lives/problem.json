@@ -1,0 +1,58 @@
+{
+  "title": "Where does it live?",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "match",
+  "minutes": 3,
+  "concepts": [
+    "memory spaces"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "`float acc = 0.0f;`"
+    },
+    {
+      "id": "p2",
+      "text": "`__shared__ float tile[32][33];`"
+    },
+    {
+      "id": "p3",
+      "text": "`float big[64]; big[k] = …` with a runtime `k`"
+    },
+    {
+      "id": "p4",
+      "text": "`__constant__ float coeffs[16];`"
+    },
+    {
+      "id": "p5",
+      "text": "a pointer from `cudaMalloc`"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "Constant memory with a broadcast cache"
+    },
+    {
+      "id": "b",
+      "text": "The host's RAM"
+    },
+    {
+      "id": "c",
+      "text": "On-chip shared memory, one copy per block"
+    },
+    {
+      "id": "d",
+      "text": "Global memory in device DRAM"
+    },
+    {
+      "id": "e",
+      "text": "A register"
+    },
+    {
+      "id": "f",
+      "text": "Local memory: DRAM behind the caches"
+    }
+  ]
+}

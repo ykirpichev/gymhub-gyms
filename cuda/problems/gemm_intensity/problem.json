@@ -1,0 +1,12 @@
+{
+  "title": "GEMM intensity",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 4,
+  "concepts": [
+    "arithmetic intensity",
+    "GEMM"
+  ],
+  "placeholder": "FLOP per byte"
+}

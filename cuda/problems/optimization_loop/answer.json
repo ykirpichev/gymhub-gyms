@@ -1,0 +1,11 @@
+{
+  "order": [
+    "f",
+    "d",
+    "b",
+    "c",
+    "e",
+    "a"
+  ],
+  "explanation": "Correctness first, then measurement before any change: the hottest kernel is often not the one you expected. One change\nat a time keeps cause and effect clear. NVIDIA's Best Practices Guide calls this cycle APOD: assess, parallelize,\noptimize, deploy."
+}

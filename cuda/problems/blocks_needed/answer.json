@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "3907"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "1,000,000 / 256 = 3906.25, so 3906 blocks would leave 64 elements uncovered. Rounding up gives 3907 blocks, or\n1,000,192 threads; the last 192 threads fail the `i < n` check and do nothing. That is why every such kernel has a\nbounds check."
+}

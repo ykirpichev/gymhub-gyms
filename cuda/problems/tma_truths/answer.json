@@ -1,0 +1,8 @@
+{
+  "correct": [
+    "b",
+    "d",
+    "e"
+  ],
+  "explanation": "TMA moves the address arithmetic into hardware: a single elected thread issues the copy with a tensor map and tile\ncoordinates, and consumers wait on an mbarrier's transaction count. Data lands in shared memory (or goes from shared to\nglobal for stores). That frees the other warps' registers and issue slots for math."
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Row-major GEMM with cuBLAS",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "choice",
+  "minutes": 4,
+  "concepts": [
+    "cuBLAS",
+    "column-major"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "`gemm(N, N, M, N, K, A, lda=K, B, ldb=N, C, ldc=N)`: the call is the same in both layouts."
+    },
+    {
+      "id": "b",
+      "text": "`gemm(T, T, M, N, K, A, lda=K, B, ldb=N, C, ldc=N)`: transpose both inputs."
+    },
+    {
+      "id": "c",
+      "text": "`gemm(N, N, N, M, K, B, ldb=N, A, lda=K, C, ldc=N)`: swap the operands and `M` with `N`."
+    },
+    {
+      "id": "d",
+      "text": "Not possible: you must transpose A and B into column-major first."
+    }
+  ],
+  "multiple": false
+}

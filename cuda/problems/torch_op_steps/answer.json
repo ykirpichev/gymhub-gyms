@@ -1,0 +1,10 @@
+{
+  "order": [
+    "b",
+    "d",
+    "c",
+    "e",
+    "a"
+  ],
+  "explanation": "A correct kernel comes first; the wrapper makes it safe to call; registration makes it a real operator; the fake\nimplementation makes it traceable; `opcheck` tests the registration (schemas, autograd, fake tensors) as a whole."
+}

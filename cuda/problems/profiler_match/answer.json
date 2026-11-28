@@ -1,0 +1,9 @@
+{
+  "pairs": {
+    "p1": "a",
+    "p2": "b",
+    "p3": "c",
+    "p4": "e"
+  },
+  "explanation": "Nsight Systems shows the whole timeline, including gaps; Nsight Compute digs into one kernel's metrics. Register counts\ncome from the compiler (and also appear in Nsight Compute). CUDA events measure GPU time between two points in a\nstream. `nvidia-smi` shows utilization and memory, too coarse for any of these questions."
+}

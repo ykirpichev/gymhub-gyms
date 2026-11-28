@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "448"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "2⁸ × 1.110₂ = 256 × 1.75 = 448. E4M3 gives up infinities to gain range; E5M2 follows IEEE rules (it has infinities) and\nreaches 57,344. In the formats widget, type a large value to see FP8 saturate."
+}

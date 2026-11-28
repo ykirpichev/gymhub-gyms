@@ -1,0 +1,9 @@
+{
+  "answers": [
+    "398"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "rel_tolerance": 0.03,
+  "explanation": "12 bytes × 10⁸ = 1.2 × 10⁹ bytes. At 0.9 × 3.35 × 10¹² B/s = 3.015 × 10¹² B/s, that takes 1.2 × 10⁹ / 3.015 × 10¹² =\n0.000398 s, about 398 µs. The 10⁸ additions are irrelevant: at 67 TFLOP/s of FP32 they would take 1.5 µs. That is\nwhat \"memory-bound\" means."
+}

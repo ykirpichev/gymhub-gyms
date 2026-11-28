@@ -1,0 +1,11 @@
+{
+  "title": "AoS to SoA",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "code",
+  "minutes": 8,
+  "concepts": [
+    "data layout",
+    "structure of arrays"
+  ]
+}

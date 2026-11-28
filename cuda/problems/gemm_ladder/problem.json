@@ -1,0 +1,37 @@
+{
+  "title": "The GEMM ladder",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "order",
+  "minutes": 3,
+  "concepts": [
+    "GEMM",
+    "optimization"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "Stage tiles of A and B in shared memory"
+    },
+    {
+      "id": "b",
+      "text": "Have each thread compute several outputs held in registers"
+    },
+    {
+      "id": "c",
+      "text": "Move the inner product onto Tensor Cores with a multistage asynchronous pipeline"
+    },
+    {
+      "id": "d",
+      "text": "Make consecutive threads read consecutive addresses (coalescing)"
+    },
+    {
+      "id": "e",
+      "text": "Load and store with 128-bit vector instructions"
+    },
+    {
+      "id": "f",
+      "text": "Organize the block's work into warp-level tiles"
+    }
+  ]
+}

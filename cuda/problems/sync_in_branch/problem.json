@@ -1,0 +1,30 @@
+{
+  "title": "A __syncthreads in a branch",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "choice",
+  "minutes": 3,
+  "concepts": [
+    "__syncthreads",
+    "correctness"
+  ],
+  "choices": [
+    {
+      "id": "a",
+      "text": "Nothing: threads that skip the branch are not part of the barrier."
+    },
+    {
+      "id": "b",
+      "text": "Only a performance problem: threads 128–255 wait at the barrier for nothing."
+    },
+    {
+      "id": "c",
+      "text": "Replace it with `__syncwarp()`, which synchronizes the whole block more cheaply."
+    },
+    {
+      "id": "d",
+      "text": "Threads 128–255 never reach the barrier: undefined behaviour. Call `__syncthreads()` outside the branch."
+    }
+  ],
+  "multiple": false
+}

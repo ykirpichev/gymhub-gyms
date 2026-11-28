@@ -1,0 +1,33 @@
+{
+  "title": "Fastest to slowest",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "order",
+  "minutes": 2,
+  "concepts": [
+    "memory hierarchy",
+    "latency"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "The L2 cache"
+    },
+    {
+      "id": "b",
+      "text": "A register"
+    },
+    {
+      "id": "c",
+      "text": "Global memory in HBM"
+    },
+    {
+      "id": "d",
+      "text": "Shared memory"
+    },
+    {
+      "id": "e",
+      "text": "Host memory over PCIe"
+    }
+  ]
+}

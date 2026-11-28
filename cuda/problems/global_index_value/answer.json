@@ -1,0 +1,8 @@
+{
+  "answers": [
+    "677"
+  ],
+  "match": "number",
+  "tolerance": 0,
+  "explanation": "`i = 5 × 128 + 37 = 640 + 37 = 677`. Blocks are laid end to end: block 5 starts at element 640."
+}

@@ -1,0 +1,34 @@
+{
+  "title": "A warp-specialized pipeline",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "order",
+  "minutes": 3,
+  "concepts": [
+    "warp specialization",
+    "mbarrier",
+    "wgmma"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "text": "When their `wgmma` on the stage has completed, the consumers arrive on \"empty\""
+    },
+    {
+      "id": "b",
+      "text": "The consumer warpgroups wait on \"full\", then issue `wgmma` on the stage"
+    },
+    {
+      "id": "c",
+      "text": "The TMA unit signals the stage's \"full\" barrier when all the bytes have arrived"
+    },
+    {
+      "id": "d",
+      "text": "The producer issues TMA loads of the next A and B tiles into the stage"
+    },
+    {
+      "id": "e",
+      "text": "The producer waits until the stage's \"empty\" barrier says consumers are done with it"
+    }
+  ]
+}

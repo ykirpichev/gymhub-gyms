@@ -1,0 +1,13 @@
+{
+  "title": "Fill in vector add",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "fill",
+  "minutes": 3,
+  "concepts": [
+    "kernels",
+    "thread indexing"
+  ],
+  "code": true,
+  "text": "[[b1]] void add(int n, const float* a, const float* b, float* c) {\n    int i = blockIdx.x * [[b2]] + threadIdx.x;\n    if (i [[b3]] n) c[i] = a[i] + b[i];\n}\nint grid = (n + [[b4]]) / 256;\nadd<<<[[b5]], 256>>>(n, a, b, c);"
+}

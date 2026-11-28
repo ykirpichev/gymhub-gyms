@@ -1,0 +1,21 @@
+{
+  "title": "Write it on a real GPU",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "checklist",
+  "minutes": 240,
+  "concepts": [
+    "practice"
+  ],
+  "items": [
+    "Warm up: [playground](#/gym/gpu/playground), [vector add](#/gym/gpu/vector_add) and [SAXPY](#/gym/gpu/saxpy) in CUDA",
+    "Coalescing and shared memory: [transpose](#/gym/gpu/transpose) beats PyTorch's copy",
+    "Reductions: [reduction](#/gym/gpu/reduction) with warp shuffles, then [row softmax](#/gym/gpu/row_softmax)",
+    "Scans and atomics: [prefix sum](#/gym/gpu/prefix_sum) and [histogram](#/gym/gpu/histogram)",
+    "Tiling: [matmul](#/gym/gpu/matmul) with shared-memory and register tiles",
+    "Tensor Cores: [FP16 GEMM](#/gym/gpu/gemm_fp16) with `wmma` or `mma.sync`",
+    "Transformer kernels: [RMSNorm](#/gym/gpu/rms_norm), [RoPE](#/gym/gpu/rope) and [causal attention](#/gym/gpu/causal_attention)",
+    "The same kernels in Triton, and compare the code size and the speed",
+    "Profile one of your kernels with Nsight Compute and fix its top stall reason"
+  ]
+}

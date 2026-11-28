@@ -1,0 +1,12 @@
+{
+  "title": "Tiled matmul, tile by tile",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 20,
+  "concepts": [
+    "tiling",
+    "matrix multiply",
+    "data reuse"
+  ]
+}

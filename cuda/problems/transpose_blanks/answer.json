@@ -1,0 +1,35 @@
+{
+  "blanks": {
+    "b1": {
+      "answers": [
+        "[33"
+      ]
+    },
+    "b2": {
+      "answers": [
+        "__syncthreads()"
+      ]
+    },
+    "b3": {
+      "answers": [
+        "y"
+      ]
+    },
+    "b4": {
+      "answers": [
+        "x"
+      ]
+    },
+    "b5": {
+      "answers": [
+        "x"
+      ]
+    },
+    "b6": {
+      "answers": [
+        "y"
+      ]
+    }
+  },
+  "explanation": "Pad the row to 33 to avoid the 32-way conflict on the column read. All threads must finish writing the tile before\nanyone reads it, hence the barrier. The output block is the mirror of the input block, so the block indices swap,\nwhile `threadIdx.x` stays on the fastest-changing column for coalesced writes. The transposition itself happens in\nshared memory: read `tile[threadIdx.x][threadIdx.y]`."
+}

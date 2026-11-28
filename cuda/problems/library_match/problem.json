@@ -1,0 +1,66 @@
+{
+  "title": "Pick the library",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "match",
+  "minutes": 3,
+  "concepts": [
+    "library stack"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "An FP8 GEMM with a fused bias and GELU"
+    },
+    {
+      "id": "p2",
+      "text": "Fused attention for a transformer, chosen per GPU"
+    },
+    {
+      "id": "p3",
+      "text": "A GEMM with a custom epilogue nobody ships, using TMA and `wgmma`"
+    },
+    {
+      "id": "p4",
+      "text": "Sort 100 million keys on the GPU from host code"
+    },
+    {
+      "id": "p5",
+      "text": "A block-wide reduction inside your own kernel"
+    },
+    {
+      "id": "p6",
+      "text": "All-reduce gradients across 8 GPUs"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "cuBLASLt"
+    },
+    {
+      "id": "b",
+      "text": "CUB"
+    },
+    {
+      "id": "c",
+      "text": "cuFFT"
+    },
+    {
+      "id": "d",
+      "text": "Thrust (or `cub::DeviceRadixSort`)"
+    },
+    {
+      "id": "e",
+      "text": "cuDNN"
+    },
+    {
+      "id": "f",
+      "text": "CUTLASS / CuTe"
+    },
+    {
+      "id": "g",
+      "text": "NCCL"
+    }
+  ]
+}

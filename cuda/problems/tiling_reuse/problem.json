@@ -1,0 +1,12 @@
+{
+  "title": "Why tiling helps",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "tiling",
+    "arithmetic intensity"
+  ],
+  "placeholder": "a whole number"
+}

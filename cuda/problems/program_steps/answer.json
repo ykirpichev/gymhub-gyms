@@ -1,0 +1,11 @@
+{
+  "order": [
+    "a",
+    "b",
+    "f",
+    "d",
+    "e",
+    "c"
+  ],
+  "explanation": "Memory must exist before it is filled, inputs before the kernel reads them, and the copy back must come after the\nlaunch. The launch error check belongs right after the launch, because the error is tied to it."
+}

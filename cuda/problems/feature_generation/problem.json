@@ -1,0 +1,50 @@
+{
+  "title": "Match the feature to the generation",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "match",
+  "minutes": 4,
+  "concepts": [
+    "GPU architectures"
+  ],
+  "prompts": [
+    {
+      "id": "p1",
+      "text": "Tensor Cores (FP16)"
+    },
+    {
+      "id": "p2",
+      "text": "`cp.async`, TF32 and BF16 Tensor Cores"
+    },
+    {
+      "id": "p3",
+      "text": "TMA, thread block clusters, `wgmma`, FP8"
+    },
+    {
+      "id": "p4",
+      "text": "Tensor Memory, `tcgen05.mma`, FP4 with block scaling"
+    }
+  ],
+  "options": [
+    {
+      "id": "a",
+      "text": "Ampere"
+    },
+    {
+      "id": "b",
+      "text": "Hopper"
+    },
+    {
+      "id": "c",
+      "text": "Blackwell"
+    },
+    {
+      "id": "d",
+      "text": "Pascal"
+    },
+    {
+      "id": "e",
+      "text": "Volta"
+    }
+  ]
+}

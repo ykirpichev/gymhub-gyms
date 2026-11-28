@@ -1,0 +1,15 @@
+{
+  "title": "Lesson: reduce, scan, and the warp-level toolbox",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "lesson",
+  "minutes": 20,
+  "concepts": [
+    "reduction",
+    "warp shuffle",
+    "scan",
+    "atomics",
+    "histogram",
+    "cooperative groups"
+  ]
+}

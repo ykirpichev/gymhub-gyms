@@ -1,0 +1,11 @@
+{
+  "title": "The cost of divergence",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 12,
+  "concepts": [
+    "divergence",
+    "SIMT efficiency"
+  ]
+}

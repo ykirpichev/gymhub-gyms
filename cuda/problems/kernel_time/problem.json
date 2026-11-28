@@ -1,0 +1,11 @@
+{
+  "title": "Predict a kernel's time",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "roofline",
+    "performance model"
+  ]
+}

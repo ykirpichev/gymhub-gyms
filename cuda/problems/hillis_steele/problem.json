@@ -1,0 +1,11 @@
+{
+  "title": "Hillis–Steele scan",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "scan",
+    "prefix sum"
+  ]
+}

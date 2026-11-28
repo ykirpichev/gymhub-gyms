@@ -1,0 +1,12 @@
+{
+  "title": "The largest FP8 E4M3 value",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "answer",
+  "minutes": 3,
+  "concepts": [
+    "FP8",
+    "number formats"
+  ],
+  "placeholder": "a number"
+}

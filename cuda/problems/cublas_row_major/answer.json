@@ -1,0 +1,6 @@
+{
+  "correct": [
+    "c"
+  ],
+  "explanation": "A row-major `M × N` matrix in memory is a column-major `N × M` matrix, its transpose. So ask cuBLAS for `Cᵀ` (`N × M`)\n`= Bᵀ (N × K) · Aᵀ (K × M)`: the buffers are already `Bᵀ` and `Aᵀ` in column-major terms. Transposing both inputs\nstill produces a column-major `C`, which is the wrong layout for you."
+}

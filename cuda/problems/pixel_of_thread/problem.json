@@ -1,0 +1,11 @@
+{
+  "title": "2D thread to pixel",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "code",
+  "minutes": 8,
+  "concepts": [
+    "2D indexing",
+    "row-major"
+  ]
+}

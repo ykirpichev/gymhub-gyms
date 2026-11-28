@@ -1,0 +1,11 @@
+{
+  "title": "Shuffle-down reduction",
+  "difficulty": "medium",
+  "summary": "",
+  "kind": "code",
+  "minutes": 15,
+  "concepts": [
+    "warp shuffle",
+    "reduction"
+  ]
+}

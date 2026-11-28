@@ -1,0 +1,10 @@
+{
+  "order": [
+    "b",
+    "d",
+    "a",
+    "c",
+    "e"
+  ],
+  "explanation": "Registers are read in the same cycle; shared memory is on-chip SRAM a few dozen cycles away; L2 is shared by the chip\nand a few hundred cycles; HBM is off-chip DRAM; host memory is across a bus, microseconds away."
+}

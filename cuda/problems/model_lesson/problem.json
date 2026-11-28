@@ -1,0 +1,13 @@
+{
+  "title": "Lesson: the CUDA programming model",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "lesson",
+  "minutes": 15,
+  "concepts": [
+    "host and device",
+    "kernels",
+    "grids and blocks",
+    "thread indexing"
+  ]
+}

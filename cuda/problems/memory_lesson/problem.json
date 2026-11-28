@@ -1,0 +1,14 @@
+{
+  "title": "Lesson: where data lives, and coalescing",
+  "difficulty": "easy",
+  "summary": "",
+  "kind": "lesson",
+  "minutes": 18,
+  "concepts": [
+    "memory hierarchy",
+    "coalescing",
+    "sectors",
+    "pinned memory",
+    "unified memory"
+  ]
+}
